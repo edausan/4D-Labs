@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php include('main_header.php') ?>
 
 <div class="top-container">
     <div id="featured-slider" class="flexslider">
