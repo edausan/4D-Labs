@@ -214,9 +214,6 @@ OLED">
                                 </a>
                             </div>
 
-                            
-                            <!--top-links-->
-
                             <ul id="top-nav" class="nav">
                                 <li class="first">
                                     <a href="http://4dlabs.com.au/customer/account/" title="My Account">Account</a>
