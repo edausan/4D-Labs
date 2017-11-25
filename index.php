@@ -1,6 +1,5 @@
 <?php include('header.php') ?>
 
-
 <div class="top-container">
     <div id="featured-slider" class="flexslider">
 
