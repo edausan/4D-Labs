@@ -1,0 +1,430 @@
+=clear()
+    &::after
+        content: ''
+        display: table
+        clear: both
+
+#inner-wrapper
+    padding-top: 0px !important
+
+
+#header
+    position: relative
+    width: 100%
+    height: auto
+    display: block
+    left: 0%
+    top: 0px
+    +transform(translateX(0%))
+    box-shadow: 0 15px 30px -10px rgba(black, .5)
+    text-align: left
+    +transition(300ms ease)
+    +clear
+
+    .top-bg
+        min-height: auto !important
+
+    #logo 
+        position: relative
+        background: url('../img/4dllogo.png') no-repeat white
+        background-size: 65% auto
+        background-position: 50%
+        height: 100px !important
+        width: 100%
+        display: block
+        top: 0px
+        left: 0px
+        z-index: 1003 !important
+        margin: 0px
+        +transition
+
+
+    nav.col-full
+        position: relative
+        width: 100%
+        max-width: 100%
+        margin: 0px !important
+        height: auto
+        z-index: 1002 !important
+        background: $darkBlue !important
+        +clear
+
+        .top-navigation
+            float: none !important
+            width: 100% !important
+            position: relative
+            display: block
+            width: 100%
+            max-width: 100%
+            height: auto
+            text-align: right
+            background: transparent
+            padding: 0px
+            margin: 0px !important
+            +clear
+
+            // Nav toggle
+            .nav-toggle
+                float: left
+                position: relative
+                top: 0
+                left: 0
+                display: inline-block
+                width: 18.99%
+                background: none
+                height: 52.6px
+                background: transparent
+                margin: 0
+                +border-radius(0px)
+                +transition
+                
+                a
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    +transform
+
+                &:hover
+                    background: $orange
+
+
+            // top menu
+            ul#top-nav  
+                float: none !important
+                position: relative
+                width: 80%
+                top: 0%
+                left: 0%
+                display: inline-block
+                height: auto
+                padding: 0px !important
+                margin: 0px !important
+                vertical-align: middle
+                +clear
+
+                li 
+                    float: left !important
+                    width: 25%
+                    display: inline-block
+                    margin: 0px !important
+                    text-align: center
+                    a 
+                        color: #333333
+                        font-size: 90%
+                        font-weight: normal
+                        display: block
+                        padding: 20px !important
+                        margin: 0px !important
+                        border: 0px !important
+                        color: white
+                        +transition
+                        
+
+                        i 
+                            margin-right: 5px
+                        span
+                            display: none
+
+
+
+                        &:hover
+                            background: $orange
+                            color: $darkBlue
+
+            // search bar
+            .search_main
+                float: none !important
+                display: block !important
+                position: relative
+                background: $orange
+                width: 100%
+                margin: 0px
+                vertical-align: middle
+                +clear
+
+                &::after
+                    content: ''
+                    display: block
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 0%
+                    height: 2px
+                    background: red
+                    +transition(300ms ease)
+                    z-index: 1004
+
+
+                &.focused::after
+                    width: 100%
+
+                span 
+                    position: absolute
+                    top: 50%
+                    +transform(translateY(-50%))
+                    right: 10px
+                    z-index: 1001
+
+                    i  
+                        color: white
+
+                .searchform
+                    position: relative
+                    display: block
+                    z-index: 1000
+                    padding-bottom: 0px !important
+                    width: 100%
+                    border-radius: 0px !important
+                    vertical-align: middle
+                    
+
+
+                    input.field
+                        width: 100%
+                        border-radius: 0px
+                        display: block
+                        padding: 0px
+                        padding-left: 10px
+                        margin: 0px
+                        background: transparent !important
+                        background-size: 0% 100%
+                        color: white !important
+                        font-size: 120%
+                        position: relative
+                        right: 0px
+                        z-index: 1000
+                        height: inherit
+                        +transition
+
+                        &:focus
+                            background: #1C3C4D !important
+                            background-size: 100% 100%
+                            width: 100%
+
+                        &::-moz-placeholder
+                            color: #eeeeee
+
+
+    // Main navigation
+    .nav-wrapper
+        position: relative
+        z-index: 1001 !important
+        background: $orange
+
+        .menus
+            max-width: 100% !important
+            text-align: center
+
+            ul#menu-nav
+                display: inline-block
+                float: none !important
+                width: 100% !important
+
+                li 
+                    float: none 
+                    display: inline-block
+                    padding: 0px !important
+
+                    a
+                        color: white !important
+                        font-weight: normal
+                        padding: 10px 20px
+                        +transition
+
+                        &:hover
+                            background: #E33110
+
+
+
+// Banner
+.main-banner
+    width: 100%
+    height: 80vh
+    position: relative
+    background: url('../img/banner3.jpg')
+    background-size: cover
+    background-attachment: fixed !important
+    background-position: bottom
+
+// Sub menu
+#header 
+    .sub-menu
+        position: absolute
+        top: 100%
+        left: 50%
+        width: 100%
+        // height: 200px
+        padding: 30px
+        background: $darkBlue
+        z-index: 1000
+        box-shadow: 0 15px 30px -10px rgba(black, .5)
+        display: block
+        +clear
+        +transition(500ms ease)
+
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 50px
+            background: linear-gradient(to bottom, rgba(black, .3), transparent)
+
+        &.hiddenSub
+            opacity: 0
+            +transform(translate(-50%, -150%))
+
+        &.showSub
+            opacity: 1
+            +transform(translate(-50%, 0%))
+
+        &.stay
+            opacity: 1
+            +transform(translate(-50%, 0%))
+        
+
+        ul.submenu-list
+            width: 100%
+            height: auto
+            display: block
+            margin: 0
+            padding: 0
+            text-align: left
+            opacity: 0
+            +transition(600ms ease)
+            +clear
+
+            h2
+                color: white
+                margin: 0px 0px 10px
+                text-align: center
+                background: $bgDarkGrey
+                padding: 10px 0px
+
+            p  
+                color: $linkDark
+
+                a
+                    color: white
+                    font-weight: 600
+                    text-decoration: none
+
+
+            li.submenu-item
+                position: relative
+                width: 33.333333333%
+                height: 100% 
+                float: left
+                display: block
+                padding: 20px
+
+                label
+                    color: white
+                    font-weight: 600
+                    display: block
+                    margin-bottom: 10px
+
+                    a
+                        color: white
+                        text-decoration: none
+                        display: block
+                        +transition
+
+                        &:hover
+                            color: $orange
+
+                ul
+                    padding: 0px
+                    margin: 0px
+
+                    li
+                        a
+                            position: relative
+                            color: $linkDark
+                            padding: 10px 20px
+                            text-decoration: none
+                            display: block
+                            +transition
+
+                            &:hover
+                                background: $orange
+                                color: white
+                                font-weight: 600
+
+                                i, img
+                                    margin-left: 0px
+                                    opacity: 1
+
+                            i
+                                position: relative
+                                margin-right: 10px
+                                margin-left: -25px
+                                opacity: 0
+                                color: white
+                                +transition
+
+                            img
+                                width: 20px
+                                height: auto
+                                position: relative
+                                margin-right: 10px
+                                margin-left: -25px
+                                opacity: 0
+                                +transition
+
+                div.overview-wrapper
+                    position: relative
+                    width: 60%
+                    left: 50%
+                    +transform(translateX(-50%))
+                    padding-top: 20px
+                    padding: 20px
+
+                    img 
+                        width: 100%
+                        height: auto
+                        transform-origin: center center
+                        +transform(scale(1))
+                        +transition
+
+                        &:hover
+                            +transform(scale(1.2))
+
+            
+            li.submenu-item.center
+                border-left: 1px solid #777777
+                border-right: 1px solid #777777
+
+        ul#products,
+        ul#appnotes,
+        ul#distributors,
+        ul#about,
+        ul#contact
+            display: none
+
+            &.showSubMenuContent
+                display: block
+
+            &.hideSubMenuContent
+                display: none
+
+            &.opaque
+                opacity: 1
+
+
+
+.carousel-item
+    // background-attachment: fixed
+    // background-size: cover
+    background-position: bottom
+    height: 65vh !important
+
+
+    .carousel-content
+        h3 
+            color: white 
+
+        .product-wrapper
+            img
+                width: 200px

@@ -1,0 +1,75 @@
+@media all and (min-width: 768px),
+print
+    #header
+        nav.col-full
+            #logo 
+                background-size: 50%
+            .top-navigation
+                text-align: center
+                .nav-toggle
+                    display: none
+                ul#top-nav
+
+                    li
+                        a   
+                            span
+                                display: inline-block
+
+                .search_main
+                    background: transparent !important
+
+
+
+
+@media all and (min-width: 1024px),
+print
+    #header
+        position: relative
+        #logo 
+            position: absolute
+            width: 20%
+            height: 77.6333px !important
+            background-size: 60% auto
+
+        nav.col-full
+            width: 100%
+            #logo
+                width: 20%
+                float: left
+
+            .top-navigation
+                width: 80%
+                float: right
+
+                ul#top-nav
+                    width: auto
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    +transform
+
+                    li
+                        float: none
+                        width: auto
+
+                .search_main
+                    position: relative
+                    float: right !important
+                    display: block
+                    width: 30% !important
+
+        .nav-wrapper
+            .menus
+                ul#menu-nav
+                    width: 65% !important
+
+
+        .sub-menu 
+            width: 60%
+
+@media all and (min-width: 1224px),
+print
+
+@media all and (min-width: 1440px),
+print
+ 

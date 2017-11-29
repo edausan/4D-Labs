@@ -52,7 +52,7 @@ OLED">
         var $ = jQuery.noConflict();
     </script>
     <script type="text/javascript" src="default-js/jquery_002.js"></script>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="default-css/styles.css" media="all">
     <link rel="stylesheet" type="text/css" href="default-css/widgets.css" media="all">
     <link rel="stylesheet" type="text/css" href="default-css/style.css" media="all">
@@ -69,6 +69,8 @@ OLED">
 
 
     <!-- Custom Styles -->
+    
+    <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
 
     <script type="text/javascript" src="default-js/prototype.js"></script>
@@ -95,8 +97,7 @@ OLED">
     <script type="text/javascript" src="default-js/owl.js"></script>
     <script type="text/javascript" src="default-js/easytabs.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
-
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
     <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" href="http://4dlabs.com.au/skin/frontend/default/default/css/styles-ie.css" media="all" />
@@ -208,24 +209,25 @@ OLED">
 
                             <!-- Nav toggle -->
                             <div class="nav-toggle" >
-                                <i class="fa fa-bars"></i>
+                                
                                 <a href="#navigation">
+                                    <i class="fa fa-bars"></i>
                                     <span>Navigation</span>
                                 </a>
                             </div>
 
                             <ul id="top-nav" class="nav">
                                 <li class="first">
-                                    <a href="http://4dlabs.com.au/customer/account/" title="My Account">Account</a>
+                                    <a href="http://4dlabs.com.au/customer/account/" title="My Account"><i class="fa fa-user-o"></i> <span>Account</span></a>
                                 </li>
                                 <li>
-                                    <a href="http://4dlabs.com.au/news" title="News">News</a>
+                                    <a href="http://4dlabs.com.au/news" title="News"><i class="fa fa-newspaper-o"></i> <span>News</span></a>
                                 </li>
                                 <li>
-                                    <a href="http://4dlabs.com.au/checkout/cart/" title="Cart" class="top-link-cart">Cart</a>
+                                    <a href="http://4dlabs.com.au/checkout/cart/" title="Cart" class="top-link-cart"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>
                                 </li>
                                 <li class=" last" id="login-link">
-                                    <a href="http://4dlabs.com.au/customer/account/login/" title="Login">Login</a>
+                                    <a href="http://4dlabs.com.au/customer/account/login/" title="Login"><i class="fa fa-sign-in"></i> <span>Login</span></a>
                                 </li>
                             </ul>
 
@@ -264,7 +266,7 @@ OLED">
                             
 
                             <!-- Mobile Tabs -->
-                            <ul class="mobile-tab">
+                            <!-- <ul class="mobile-tab">
                                 <li>
                                     <a href="">
                                         <i class="fa fa-user"></i>
@@ -288,7 +290,7 @@ OLED">
                                         <i class="fa fa-sign-in"></i>
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> -->
 
                             
 

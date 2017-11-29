@@ -1,8 +1,10 @@
 <header id="header" class="page-header">
+    <!-- Logo -->
+    <a href="index.php" title="4D Labs" id="logo"></a>
+    
+    <!-- Main menu -->
     <div class="section-wrapper top-bg">
         <nav class="col-full" role="navigation">
-
-            <a href="index.php" title="4D Labs" id="logo"></a>
 
             <div class="site-header">
                 <h1 class="site-title">
@@ -10,6 +12,7 @@
                 </h1>
                 <h2 class="site-description"></h2>
             </div>
+
 
             <div class="top-navigation">
 
@@ -21,18 +24,20 @@
                     </a>
                 </div>
 
+                
+
                 <ul id="top-nav" class="nav">
                     <li class="first">
-                        <a href="http://4dlabs.com.au/customer/account/" title="My Account">Account</a>
+                        <a href="http://4dlabs.com.au/customer/account/" title="My Account"><i class="fa fa-user-o"></i> <span>Account</span></a>
                     </li>
                     <li>
-                        <a href="http://4dlabs.com.au/news" title="News">News</a>
+                        <a href="http://4dlabs.com.au/news" title="News"><i class="fa fa-newspaper-o"></i> <span>News</span></a>
                     </li>
                     <li>
-                        <a href="http://4dlabs.com.au/checkout/cart/" title="Cart" class="top-link-cart">Cart</a>
+                        <a href="http://4dlabs.com.au/checkout/cart/" title="Cart" class="top-link-cart"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>
                     </li>
                     <li class=" last" id="login-link">
-                        <a href="http://4dlabs.com.au/customer/account/login/" title="Login">Login</a>
+                        <a href="http://4dlabs.com.au/customer/account/login/" title="Login"><i class="fa fa-sign-in"></i> <span>Login</span></a>
                     </li>
                 </ul>
 
@@ -54,7 +59,7 @@
 
 
                             <input name="cat" value="26" id="global-search-option" type="hidden">
-                            <input name="sa" value="Search" class="submits" type="submit">
+                            <!-- <input name="sa" value="Search" class="submits" type="submit"> -->
                             <div id="search_autocomplete" class="search-autocomplete"></div>
 
                             <script type="text/javascript">
@@ -68,6 +73,8 @@
                     </div>
                     <!--/Google CSE-->
                 </div>
+
+                
                 
 
                 <!-- Mobile Tabs -->
@@ -105,6 +112,8 @@
         </nav>
         <div class="clear"></div>
     </div>
+
+    <!-- Main Navigation -->
     <div class="section-wrapper nav-wrapper">
 
         <!-- Navbar -->

@@ -1,0 +1,104 @@
+section.featured-wrapper
+    +clear
+    display: block
+    margin: 20px 0
+
+    section.featured-container
+        width: 1440px
+        padding: 20px
+        position: relative
+        display: block
+        margin: 0 auto
+        +clear
+        text-align: left
+
+        header
+            display: block
+
+            a
+                text-decoration: none
+                color: black
+                +transition
+
+                &:hover
+                    color: $paleBlue
+
+                    i
+                        +transform(translateX(15px))
+
+                h5
+                    display: inline-block
+                    
+                    span
+                        display: inline-block
+                        vertical-align: middle
+                    i
+                        display: inline-block
+                        font-size: 50%
+                        +transform(translateX(5px))
+                        +transition
+    
+        article.featured
+            width: 33.333333333%
+            height: 460px
+            float: left
+            padding: 40px 60px
+            margin-top: 20px
+            position: relative
+            text-align: center
+            +transition
+
+            &:hover
+                box-shadow: 0 8px 32px rgba(black, .1)
+
+            figure 
+                display: block
+                width: 100%
+                margin-bottom: 50px
+
+                img
+                    width: 50%
+                    display: block
+                    margin: 0 auto
+
+            section.content
+                h3
+                    color: $paleBlue
+
+                p
+                    color: $darkBlue
+                    font-size: 95%
+
+
+            a.learn
+                text-decoration: none
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                color: black
+                font-weight: 600
+                font-size: 90%
+                padding: 10px 20px
+                display: block
+                +transition
+
+                &:hover
+                    background: $paleBlue
+                    color: white
+
+                    i
+                        color: white
+                        +transform(translateX(15px))
+
+                span
+                    +transform(translateX(0px))
+
+
+                i
+                    font-size: 90%
+                    color: $paleBlue
+                    +transform(translateX(5px))
+                    +transition
+                
+                

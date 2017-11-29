@@ -1,0 +1,148 @@
+header.header-wrapper
+    height: auto
+    position: relative
+    display: block
+    background: white
+    +clear
+    
+
+    nav.nav-wrapper
+        height: auto
+        position: relative
+        display: block
+        padding: 0px 15px
+        +clear
+
+        section.menu-container
+            display: block
+            position: relative
+            margin: 0px -15px
+            +clear
+
+            article
+                position: relative
+                height: auto
+                +clear
+
+            article.logo
+                position: relative
+                width: 100%
+                float: none
+                padding: 0px 20px
+
+                figure.logo-wrapper
+                    width: 100%
+                    margin: 0px
+
+                    img
+                        width: 100%
+
+            
+            article.menu-bar
+                float: none
+                display: block
+                width: 100%
+                position: relative
+
+                section.menu-wrapper
+                    position: relative
+                    display: block
+                    width: 100%
+                    padding: 20px
+
+                    form.search-form
+                        position: relative
+                        padding: 0px 10px
+                        border: 1px solid #cccccc
+                        +transition
+                        +border-radius
+                        +clear
+
+                        &.focused
+                            border-color: $paleBlue
+
+                        span
+                            position: absolute
+                            top: 50%
+                            right: 10px
+                            +transform(translateY(-50%))
+                            +transition
+                            color: #cccccc
+
+                            &.focus
+                                color: $paleBlue
+
+                        input
+                            background: none
+                            width: 95%
+                            margin: 0 -10px
+                            display: block
+                            border-style: none 
+                            padding: 10px
+
+                            &::placeholder
+                                color: #cccccc
+
+                    ul
+                        list-style: none 
+                        margin: 0px
+                        padding: 0px
+                        
+
+                        li
+                            display: inline-block
+                            width: 20%
+                            float: left
+                            text-align: center
+
+                            a
+                                text-decoration: none
+                                +transition
+
+                                
+
+                    ul.menus
+
+                        li
+                            padding: 20px 0px
+
+                            a
+                                color: #aaaaaa
+
+                                &:hover
+                                    color: black
+
+                                i
+                                    display: block
+                                span
+                                    display: none
+
+                            i
+                                display: block
+                                color: #aaaaaa
+                                cursor: pointer
+                                +transition
+
+                                &:hover
+                                    color: black
+                            
+
+                
+                section.main-navbar-wrapper
+                    display: none
+
+                    ul.main-navbar 
+                        padding: 0px
+                        margin: 0px
+
+                        li
+                            display: block !important
+                            width: 100%
+                            
+                         
+                            a
+                                border-bottom: 2px solid white
+                                text-decoration: none
+
+                                &:hover
+                                    border-bottom-color: #900E0E

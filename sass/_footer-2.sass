@@ -1,0 +1,169 @@
+// #############################
+// ##### New Footer Styles #####
+// #############################
+
+
+footer.footer-wrapper
+    padding: 0px
+    position: relative  
+    display: block
+    height: auto
+    background: $darkBlue
+
+    article.footer-container
+        display: block
+        width: 100%
+        height: auto
+        position: relative
+        width: 1440px
+        margin: 0 auto
+        padding: 60px 0px 10px
+        
+        +clear
+
+        section
+            width: 25%
+            float: left
+            display: block
+            padding: 30px
+            +clear
+
+            ul
+                list-style: none 
+                padding: 0px
+                li
+                    margin-bottom: 5px
+                    a
+                        text-decoration: none 
+                        color: white
+                        +transition
+
+                        &:hover
+                            color: $paleBlue
+                            
+                        span
+                         color: #555555
+
+
+            hr 
+                border-color: $paleBlue
+
+            h3 
+                color: $paleBlue
+
+
+            .get-in-touch
+                width: 100%
+                +clear
+
+                p
+                    color: white
+
+                input, button
+                    border-style: none
+                    height: 40px
+
+                input
+                    width: 75%
+                    float: left
+                    padding: 10px
+                    background: transparent
+                    color: white
+                    border: 1px solid $paleBlue
+                    +transition
+
+                    &:focus
+                        background: $paleBlue
+
+
+                button
+                    width: 25%
+                    float: left
+                    color: white
+                    background: $paleBlue
+                    border: 1px solid $paleBlue
+                    border-left: none
+                    +transition
+
+                    &:hover
+                        background: $darkBlue
+
+                    i 
+                        margin-left: 5p
+                    
+
+
+
+
+
+
+    article.credit-cards
+        padding-bottom: 50px
+        section.credit-cards-wrapper
+            width: 20%
+            display: block
+            margin: 0 auto
+            ul
+                list-style: none
+                padding: 0
+                width: 100%
+                +clear
+
+                li
+                    width: 25%
+                    float: left
+                    +transition
+
+                    img 
+                        width: 60%
+                        filter: grayscale(100%)
+                        +transition
+                        opacity: .3
+
+                        
+
+
+
+    article.copyright   
+        padding: 20px 0px
+        display: block
+        width: 100%
+        text-align: center
+        background: #111111
+
+        p
+            color: white
+            padding: 0
+            margin: 0
+            display: inline-block
+
+
+        ul
+            list-style: none 
+            padding: 0px
+            margin: 0px
+            display: inline-block
+            margin-left: 40px
+
+            li
+                display: inline-block
+                margin-left: 15px
+                
+                a
+                    color: white
+                    font-size: 120%
+                    
+
+                    i
+                        +transition
+
+                    .fa-github:hover
+                        color: black
+
+                    .fa-linkedin:hover
+                        color: #007ab9
+
+                    .fa-youtube:hover
+                        color: #c61b1f
+
+                    
