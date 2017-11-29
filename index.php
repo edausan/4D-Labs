@@ -1,6 +1,6 @@
 <?php include('headers/header-2.php'); ?>
-<?php include('Include/banner.html'); ?>
-<?php include('Include/featured.html'); ?>
-<?php include('Include/quick-links.html'); ?>
-<?php include('Include/news.html'); ?>
+<?php include('include/banner.html'); ?>
+<?php include('include/featured.html'); ?>
+<?php include('include/quick-links.html'); ?>
+<?php include('include/news.html'); ?>
 <?php include('footers/footer-2.php'); ?>
