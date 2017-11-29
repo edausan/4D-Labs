@@ -1,0 +1,63 @@
+section.thumbnails-wrapper
+    width: 100%
+    margin-top: 20px
+
+    article.thumbnails-container
+        width: 1440px
+        margin: 0 auto
+        +clear
+
+        a
+            text-decoration: none
+            color: black
+
+
+        section.thumbnail
+            width: 50%
+            float: left
+            padding: 20px
+
+            article.img-wrapper
+                background: $darkBlue
+                padding: 20px
+                height: 334px
+                cursor: pointer
+                box-shadow: 0 2px 10px rgba(black, .1)
+                +transition
+
+                &:hover
+                    opacity: .8
+                    box-shadow: 0 8px 22px rgba(black, .2)
+
+
+                &.thumb-1
+                    background: url('../img/banner3.jpg') $darkBlue
+                    
+                &.thumb-2
+                    background: url('../img/banner7.png') $darkBlue
+
+                &.thumb-1,
+                &.thumb-2
+                    background-size: 100% auto
+                    background-position: 50%
+                
+                p
+                    color: white
+
+                header 
+                    h3
+                        color: white
+
+        &.row-1
+            section.thumbnail
+                width: 50%
+        
+        &.row-2
+            section.thumbnail
+                width: 33.333333333%
+
+
+
+                
+                        
+
