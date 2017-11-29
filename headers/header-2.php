@@ -18,4 +18,4 @@
 </head>
 <body>
 
-    <?php include('navbar_2.html'); ?>
+    <?php include('navbars/navbar_2.html'); ?>
