@@ -1,7 +1,4 @@
-<?php include('headers/header-2.php'); ?>
-<?php include('include/banner.html'); ?>
-<?php include('include/featured.html'); ?>
-<?php include('include/quick-links.html'); ?>
-<?php include('include/thumbnails.html'); ?>
-<?php include('include/news.html'); ?>
-<?php include('footers/footer-2.php'); ?>
+<?php
+    $file = file_get_contents("http://localhost/4DLabs-dev/all.php");
+    file_put_contents("index.html", $file);
+?>
