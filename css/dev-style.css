@@ -1246,7 +1246,9 @@ section.thumbnails-wrapper {
           background: url("../img/banner3.jpg") #11252F; }
         section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-2 {
           background: url("../img/banner7.png") #11252F; }
-        section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-1, section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-2 {
+        section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-3 {
+          background: url("../img/banner4.png") #11252F; }
+        section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-1, section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-2, section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper.thumb-3 {
           background-size: 100% auto;
           background-position: 50%; }
         section.thumbnails-wrapper article.thumbnails-container section.thumbnail article.img-wrapper p {
