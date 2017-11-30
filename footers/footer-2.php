@@ -57,7 +57,7 @@
                 <li><img src="img/footer-icons/visa.png" alt="Visa"></li>
                 <li><img src="img/footer-icons/mastercard.png" alt="MasterCard"></li>
                 <li><img src="img/footer-icons/americanexpress.png" alt="American Express"></li>
-                <li><img src="img/footer-icons/paypal.png" alt="Paypal"></li>
+                <li><img src="img/footer-icons/paypal.png" alt="Paypal" id="paypal"></li>
             </ul>
         </section>
     </article>
