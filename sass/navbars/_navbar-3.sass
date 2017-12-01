@@ -55,6 +55,35 @@ header.header-wrapper
                                 color: black
                                 padding: 10px
                                 cursor: pointer
+
+                                span.lang-name
+                                    vertical-align: middle
+                                    display: inline-block
+
+                                .lang
+                                    background: url('../img/languages.png') no-repeat
+                                    width: 22px
+                                    height: 16px
+                                    display: inline-block
+                                    position: relative
+                                    margin-right: 10px
+                                    vertical-align: middle
+                                    +transform(translateY(-2px))
+                                    
+
+                                .lang-en
+                                    background-position: 0px 2px
+
+                                .lang-zh
+                                    background-position: 0px -14px
+
+                                .lang-ja
+                                    background-position: 0px -28px
+                                    border: 1px solid #eeeeee
+
+                                .lang-ko
+                                    background-position: 0px -42px
+                                    border: 1px solid #eeeeee
                                 
                                 &:hover
                                     color: $orange
@@ -63,14 +92,14 @@ header.header-wrapper
                                     cursor: pointer
 
 
-                                &.accForm
+                                &.accForm,
+                                &.langView
                                     color: $orange
 
-                            form.account-form
+                            div.account-form
                                 position: absolute
-                                top: 100%
+                                top: 10%
                                 right: 0
-                                +transform(translateY(-100vh))
                                 width: 500px
                                 background: white
                                 padding: 30px 30px 20px
@@ -79,11 +108,25 @@ header.header-wrapper
                                 border-bottom: 5px solid $orange
                                 overflow: hidden
                                 opacity: 0
-                                +transition(500ms ease)
+                                display: none
+                                +transition
 
                                 &.viewForm
-                                    +transform(translateY(0%))
-                                    opacity: 1
+                                    display: block
+
+                                span.close-form-btn  
+                                    position: absolute
+                                    top: 10px
+                                    right: 10px
+                                    font-size: 100%
+                                    padding: 3px
+                                    background: whitesmoke
+                                    color: white
+                                    +border-radius
+                                    cursor: pointer
+
+                                    &:hover
+                                        background: #eeeeee
 
                                 h4,
                                 label,
@@ -94,6 +137,26 @@ header.header-wrapper
 
                                 h4
                                     margin-bottom: 20px
+                                    position: relative
+
+                                p.notif
+                                    display: none
+                                    padding: 5px 10px
+                                    
+
+                                    &.notvalid
+                                        display: block
+                                        background: rgba(255, 0, 0, .2)
+                                        color: red
+
+                                    &.valid
+                                        display: block
+                                        background: rgba(0, 255, 0, .2)
+                                        color: green
+
+
+                                    
+                                    
                                 label
                                     margin: 0px
 
@@ -104,9 +167,21 @@ header.header-wrapper
                                     border-bottom: 1px solid #eeeeee
                                     margin-bottom: 10px
                                     +transition
+
+                                    &[type=email]:invalid
+                                        background: rgba(255, 0, 0, .2)
+                                        border-color: rgba(255, 0, 0, .2)
+                                        outline: none
+
+                                    &[type=email]:valid
+                                        border-color: #eeeeee
+
+                                    &[type=email]:valid:focus
+                                        border-bottom-color: $orange
                                     
                                     &:focus
                                         border-bottom-color: $orange
+                                        
 
                                 button
                                     margin: 20px 0px
@@ -145,6 +220,69 @@ header.header-wrapper
                                         
                                         a
                                             display: inline-block
+
+
+                            div.languages-wrapper
+                                opacity: 0
+                                display: none
+                                position: absolute
+                                top: 10%
+                                right: 0
+                                background: white
+                                box-shadow: 0 8px 32px rgba(black, .2)
+                                +transition
+
+                                &.viewLang
+                                    display: block
+                                
+                                ul 
+                                    text-align: left
+                                    padding: 10px
+                                    width: 170px
+
+                                    hr
+                                        margin: 10px 0px
+                                    
+                                    li
+                                        display: block
+                                        word-wrap: none
+                                        padding: 0
+                                        margin: 0
+
+                                        &:nth-child(1)
+                                            padding: 10px 20px
+
+                                        a
+                                            padding: 0
+                                            background: white
+                                            display: block
+                                            padding: 10px 20px
+
+                                            &:hover
+                                                background: #eeeeee
+
+                                            .lang
+                                                background: url('../img/languages.png') no-repeat
+                                                width: 22px
+                                                height: 16px
+                                                display: inline-block
+                                                position: relative
+                                                margin-right: 10px
+                                                vertical-align: middle
+
+                                            .lang-en
+                                                background-position: 0px 2px
+
+                                            .lang-zh
+                                                background-position: 0px -14px
+
+                                            .lang-ja
+                                                background-position: 0px -28px
+
+                                            .lang-ko
+                                                background-position: 0px -42px
+                                                    
+                                                    
 
                                             
 
@@ -193,7 +331,7 @@ header.header-wrapper
         top: 0%
         left: 0
         border-top: 2px solid $paleBlue
-        background: whitesmoke
+        background: white
         z-index: 1000
         box-shadow: 0 20px 20px rgba(black, .3)
         +transition

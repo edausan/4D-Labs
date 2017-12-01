@@ -32,17 +32,25 @@
                 
                 <section class="menu-bar">
                     <ul>
+
+                        <!-- account form -->
                         <li>
                             <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
 
-                            <form action="" class="account-form">
-                                <h4>Sign In</h4>
+                            <!-- Change the div element to 'form' -->
+                            <!-- also change the 'div.account-form' to 'form.account-form in navbar-3.sass' -->
+                            <!-- also change the 'div.account-form' to 'form.account-form in navbar.js'  -->
+                            <div class="account-form">
+                                <span class="close-form-btn"><i class="fa fa-close"></i></span>
+                                <h4>Sign In </h4>
+
+                                <p class="notif"><i class="fa fa-exclamation-circle"></i></p>
 
                                 <label for="email-add">Email Address</label>
                                 <input type="email" name="email-add" id="email-add">
 
                                 <label for="password">Password</label>
-                                <input type="email" name="password" id="password">
+                                <input type="password" name="password" id="password">
 
                                 <button class="submit" id="submit">Sign In <i class="fa fa-paper-plane"></i></button>
 
@@ -53,9 +61,28 @@
                                     <p>Don't have an account? <a href="">Register Now</a></p>
                                 </div>
                                 
-                            </form>
+                            </div>
                         </li>
-                        <li><a id="translation"><i class="fa fa-globe"></i> <label for="">ENGLISH</label> <i class="fa fa-angle-down"></i></a></li>
+                        <!-- /account form -->
+
+
+                        <li>
+                            <a id="languages"><span class="lang lang-en"></span> <span id="lang-name">ENGLISH</span> </a> <i class="fa fa-angle-down"></i></a>
+                            
+                            <div class="languages-wrapper">
+                                <ul>
+                                    <li>Select language</li>
+                                    <hr>
+                                    <li><a id="en"><span class="lang lang-en"></span> ENGLISH</a></li>
+                                    <li><a id="zh"><span class="lang lang-zh"></span> 中文</a></li>
+                                    <li><a id="ja"><span class="lang lang-ja"></span> 日本語</a></li>
+                                    <li><a id="ko"><span class="lang lang-ko"></span> 한국어</a></li>
+                                </ul>
+                            </div>
+
+                        
+                        
+                        </li>
                         <li><a href=""><i class="fa fa-shopping-cart"></i> <label for="">CART</label></a></li>
                     </ul>
                 </section>
