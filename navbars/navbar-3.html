@@ -1,31 +1,64 @@
-<header class="navigation-wrapper">
-    <section class="navigation-container">
-        <article class="menu-bar">
-            <ul>
-                <li><a href=""><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a></li>
-                <li><a href=""><i class="fa fa-globe"></i> <label for="">ENGLISH</label> <i class="fa fa-angle-down"></i></a></li>
-                <li><a href=""><i class="fa fa-shopping-cart"></i> <label for="">CART</label></a></li>
-            </ul>
-        </article>
+<header class="header-wrapper">
 
-        <article class="navbar-wrapper">
-            <figure class="logo-wrapper">
+    <section class="navigation-wrapper">
+        <section class="navigation-container">
+            <article class="logo-wrapper">
                 <a href="">
                     <img src="img/4dllogo2.png" alt="">
                 </a>
+            </article>
+
+            <article class="navbar-wrapper">
                 
-            </figure>
+                <section class="menu-bar">
+                    <ul>
+                        <li>
+                            <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
 
-            <nav class="navigation-bar">
-                <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Applications</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Business Segment</a></li>
-                    <li><a href="">Contacts</a></li>
-                </ul>
-            </nav>
-        </article>
+                            <form action="" class="account-form">
+                                <h4>Sign In</h4>
 
+                                <label for="email-add">Email Address</label>
+                                <input type="email" name="email-add" id="email-add">
+
+                                <label for="password">Password</label>
+                                <input type="email" name="password" id="password">
+
+                                <button class="submit" id="submit">Sign In <i class="fa fa-paper-plane"></i></button>
+
+                                <hr>
+
+                                <div class="account-bottom">
+                                    <a href="">Forgot your password?</a>
+                                    <p>Don't have an account? <a href="">Register Now</a></p>
+                                </div>
+                                
+                            </form>
+                        </li>
+                        <li><a id="translation"><i class="fa fa-globe"></i> <label for="">ENGLISH</label> <i class="fa fa-angle-down"></i></a></li>
+                        <li><a href=""><i class="fa fa-shopping-cart"></i> <label for="">CART</label></a></li>
+                    </ul>
+                </section>
+                
+                <nav class="navigation-bar">
+                    <ul>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Applications</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Business Segment</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a id="search"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </nav>
+            </article>
+
+        </section>
+    </section>
+
+    <section class="search-bar-wrapper">
+        <form action="" class="search-bar">
+            <input type="text" name="" id="" placeholder="Search Product">
+            <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
+        </form>
     </section>
 </header>
