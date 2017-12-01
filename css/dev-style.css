@@ -7,8 +7,8 @@ body, html {
   padding: 0;
   margin: 0; }
 
-section, article, figure {
-  display: block; }
+a {
+  text-decoration: none; }
 
 #inner-wrapper {
   padding-top: 0px !important; }
