@@ -90,11 +90,16 @@ header.header-wrapper
 
                                 i, label    
                                     cursor: pointer
+                                    +transform(rotate(0deg))
+                                    +transition(300ms ease)
 
 
                                 &.accForm,
                                 &.langView
                                     color: $orange
+
+                                    i.fa-angle-down
+                                        +transform(rotate(180deg))
 
                             div.account-form
                                 position: absolute

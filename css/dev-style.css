@@ -867,9 +867,24 @@ header.header-wrapper {
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a:hover {
                 color: #FB2800; }
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a i, header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a label {
-                cursor: pointer; }
+                cursor: pointer;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-transition: 300ms ease;
+                -moz-transition: 300ms ease;
+                -o-transition: 300ms ease;
+                transition: 300ms ease; }
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a.accForm, header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a.langView {
                 color: #FB2800; }
+                header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a.accForm i.fa-angle-down, header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a.langView i.fa-angle-down {
+                  -webkit-transform: rotate(180deg);
+                  -moz-transform: rotate(180deg);
+                  -o-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
             header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form {
               position: absolute;
               top: 10%;
