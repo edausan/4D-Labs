@@ -11,6 +11,8 @@ $(function() {
     var accFormCloseBtn = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form span.close-form-btn');
 
     searchBtn.click(function() {
+        closeAccForm();
+        closeLang();
         if (searchBar.hasClass('goDown')) {
             searchBar.removeClass('goDown');
             $(this).removeClass('searching');
@@ -32,6 +34,8 @@ $(function() {
     });
 
     accountBtn.click(function() {
+        searchBar.removeClass('goDown');
+        searchBtn.removeClass('searching');
         closeLang();
         if (accountForm.hasClass('viewForm')) {            
             closeAccForm();
@@ -64,6 +68,8 @@ $(function() {
     var selectedLangName = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a#languages span#lang-name');
 
     languageBtn.click(function() {
+        searchBar.removeClass('goDown');
+        searchBtn.removeClass('searching');
         closeAccForm();
         if (langWrap.hasClass('viewLang')) {            
             closeLang();
