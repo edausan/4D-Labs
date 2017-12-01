@@ -1,23 +1,231 @@
-header.navigation-wrapper
-    section.navigation-container
+header.header-wrapper
+    position: relative
+    +clear
 
-        // Menu Bar
-        article.menu-bar
-            ul
-                li
-                    a   
-                        i
-                        label
+    section.navigation-wrapper
+        position: relative
+        background: white
+        z-index: 1001
+        box-shadow: 0 8px 32px rgba(black, .2)
+        +clear
+
+        section.navigation-container
+            max-width: 1440px
+            position: relative
+            margin: 0 auto
+            z-index: 1001
+            background: white
+            +clear
+
+            
+
+            article.logo-wrapper
+                width: 20%
+                float: left
+                height: 100px
+                position: relative
+
+                img 
+                    position: absolute
+                    left: 10px
+                    bottom: 0
+                    width: 75%
 
 
-        article.navbar-wrapper
+            article.navbar-wrapper
+                width: 80%
+                float: left
+                padding: 10px
 
-            figure.logo-wrapper
+                section.menu-bar
+                    
+                    ul
+                        text-align: right
+                        padding: 10px 10px 0px
+                        li
+                            display: inline-block
+                            margin: 0 5px
+                            position: relative
 
-                img
+                            i
+                                margin: 0 5px
 
-            nav.navigation-bar
+                            a
+                                text-decoration: none
+                                color: black
+                                padding: 10px
+                                cursor: pointer
+                                
+                                &:hover
+                                    color: $orange
 
-                ul
-                    li
-                        a
+                                i, label    
+                                    cursor: pointer
+
+
+                                &.accForm
+                                    color: $orange
+
+                            form.account-form
+                                position: absolute
+                                top: 100%
+                                right: 0
+                                +transform(translateY(-100vh))
+                                width: 500px
+                                background: white
+                                padding: 30px 30px 20px
+                                text-align: left
+                                box-shadow: 0 8px 32px rgba(black, .2)
+                                border-bottom: 5px solid $orange
+                                overflow: hidden
+                                opacity: 0
+                                +transition(500ms ease)
+
+                                &.viewForm
+                                    +transform(translateY(0%))
+                                    opacity: 1
+
+                                h4,
+                                label,
+                                input,
+                                button
+                                    display: block
+
+
+                                h4
+                                    margin-bottom: 20px
+                                label
+                                    margin: 0px
+
+                                input
+                                    width: 100%
+                                    padding: 5px
+                                    border-style: none
+                                    border-bottom: 1px solid #eeeeee
+                                    margin-bottom: 10px
+                                    +transition
+                                    
+                                    &:focus
+                                        border-bottom-color: $orange
+
+                                button
+                                    margin: 20px 0px
+                                    border-style: none
+                                    background: $orange
+                                    color: white
+                                    padding: 8px 16px
+                                    +border-radius
+                                    cursor: pointer
+                                    width: 30%
+
+
+                                    &:hover
+                                        background: #AD2005
+
+                                hr
+                                    margin: 20px -30px
+
+                                .account-bottom
+                                    text-align: center
+
+                                    a
+                                        text-align: center
+                                        padding: 0px
+                                        margin-right: 5px
+                                        color: $orange
+
+                                        &:hover
+                                            color: #AD2005
+
+                                    p
+                                        text-align: center
+                                        margin: 0
+                                        display: inline-block
+                                        margin-left: 5px
+                                        
+                                        a
+                                            display: inline-block
+
+                                            
+
+
+                nav.navigation-bar
+                    ul
+                        text-align: right
+                        padding: 10px
+                        li
+                            display: inline-block
+                            margin-left: 20px
+                            cursor: pointer
+
+                            a
+                                text-decoration: none
+                                color: black
+                                padding: 10px
+                                font-size: 120%
+                                font-weight: 600
+                                cursor: pointer
+                                // +transition
+                                
+                                &:hover
+                                    color: $orange
+
+                                label
+                                    cursor: pointer
+
+
+                                i
+                                    color: $paleBlue
+
+                                    &:hover
+                                        color: $orange
+                                        
+                                &.searching
+                                    i
+                                        color: $orange !important
+
+        
+            
+
+    section.search-bar-wrapper
+        width: 100%
+        position: absolute
+        top: 0%
+        left: 0
+        border-top: 2px solid $paleBlue
+        background: whitesmoke
+        z-index: 1000
+        box-shadow: 0 20px 20px rgba(black, .3)
+        +transition
+
+        &.goDown
+            top: 100%
+
+        form.search-bar
+            width: 1440px
+            position: relative
+            margin: 0 auto
+            padding: 20px
+
+            input
+                width: 99%
+                border-style: none
+                padding: 5px
+                padding-left: 0px
+                background: transparent
+                color: $paleBlue
+
+            span.clear-btn
+                display: block
+                position: absolute
+                top: 50%
+                right: 10px
+                +transform(translateY(-50%))
+                font-size: 150%
+                border-style: none
+                background: transparent
+                padding: 5px 10px
+                color: $paleBlue
+
+                &:hover
+                    color: #cccccc
