@@ -76,6 +76,6 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="scripts/script.js"></script>
+<script src="scripts/navbar.js"></script>
 </body>
 </html>
