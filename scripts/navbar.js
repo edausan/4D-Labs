@@ -117,9 +117,11 @@ $(function() {
 
 
 
+    // --------------------------------------------------
+    // ----- delete the codes below ---------------------
+    // ----- this is only a sample form validation ------
+    // --------------------------------------------------
 
-    // delete the code below
-    // this is only a sample form validation
     var emailAdd = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form input#email-add');
     var password = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form input#password');
     var submitBtn = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form button#submit');
@@ -153,7 +155,7 @@ $(function() {
             submitBtn.click();
         }
     });
-    // --------------------
+    // --------------------------------------------------
 
 
     
