@@ -1,0 +1,90 @@
+footer.footer-wrapper
+    background: $footerGrey
+    color: $footerWhite
+
+    section.footer-container
+        padding: 100px 0
+
+        article.footer-content-wrapper
+            padding: 0px 0px 50px
+            border-bottom: 1px solid $footerWhite
+            +clear
+
+            .footer-content
+                width: 33.333333333%
+                float: left
+
+                h2
+                    margin-bottom: 20px
+
+                ul
+                    li
+                        a
+                            color: $footerWhite
+                            font-size: 120%
+                            text-decoration: none
+                            +transition
+
+                            &:hover
+                                color: grey
+
+        article.addlink-wrapper
+            padding: 50px 0px 20px
+            +clear
+
+            .addtnl-links
+                width: 66.666666666%
+                float: left
+
+                ul 
+                    li
+                        display: inline-block
+                        margin-right: 40px
+
+                        a
+                            color: $footerWhite
+                            text-decoration: none
+                            font-size: 120%
+                            +transition
+
+                            &:hover
+                                color: grey
+
+            .social-media-wrapper
+                width: 33.333333333%
+                float: left
+                ul
+                    li
+                        display: inline-block
+                        margin-right: 40px
+
+                        a
+                            color: $footerWhite
+                            text-decoration: none
+                            font-size: 120%
+                            
+                            i
+                                +transition
+                                
+
+                            i.fa-github:hover
+                                color: black !important
+                            
+                            i.fa-linkedin:hover
+                                color: #007ab9 !important
+
+                            i.fa-youtube:hover
+                                color: #c61b1f !important
+
+
+        .footer-logo
+            img
+                width: 18%
+
+        .copyright-wrapper
+            p
+                color: #7e7e7e
+                font-size: 140%
+
+
+

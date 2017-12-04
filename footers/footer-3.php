@@ -1,0 +1,87 @@
+<footer class="footer-wrapper">
+    <!-- Footer row 1 -->
+    <article class="lab-container">
+
+
+        <section class="footer-container">
+
+        
+            <section class="lab-row">
+
+                <article class="footer-content-wrapper">
+                    <div class="footer-content">
+                        <h2>4D Labs</h2>
+                        <ul>
+                            <li><a href="http://">App Notes</a></li>
+                            <li><a href="http://">Distributors</a></li>
+                            <li><a href="http://">Shopping Cart</a></li>
+                            <li><a href="http://">Account</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="footer-content">
+                        <h2>Products</h2>
+                        <ul>
+                            <li><a href="http://">Goldelox</a></li>
+                            <li><a href="http://">Diablo16</a></li>
+                            <li><a href="http://">Picaso</a></li>
+                            <li><a href="http://">Picaso-Lite</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-content">
+                        <h2>Corporate</h2>
+                        <ul>
+                            <li><a href="http://">About Us</a></li>
+                            <li><a href="http://">Contact Us</a></li>
+                            <li><a href="http://">News and Events</a></li>
+                        </ul>
+                    </div>
+                </article>
+
+            </section>
+
+            
+
+            <!-- Footer row 2 -->
+            <section class="lab-row">
+
+                <article class="addlink-wrapper">
+                    <div class="addtnl-links">
+                        <ul>
+                            <li><a href="http://">Accessibility</a></li>
+                            <li><a href="http://">Terms & Conditions</a></li>
+                            <li><a href="http://">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-media-wrapper">
+                        <ul>
+                            <li><a href=""><i class="fa fa-github"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </article>
+                
+            </section>
+
+            <section class="lab-row">
+                <div class="footer-logo">
+                    <img src="img/4dllogo-grey.png" alt="">
+                </div>
+                <div class="copyright-wrapper">
+                    <p>&copy; <?php echo date('Y') ?> 4D Labs. All rights reserved.</p>
+                </div>
+            </section>
+
+        </section>
+
+    </article>
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="scripts/navbar.js"></script>
+</body>
+</html>

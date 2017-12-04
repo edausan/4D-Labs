@@ -4,4 +4,4 @@
 <?php include('include/quick-links.html'); ?>
 <?php include('include/thumbnails-2.html'); ?>
 <?php include('include/news.html'); ?>
-<?php include('footers/footer-2.php'); ?>
+<?php include('footers/footer-3.php'); ?>
