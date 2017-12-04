@@ -3,11 +3,11 @@
   src: url(../fonts/PT_Sans-Web-Regular.ttf); }
 
 @font-face {
-  font-family: Sony Sketch;
+  font-family: 'Sony Sketch';
   src: url(../Sony_Sketch_EF.ttf); }
 
 body, html {
-  font-family: Sony Sketch;
+  font-family: 'Sony Sketch';
   padding: 0;
   margin: 0; }
 
