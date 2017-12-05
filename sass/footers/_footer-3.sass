@@ -58,31 +58,44 @@ footer.footer-wrapper
                             &:hover
                                 color: grey
 
-            .social-media-wrapper
+
+
+
+            .payment-method-wrapper
                 width: 33.333333333%
                 float: left
+                padding-right: 15px
+                position: relative
+                +clear
+                
                 ul
+                    +clear
+                    
                     li
-                        display: inline-block
-                        margin-right: 40px
+                        width: 25%
+                        float: left
+                        height: 40px
+                        
+                        img
+                            display: block
+                            height: 100%
+                            filter: grayscale(100%)
 
-                        a
-                            color: #cccccc
-                            text-decoration: none
-                            font-size: 120%
-                            
-                            i
-                                +transition
-                                
+                    #visa
+                        // margin-left: -15px
+                    
+                    #paypal
+                        img 
+                            margin: 0 auto
 
-                            i.fa-github:hover
-                                color: black !important
-                            
-                            i.fa-linkedin:hover
-                                color: #007ab9 !important
+                    #paypal
+                        img 
+                            height: auto
+                            width: 100%
 
-                            i.fa-youtube:hover
-                                color: #c61b1f !important
+                    #americanexpress
+                        img
+                            margin-left: auto
 
 
         .newsletter-wrapper
@@ -142,42 +155,10 @@ footer.footer-wrapper
 
 
 
-        .payment-method-wrapper
-            width: 100%
-            float: left
-            padding-top: 40px
-            padding-right: 15px
-            position: relative
-            +clear
-            
-            ul
-                +clear
-                
-                li
-                    width: 25%
-                    float: left
-                    height: 40px
-                    
-                    img
-                        display: block
-                        height: 100%
-                        filter: grayscale(100%)
 
-                #visa
-                    // margin-left: -15px
-                
-                #paypal
-                    img 
-                        margin: 0 auto
 
-                #paypal
-                    img 
-                        height: auto
-                        width: 100%
 
-                #americanexpress
-                    img
-                        margin-left: auto
+        
 
 
 
@@ -191,7 +172,34 @@ footer.footer-wrapper
         .copyright-wrapper
             p
                 color: #7e7e7e
-                font-size: 140%
+                font-size: 100%
+                display: inline-block
+
+            .social-media-wrapper
+                display: inline-block
+                margin-left: 20px
+                ul
+                    li
+                        display: inline-block
+                        margin-right: 20px
+
+                        a
+                            color: #cccccc
+                            text-decoration: none
+                            font-size: 120%
+                            
+                            i
+                                +transition
+                                
+
+                            i.fa-github:hover
+                                color: black !important
+                            
+                            i.fa-linkedin:hover
+                                color: #007ab9 !important
+
+                            i.fa-youtube:hover
+                                color: #c61b1f !important
 
 
 
