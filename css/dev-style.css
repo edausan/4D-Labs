@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Sony Sketch';
-  src: url(../fonts/Sony_Sketch_EF.ttf); }
+  src: url(../fonts/Sony_Sketch_EF.ttf), url("../Sony_Sketch_EF.ttf"); }
 
 @font-face {
   font-family: 'Roboto Medium';
@@ -827,7 +827,8 @@ header.header-wrapper {
     background: white;
     z-index: 1001;
     -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    font-family: 'Sony Sketch'; }
     header.header-wrapper section.navigation-wrapper::after {
       content: '';
       display: table;
@@ -1793,27 +1794,35 @@ footer.footer-wrapper {
             transition: 250ms ease; }
             footer.footer-wrapper section.footer-container article.addlink-wrapper .addtnl-links ul li a:hover {
               color: grey; }
-      footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper {
+      footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper {
         width: 33.333333333%;
-        float: left; }
-        footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li {
-          display: inline-block;
-          margin-right: 40px; }
-          footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a {
-            color: #cccccc;
-            text-decoration: none;
-            font-size: 120%; }
-            footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a i {
-              -webkit-transition: 250ms ease;
-              -moz-transition: 250ms ease;
-              -o-transition: 250ms ease;
-              transition: 250ms ease; }
-            footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a i.fa-github:hover {
-              color: black !important; }
-            footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a i.fa-linkedin:hover {
-              color: #007ab9 !important; }
-            footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a i.fa-youtube:hover {
-              color: #c61b1f !important; }
+        float: left;
+        padding-right: 15px;
+        position: relative; }
+        footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper::after {
+          content: '';
+          display: table;
+          clear: both; }
+        footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper ul::after {
+          content: '';
+          display: table;
+          clear: both; }
+        footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper ul li {
+          width: 25%;
+          float: left;
+          height: 40px; }
+          footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper ul li img {
+            display: block;
+            height: 100%;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+        footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper ul #paypal img {
+          margin: 0 auto; }
+        footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper ul #paypal img {
+          height: auto;
+          width: 100%; }
+        footer.footer-wrapper section.footer-container article.addlink-wrapper .payment-method-wrapper ul #americanexpress img {
+          margin-left: auto; }
     footer.footer-wrapper section.footer-container .newsletter-wrapper {
       padding-right: 15px;
       width: 100%;
@@ -1862,38 +1871,30 @@ footer.footer-wrapper {
           footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper button:hover {
             background: #343D44;
             color: #f7f7f7; }
-    footer.footer-wrapper section.footer-container .payment-method-wrapper {
-      width: 100%;
-      float: left;
-      padding-top: 40px;
-      padding-right: 15px;
-      position: relative; }
-      footer.footer-wrapper section.footer-container .payment-method-wrapper::after {
-        content: '';
-        display: table;
-        clear: both; }
-      footer.footer-wrapper section.footer-container .payment-method-wrapper ul::after {
-        content: '';
-        display: table;
-        clear: both; }
-      footer.footer-wrapper section.footer-container .payment-method-wrapper ul li {
-        width: 25%;
-        float: left;
-        height: 40px; }
-        footer.footer-wrapper section.footer-container .payment-method-wrapper ul li img {
-          display: block;
-          height: 100%;
-          -webkit-filter: grayscale(100%);
-          filter: grayscale(100%); }
-      footer.footer-wrapper section.footer-container .payment-method-wrapper ul #paypal img {
-        margin: 0 auto; }
-      footer.footer-wrapper section.footer-container .payment-method-wrapper ul #paypal img {
-        height: auto;
-        width: 100%; }
-      footer.footer-wrapper section.footer-container .payment-method-wrapper ul #americanexpress img {
-        margin-left: auto; }
     footer.footer-wrapper section.footer-container .footer-logo img {
       width: 18%; }
     footer.footer-wrapper section.footer-container .copyright-wrapper p {
       color: #7e7e7e;
-      font-size: 140%; }
+      font-size: 100%;
+      display: inline-block; }
+    footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper {
+      display: inline-block;
+      margin-left: 20px; }
+      footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a {
+          color: #cccccc;
+          text-decoration: none;
+          font-size: 120%; }
+          footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a i {
+            -webkit-transition: 250ms ease;
+            -moz-transition: 250ms ease;
+            -o-transition: 250ms ease;
+            transition: 250ms ease; }
+          footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a i.fa-github:hover {
+            color: black !important; }
+          footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a i.fa-linkedin:hover {
+            color: #007ab9 !important; }
+          footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a i.fa-youtube:hover {
+            color: #c61b1f !important; }
