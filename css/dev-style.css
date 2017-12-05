@@ -1270,30 +1270,6 @@ section.featured-wrapper {
           -o-transition: 250ms ease;
           transition: 250ms ease; }
 
-.flexslider {
-  height: 75vh;
-  position: relative; }
-  .flexslider .flex-viewport {
-    height: 100%; }
-    .flexslider .flex-viewport .slides {
-      height: 100%;
-      width: 100%;
-      -webkit-transition-duration: 0s;
-      -o-transition-duration: 0s;
-      transition-duration: 0s;
-      -webkit-transform: translate3d(0px, 0px, 0px);
-      transform: translate3d(0px, 0px, 0px);
-      position: relative;
-      background-attachment: fixed !important; }
-      .flexslider .flex-viewport .slides li {
-        background: url("../img/banner7.png") no-repeat;
-        background-size: 100%;
-        background-position: top;
-        background-attachment: fixed;
-        height: 75vh;
-        width: 100%;
-        display: block; }
-
 section.quick-links {
   padding: 0 15px;
   display: block;
@@ -1580,6 +1556,62 @@ section.news-section-wrapper {
           color: #FB2800;
           font-weight: 600;
           text-decoration: none; }
+
+.carousel .carousel-inner .carousel-item .carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block; }
+  .carousel .carousel-inner .carousel-item .carousel-content h3 {
+    font-family: 'Sony Sketch';
+    font-size: 60px;
+    margin: 0;
+    padding: 30px 60px;
+    background: #343D44;
+    -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    -moz-transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    -o-transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    opacity: 0; }
+  .carousel .carousel-inner .carousel-item .carousel-content p {
+    color: #343D44;
+    font-size: 30px;
+    margin: 0;
+    padding: 20px 40px;
+    background: white;
+    -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    -moz-transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    -o-transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    transition: 500ms cubic-bezier(0.94, 0.11, 0.65, 0.98);
+    opacity: 0; }
+
+.carousel .carousel-inner .carousel-item.active .carousel-content h3, .carousel .carousel-inner .carousel-item.active .carousel-content p {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  opacity: 1; }
 
 #footer-wrapper {
   background: #11252F !important; }
