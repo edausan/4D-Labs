@@ -1150,7 +1150,8 @@ header.header-wrapper {
 
 section.featured-wrapper {
   display: block;
-  margin: 30px 0; }
+  margin: 30px 0;
+  font-family: 'Avenir'; }
   section.featured-wrapper::after {
     content: '';
     display: table;
@@ -1222,7 +1223,7 @@ section.featured-wrapper {
           display: block;
           margin: 0 auto; }
       section.featured-wrapper section.featured-container article.featured section.content h3 {
-        color: #327B83; }
+        color: #343D44; }
       section.featured-wrapper section.featured-container article.featured section.content p {
         color: #11252F;
         font-size: 100%; }
@@ -1241,7 +1242,7 @@ section.featured-wrapper {
         -o-transition: 250ms ease;
         transition: 250ms ease; }
         section.featured-wrapper section.featured-container article.featured a.learn:hover {
-          background: #327B83;
+          background: #343D44;
           color: white; }
           section.featured-wrapper section.featured-container article.featured a.learn:hover i {
             color: white;
@@ -1258,7 +1259,7 @@ section.featured-wrapper {
           transform: translateX(0px); }
         section.featured-wrapper section.featured-container article.featured a.learn i {
           font-size: 90%;
-          color: #327B83;
+          color: #343D44;
           -webkit-transform: translateX(5px);
           -moz-transform: translateX(5px);
           -o-transform: translateX(5px);
@@ -1299,7 +1300,8 @@ section.quick-links {
   position: relative;
   background: url("../img/banner7.png") #660000;
   background-size: cover;
-  background-position: 50%; }
+  background-position: 50%;
+  font-family: 'Avenir'; }
   section.quick-links::after {
     content: '';
     display: table;
