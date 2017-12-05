@@ -852,8 +852,8 @@ header.header-wrapper {
         header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper img {
           position: absolute;
           left: 10px;
-          bottom: 0;
-          width: 75%; }
+          bottom: -10px;
+          width: 90%; }
       header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper {
         width: 75%;
         float: left;
