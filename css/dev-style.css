@@ -1,13 +1,21 @@
 @font-face {
-  font-family: pt-sans;
+  font-family: 'PT Sans';
   src: url(../fonts/PT_Sans-Web-Regular.ttf); }
 
 @font-face {
   font-family: 'Sony Sketch';
-  src: url(../Sony_Sketch_EF.ttf); }
+  src: url(../fonts/Sony_Sketch_EF.ttf); }
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url(../fonts/Roboto-Medium.ttf); }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url(../fonts/AvenirLTStd-Light.ttf); }
 
 body, html {
-  font-family: 'Sony Sketch';
+  font-family: 'PT Sans';
   padding: 0;
   margin: 0; }
 
@@ -808,7 +816,8 @@ header.header-wrapper {
     width: 1024px; } }
 
 header.header-wrapper {
-  position: relative; }
+  position: relative;
+  font-family: 'Sony Sketch'; }
   header.header-wrapper::after {
     content: '';
     display: table;
@@ -1080,7 +1089,8 @@ header.header-wrapper {
               color: #3c3c3c;
               padding: 10px;
               font-size: 22px;
-              cursor: pointer; }
+              cursor: pointer;
+              text-transform: uppercase; }
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a:hover {
                 color: #FB2800; }
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a label {
@@ -1303,54 +1313,19 @@ section.quick-links {
     background: black;
     opacity: .6;
     z-index: 1001; }
-  section.quick-links article {
-    margin: 0 auto;
-    display: block;
+  section.quick-links .quick-wrapper {
     position: relative;
     z-index: 1002;
-    padding-top: 40px; }
-    section.quick-links article::after {
-      content: '';
-      display: table;
-      clear: both; }
-    section.quick-links article h1 {
+    padding: 100px 15px; }
+    section.quick-links .quick-wrapper h1 {
       color: white;
       text-align: center;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #cecece; }
-    section.quick-links article ul {
-      list-style: none;
-      padding: 100px 0px;
-      margin: 0;
-      width: 100%; }
-      section.quick-links article ul::after {
-        content: '';
-        display: table;
-        clear: both; }
-      section.quick-links article ul li {
-        width: 25%;
-        float: left;
-        text-align: center;
-        opacity: .8;
-        -webkit-transition: 250ms ease;
-        -moz-transition: 250ms ease;
-        -o-transition: 250ms ease;
-        transition: 250ms ease;
-        padding: 0 20px; }
-        section.quick-links article ul li:hover {
-          opacity: 1; }
-        section.quick-links article ul li a {
-          text-decoration: none; }
-          section.quick-links article ul li a img {
-            display: block;
-            width: 40%;
-            margin: 0 auto; }
-          section.quick-links article ul li a label {
-            display: block;
-            color: white;
-            font-size: 150%;
-            font-weight: 600;
-            margin-top: 20px; }
+      border-bottom: 1px solid #cecece;
+      padding-bottom: 40px; }
+    section.quick-links .quick-wrapper p {
+      color: white;
+      font-size: 200%;
+      padding-top: 40px; }
 
 #content .homepage-area {
   background: #eeeeee;
@@ -1592,8 +1567,16 @@ section.news-section-wrapper {
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
       padding: 30px; }
       section.news-section-wrapper .latest-news-wrapper .news h1 {
-        border-bottom: 2px solid #9C0000;
-        color: #9C0000; }
+        border-bottom: 2px solid #cccccc;
+        color: #FB2800;
+        text-align: center; }
+      section.news-section-wrapper .latest-news-wrapper .news p {
+        font-size: 120%;
+        font-style: italic; }
+        section.news-section-wrapper .latest-news-wrapper .news p a {
+          color: #FB2800;
+          font-weight: 600;
+          text-decoration: none; }
 
 #footer-wrapper {
   background: #11252F !important; }
@@ -1753,12 +1736,17 @@ footer.footer-wrapper {
 
 footer.footer-wrapper {
   background: #343D44;
-  color: #f7f7f7; }
+  color: #f7f7f7;
+  font-family: 'Roboto Medium'; }
   footer.footer-wrapper section.footer-container {
     padding: 100px 0; }
+    footer.footer-wrapper section.footer-container::after {
+      content: '';
+      display: table;
+      clear: both; }
     footer.footer-wrapper section.footer-container article.footer-content-wrapper {
       padding: 0px 0px 50px;
-      border-bottom: 1px solid #f7f7f7; }
+      border-bottom: 2px solid #f7f7f7; }
       footer.footer-wrapper section.footer-container article.footer-content-wrapper::after {
         content: '';
         display: table;
@@ -1767,10 +1755,14 @@ footer.footer-wrapper {
         width: 33.333333333%;
         float: left; }
         footer.footer-wrapper section.footer-container article.footer-content-wrapper .footer-content h2 {
+          font-size: 20px;
           margin-bottom: 20px; }
+        footer.footer-wrapper section.footer-container article.footer-content-wrapper .footer-content h2#corporate {
+          margin-top: 40px; }
         footer.footer-wrapper section.footer-container article.footer-content-wrapper .footer-content ul li a {
-          color: #f7f7f7;
-          font-size: 120%;
+          color: #cccccc;
+          font-family: 'Avenir';
+          font-size: 16px;
           text-decoration: none;
           -webkit-transition: 250ms ease;
           -moz-transition: 250ms ease;
@@ -1791,9 +1783,10 @@ footer.footer-wrapper {
           display: inline-block;
           margin-right: 40px; }
           footer.footer-wrapper section.footer-container article.addlink-wrapper .addtnl-links ul li a {
-            color: #f7f7f7;
+            color: #cccccc;
             text-decoration: none;
-            font-size: 120%;
+            font-family: 'Avenir';
+            font-size: 16px;
             -webkit-transition: 250ms ease;
             -moz-transition: 250ms ease;
             -o-transition: 250ms ease;
@@ -1807,7 +1800,7 @@ footer.footer-wrapper {
           display: inline-block;
           margin-right: 40px; }
           footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a {
-            color: #f7f7f7;
+            color: #cccccc;
             text-decoration: none;
             font-size: 120%; }
             footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a i {
@@ -1821,6 +1814,84 @@ footer.footer-wrapper {
               color: #007ab9 !important; }
             footer.footer-wrapper section.footer-container article.addlink-wrapper .social-media-wrapper ul li a i.fa-youtube:hover {
               color: #c61b1f !important; }
+    footer.footer-wrapper section.footer-container .newsletter-wrapper {
+      padding-right: 15px;
+      width: 100%;
+      float: left; }
+      footer.footer-wrapper section.footer-container .newsletter-wrapper h3 {
+        font-size: 20px; }
+      footer.footer-wrapper section.footer-container .newsletter-wrapper p {
+        font-family: 'Avenir'; }
+      footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper {
+        height: 40px; }
+        footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper::after {
+          content: '';
+          display: table;
+          clear: both; }
+        footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper input, footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper button {
+          border-style: none;
+          height: 100%;
+          background: #343D44;
+          color: #f7f7f7;
+          -webkit-transition: 250ms ease;
+          -moz-transition: 250ms ease;
+          -o-transition: 250ms ease;
+          transition: 250ms ease; }
+        footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper input {
+          width: 70%;
+          padding: 10px;
+          float: left;
+          border: 1px solid #f7f7f7; }
+          footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper input:focus {
+            background: #f7f7f7;
+            color: #343D44; }
+          footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper input[type=email]:invalid {
+            background: #f7f7f7;
+            border-color: red;
+            outline: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            color: red; }
+        footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper button {
+          width: 30%;
+          float: left;
+          border: 1px solid #f7f7f7;
+          border-left: none;
+          background: #f7f7f7;
+          color: #343D44; }
+          footer.footer-wrapper section.footer-container .newsletter-wrapper .subscribe-wrapper button:hover {
+            background: #343D44;
+            color: #f7f7f7; }
+    footer.footer-wrapper section.footer-container .payment-method-wrapper {
+      width: 100%;
+      float: left;
+      padding-top: 40px;
+      padding-right: 15px;
+      position: relative; }
+      footer.footer-wrapper section.footer-container .payment-method-wrapper::after {
+        content: '';
+        display: table;
+        clear: both; }
+      footer.footer-wrapper section.footer-container .payment-method-wrapper ul::after {
+        content: '';
+        display: table;
+        clear: both; }
+      footer.footer-wrapper section.footer-container .payment-method-wrapper ul li {
+        width: 25%;
+        float: left;
+        height: 40px; }
+        footer.footer-wrapper section.footer-container .payment-method-wrapper ul li img {
+          display: block;
+          height: 100%;
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+      footer.footer-wrapper section.footer-container .payment-method-wrapper ul #paypal img {
+        margin: 0 auto; }
+      footer.footer-wrapper section.footer-container .payment-method-wrapper ul #paypal img {
+        height: auto;
+        width: 100%; }
+      footer.footer-wrapper section.footer-container .payment-method-wrapper ul #americanexpress img {
+        margin-left: auto; }
     footer.footer-wrapper section.footer-container .footer-logo img {
       width: 18%; }
     footer.footer-wrapper section.footer-container .copyright-wrapper p {
