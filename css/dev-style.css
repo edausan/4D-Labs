@@ -1097,7 +1097,7 @@ header.header-wrapper {
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a label {
                 cursor: pointer; }
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a i {
-                color: #327B83; }
+                color: #343D44; }
                 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a i:hover {
                   color: #FB2800; }
               header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a.searching i {
@@ -1763,7 +1763,7 @@ footer.footer-wrapper {
         footer.footer-wrapper section.footer-container article.footer-content-wrapper .footer-content h2#corporate {
           margin-top: 40px; }
         footer.footer-wrapper section.footer-container article.footer-content-wrapper .footer-content ul li a {
-          color: #cccccc;
+          color: white;
           font-family: 'Avenir';
           font-size: 16px;
           text-decoration: none;
@@ -1786,7 +1786,7 @@ footer.footer-wrapper {
           display: inline-block;
           margin-right: 40px; }
           footer.footer-wrapper section.footer-container article.addlink-wrapper .addtnl-links ul li a {
-            color: #cccccc;
+            color: white;
             text-decoration: none;
             font-family: 'Avenir';
             font-size: 16px;
@@ -1886,7 +1886,7 @@ footer.footer-wrapper {
         display: inline-block;
         margin-right: 20px; }
         footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a {
-          color: #cccccc;
+          color: white;
           text-decoration: none;
           font-size: 120%; }
           footer.footer-wrapper section.footer-container .copyright-wrapper .social-media-wrapper ul li a i {
