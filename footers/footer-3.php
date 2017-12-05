@@ -16,7 +16,13 @@
                             <li><a href="http://">Distributors</a></li>
                             <li><a href="http://">Shopping Cart</a></li>
                             <li><a href="http://">Account</a></li>
-                            
+                        </ul>
+
+                        <h2 id="corporate">Corporate</h2>
+                        <ul>
+                            <li><a href="http://">About Us</a></li>
+                            <li><a href="http://">Contact Us</a></li>
+                            <li><a href="http://">News and Events</a></li>
                         </ul>
                     </div>
 
@@ -28,15 +34,30 @@
                             <li><a href="http://">Picaso</a></li>
                             <li><a href="http://">Picaso-Lite</a></li>
                         </ul>
+
+                        
                     </div>
 
                     <div class="footer-content">
-                        <h2>Corporate</h2>
-                        <ul>
-                            <li><a href="http://">About Us</a></li>
-                            <li><a href="http://">Contact Us</a></li>
-                            <li><a href="http://">News and Events</a></li>
-                        </ul>
+                        <div class="newsletter-wrapper">
+                            <h3>Subscribe</h3>
+                            <hr>
+                            <p>Get the latest updates on the products and promotions of 4D Labs.</p>
+                            <div class="subscribe-wrapper">
+                                <input type="email" placeholder="your@email.com" id="email" name="email">
+                                <button class="submit-email-btn" id="sumit-email">Send <i class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="payment-method-wrapper">
+                            <ul class="credit-card-list">
+                                <li id="visa"><img src="img/footer-icons/visa.png" alt=""></li>
+                                <li id="mastercard"><img src="img/footer-icons/mastercard.png" alt=""></li>
+                                <li id="paypal"><img src="img/footer-icons/paypal.png" alt=""></li>
+                                <li id="americanexpress"><img src="img/footer-icons/americanexpress.png" alt=""></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </article>
 
@@ -64,6 +85,17 @@
                     </div>
                 </article>
                 
+            </section>
+
+
+            <section class="lab-row">
+
+                <div class="newsletter-payment-wrapper">
+                    
+
+                    
+                </div>
+
             </section>
 
             <section class="lab-row">

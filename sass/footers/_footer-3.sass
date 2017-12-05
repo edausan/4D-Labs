@@ -1,13 +1,15 @@
 footer.footer-wrapper
     background: $footerGrey
     color: $footerWhite
+    font-family: 'Roboto Medium'
 
     section.footer-container
         padding: 100px 0
+        +clear
 
         article.footer-content-wrapper
             padding: 0px 0px 50px
-            border-bottom: 1px solid $footerWhite
+            border-bottom: 2px solid $footerWhite
             +clear
 
             .footer-content
@@ -15,13 +17,18 @@ footer.footer-wrapper
                 float: left
 
                 h2
+                    font-size: 20px
                     margin-bottom: 20px
+
+                h2#corporate
+                    margin-top: 40px
 
                 ul
                     li
                         a
-                            color: $footerWhite
-                            font-size: 120%
+                            color: #cccccc
+                            font-family: 'Avenir'
+                            font-size: 16px
                             text-decoration: none
                             +transition
 
@@ -42,9 +49,10 @@ footer.footer-wrapper
                         margin-right: 40px
 
                         a
-                            color: $footerWhite
+                            color: #cccccc
                             text-decoration: none
-                            font-size: 120%
+                            font-family: 'Avenir'
+                            font-size: 16px
                             +transition
 
                             &:hover
@@ -59,7 +67,7 @@ footer.footer-wrapper
                         margin-right: 40px
 
                         a
-                            color: $footerWhite
+                            color: #cccccc
                             text-decoration: none
                             font-size: 120%
                             
@@ -75,6 +83,105 @@ footer.footer-wrapper
 
                             i.fa-youtube:hover
                                 color: #c61b1f !important
+
+
+        .newsletter-wrapper
+            padding-right: 15px
+            width: 100%
+            float: left
+            h3
+                font-size: 20px
+
+            hr
+
+            p
+                font-family: 'Avenir'
+
+            .subscribe-wrapper
+                +clear
+                height: 40px
+
+                input, button 
+                    border-style: none
+                    height: 100%
+                    background: $footerGrey
+                    color: $footerWhite
+                    +transition
+
+
+                input
+                    width: 70%
+                    padding: 10px
+                    float: left
+                    border: 1px solid $footerWhite
+                    
+
+                    &:focus
+                        background: $footerWhite
+                        color: $footerGrey
+
+                    &[type=email]:invalid
+                        background: $footerWhite
+                        border-color: red
+                        outline: none !important
+                        box-shadow: none !important
+                        color: red
+
+
+                button
+                    width: 30%
+                    float: left
+                    border: 1px solid $footerWhite
+                    border-left: none
+                    background: $footerWhite
+                    color: $footerGrey
+
+                    &:hover
+                        background: $footerGrey
+                        color: $footerWhite
+
+
+
+        .payment-method-wrapper
+            width: 100%
+            float: left
+            padding-top: 40px
+            padding-right: 15px
+            position: relative
+            +clear
+            
+            ul
+                +clear
+                
+                li
+                    width: 25%
+                    float: left
+                    height: 40px
+                    
+                    img
+                        display: block
+                        height: 100%
+                        filter: grayscale(100%)
+
+                #visa
+                    // margin-left: -15px
+                
+                #paypal
+                    img 
+                        margin: 0 auto
+
+                #paypal
+                    img 
+                        height: auto
+                        width: 100%
+
+                #americanexpress
+                    img
+                        margin-left: auto
+
+
+
+
 
 
         .footer-logo
