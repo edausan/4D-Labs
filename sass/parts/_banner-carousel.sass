@@ -1,0 +1,40 @@
+.carousel
+    .carousel-inner
+        .carousel-item
+            .carousel-content
+                position: absolute
+                top: 50%
+                left: 50%
+                +transform
+                text-align: center
+                
+                display: inline-block
+                h3
+                    font-family: 'Sony Sketch'
+                    font-size: 60px
+                    margin: 0
+                    padding: 30px 60px
+                    background: $footerGrey
+                    box-shadow: 0 8px 32px rgba(black, .3)
+                    +transform(translateX(-50%))
+                    +transition(500ms cubic-bezier(.94,.11,.65,.98))
+                    opacity: 0
+                    
+
+                p
+                    color: $footerGrey
+                    font-size: 30px
+                    margin: 0
+                    padding: 20px 40px
+                    background: white
+                    box-shadow: 0 8px 32px rgba(black, .2)
+                    +transform(translateX(50%))
+                    +transition(500ms cubic-bezier(.94,.11,.65,.98))
+                    opacity: 0
+
+            &.active
+                .carousel-content
+                    h3, p
+                        +transform(translateX(0%))
+                        opacity: 1
+
