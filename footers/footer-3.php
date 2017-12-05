@@ -48,15 +48,8 @@
                                 <button class="submit-email-btn" id="sumit-email">Send <i class="fa fa-paper-plane"></i></button>
                             </div>
                         </div>
-
-                        <div class="payment-method-wrapper">
-                            <ul class="credit-card-list">
-                                <li id="visa"><img src="img/footer-icons/visa.png" alt=""></li>
-                                <li id="mastercard"><img src="img/footer-icons/mastercard.png" alt=""></li>
-                                <li id="paypal"><img src="img/footer-icons/paypal.png" alt=""></li>
-                                <li id="americanexpress"><img src="img/footer-icons/americanexpress.png" alt=""></li>
-                            </ul>
-                        </div>
+                        
+                        
                         
                     </div>
                 </article>
@@ -76,13 +69,18 @@
                             <li><a href="http://">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div class="social-media-wrapper">
-                        <ul>
-                            <li><a href=""><i class="fa fa-github"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    
+
+                    <div class="payment-method-wrapper">
+                        <ul class="credit-card-list">
+                            <li id="visa"><img src="img/footer-icons/visa.png" alt=""></li>
+                            <li id="mastercard"><img src="img/footer-icons/mastercard.png" alt=""></li>
+                            <li id="paypal"><img src="img/footer-icons/paypal.png" alt=""></li>
+                            <li id="americanexpress"><img src="img/footer-icons/americanexpress.png" alt=""></li>
                         </ul>
                     </div>
+
+                    
                 </article>
                 
             </section>
@@ -104,6 +102,15 @@
                 </div>
                 <div class="copyright-wrapper">
                     <p>&copy; <?php echo date('Y') ?> 4D Labs. All rights reserved.</p>
+                    <div class="social-media-wrapper">
+                        <ul>
+                            <li><a href=""><i class="fa fa-github"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                        
+                    </div>
+
                 </div>
             </section>
 
