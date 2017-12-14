@@ -3,6 +3,7 @@ $link: #3c3c3c
 header.header-wrapper
     position: relative
     font-family: 'Sony Sketch'
+    z-index: 1004
     +clear
 
     section.navigation-wrapper
@@ -43,6 +44,8 @@ header.header-wrapper
                 padding: 10px
 
                 section.menu-bar
+                    position: relative
+                    z-index: 4
                     
                     ul
                         text-align: right
@@ -60,10 +63,12 @@ header.header-wrapper
                                 color: black
                                 padding: 10px
                                 cursor: pointer
+                                
 
                                 span.lang-name
                                     vertical-align: middle
                                     display: inline-block
+                                    
 
                                 .lang
                                     background: url('../img/languages.png') no-repeat
@@ -93,7 +98,8 @@ header.header-wrapper
                                 &:hover
                                     color: $orange
 
-                                i, label    
+                                i, label
+                                    
                                     cursor: pointer
                                     +transform(rotate(0deg))
                                     +transition(300ms ease)
@@ -107,6 +113,7 @@ header.header-wrapper
                                         +transform(rotate(180deg))
 
                             div.account-form
+                                font-family: 'Avenir'
                                 position: absolute
                                 top: 10%
                                 right: 0
@@ -115,10 +122,11 @@ header.header-wrapper
                                 padding: 30px 30px 20px
                                 text-align: left
                                 box-shadow: 0 8px 32px rgba(black, .2)
-                                border-bottom: 5px solid $orange
+                                border-bottom: 5px solid $paleBlue
                                 overflow: hidden
                                 opacity: 0
                                 display: none
+                                z-index: 4
                                 +transition
 
                                 &.viewForm
@@ -187,16 +195,16 @@ header.header-wrapper
                                         border-color: #eeeeee
 
                                     &[type=email]:valid:focus
-                                        border-bottom-color: $orange
+                                        border-bottom-color: $paleBlue
                                     
                                     &:focus
-                                        border-bottom-color: $orange
+                                        border-bottom-color: $paleBlue
                                         
 
                                 button
                                     margin: 20px 0px
                                     border-style: none
-                                    background: $orange
+                                    background: $paleBlue
                                     color: white
                                     padding: 8px 16px
                                     +border-radius
@@ -217,7 +225,7 @@ header.header-wrapper
                                         text-align: center
                                         padding: 0px
                                         margin-right: 5px
-                                        color: $orange
+                                        color: $paleBlue
 
                                         &:hover
                                             color: #AD2005
@@ -240,6 +248,7 @@ header.header-wrapper
                                 right: 0
                                 background: white
                                 box-shadow: 0 8px 32px rgba(black, .2)
+                                font-family: 'Avenir'
                                 +transition
 
                                 &.viewLang
@@ -343,6 +352,7 @@ header.header-wrapper
         background: white
         z-index: 1000
         box-shadow: 0 20px 20px rgba(black, .3)
+        font-family: 'Avenir'
         +transition
 
         &.goDown

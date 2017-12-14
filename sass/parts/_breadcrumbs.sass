@@ -1,0 +1,80 @@
+.breadcrumbs
+    font-family: 'Avenir'
+    ul.breadcrumbs-list
+        display: block
+        overflow: hidden
+        +clear
+        margin-top: 50px
+        li
+            display: inline-block
+            position: relative
+            float: left
+
+            &:first-child a
+                padding-left: 20px
+            
+            a
+                text-decoration: none
+                color: black
+                padding: 5px 0 5px 65px
+                display: block
+                position: relative
+                float: left
+                background: #eeeeee
+                +transition
+
+                &:hover
+                    background: #cccccc
+                    color: white
+
+                    &::after
+                        border-left-color: #cccccc
+
+                &::after
+                    content: "" 
+                    display: block 
+                    width: 0 
+                    height: 0
+                    border-top: 50px solid transparent
+                    border-bottom: 50px solid transparent
+                    border-left: 30px solid #eeeeee
+                    position: absolute
+                    top: 50%
+                    margin-top: -50px 
+                    left: 100%
+                    z-index: 2 
+                    +transition
+
+                &::before
+                    content: ""
+                    display: block 
+                    width: 0 
+                    height: 0
+                    border-top: 50px solid transparent       
+                    border-bottom: 50px solid transparent
+                    border-left: 30px solid white
+                    position: absolute
+                    top: 50%
+                    margin-top: -50px 
+                    margin-left: 1px
+                    left: 100%
+                    z-index: 1 
+
+                
+                
+
+            &:last-child a
+                color: white
+                background: $paleBlue
+
+                &::after
+                    border-left: 30px solid $paleBlue !important
+
+            &:nth-child(3)
+                span
+                    display: block
+                    position: relative
+                    &::after
+                        content: ' Graphics Processor'
+
+                
