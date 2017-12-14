@@ -1,32 +1,40 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide carousel-2" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
 
 
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('img/banner1.png')">
-            <div class="carousel-content">
+        <div class="carousel-item active" style="background-image: url('img/product-banner/<?php echo $product['title'] ?>.jpg')">
+            <!-- <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
-            </div>
+            </div> -->
         </div>
 
-        <div class="carousel-item" style="background-image: url('img/banner2.jpg')">
-            <div class="carousel-content">
+        <div class="carousel-item" style="background-image: url('img/product-banner/<?php echo $product['title'] ?>-2.jpg')">
+            <!-- <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
-            </div>
+            </div> -->
         </div>
 
-        <div class="carousel-item" style="background-image: url('img/banner3.jpg')">
-            <div class="carousel-content">
+        <div class="carousel-item" style="background-image: url('img/product-banner/<?php echo $product['title'] ?>.jpg')">
+            <!-- <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
-            </div>
+            </div> -->
+        </div>
+
+        <div class="carousel-item" style="background-image: url('img/product-banner/<?php echo $product['title'] ?>-2.jpg')">
+            <!-- <div class="carousel-content">
+                <h3>4D LABS SEMICONDUCTORS</h3>
+                <p>Big Solutions in Small Packages</p>
+            </div> -->
         </div>
     </div>
 

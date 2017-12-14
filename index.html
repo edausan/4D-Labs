@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
+    <link rel="stylesheet" href="css/dev-style.min-dist.css">
 </head>
 <body>
+
 
     <header class="header-wrapper">
 
     <section class="navigation-wrapper">
         <section class="navigation-container">
             <article class="logo-wrapper">
-                <a href="">
+                <a href="/">
                     <img src="img/4dllogo.png" alt="">
                 </a>
             </article>
@@ -89,11 +91,11 @@
                 
                 <nav class="navigation-bar">
                     <ul>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Learn</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="products.php">Products</a></li>
+                        <li><a href="solutions.php">Solutions</a></li>
+                        <li><a href="learn.php">Learn</a></li>
+                        <li><a href="support.php">Support</a></li>
+                        <li><a href="about.php">About</a></li>
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </nav>
@@ -108,9 +110,7 @@
             <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
         </form>
     </section>
-</header><!-- <div class="main-banner"></div> -->
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+</header><div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -120,33 +120,26 @@
 
 
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('img/banner4.png')">
+        <div class="carousel-item active" style="background-image: url('img/banner1.png')">
             <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
             </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url('img/banner4.png')">
+        <div class="carousel-item" style="background-image: url('img/banner2.jpg')">
             <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
             </div>
-        </div>
-
-        <div class="carousel-item" style="background-image: url('img/banner4.png')">
-            <div class="carousel-content">
-                <h3>4D LABS SEMICONDUCTORS</h3>
-                <p>Big Solutions in Small Packages</p>
-            </div>
-        </div>
-
-
-        <!-- <div class="carousel-item" style="background-image: url('img/banner7.png')">
         </div>
 
         <div class="carousel-item" style="background-image: url('img/banner3.jpg')">
-        </div> -->
+            <div class="carousel-content">
+                <h3>4D LABS SEMICONDUCTORS</h3>
+                <p>Big Solutions in Small Packages</p>
+            </div>
+        </div>
     </div>
 
 
@@ -302,7 +295,7 @@ Development Resources
 
 
         <!-- Thumb Row 1 -->
-        <section class="lab-row thumb-row thumb-row-1 ">
+        <section class="lab-row thumb-row thumb-row-1 " >
 
             <a href="">
                 <div class="thumbs thumb-md">
@@ -310,17 +303,19 @@ Development Resources
                         <p>Free integrated software development platform for all graphics processors and modules</p>
                         <h2>Powerful and User-friendly IDE</h2>
                     </header>
-                    <img class="thumb-img" src="img/thumbnails/thumb-1.jpg" alt="">
+                    <img class="thumb-img" src="img/thumbnails/thumb-1.1.jpg" alt="Powerful and User-friendly IDE">
                 </div>
             </a>
 
             <a href="">
                 <div class="thumbs thumb-md">
                     <header>
-                        <p>Fastest time to market for industrial, medical, and commercial solutions</p>
-                        <h2>Rapid Application Development</h2>
+                        <p>4D Labs provides easy-to-Use graphics processors for your custom applications</p>
+                        <h2>Need Graphics Solutions?</h2>
+                        
+                        
                     </header>
-                    <img class="thumb-img" src="img/thumbnails/thumb-2.jpg" alt="">
+                    <img class="thumb-img" src="img/thumbnails/thumb-2.jpg" alt="Need Graphics Solutions?">
                 </div>
             </a>
 
@@ -336,10 +331,10 @@ Development Resources
             <a href="">
                 <div class="thumbs thumb-sm">
                     <header>
-                        <p>4D Labs provides easy-to-Use graphics processors for your custom applications</p>
-                        <h2>Need Graphics Solutions?</h2>
+                        <p>Fastest time to market for industrial, medical, and commercial solutions</p>
+                        <h2>Rapid Application Development</h2>
                     </header>
-                    <img class="thumb-img" src="img/thumbnails/thumb-3.jpg" alt="">
+                    <img class="thumb-img" src="img/thumbnails/thumb-3.jpg" alt="Rapid Application Development">
                 </div>
             </a>
             
@@ -350,7 +345,7 @@ Development Resources
                         <p>Canned modules powered with 4D Labs' powerful graphics processors and touch controllers</p>
                         <h2>All-in-One Solutions</h2>
                     </header>
-                    <img class="thumb-img" src="img/thumbnails/thumb-4.jpg" alt="">
+                    <img class="thumb-img" src="img/thumbnails/thumb-4.jpg" alt="All-in-One Solutions">
                 </div>
             </a>
 
@@ -361,7 +356,8 @@ Development Resources
                         <h2>Professional Support Team</h2>
                     </header>
 
-                    <div class="thumb-img last-thumb"></div>
+                    <!-- <div class="thumb-img last-thumb"></div> -->
+                    <img class="thumb-img" src="img/thumbnails/thumb-5.jpg" alt="Professional Support Team">
                 </div>
             </a>
 
@@ -374,10 +370,120 @@ Development Resources
         <section class="lab-row">
 
             <div class="latest-news-wrapper">
-                <div class="news">
+
+                <header class="news-header">
                     <h1>Latest News</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis rerum libero quos sit impedit id voluptatem reprehenderit illo a inventore labore explicabo vero praesentium, exercitationem modi at fuga asperiores. <a href="">Read More <i class="fa fa-chevron-right"></i></a></p>
-                </div>
+                </header>
+                <ul>
+
+                    <!-- News -->
+                    <li class="news">
+
+                        <div class="news-thumb-wrapper">
+                            <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2964">
+                                <img class="news-thumb" src="img/news-thumbs/IoD09.jpg" alt="IoD-09">
+                            </a>
+                            
+                        </div>
+
+                        <div class="news-content">
+                            <header class="news-content-header">
+                                <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2964"><h4 id="news-title">4D Systems adds smallest 0.9” Display module to its Internet of Displays range</h4></a><h6 id="news-date">Nov 11, 2017</h6>
+                            </header>
+                            
+                            <p id="news-content">4D Systems is leading the way with its Internet of Display modules. Today they announced the latest addition to the range with its smallest LCD display yet. At 0.9-inch and powered by the popular Wi-Fi enabled ESP8266, it is ideal for miniature IoT projects. <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2964">Read more.</a></p>
+                        </div>
+                        
+                    </li>
+                    <!-- /News -->
+
+                    <!-- News -->
+                    <li class="news">
+                            
+                        <div class="news-thumb-wrapper">
+                            <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2961">
+                                <img class="news-thumb" src="img/news-thumbs/ws4.jpg" alt="Workshop4 Pro IDE">
+                            </a>
+                            
+                        </div>
+
+                        <div class="news-content">
+                            <header class="news-content-header">
+                                <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2961"><h4 id="news-title">4D Systems adds smart widgets editor tool and smart objects to Workshop4 PRO GUI development tool </h4></a><h6 id="news-date">Jul 26, 2017</h6>
+                            </header>
+                            
+                            <p id="news-content">Workshop4 PRO enhances the standard features of the base version of the Workshop4 IDE with options that extend productivity for developing advanced GUIs for embedded applications. <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2961">Read more.</a></p>
+                        </div>
+                        
+                    </li>
+                    <!-- /News -->
+
+                    <!-- News -->
+                    <li class="news">
+                            
+                        <div class="news-thumb-wrapper">
+                            <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2960">
+                                <img class="news-thumb" src="img/news-thumbs/build.jpg" alt="gen4-IoD">
+                            </a>
+                            
+                        </div>
+
+                        <div class="news-content">
+                            <header class="news-content-header">
+                                <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2960"><h4 id="news-title">Building easy access to Big Data</h4></a><h6 id="news-date">Sep 13, 2017</h6>
+                            </header>
+                            
+                            <p id="news-content">The infrastructure to support the Internet of Things is evolving, and a large part of that infrastructure is what we now call the cloud. As the IoT matures, it is pioneering new concepts such as distributed intelligence; edge-nodes that operate autonomously, creating and acting on data that is passed to the cloud and accessible from anywhere. <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2960">Read more.</a></p>
+                        </div>
+                        
+                    </li>
+                    <!-- /News -->
+
+                    <!-- News -->
+                    <li class="news">
+                            
+                        <div class="news-thumb-wrapper">
+                            <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2959">
+                                <img class="news-thumb" src="img/news-thumbs/bbb.jpg" alt="gen4-CAPE">
+                            </a>
+                            
+                        </div>
+
+                        <div class="news-content">
+                            <header class="news-content-header">
+                                <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2959"><h4 id="news-title">TFT LCD display series for BeagleBone Black incorporates touch sensing over I2C</h4></a><h6 id="news-date">June 09, 2017</h6>
+                            </header>
+                            
+                            <p id="news-content">4D Systems announces the launch of the gen4 CAPE series of TFT LCD display capes designed specifically for use with the BeagleBone Black single board computer. The series comprises 4.3-, 5.0- and 7.0- inch models, each equipped with a 30-pin robust FPC cable that plugs into the supplied gen4 CAPE adapter board. <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2959">Read more.</a></p>
+                        </div>
+                        
+                    </li>
+                    <!-- /News -->
+
+                    <!-- News -->
+                    <li class="news">
+                            
+                        <div class="news-thumb-wrapper">
+                            <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2957">
+                                <img class="news-thumb" src="img/news-thumbs/motg.jpg" alt="Modules On The Go">
+                            </a>
+                            
+                        </div>
+
+                        <div class="news-content">
+                            <header class="news-content-header">
+                                <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2957"><h4 id="news-title">Intelligent display modules gain host of connectivity expansion options</h4></a><h6 id="news-date">June 09, 2017</h6>
+                            </header>
+                            
+                            <p id="news-content">4D Systems today introduced the modules-on-the-go (MOTG) series, which provides a simple plug-and-play interface to the 4D Systems gen4 range of DIABLO16 and PICASO intelligent display modules. <a target="_blank" href="http://www.4dsystems.com.au/article.php?id=2957">Read more.</a></p>
+                        </div>
+                        
+                    </li>
+                    <!-- /News -->
+
+                </ul>
+
+
             </div>
     
         </section>        
@@ -506,5 +612,6 @@ Development Resources
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="scripts/navbar.js"></script>
+<script src="scripts/product-tabs.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Home | 4D Labs</title>
+    <title><?php echo TITLE; ?> | 4D Labs</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
+    <link rel="stylesheet" href="css/dev-style.min-dist.css">
 </head>
 <body>
 
@@ -24,7 +25,7 @@
     <section class="navigation-wrapper">
         <section class="navigation-container">
             <article class="logo-wrapper">
-                <a href="">
+                <a href="/">
                     <img src="img/4dllogo.png" alt="">
                 </a>
             </article>
@@ -90,11 +91,11 @@
                 
                 <nav class="navigation-bar">
                     <ul>
-                        <li><a href="views/product-page.php">Products</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Learn</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="products.php">Products</a></li>
+                        <li><a href="solutions.php">Solutions</a></li>
+                        <li><a href="learn.php">Learn</a></li>
+                        <li><a href="support.php">Support</a></li>
+                        <li><a href="about.php">About</a></li>
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </nav>
