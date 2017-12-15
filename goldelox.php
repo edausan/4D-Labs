@@ -10,6 +10,9 @@
         // Product Name
         'name'          =>  'Goldelox Graphics Processor',
 
+        // Carousel Images
+        'carousel-img'  => array('goldelox-2', 'goldelox-3'),
+
         // Product Highlights
         'highlights'    =>  array(
                                 'The <strong>GOLDELOX</strong> is a custom embedded graphics controller designed to interface with many popular <strong>OLED</strong> and <strong>LCD</strong> display panels. Powerful graphics, text, image, animation and countless more features are built right inside the chip. It offers a simple plug-n-play interface to many <strong>8bit 80-Series colour LCD and OLED displays</strong>.',

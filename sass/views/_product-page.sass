@@ -103,8 +103,6 @@ article.product-details-wrapper
         margin: 60px 0px
         background: white
         box-shadow: 0 8px 22px rgba(black, .050)
-        padding: 1px
-        background: whitesmoke
 
         article.tabs-wrapper
             
@@ -113,6 +111,9 @@ article.product-details-wrapper
                 overflow: hidden
                 background: $footerGrey
                 border-bottom: 5px solid $paleBlue
+
+                &.orderActive
+                    border-bottom-color: $orange
 
                 $class-slug: tab
                 @for $i from 1 through 5
@@ -132,6 +133,7 @@ article.product-details-wrapper
                     text-transform: uppercase
                     +transform(scale(.90))
                     transform-origin: bottom
+                    background: $footerGrey
 
                     .ico-svg
                         fill: white
@@ -154,9 +156,11 @@ article.product-details-wrapper
                         +transform(scale(1))
 
                     label
+                        position: relative
                         margin: 0
                         padding: 20px
                         cursor: pointer
+                        z-index: 1001
 
                         span
                             display: inline-block
@@ -165,24 +169,46 @@ article.product-details-wrapper
                             padding: 0
 
                 li.tab.order
-                    .blink
-                        stroke: white
-                        fill: white
-                        animation: blink 700ms ease forwards infinite
-                        +transform(rotate(0deg)) 
+                    position: relative
+                    border-left: 5px solid white
+                    background: $orange
+                    +transform(scale(1))
 
-                li.tab.order.active
-                    .ico-svg
-                        stroke: white
-                        fill: white
-                        animation: blink2 50ms ease forwards infinite
-                        +transform(scale(1)) 
+                    label 
+                        span 
+                            font-weight: 600
+
+                    // &::before
+                    //     content: ''
+                    //     position: absolute
+                    //     top: 0
+                    //     left: 0
+                    //     width: 50px
+                    //     height: 50px
+                    //     z-index: 1000
+                    //     background: $orange
+                    //     +transition
+                    //     +transform(translate(-50%, -50%) rotate(45deg))
+
+                    // &:hover
+                    //     &::before
+                    //         width: 95px
+                    //         height: 95px
+
+
+                    // .blink
+                    //     stroke: white
+                    //     fill: white
+                        // animation: blink 700ms ease forwards infinite
+
+                
 
 
 
         article.tab-content
             padding: 50px
             background: white
+            border: 1px solid whitesmoke
 
             .tab-content
 
@@ -348,7 +374,130 @@ article.product-details-wrapper
                                     color: #876001
                                 
                             p
-                                
+
+            .order-details-wrapper  
+                +clear   
+                h2 
+                    display: none
+
+                
+
+                form.order-form
+                    padding: 0px 20px
+                    float: left
+                    width: 65%
+                    +clear
+
+                    figure.order-img-wrapper
+                        float: left
+                        width: 35%
+                        vertical-align: middle
+                        height: 227px
+                        
+                        img
+                            width: 80%
+                            margin: 0 auto
+                            display: block
+
+                        figcaption
+                            text-align: center
+                            padding: 10px 0px
+                            font-weight: 600
+                            color: $paleBlue
+
+                    .form-input
+                        width: 65%
+                        float: left
+                        padding: 0px 20px
+                        vertical-align: middle
+
+                        label
+                            font-size: 150%
+                            margin-bottom: 20px
+
+                        input
+                            width: 100% !important
+                            display: block
+                            margin-bottom: 20px
+
+                        button
+                            font-size: 16px
+                            background: $orange
+                            border-color: $orange
+                            width: 100%
+                            +transition
+                            cursor: pointer
+                            text-transform: uppercase
+
+                            i
+                                font-size: 16px
+                                vertical-align: middle
+                            span
+                                vertical-align: middle
+                                margin-left: 10px
+
+                            &:hover
+                                background: darken($orange, 10%)
+
+                        .separator
+                            width: 24px
+                            height: 24px
+                            border: 1px solid #cccccc 
+                            +border-radius(100%)
+                            position: relative
+                            margin: 20px auto
+
+                            &::before,
+                            &::after
+                                content: ''
+                                position: absolute
+                                top: 50%
+                                display: block
+                                width: 232px
+                                height: 1px
+                                background: #cccccc
+
+                            &::before
+                                left: 0%
+                                +transform(translateX(-100%))
+
+                            &::after
+                                right: 0%
+                                +transform(translateX(100%))
+
+                            span 
+                                position: absolute
+                                display: block
+                                top: 50%
+                                left: 50%
+                                color: #cccccc
+                                +transform
+
+                        a.request-quote
+                            display: block
+                            text-align: center
+                            padding: 10px 0px
+                            background: #eeeeee
+                            color: grey
+                            +border-radius(5px)
+                            text-decoration: none
+                            +transition
+                            text-transform: uppercase
+
+                            &:hover
+                                background: #cccccc
+
+                table.quantity-table
+                    float: left
+                    width: 30%
+                    padding: 20px
+
+                    thead 
+                        tr 
+
+                    tbody 
+                        tr
+                            td    
 
 
 @keyframes blink

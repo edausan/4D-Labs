@@ -124,7 +124,7 @@
                         </li>
                         <li class="tab order" id="order-details">
                             <label>
-                                <svg class="ico-svg blink" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="img/tab-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                                 </svg>
                                 <span>Order Now</span>
@@ -243,10 +243,31 @@
                 <!-- Order Details -->
                 <div class="tab-content tab-hidden order-details-wrapper" id="order-details">
                     <h2>Order Now</h2>
-                    
 
-                    <h5>Quantity</h5>
-                    <table>
+                    <form action="" class="order-form">
+                        <!-- style="background: url('img/<?php echo $product['title']?>.png') no-repeat; background-size: auto 100%; background-position: 50%" -->
+                        <figure class="order-img-wrapper" >
+                            <img src="img/<?php echo $product['title']?>.png" alt="">
+                            <figcaption><?php echo $product['order-details']['Package Type']?></figcaption>
+                        </figure>
+
+                        <div class="form-input">
+                            <label for="qty" class="">Quantity</label>
+                            <input name="qty" id="qty" step="" min="1" max="999999999" value="1" title="Enter Quantity" class="input-text form-control" type="number">
+                            <button type="submit" class="btn btn-info"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span> </button>
+
+                            <div class="separator"><span>or</span></div>
+
+                            <a href="contact.php" class="request-quote">REQUEST A QUOTE FOR HIGHER QUANTITIES</a>
+                        </div>
+                        
+                    
+                        
+                        
+                    </form>
+
+
+                    <table class="quantity-table table">
                             
                         <thead>
                             <tr>
@@ -257,6 +278,7 @@
                                 <?php } ?>
                             </tr>
                         </thead>
+
                         <tbody>
                                 <?php
                                     $x = 0;

@@ -10,6 +10,9 @@
         // Product Name
         'name'          =>  'Diablo16 Graphics Processor',
 
+        // Carousel Images
+        'carousel-img'  => array('goldelox-2'),
+
         // Product Highlights
         'highlights'    =>  array(
                                 'Low-cost OLED, LCD and TFT display graphics user interface solution.',
@@ -91,7 +94,7 @@
                                                                 'names'  =>  array('4D Workshop4 IDE','Workshop4 IDE User Guide','Workshop4 IDE Installation Guide','ViSi User Guide','ViSi-Genie User Guide'),
                                                                 'srcs'   =>  array('http://4dlabs.com.au/Workshop4-IDE-Installer.html','http://4dlabs.com.au/Workshop4-IDE-User-Guide.html','http://4dlabs.com.au/Workshop4-IDE-Installation-Guide.html','http://4dlabs.com.au/ViSi-User-Guide.html','http://4dlabs.com.au/ViSi-Genie-User-Guide.html'),
                                                                 'rev'    =>  array('Rev. 4.4.0.9','Rev. 2.0','Rev. 2.0','Rev. 2.0','Rev. 2.0'),
-                                                                'size'    =>  array('87.31 MB','3.23 MB','1.08 MB','3.82 MB','3.58 MB'),
+                                                                'size'   =>  array('87.31 MB','3.23 MB','1.08 MB','3.82 MB','3.58 MB'),
                                                                 'icon'   =>  array('exe','pdf','pdf','pdf','pdf')
 
                                                             ),
@@ -99,7 +102,7 @@
                                                                 'names'  =>  array("4DGL Programmer's Reference Manual","Diablo6 Internal Functions Reference Manual","Diablo16 Serial Command Set Reference Manual"),
                                                                 'srcs'   =>  array("http://4dlabs.com.au/4DGL-Programmer's-Reference-Manual.html","http://4dlabs.com.au/4DLS-IF-DIABLO16.html","http://4dlabs.com.au/4DLS-SC-DIABLO16.html"),
                                                                 'rev'    =>  array('Rev. 6.0','Rev. 2.0','Rev. 2.0'),
-                                                                'size'    =>  array('1.71 MB','6.98 MB','3.27 MB'),
+                                                                'size'   =>  array('1.71 MB','6.98 MB','3.27 MB'),
                                                                 'icon'   =>  array('pdf','pdf','pdf')
                                                                 
                                                             ),
@@ -161,7 +164,7 @@
 
 <section class="product-wrapper">
     <article class="lab-container">
-        
+
             <?php
                 $breads     =   array('products', TITLE);
                 include('product-template.php'); 

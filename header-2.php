@@ -16,8 +16,13 @@
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
+    
 </head>
 <body>
+
+    <div class="to-top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
 
 
     <header class="header-wrapper">

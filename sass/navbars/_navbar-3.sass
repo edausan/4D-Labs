@@ -386,3 +386,33 @@ header.header-wrapper
 
                 &:hover
                     color: #cccccc
+
+
+
+div.to-top
+    color: $paleBlue
+    width: 50px
+    height: 50px
+    background: white
+    position: fixed !important
+    right: -100%
+    bottom: 30px
+    z-index: 1004
+    cursor: pointer
+    +transition
+    box-shadow: 0 4px 15px rgba(black, .1)
+    border: 1px solid $paleBlue
+    
+
+    &.active
+        right: 30px
+    
+    i
+        position: absolute
+        top: 50%
+        left: 50%
+        +transform
+
+    &:hover
+        background: 
+        box-shadow: 0 8px 15px -4px rgba(black, .2)

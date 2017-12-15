@@ -106,8 +106,31 @@ $(function() {
 
 
 
+    // To Top Button
+    var toTop = $('div.to-top');
+    var headerHeight = $('header.header-wrapper').height();
+
+    $(window).scroll(function() {
+
+        var winScroll = $(this).scrollTop();
+
+        console.log(winScroll);
+
+        if (winScroll >= headerHeight) {
+            toTop.addClass('active');
+            // alert('top');
+        } else {
+            toTop.removeClass('active');
+        }
 
 
+    });
+
+
+    toTop.click(function() {
+        $('html, body').animate({scrollTop : 0},800);
+    });
+    
 
 
 
