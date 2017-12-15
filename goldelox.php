@@ -152,6 +152,11 @@
                                                                 ),
 
                             ),
+        'reel-order'  =>  array(
+
+                                'Reel of 1600' => 'To purchase full reel, order in multiples of 1600',
+
+                            ),
         
                 )
 
