@@ -244,56 +244,111 @@
                 <div class="tab-content tab-hidden order-details-wrapper" id="order-details">
                     <h2>Order Now</h2>
 
-                    <form action="" class="order-form">
-                        <!-- style="background: url('img/<?php echo $product['title']?>.png') no-repeat; background-size: auto 100%; background-position: 50%" -->
-                        <figure class="order-img-wrapper" >
-                            <img src="img/<?php echo $product['title']?>.png" alt="">
-                            <figcaption><?php echo $product['order-details']['Package Type']?></figcaption>
-                        </figure>
-
-                        <div class="form-input">
-                            <label for="qty" class="">Quantity</label>
-                            <input name="qty" id="qty" step="" min="1" max="999999999" value="1" title="Enter Quantity" class="input-text form-control" type="number">
-                            <button type="submit" class="btn btn-info"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span> </button>
-
-                            <div class="separator"><span>or</span></div>
-
-                            <a href="contact.php" class="request-quote">REQUEST A QUOTE FOR HIGHER QUANTITIES</a>
-                        </div>
-                        
-                    
-                        
-                        
-                    </form>
-
-
-                    <table class="quantity-table table">
+                    <!-- Ordering form -->
+                    <div class="order-container">
+                        <form action="" class="order-form">
                             
-                        <thead>
-                            <tr>
-                                <?php
-                                    foreach ($product['quotation'] as $key => $value) {
-                                ?>
-                                            <th style="padding-right: 20px;"><?php echo $key; ?></th>
-                                <?php } ?>
-                            </tr>
-                        </thead>
+                            <figure class="order-img-wrapper" >
+                                <img src="img/<?php echo $product['title']?>.png" alt="">
+                                <figcaption><?php echo $product['order-details']['Package Type']?></figcaption>
+                            </figure>
 
-                        <tbody>
-                                <?php
-                                    $x = 0;
-                                    foreach ($product['quotation']['Quantity'] as $quote) {
-                                ?>
-                            <tr>
+                            <div class="form-input">
+                                <label for="qty" class="">Quantity</label>
+                                <input name="qty" id="qty" step="" min="1" max="999999999" value="1" title="Enter Quantity" class="input-text form-control" type="number">
+                                <button type="submit" class="btn btn-info"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span> </button>
 
-                                    <td><?php echo $quote; ?></td>
-                                    <td><?php echo $product['quotation']['Unit Price'][$x]; ?></td>
-                                    <td><?php echo $product['quotation']['Lead Time'][$x]; ?></td>
+                                <div class="separator"><span>or</span></div>
+
+                                <a href="contact.php" class="request-quote">REQUEST A QUOTE FOR HIGHER QUANTITIES</a>
+                            </div>
+                            
+                        </form>
+                        <!-- /Ordering form -->
+
+                        <!-- Quantity Table -->
+                        <table class="quantity-table table">
                                 
-                            </tr>
-                                <?php  $x++; } ?>
-                        </tbody>
-                    </table>
+                            <thead>
+                                <tr>
+                                    <?php
+                                        foreach ($product['quotation'] as $key => $value) {
+                                    ?>
+                                                <th style="padding-right: 20px;"><?php echo $key; ?></th>
+                                    <?php } ?>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                    <?php
+                                        $x = 0;
+                                        foreach ($product['quotation']['Quantity'] as $quote) {
+                                    ?>
+                                <tr>
+
+                                        <td><?php echo $quote; ?></td>
+                                        <td><?php echo $product['quotation']['Unit Price'][$x]; ?></td>
+                                        <td><?php echo $product['quotation']['Lead Time'][$x]; ?></td>
+                                    
+                                </tr>
+                                    <?php  $x++; } ?>
+                            </tbody>
+                        </table>
+                        <!-- /Quantity Table -->
+
+                    </div>
+
+
+                    
+                    <!-- Reel Order -->
+                    <div class="reel-order">
+                        <?php if (array_key_exists('reel-order', $product)) { ?>
+                            
+                            <?php  foreach ($product['reel-order'] as $key => $value) { ?>
+                                <div class="reel-order-content">
+                                    <i class="fa fa-info-circle"></i> 
+                                    <label for=""><strong><?php echo $key; ?></strong></label>
+                                    <p><?php echo $value; ?></p>
+                                </div>
+                            <?php } ?>
+
+                        <?php } ?>
+                    </div>
+                    <!-- /Reel Order -->
+
+                    <!-- <hr> -->
+
+                    <!-- Order Services -->
+                    <div class="order-services">
+
+                        <div class="services dispatch">
+                            <div class="service">
+                                
+                                <div class="service-content">
+                                    <h3>Next Business Day Dispatch</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+
+                                <img src="img/order-icons/dispatch.png" alt="">
+                            </div>
+                            
+                        </div>
+
+                        <div class="services delivery">
+                            <div class="service">
+                                
+                                <div class="service-content">
+                                    <h3>Express Worldwide Delivery</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+
+                                <img src="img/order-icons/delivery.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /Order Services -->
+
                 </div>
 
                 <!-- /Order Details -->
