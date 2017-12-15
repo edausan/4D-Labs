@@ -381,139 +381,206 @@ article.product-details-wrapper
                     display: none
 
                 
-
-                form.order-form
-                    padding: 0px 20px
-                    float: left
-                    width: 65%
+                .order-container
                     +clear
-
-                    figure.order-img-wrapper
-                        float: left
-                        width: 35%
-                        vertical-align: middle
-                        height: 227px
-                        
-                        img
-                            width: 80%
-                            margin: 0 auto
-                            display: block
-
-                        figcaption
-                            text-align: center
-                            padding: 10px 0px
-                            font-weight: 600
-                            color: $paleBlue
-
-                    .form-input
-                        width: 65%
-                        float: left
+                    form.order-form
                         padding: 0px 20px
-                        vertical-align: middle
+                        float: left
+                        width: 65%
+                        +clear
+
+                        figure.order-img-wrapper
+                            float: left
+                            width: 35%
+                            vertical-align: middle
+                            height: 227px
+                            
+                            img
+                                width: 80%
+                                margin: 0 auto
+                                display: block
+
+                            figcaption
+                                text-align: center
+                                padding: 10px 0px
+                                font-weight: 600
+                                color: $paleBlue
+
+                        .form-input
+                            width: 65%
+                            float: left
+                            padding: 0px 20px
+                            vertical-align: middle
+
+                            label
+                                font-size: 150%
+                                margin-bottom: 20px
+
+                            input
+                                width: 100% !important
+                                display: block
+                                margin-bottom: 20px
+
+                            button
+                                font-size: 16px
+                                background: $orange
+                                border-color: $orange
+                                width: 100%
+                                +transition
+                                cursor: pointer
+                                text-transform: uppercase
+
+                                i
+                                    font-size: 16px
+                                    vertical-align: middle
+                                span
+                                    vertical-align: middle
+                                    margin-left: 10px
+
+                                &:hover
+                                    background: darken($orange, 10%)
+
+                            .separator
+                                width: 24px
+                                height: 24px
+                                border: 1px solid #cccccc 
+                                +border-radius(100%)
+                                position: relative
+                                margin: 20px auto
+
+                                &::before,
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    top: 50%
+                                    display: block
+                                    width: 232px
+                                    height: 1px
+                                    background: #cccccc
+
+                                &::before
+                                    left: 0%
+                                    +transform(translateX(-100%))
+
+                                &::after
+                                    right: 0%
+                                    +transform(translateX(100%))
+
+                                span 
+                                    position: absolute
+                                    display: block
+                                    top: 50%
+                                    left: 50%
+                                    color: #cccccc
+                                    +transform
+
+                            a.request-quote
+                                display: block
+                                text-align: center
+                                padding: 10px 0px
+                                background: #eeeeee
+                                color: grey
+                                +border-radius(5px)
+                                text-decoration: none
+                                +transition
+                                text-transform: uppercase
+
+                                &:hover
+                                    background: #cccccc
+
+                    table.quantity-table
+                        float: left
+                        width: 30%
+                        padding: 20px
+
+                        thead 
+                            tr 
+
+                        tbody 
+                            tr
+                                td
+
+
+                .reel-order
+                    text-align: center
+                    background: $paleBlue
+                    // border-left: 5px solid $orange
+
+                    .reel-order-content
+                        padding: 10px
+                        display: inline-block
+
+                        i
+                            font-size: 14px
+                            vertical-align: middle
+                            display: inline-block
+                            color: white
+                            margin-right: 2px
 
                         label
-                            font-size: 150%
-                            margin-bottom: 20px
-
-                        input
-                            width: 100% !important
-                            display: block
-                            margin-bottom: 20px
-
-                        button
-                            font-size: 16px
-                            background: $orange
-                            border-color: $orange
-                            width: 100%
-                            +transition
-                            cursor: pointer
+                            padding: 0
+                            margin: 0
+                            color: white
                             text-transform: uppercase
+                            margin-right: 10px
+                            vertical-align: middle
+                            
+                            
 
-                            i
-                                font-size: 16px
-                                vertical-align: middle
-                            span
-                                vertical-align: middle
-                                margin-left: 10px
+                            strong
+                        p
+                            color: white
+                            margin: 0
+                            padding: 0
+                            vertical-align: middle
 
-                            &:hover
-                                background: darken($orange, 10%)
+                hr
+                    margin: 40px 0px
+                    border-color: whitesmoke
 
-                        .separator
-                            width: 24px
-                            height: 24px
-                            border: 1px solid #cccccc 
-                            +border-radius(100%)
-                            position: relative
-                            margin: 20px auto
+                    
+                .order-services
+                    margin-top: 40px
+                    +clear
 
-                            &::before,
-                            &::after
-                                content: ''
-                                position: absolute
-                                top: 50%
-                                display: block
-                                width: 232px
-                                height: 1px
-                                background: #cccccc
+                    .services
+                        float: left
+                        width: 50%
+                        padding: 0px 20px
 
-                            &::before
-                                left: 0%
-                                +transform(translateX(-100%))
 
-                            &::after
-                                right: 0%
-                                +transform(translateX(100%))
-
-                            span 
-                                position: absolute
-                                display: block
-                                top: 50%
-                                left: 50%
-                                color: #cccccc
-                                +transform
-
-                        a.request-quote
-                            display: block
+                        .service
+                            border-top: 3px solid $footerGrey
+                            border-bottom: 3px solid $footerGrey
+                            padding: 40px
                             text-align: center
-                            padding: 10px 0px
-                            background: #eeeeee
-                            color: grey
-                            +border-radius(5px)
-                            text-decoration: none
-                            +transition
-                            text-transform: uppercase
 
-                            &:hover
-                                background: #cccccc
+                            .service-content
+                                vertical-align: middle
+                                display: inline-block
+                                margin-right: 20px
+                                
+                                h3
+                                    color: $paleBlue
+                                p
 
-                table.quantity-table
-                    float: left
-                    width: 30%
-                    padding: 20px
+                            img
+                                vertical-align: middle
+                                height: 70px
 
-                    thead 
-                        tr 
+                    .dispatch
+                        padding-left: 0px
+                        .service-content
+                            h3
+                            p
 
-                    tbody 
-                        tr
-                            td    
+                        img
 
+                    .delivery
+                        padding-right: 0px
+                        .service-content
+                            h3
+                            p
 
-@keyframes blink
-    0%
-        +transform(scale(1))
-    50%
-        +transform(scale(1.5))
-    100%
-        +transform(scale(1))
-
-@keyframes blink2
-    0%
-        +transform(scale(1))
-    50%
-        +transform(scale(1))
-        
-    100%
-        +transform(scale(1))
+                        img
         
