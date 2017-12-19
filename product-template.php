@@ -262,6 +262,8 @@
 
                                 <a href="contact.php" class="request-quote">REQUEST A QUOTE FOR HIGHER QUANTITIES</a>
                             </div>
+
+                            
                             
                         </form>
                         <!-- /Ordering form -->
