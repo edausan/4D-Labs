@@ -12,7 +12,7 @@
                     <div class="footer-content">
                         <h2>4D Labs</h2>
                         <ul>
-                            <li><a href="http://">App Notes</a></li>
+                            <li><a href="app notes.php">App Notes</a></li>
                             <li><a href="http://">Distributors</a></li>
                             <li><a href="http://">Shopping Cart</a></li>
                             <li><a href="http://">Account</a></li>
@@ -20,7 +20,7 @@
 
                         <h2 id="corporate">Corporate</h2>
                         <ul>
-                            <li><a href="http://">About Us</a></li>
+                            <li><a href="about.php">About Us</a></li>
                             <li><a href="http://">Contact Us</a></li>
                             <li><a href="http://">News and Events</a></li>
                         </ul>
@@ -29,10 +29,10 @@
                     <div class="footer-content">
                         <h2>Products</h2>
                         <ul>
-                            <li><a href="http://">Goldelox</a></li>
-                            <li><a href="http://">Diablo16</a></li>
-                            <li><a href="http://">Picaso</a></li>
-                            <li><a href="http://">Picaso-Lite</a></li>
+                            <li><a href="goldelox.php">Goldelox</a></li>
+                            <li><a href="diablo16.php">Diablo16</a></li>
+                            <li><a href="picaso.php">Picaso</a></li>
+                            <li><a href="picaso-Lite.php">Picaso-Lite</a></li>
                         </ul>
 
                         
@@ -65,8 +65,8 @@
                     <div class="addtnl-links">
                         <ul>
                             <li><a href="http://">Accessibility</a></li>
-                            <li><a href="http://">Terms & Conditions</a></li>
-                            <li><a href="http://">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions.php">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy.php">Privacy Policy</a></li>
                         </ul>
                     </div>
                     
@@ -122,6 +122,8 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="scripts/navbar.js"></script>
+<script src="scripts/shop.js"></script>
 <script src="scripts/product-tabs.js"></script>
+
 </body>
 </html>

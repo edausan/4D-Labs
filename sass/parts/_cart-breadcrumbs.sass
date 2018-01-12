@@ -1,0 +1,100 @@
+article.cart-breadcrumbs
+    font-family: 'Avenir'
+    +clear
+    overflow: hidden
+    margin: 0px 0px 60px
+
+    ul.cart-bread-list
+        li.cart-bread
+            a.cart-bread-link
+                color: $paleBlue
+                text-decoration: none
+
+                &:hover
+                    color: $paleBlue
+
+                section.bread 
+                    width: 33.333333333%
+                    float: left
+                    background: #eeeeee
+                    padding: 5px
+                    text-align: center
+                    position: relative
+                    +transition
+
+                    &:hover
+                        background: lighten($paleBlue, 50%)
+
+                        &::after
+                            border-left: 30px solid lighten($paleBlue, 50%) !important
+
+                    &.bread-arrow
+                        &::after
+                            content: "" 
+                            display: block 
+                            width: 0 
+                            height: 0
+                            border-top: 50px solid transparent
+                            border-bottom: 50px solid transparent
+                            border-left: 30px solid #eeeeee
+                            position: absolute
+                            top: 50%
+                            margin-top: -50px 
+                            left: 100%
+                            z-index: 2 
+                            +transition
+                            
+                        &::before
+                            content: ""
+                            display: block 
+                            width: 0 
+                            height: 0
+                            border-top: 50px solid transparent       
+                            border-bottom: 50px solid transparent
+                            border-left: 30px solid white
+                            position: absolute
+                            top: 50%
+                            margin-top: -50px 
+                            margin-left: 5px
+                            left: 100%
+                            z-index: 1 
+
+                    &.active-cart-bread
+                        background: $paleBlue
+                        color: white
+
+                        &::after
+                            border-left: 30px solid $paleBlue
+
+                        span#bread-icon
+                            color: $paleBlue
+                            border-color: white !important
+
+                        &:hover
+                            &::after
+                                border-left: 30px solid $paleBlue !important
+
+                    span
+                        vertical-align: middle
+                        display: inline-block
+                        font-size: 16px
+                        text-transform: uppercase
+
+                        &#bread-icon
+                            width: 20px
+                            height: 20px
+                            +border-radius(100%)
+                            display: inline-block
+                            background: white
+                            position: relative
+                            margin-right: 10px
+                            color: $paleBlue
+                            border: 2px solid $paleBlue
+
+                            i.b-icon
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                font-size: 14px
+                                +transform
+                                font-style: normal

@@ -9,7 +9,8 @@
 
         
             <?php
-                $breads     =   array(TITLE);
+                $title      =   'solutions';
+                $breads     =   array($title);
                 include('include/coming-soon.php'); 
             ?>       
     

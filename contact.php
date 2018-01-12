@@ -9,7 +9,8 @@
     <article class="lab-container">
 
             <?php
-                $breads     =   array(TITLE);
+                $title      =   'contact';
+                $breads     =   array($title);
                 include('include/coming-soon.php'); 
             ?>       
     

@@ -18,7 +18,146 @@
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
 </head>
-<body>
+
+<section class="updates-wrapper" id="updates-wrapper">
+
+    <article class="updates-container">
+        <div class="counter">
+            <p id="visits">0 time</p>
+            <pre id="times">--:--:--</pre>
+        </div>
+        <h1>Updates</h1>
+        
+
+        
+                            <div class="updates">
+                    <strong>January 11, 2018</strong>
+                    <ul>
+                                                    <li>update the design of <a href="shopping-cart.php">Shopping Cart</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>January 9, 2018</strong>
+                    <ul>
+                                                    <li>update the design of <a href="shopping-cart.php">Shopping Cart</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>January 8, 2018</strong>
+                    <ul>
+                                                    <li>added <a href="shopping-cart.php">Shopping Cart</a> page.</li>
+                                                    <li>update some design of <a href="register.php">Create an Account</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>January 6, 2018</strong>
+                    <ul>
+                                                    <li>added <a href="login.php">Sign In</a> page.</li>
+                                                    <li>redesign <a href="register.php">Create an Account</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>January 5, 2018</strong>
+                    <ul>
+                                                    <li>added <a href="register.php">Create an Account</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>January 4, 2018</strong>
+                    <ul>
+                                                    <li>update the design of <a href="about.php">About Us</a> page.</li>
+                                                    <li>added <a href="about.php#learn">Learn</a> section after the Our Team section.</li>
+                                                    <li>update <a href="workshop4.php">Workshop4 PRO IDE</a> product page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>January 3, 2018</strong>
+                    <ul>
+                                                    <li>redesign <a href="about.php">About Us</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>December 29, 2017</strong>
+                    <ul>
+                                                    <li>new design of <a href="about.php">About Us</a> descriptions.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>December 28, 2017</strong>
+                    <ul>
+                                                    <li>redesigned <a href="about.php">About Us</a> descriptions.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>December 27, 2017</strong>
+                    <ul>
+                                                    <li>added <a href="about.php">About Us</a> page.</li>
+                                            </ul>
+                </div>
+                            <div class="updates">
+                    <strong>December 22, 2017</strong>
+                    <ul>
+                                                    <li>added <a href="privacy-policy.php">Privacy Policy</a> page.</li>
+                                                    <li>added <a href="terms-and-conditions.php">Terms and Conditions</a> page.</li>
+                                                    <li>style updates of <a href="app notes.php">App Notes</a>.</li>
+                                            </ul>
+                </div>
+                    </ul>
+
+        <blockquote>Note: To view this popup again, close the current tab and view the website again.</blockquote>
+
+        
+
+    </article>
+
+    <button id="close-update">Close</button>
+    
+    
+</section>
+
+<script type="text/javascript" src="js/json-serialization.js"></script>
+<script type="text/javascript" src="js/session.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+
+// initialize application defaults
+var counter = Session.get("counter") || {
+	visits: 0,
+	time: []
+};
+
+// onload
+window.onload = function() {
+
+	// update previous visits
+	var d = new Date();
+	counter.visits++;
+	counter.time.push(Pad(d.getHours()) + ":" + Pad(d.getMinutes()) + ":" + Pad(d.getSeconds()));
+	if (counter.time.length > 10) counter.time = counter.time.slice(1);
+
+	// update page
+	document.getElementById("visits").firstChild.nodeValue = counter.visits + " time" + (counter.visits == 1 ? "" : "s");
+	var t = "";
+	for (var i = counter.time.length-1; i >= 0; i--) t += counter.time[i] + "\n";
+	document.getElementById("times").firstChild.nodeValue = t;
+
+	// store value in session
+    Session.set("counter", counter);
+    
+    
+    if(counter.visits >= 2){
+        document.getElementById("updates-wrapper").outerHTML='';
+    }
+
+};
+
+// add leading zeros
+function Pad(n) {
+	n = "00" + n;
+	return n.substr(n.length-2);
+}
+// ]]>
+</script><body>
 
     <div class="to-top">
         <i class="fa fa-chevron-up"></i>
@@ -65,7 +204,7 @@
 
                                 <div class="account-bottom">
                                     <a href="">Forgot your password?</a>
-                                    <p>Don't have an account? <a href="">Register Now</a></p>
+                                    <p>Don't have an account? <a href="register.php">Register Now</a></p>
                                 </div>
                                 
                             </div>
@@ -90,7 +229,7 @@
                         
                         
                         </li>
-                        <li><a href=""><i class="fa fa-shopping-cart"></i> <label for="">CART</label></a></li>
+                                                <li><a href="shopping-cart.php"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i>3</i></span></a></li>
                     </ul>
                 </section>
                 
@@ -98,7 +237,7 @@
                     <ul>
                         <li><a href="products.php">Products</a></li>
                         <li><a href="solutions.php">Solutions</a></li>
-                        <li><a href="learn.php">Learn</a></li>
+                        <li><a href="app notes.php">App Notes</a></li>
                         <li><a href="support.php">Support</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
@@ -115,7 +254,10 @@
             <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
         </form>
     </section>
-</header><div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+</header>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -125,7 +267,7 @@
 
 
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('img/banner1.png')">
+        <div class="carousel-item active" style="background-image: url('img/banner1.jpg')">
             <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
@@ -507,7 +649,7 @@ Development Resources
                     <div class="footer-content">
                         <h2>4D Labs</h2>
                         <ul>
-                            <li><a href="http://">App Notes</a></li>
+                            <li><a href="app notes.php">App Notes</a></li>
                             <li><a href="http://">Distributors</a></li>
                             <li><a href="http://">Shopping Cart</a></li>
                             <li><a href="http://">Account</a></li>
@@ -515,7 +657,7 @@ Development Resources
 
                         <h2 id="corporate">Corporate</h2>
                         <ul>
-                            <li><a href="http://">About Us</a></li>
+                            <li><a href="about.php">About Us</a></li>
                             <li><a href="http://">Contact Us</a></li>
                             <li><a href="http://">News and Events</a></li>
                         </ul>
@@ -524,10 +666,10 @@ Development Resources
                     <div class="footer-content">
                         <h2>Products</h2>
                         <ul>
-                            <li><a href="http://">Goldelox</a></li>
-                            <li><a href="http://">Diablo16</a></li>
-                            <li><a href="http://">Picaso</a></li>
-                            <li><a href="http://">Picaso-Lite</a></li>
+                            <li><a href="goldelox.php">Goldelox</a></li>
+                            <li><a href="diablo16.php">Diablo16</a></li>
+                            <li><a href="picaso.php">Picaso</a></li>
+                            <li><a href="picaso-Lite.php">Picaso-Lite</a></li>
                         </ul>
 
                         
@@ -560,8 +702,8 @@ Development Resources
                     <div class="addtnl-links">
                         <ul>
                             <li><a href="http://">Accessibility</a></li>
-                            <li><a href="http://">Terms & Conditions</a></li>
-                            <li><a href="http://">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions.php">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy.php">Privacy Policy</a></li>
                         </ul>
                     </div>
                     
@@ -596,7 +738,7 @@ Development Resources
                     <img src="img/4dllogo-grey.png" alt="">
                 </div>
                 <div class="copyright-wrapper">
-                    <p>&copy; 2017 4D Labs. All rights reserved.</p>
+                    <p>&copy; 2018 4D Labs. All rights reserved.</p>
                     <div class="social-media-wrapper">
                         <ul>
                             <li><a href=""><i class="fa fa-github"></i></a></li>
@@ -617,6 +759,8 @@ Development Resources
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="scripts/navbar.js"></script>
+<script src="scripts/shop.js"></script>
 <script src="scripts/product-tabs.js"></script>
+
 </body>
 </html>

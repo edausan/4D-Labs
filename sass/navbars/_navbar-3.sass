@@ -3,7 +3,7 @@ $link: #3c3c3c
 header.header-wrapper
     position: relative
     font-family: 'Sony Sketch'
-    z-index: 1004
+    z-index: 1003
     +clear
 
     section.navigation-wrapper
@@ -58,6 +58,26 @@ header.header-wrapper
                             i
                                 margin: 0 5px
 
+                            span#order-count
+                                width: 20px
+                                height: 20px
+                                background: $orange
+                                +border-radius(100%)
+                                position: relative
+                                display: inline-block
+                                vertical-align: middle
+                                color: white
+                                font-family: 'Avenir'
+                                font-size: 12px
+
+                                i 
+                                    font-style: normal
+                                    position: absolute
+                                    top: 50%
+                                    left: 50%
+                                    +transform
+                                    margin: 0
+
                             a
                                 text-decoration: none
                                 color: black
@@ -68,6 +88,11 @@ header.header-wrapper
                                 span.lang-name
                                     vertical-align: middle
                                     display: inline-block
+
+                                
+
+                                    
+
                                     
 
                                 .lang

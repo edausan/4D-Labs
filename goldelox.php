@@ -169,8 +169,9 @@
     <article class="lab-container">
         
             <?php
-                $breads     =   array('products', TITLE);
-                include('product-template.php'); 
+                $title      =   'goldelox';
+                $breads     =   array('products', $title);
+                include('product-template.php');
             ?>
 
     </article>

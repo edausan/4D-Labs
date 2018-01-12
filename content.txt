@@ -1,0 +1,9 @@
+Since 1990, 4D LABS has forged its place as a global leader for intelligent displays and graphics processors. Our growing range of embedded displays leverage oLED and LCD technology, while our range of dedicated graphics processors provide the horsepower to bring superior yet affordable graphics systems to any application. These powerful, rich graphics displays are also complemented by resistive or capacitive touch in many instances, for a comprehensive user interface solution. 
+
+Perpetual research and development drives evolutions in our hardware solutions. Our proprietary WS4 software has been uniquely developed to provide engineers with a powerful utility for rapid prototype, development, and deployment of solutions into whatever scenario you have planned.
+
+While our heritage is in providing power for commercially-destined embedded systems, an area we remain committed to, the maker movement has also created new interest and requirements for rich displays. Our suite of Arduino and Raspberry Pi compatible display hardware provides market-leading capabilities, without prohibitive cost or development challenges even for novice users. Native display capabilities for Arduino compatible hardware in particular are quite limited. Our integrated solutions take care of the processing, so a rich user experience is possible with standard Arduino hardware.
+
+It goes without saying that quality matters every step of the way. Our hardware and software engineering teams are well seasoned, and work with ISO9001 certified production factories using our own quality assurance procedures for impeccable outcomes. Hardware is available directly or via one of many distribution partners across the globe. Our hardware is directly supported by our engineering team for impeccable problem solving, so you’re not alone.  
+
+We’re constantly improving and adapting to the needs of our customers, to rapidly improve and forge new technologies.

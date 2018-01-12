@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
 </head>
+<?php include('arrays.php'); ?>
+<?php include('updates.php'); ?>
 <body>
 
     <div class="to-top">
@@ -65,7 +67,7 @@
 
                                 <div class="account-bottom">
                                     <a href="">Forgot your password?</a>
-                                    <p>Don't have an account? <a href="">Register Now</a></p>
+                                    <p>Don't have an account? <a href="register.php">Register Now</a></p>
                                 </div>
                                 
                             </div>
@@ -90,7 +92,13 @@
                         
                         
                         </li>
-                        <li><a href=""><i class="fa fa-shopping-cart"></i> <label for="">CART</label></a></li>
+                        <?php 
+                            $x = 0;
+                            foreach ($shopSample as $key => $value) {
+                            $x++;
+                            }
+                        ?>
+                        <li><a href="shopping-cart.php"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i><?php echo $x; ?></i></span></a></li>
                     </ul>
                 </section>
                 
@@ -98,7 +106,7 @@
                     <ul>
                         <li><a href="products.php">Products</a></li>
                         <li><a href="solutions.php">Solutions</a></li>
-                        <li><a href="learn.php">Learn</a></li>
+                        <li><a href="app notes.php">App Notes</a></li>
                         <li><a href="support.php">Support</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
@@ -116,3 +124,5 @@
         </form>
     </section>
 </header>
+
+

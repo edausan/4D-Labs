@@ -1,0 +1,169 @@
+.appnote-details
+    padding-left: 10px !important
+
+details.appnote-cat-details
+    padding: 0px !important
+    margin-top: 10px
+
+    summary
+        cursor: pointer
+
+    ul.appnote-detail-list
+        // margin-top: 10px
+        padding-left: 15px
+
+        li.appnote-detail
+            // margin-bottom: 5px !important
+            font-size: 14px !important
+
+            strong
+                width: 25% !important
+
+            a
+                text-decoration: none
+
+            span
+                width: 70% !important
+                display: inline-block !important
+                vertical-align: top !important
+
+            ul.env-list
+                width: 70%
+                display: inline-block
+
+                li
+                    text-transform: capitalize
+                    display: inline-block
+                    font-weight: 600
+                
+
+        #supported-processor
+            a
+                display: inline-block
+
+        #supported-environment
+            img 
+                width: 40px
+
+        #downloads
+            ul
+                display: inline-block
+                li
+                    display: inline-block
+                    a
+                        img
+                            width: 40px
+
+    
+article.appnote-wrapper,
+details.appnote-cat-details
+    font-family: 'Avenir'
+
+    header.appnote-header
+        h2
+            color: $paleBlue
+            border-bottom: 1px solid #eeeeee
+            padding-bottom: 10px
+
+    ul.appnote-detail-list
+        li.appnote-detail
+            // margin-bottom: 20px
+            font-size: 18px
+
+            strong 
+                width: 20%
+                display: inline-block
+                color: $paleBlue
+                vertical-align: top
+            
+            a
+                text-decoration: none
+
+            
+
+        #diff
+            strong 
+                vertical-align: middle
+
+            figure
+                width: 42px
+                height: 28px
+                display: inline-block
+                position: relative
+                overflow: hidden
+                margin: 0
+                vertical-align: middle
+                +transform(scale(.8))
+
+                img
+                    height: 100%
+
+                    &.Easy
+                        +transform(translateX(2px))
+
+                    &.Average
+                        +transform(translateX(-40px))
+
+                    &.Difficult
+                        +transform(translateX(-82px))
+                    
+
+
+        #revision
+
+        #description
+            strong 
+
+            span 
+                width: 70% !important
+                display: inline-block
+                vertical-align: top
+
+        #supported-processor
+            a
+                display: inline-block
+                color: black
+                +border-radius(2px)
+                font-weight: 600
+
+                &:hover
+                    color: $paleBlue
+
+        #supported-environment
+            img 
+                width: 40px
+
+        #prerequisites
+            margin-top: 15px
+            strong
+                vertical-align: top
+            ul 
+                display: inline-block
+                vertical-align: top
+                width: 60%
+                li  
+                    &.prerequisite-header
+                        margin-bottom: 10px
+                        strong#app-title
+                            width: 50% !important
+                    a
+                        width: 50%
+                        display: inline-block
+
+                    span
+                        display: inline-block
+                        width: 30% !important
+                        
+
+
+        #downloads
+            ul
+                display: inline-block
+                li
+                    display: inline-block
+                    
+                    a
+                        margin-right: 5px
+                        img
+                            width: 30px
+    

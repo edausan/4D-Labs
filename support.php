@@ -8,7 +8,8 @@
     <article class="lab-container">
 
             <?php
-                $breads     =   array(TITLE);
+                $title      =   'support';
+                $breads     =   array($title);
                 include('include/coming-soon.php'); 
             ?>
     

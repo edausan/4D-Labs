@@ -1,0 +1,318 @@
+section.shopping-cart-wrapper
+    font-family: 'Avenir'
+    +clear
+    padding: 50px 0px
+
+    hr 
+        border-color: #eeeeee
+
+
+    header.title-wrapper
+        margin: 20px 0px
+        h1
+            text-transform: uppercase
+            font-size: 25px
+
+            span
+                vertical-align: middle
+                display: inline-block
+
+            a
+                display: inline-block
+                font-size: 14px
+                color: rgba($orange, .5)
+                text-decoration: none
+                vertical-align: middle
+                margin-left: 30px
+                border: 1px solid rgba($orange, .5)
+                +transition
+                +border-radius
+                padding: 10px
+
+                &:hover
+                    border: 1px solid rgba($orange, 1)
+                    color: rgba($orange, 1)
+
+
+
+
+
+
+    section.cart-wrapper
+        display: block 
+        width: 100%
+        +clear
+        article.cart-orders
+            width: 75%
+            float: left
+            border-right: 20px solid white
+
+            form.cart-form
+
+                table.shopping-cart-table
+                    width: 100%
+                    border-right: 10px solid white
+
+                    thead
+                        width: 100%
+                        tr
+                            width: 100%
+                            +clear
+
+                            th.shopcart-header
+                                width: 10%
+                                padding: 15px 0px
+                                background: #eeeeee
+                                color: $footerGrey
+                                text-align: center
+                                font-size: 14px
+
+                                &#items
+                                    width: 69%
+
+                                &#action
+                                    width: 1%
+
+                                &#subtotal-head
+                                    // padding-left: 70px
+
+                    tbody
+                        tr
+                            &:nth-child(2n+1)
+                                background: whitesmoke
+
+                            td
+                                text-align: center
+                                padding: 20px
+                                height: 128px
+                                font-size: 16px
+                                +clear
+
+                                figure.prod-img-container
+                                    width: 25%
+                                    height: 100%
+                                    float: left
+                                    position: relative
+                                    margin: 0
+
+                                    a
+                                        text-decoration: none
+
+                                        img
+                                            width: 100%
+                                            max-width: 87px
+
+                                header.prod-name
+                                    width: 75%
+                                    height: 100%
+                                    float: left
+                                    height: 100%
+                                    position: relative
+                                    text-align: left
+                                    padding-left: 20px
+
+                                    .prod-name-content
+
+                                        a 
+                                            text-decoration: none
+                                            color: #000000
+                                            font-weight: 600
+                                            font-size: 16px
+
+                                            p
+                                                text-transform: capitalize
+                                                margin: 0
+
+                                            &:hover
+                                                color: $orange
+
+                                        details 
+                                            summary 
+                                                cursor: pointer
+                                                font-size: 12px
+
+                                            p
+                                                font-size: 12px
+                                                color: grey
+
+                                p
+
+                                input
+                                    border-style: none 
+                                    text-align: center
+                                    background: none
+
+
+                                &#quantity
+                                    input
+                                        border: 1px solid #eeeeee
+                                        padding: 10px
+                                        display: inline-block
+                                        +transition
+
+                                        &:focus
+                                            border-color: $orange
+
+                                &#subtotal
+
+                                &#remove
+                                    a
+                                        color: #cccccc
+
+                                        &:hover
+                                            color: $orange
+
+                            &.order-total
+                                border-bottom: none
+
+                                td
+                                    font-size: 20px
+
+                                    &#total
+                                        color: $orange
+                                        font-size: 30px
+                                        font-weight: 600
+
+
+
+
+
+        article.cart-summary
+            width: 25%
+            float: left
+            background: $footerGrey
+            color: white
+            padding: 30px
+
+            hr 
+                border-color: lighten($footerGrey, 10%)
+
+            header.cart-summary-header
+                h5
+                    text-transform: uppercase
+                    font-weight: 600
+
+            .totals
+                +clear
+                p, input 
+                    float: left
+                p
+                    width: 75%
+                    margin: 0
+
+                input
+                    width: 25%
+                    color: white 
+                    text-align: right
+                    border-style: none
+                    background: none
+                    
+
+                &.subtotal-wrapper
+                    p
+                    
+                    input
+
+                &.total-wrapper
+                    font-size: 18px
+                    font-weight: 600
+                    p
+                    input 
+                        font-weight: 600
+
+                &.final-total
+                    p
+                        text-align: right
+
+                    input 
+                        text-align: left
+                        padding-left: 10px
+
+            p#vat
+                color: #cccccc
+
+            .coupon-wrapper
+                margin-top: 30px
+                h5 
+                    font-weight: 600
+                    margin: 0
+                p 
+                    color: #cccccc
+
+                .coupon-input
+                    input
+                        +border-radius(0px)
+
+                    button
+                        +border-radius(0px)
+                        background: lighten($footerGrey, 20%)
+                        border-color: lighten($footerGrey, 20%)
+                        color: white
+                        cursor: pointer
+
+                        &:hover
+                            background: lighten($footerGrey, 30%)
+                            border-color: lighten($footerGrey, 30%)
+
+            .checkout-wrapper
+                margin-top: 20px
+                display: block
+                text-align: center
+
+                a#proceed-checkout
+                    width: 100%
+                    display: block
+                    padding: 10px 20px
+                    background: $designer
+                    color: white
+                    cursor: pointer
+                    +transition
+
+                    &:hover
+                        background: darken($designer, 10%)
+
+                a
+                    text-decoration: none
+                    color: #cccccc
+                    margin-top: 10px
+                    display: inline-block
+                    +transition
+
+                    &:hover
+                        color: white
+
+
+    article.frequent-products
+        +clear
+
+        hr 
+            margin-top: 50px
+
+
+        header.also-viewed
+            margin-bottom: 30px
+            h6 
+                // text-transform: uppercase
+
+        section.freq-product
+            width: 10%
+            float: left
+            border-right: 20px solid white
+            a 
+                text-decoration: none
+                color: black
+                figure
+                    width: 100%
+
+                    img 
+                        width: 75%
+                        display: block
+                        margin: 0 auto 
+
+                header 
+                    text-align: center
+                    h5 
+                        font-size: 14px
+                    p
+
+

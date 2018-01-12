@@ -1,0 +1,27 @@
+/* Rating Star Widgets Style */
+.rating-stars 
+    ul 
+        list-style-type: none
+        padding: 0
+        -moz-user-select: none
+        -webkit-user-select: none
+        text-align: left
+
+        li.star 
+            display: inline-block
+            cursor: pointer
+
+            /* Idle State of the stars */
+            & > i.fa 
+                font-size: 14px ///* Change the size of the stars */
+            
+                color: #ccc ///* Color on idle state */
+            
+            /* Hover state of the stars */
+            &.hover > i.fa 
+                color: #FFCC36
+
+
+            /* Selected state of the stars */
+            &.selected > i.fa 
+                color: $orange

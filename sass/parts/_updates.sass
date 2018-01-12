@@ -1,0 +1,92 @@
+section.updates-wrapper
+    width: 100vw
+    height: 100vh
+    background: rgba(black, .8)
+    position: fixed
+    z-index: 1004
+
+    button#close-update
+        position: absolute
+        bottom: 20px
+        left: 50%
+        +transform(translateX(-50%))
+        border-style: none
+        background: white
+        border: 1px solid rgba($orange, .5)
+        color: rgba($orange, .5)
+        padding: 5px 20px
+        margin: 20px auto
+        cursor: pointer
+        +transition
+
+        &:hover
+            color: $orange
+            border-color: $orange
+    
+    article.updates-container
+        padding: 50px
+        position: fixed
+        top: 50%
+        left: 50%
+        +transform
+        background: white
+        +border-radius(5px)
+        box-shadow: 0 8px 32px rgba(black, .2)
+        width: 500px
+        height: auto
+        text-align: center
+        max-height: 80vh
+        overflow-y: auto
+
+        .counter
+            display: none
+
+            &.hide
+                opacity: 0
+
+
+
+
+        h1
+            color: $orange
+            border-bottom: 1px solid $orange
+            text-transform: uppercase
+            margin-bottom: 20px
+
+        .updates
+            text-align: left
+
+            strong
+                text-align: center
+                display: block
+                color: #cccccc
+
+            ul 
+                list-style: disc
+                padding-left: 15px
+                margin-bottom: 20px
+                text-align: left
+                border-bottom: 1px solid #eeeeee
+                padding-bottom: 10px
+
+                strong
+                
+                li
+                    color: grey
+                    a
+                        color: $orange
+
+            &:nth-child(3)
+                ul
+                    li
+
+                        background: whitesmoke
+                        padding: 5px 10px
+                        font-weight: 600
+                        color: black
+
+
+        blockquote
+            color: #cccccc !important
+            margin-bottom: 50px
+            display: block

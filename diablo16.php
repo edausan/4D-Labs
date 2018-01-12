@@ -166,7 +166,8 @@
     <article class="lab-container">
 
             <?php
-                $breads     =   array('products', TITLE);
+                $title      =   'diablo16';
+                $breads     =   array('products', $title);
                 include('product-template.php'); 
             ?>
 

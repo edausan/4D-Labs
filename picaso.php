@@ -9,7 +9,10 @@
     <article class="lab-container">
 
             <?php
-                $breads     =   array('products', TITLE);
+                $title      =   'picaso';
+                $breads     =   array('products', $title);
+                $name       =   'picaso';
+                $type       =   'png';
                 include('include/coming-soon.php'); 
             ?>       
     
