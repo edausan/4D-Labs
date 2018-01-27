@@ -1,9 +1,15 @@
 section.checkout-wrapper
     padding: 50px 0px
+    font-family: 'Avenir'
     +clear
     article.checkout-account
-        width: 50%
+        width: 45%
         float: left
+        padding: 50px 0px 70px
+
+
+        &#login-wrapper
+            padding-left: 65px
 
         header.checkout-account-header
             h3 
@@ -13,14 +19,88 @@ section.checkout-wrapper
         form.checkout-have-account
             width: 75%
 
+
             .checkout-input-wrapper
                 
                 input.checkout-input
                     width: 100%
                     display: block
+                    margin-bottom: 10px
+                    padding: 10px 20px
+                    border-style: none
+                    border: 1px solid #cccccc
+                    box-shadow: none
+                    +border-radius
+                    +transition
+
+                    &:focus
+                        border-color: $paleBlue
+
+                    &[type=email]:invalid
+                        border-color: $diablo
+
+                    &[type=email]:invalid:focus
+                        border-color: $paleBlue
+
+                    &[type=email]:valid
+                        border-color: $designer
+
+                    &[type=email]:valid:focus
+                        border-color: $paleBlue
+
 
             .action-wrapper
+                position: relative
+                +clear
+                padding: 10px 0px
+                
                 a#forgot-pass
+                    float: left
+                    color: grey
+                    text-decoration: none
+                    +transition
+
+                    &:hover
+                        color: $orange
+                
                 button#checkout-signin-btn
+                    float: right
+                    border-style: none
+                    background: $designer
+                    +border-radius
+                    padding: 10px 20px
+                    color: white
+                    cursor: pointer
+                    +transition
+                    
+                    &:hover
+                        background: darken($designer, 5%)
+                        
+                        i 
+                            +transform(translateX(50%))
+
+                    i
+                        display: inline-block
+                        margin-right: 10px
+                        +transform(translateX(0%))
+                        +transition
+
+                    
 
         a#checkout-signup-btn
+            text-decoration: none
+            color: white 
+            background: $picaso
+            padding: 10px 20px
+            cursor: pointer
+            +border-radius
+            +transition
+            
+
+            &:hover
+                background: darken($picaso, 10%)
+
+            i
+                display: inline-block
+                margin-right: 10px
+                +transition

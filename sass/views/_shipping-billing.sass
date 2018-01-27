@@ -1,0 +1,152 @@
+section.shipping-billing-userin-wrapper
+    width: 100%
+    position: relative
+    font-family: Arial, Helvetica, sans-serif
+    padding: 50px 0px
+    overflow-x: hidden
+    +clear
+
+    .shipping-details-container
+        +clear
+
+    form.sb-form
+
+        +clear 
+
+        .sb-input-wrapper
+            +transition
+            +clear 
+
+            &.translate-to-right
+                +transform(translateX(50%))
+
+
+            header 
+                margin-bottom: 30px
+
+        .billing-details-input-wrapper
+            padding: 20px
+            width: 48%
+            background: whitesmoke
+            float: left
+
+
+        .shipping-details-input-wrapper
+            padding: 20px
+            background: whitesmoke
+            width: 48%
+            float: right
+            opacity: 1
+            position: relative
+
+            &.translate-to-right
+                opacity: 0
+
+
+        .sb-input-container
+            width: 100%
+            float: left
+            margin-bottom: 20px
+
+            label
+                display: block
+                font-weight: 600
+                color: $paleBlue
+                cursor: pointer
+
+                span 
+                    color: red
+                    margin-left: 5px
+                    font-weight: 600
+
+            input.sb-input,
+            select 
+                border-style: none
+                display: block
+                width: 100%
+                margin-bottom: 10px
+                padding: 10px
+                border: 1px solid #cccccc
+                position: relative
+                +transition
+
+                &:focus
+                    border-color: $paleBlue
+                    background: whitesmoke
+
+            &.half-wrapper
+                width: 49%
+
+            &#fname-wrapper
+                float: left
+                
+            &#lname-wrapper
+                float: right
+
+            &#phone-wrapper
+                float: left
+
+            &#email-wrapper
+                float: right 
+
+            &#city-wrapper
+                float: left 
+
+            &#state-wrapper
+                float: right 
+
+            &#postal-wrapper
+                float: left 
+                width: 34% 
+
+            &#country-wrapper
+                float: right 
+                width: 64%
+
+
+        textarea
+            border-style: none
+            display: block
+            width: 100%
+            margin-bottom: 10px
+            padding: 10px
+            border: 1px solid #cccccc
+            position: relative
+            +transition
+
+            &:focus
+                border-color: $paleBlue
+
+        .shipping-details-cbox
+            +clear
+            .cbox
+                input
+                label 
+                i
+
+            button#save-details-btn
+                border-style: none
+                padding: 10px 20px 
+                background: $designer
+                color: white 
+                +border-radius
+                float: right 
+                margin-top: 20px
+                text-transform: uppercase
+                font-weight: 600
+                cursor: pointer
+                +transition
+
+                &:hover
+                    background: darken($designer, 10%)
+
+
+    .cbox
+        label 
+            color: black
+
+        i 
+            color: black
+
+        &::before
+            background: rgba($paleBlue, .5)

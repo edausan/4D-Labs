@@ -1,0 +1,169 @@
+article.cart-summary        
+    width: 30%
+    float: left
+
+    section.cart-sum-wrapper
+        color: $footerGrey
+        padding: 20px
+        border: 1px solid $paleBlue
+        box-shadow: 0 3px 10px rgba(black, .3)
+        background: lighten(#E1E3E8, 5%)
+        padding-top: 5px
+
+        .total-container
+            padding: 20px
+            background: white
+            box-shadow: 0 3px 8px rgba(black, .2)
+            +border-radius(2px)
+            margin-top: 10px
+
+        hr 
+            border-color: lighten($footerGrey, 10%)
+
+        header.cart-summary-header
+            h5
+                // text-transform: uppercase
+                margin-bottom: 10px
+                font-weight: 600
+
+        .terms-wrapper
+            margin-top: 10px
+            label
+                color: $paleBlue
+                font-weight: 600
+                margin: 0
+            p 
+                color: $footerGrey
+                margin: 0
+                margin-bottom: 10px
+
+            ul 
+                margin-bottom: 10px
+                list-style-type: disc
+                padding-left: 13px
+            
+
+        .totals
+            +clear
+            p, input 
+                float: left
+            p
+                width: 60%
+                margin: 0
+
+            input
+                width: 40%
+                color: $footerGrey 
+                text-align: right
+                border-style: none
+                background: none
+                
+
+            &.subtotal-wrapper
+                p
+                
+                input
+
+            &.total-wrapper
+                font-size: 18px
+                font-weight: 600
+                p
+                    color: $paleBlue
+                input 
+                    font-weight: 600
+                    color: $paleBlue
+
+            &.final-total
+                p
+                    text-align: right
+
+                input 
+                    text-align: right
+                    padding-left: 10px
+
+        p#vat
+            color: $footerGrey
+            margin: 0px
+            font-weight: 600
+
+        .coupon-wrapper
+            margin-top: 20px
+            h5 
+                font-weight: 600
+                margin: 0
+            p 
+                color: $footerGrey
+
+            .coupon-input
+                input
+                    +border-radius(0px)
+                    
+                    &:focus
+                        box-shadow: none
+                        outline: none
+                        border-color: $paleBlue
+
+                button
+                    +border-radius(0px)
+                    background: $paleBlue
+                    border-color: darken($paleBlue, 10%)
+                    color: white
+                    cursor: pointer
+
+                    &:hover
+                        background: darken($paleBlue, 10%)
+                        border-color: darken($paleBlue, 20%)
+
+        .checkout-wrapper
+            margin-top: 20px
+            display: block
+            text-align: center
+
+            a#proceed-checkout,
+            button#proceed-checkout
+                width: 100%
+                display: block
+                padding: 10px 20px
+                background: $designer
+                color: white
+                cursor: pointer
+                font-size: 18px
+                border-style: none
+                text-transform: uppercase
+                font-weight: 600
+                +transition
+
+                &:hover
+                    background: darken($designer, 10%)
+
+            a
+                text-decoration: none
+                color: #cccccc
+                margin-top: 10px
+                display: inline-block
+                +transition
+
+                &:hover
+                    color: white
+
+    section.continue-shop-wrapper
+        text-align: center
+        padding: 20px 0px
+        width: 100%
+
+        a
+            padding: 10px 20px
+            border: 1px solid $orange
+            color: $orange
+            text-decoration: none
+            display: block
+            text-transform: uppercase
+            +border-radius
+            +transition
+
+            &:hover
+                background: $orange
+                color: white
+
+            i
+                margin-right: 10px

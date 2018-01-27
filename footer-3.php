@@ -123,6 +123,7 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="scripts/navbar.js"></script>
 <script src="scripts/shop.js"></script>
+<script src="scripts/register.js"></script>
 <script src="scripts/product-tabs.js"></script>
 
 </body>

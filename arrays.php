@@ -481,25 +481,65 @@
 
     );
 
+    // $shopSample = array();
+
     $shopSample =   array(
         'goldelox'  =>  array(
             'Goldelox Graphics Processor',
-            '29.00',
-            '2',
-            'The GOLDELOX is a custom embedded graphics controller designed to interface with many popular OLED and LCD display panels.'
-            
+            29.00,
+            20000,
+            'The GOLDELOX is a custom embedded graphics controller designed to interface with many popular OLED and LCD display panels.',
+            '6020',
+            '4DL-GOLDELOX'
         ),
         'workshop4'  =>  array(
             'Workshop4 Pro IDE',
-            '39.00',
-            '5',
-            'Workshop4 delivers a comprehensive interface enriched with features for optimal software development for any user.'
+            39.00,
+            50000,
+            'Workshop4 delivers a comprehensive interface enriched with features for optimal software development for any user.',
+            '3027',
+            '4DL-WS4-PRO'
         ),
         'diablo16'  =>  array(
             'Diablo16 Graphics Processor',
-            '63.50',
-            '3',
-            'Ideal as a standalone embedded graphics processor or interface to any host controller as a graphics co-processor.'
+            63.50,
+            3000000,
+            'Ideal as a standalone embedded graphics processor or interface to any host controller as a graphics co-processor.',
+            '7523',
+            '4DL-DIABLO-16'
+        ),
+    );
+
+    $relatedProducts =   array(
+        'picaso'  =>  array(
+            'Picaso Graphics Processor',
+            'Picaso is a custom embedded 4DGL graphics controller designed to interface with many popular OLED and LCD display panels.',
+            '$92.00',
+        ),
+        'picaso-Lite'  =>  array(
+            'Picaso-Lite Graphics Processor',
+            'The Picaso-Lite is a custom embedded 4DGL graphics controller designed to interface with many popular OLED and LCD display panels.',
+            '$84.50',
+        ),
+        'diablo16'  =>  array(
+            'Diablo16 Graphics Processor',
+            'The Picaso-Lite is a custom embedded 4DGL graphics controller designed to interface with many popular OLED and LCD display panels.',
+            '$89.50',
+        ),
+        'workshop4'  =>  array(
+            'Workshop4 Pro IDE',
+            'Workshop4 delivers a comprehensive interface enriched with features for optimal software development for any user.',
+            '$39.00',
+        ),
+        'goldelox'  =>  array(
+            'Goldelox Graphics Processor',
+            'The GOLDELOX is a custom embedded graphics controller designed to interface with many popular OLED and LCD display panels.',
+            '$29.00',
+        ),
+        'workshop4-2'  =>  array(
+            'Workshop4 Pro IDE',
+            'Workshop4 delivers a comprehensive interface enriched with features for optimal software development for any user.',
+            '$39.00',
         ),
     );
 

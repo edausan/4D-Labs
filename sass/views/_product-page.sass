@@ -513,48 +513,52 @@ article.product-details-wrapper
                     border-color: whitesmoke
 
                     
-                .order-services
-                    margin-top: 40px
-                    +clear
+.order-services
+    margin-top: 40px
+    +clear
 
-                    .services
-                        float: left
-                        width: 50%
-                        padding: 0px 20px
+    .services
+        float: left
+        width: 50%
+        padding: 0px 20px
 
 
-                        .service
-                            border-top: 3px solid $footerGrey
-                            border-bottom: 3px solid $footerGrey
-                            padding: 40px
-                            text-align: center
+        .service
+            border-top: 3px solid $footerGrey
+            border-bottom: 3px solid $footerGrey
+            padding: 40px
+            text-align: center
 
-                            .service-content
-                                vertical-align: middle
-                                display: inline-block
-                                margin-right: 20px
-                                
-                                h3
-                                    color: $paleBlue
-                                p
+            .service-content
+                vertical-align: middle
+                display: inline-block
+                margin-right: 20px
+                
+                h3
+                    color: $paleBlue
+                p
 
-                            img
-                                vertical-align: middle
-                                height: 70px
+            img
+                vertical-align: middle
+                height: 70px
 
-                    .dispatch
-                        padding-left: 0px
-                        .service-content
-                            h3
-                            p
 
-                        img
+            &.last-service
+                margin-top: 40px
+            //     border-top: none
 
-                    .delivery
-                        padding-right: 0px
-                        .service-content
-                            h3
-                            p
+    .dispatch
+        padding-left: 0px
+        .service-content
+            h3
+            p
 
-                        img
-        
+        img
+
+    .delivery
+        padding-right: 0px
+        .service-content
+            h3
+            p
+
+        img

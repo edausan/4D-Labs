@@ -4,18 +4,18 @@
             <a href="shopping-cart.php" class="cart-bread-link">
                 <section class="bread bread-arrow <?php echo $active[0] ?>">
                     <span id="bread-icon">
-                        <i class="b-icon">1</i>
+                        <i class="b-icon b-icon-1"></i>
                     </span>
-                    <span>Items in you Cart</span>
+                    <span>Items in your Cart</span>
                 </section>
             </a>
         </li>
 
         <li class="cart-bread">
-            <a href="checkout.php" class="cart-bread-link">
+            <a href="shippingandbilling.php" class="cart-bread-link">
                 <section class="bread bread-arrow <?php echo $active[1] ?>">
                     <span id="bread-icon">
-                        <i class="b-icon">2</i>
+                        <i class="b-icon b-icon-2"></i>
                     </span>
                     <span>Shipping and Billing</span>
                 </section>
@@ -23,12 +23,12 @@
         </li>
         
         <li class="cart-bread">
-            <a href="payment.php" class="cart-bread-link">
+            <a href="payments.php" class="cart-bread-link">
                 <section class="bread <?php echo $active[2] ?>">
                     <span id="bread-icon">
-                        <i class="b-icon">3</i>
+                        <i class="b-icon b-icon-3"></i>
                     </span>
-                    <span>Payment</span>
+                    <span>Payments</span>
                 </section>
             </a>
         </li>

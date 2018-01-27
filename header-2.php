@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +18,12 @@
     <link rel="stylesheet" href="default-css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
+    <!-- <link rel="stylesheet" href="css/shop-cart-carousel.css"> -->
     <link rel="stylesheet" href="css/dev-style.min.css">
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
 </head>
 <?php include('arrays.php'); ?>
-<?php include('updates.php'); ?>
 <body>
 
     <div class="to-top">
@@ -98,17 +102,17 @@
                             $x++;
                             }
                         ?>
-                        <li><a href="shopping-cart.php"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i><?php echo $x; ?></i></span></a></li>
+                        <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i><?php echo $x; ?></i></span></a></li>
                     </ul>
                 </section>
                 
                 <nav class="navigation-bar">
                     <ul>
-                        <li><a href="products.php">Products</a></li>
-                        <li><a href="solutions.php">Solutions</a></li>
-                        <li><a href="app notes.php">App Notes</a></li>
-                        <li><a href="support.php">Support</a></li>
-                        <li><a href="about.php">About</a></li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="solutions">Solutions</a></li>
+                        <li><a href="app notes">App Notes</a></li>
+                        <li><a href="support">Support</a></li>
+                        <li><a href="about">About</a></li>
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </nav>

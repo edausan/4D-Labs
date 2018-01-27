@@ -182,7 +182,7 @@
                     <section class="lab-row">
                         <ul class="learn-list">
                             <li class="learn learn-product">
-                                <a href="products.php">
+                                <a href="products">
                                     <header>
                                         <label for="">Learn about our</label>
                                         <h1>Products</h1>
@@ -193,7 +193,7 @@
                             </li>
                             
                             <li class="learn learn-software">
-                                <a href="workshop4.php">
+                                <a href="workshop4">
                                     <header>
                                         <label for="">Learn about our</label>
                                         <h1>Software</h1>

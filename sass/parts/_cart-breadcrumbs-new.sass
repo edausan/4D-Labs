@@ -1,0 +1,109 @@
+article.cart-breadcrumbs-new
+    margin-bottom: 50px
+
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        width: 500%
+        
+
+    ul.cart-bread-list-new
+        display: block
+        width: 100%
+        +clear
+        overflow: hidden
+
+        li.cart-bread
+            width: 20% !important
+            float: left
+            text-align: center
+            position: relative
+            +transition
+            font-family: 'Sony Sketch'
+
+            &::before 
+                content: ''
+                position: absolute
+                top: 75px
+                left: 60%
+                background: #cccccc 
+                height: 2px 
+                width: 80%
+
+            &.last-bread
+                &::before
+                    background: transparent !important
+
+
+
+            section.bread
+                padding: 20px
+                color: white
+                text-transform: uppercase
+
+                &.active-cart-bread
+                    p.bread-title
+                        color: $orange
+
+                    p.num-wrapper
+                        background: $orange
+                        color: white
+
+                &.pass-cart-bread
+                    p.bread-title
+                        color: $designer
+
+                    p.num-wrapper
+                        background: $designer
+                        color: white
+                        
+                        &:hover
+                            background: darken($designer, 10%)
+
+                        &::before
+                            display: block 
+
+                        span
+                            display: none
+                        
+
+                
+                p.bread-title
+                    color: $footerGrey
+                    font-size: 16px
+                
+
+                .bread-number-wrapper
+                    a
+                        display: inline-block
+                
+                    p 
+                        margin: 0
+                        width: 30px
+                        height: 30px
+                        display: block
+                        +border-radius(100%)
+                        background: #cccccc 
+                        color: $footerGrey
+                        position: relative
+                        margin: 0 auto
+                        +transition
+
+                        &::before
+                            content: '\2713'
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            +transform
+                            display: none
+                            font-weight: 600
+                        
+
+                        span
+                            position: absolute
+                            left: 50%
+                            top: 50%
+                            +transform
+                            

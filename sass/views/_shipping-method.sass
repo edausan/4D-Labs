@@ -1,0 +1,235 @@
+section.shipping-method-wrapper
+    padding: 50px 0px
+    +clear 
+
+    form#shipping-method-form
+        padding: 0 85px 0px 45px
+
+
+
+    article.shipping-method-details
+        width: 70%
+        float: left
+        +clear 
+
+        hr 
+            margin: 10px 20px 10px 0px !important
+
+        header
+            h3 
+                font-size: 20px
+                color: white
+                padding: 5px 10px
+                background: $paleBlue
+
+
+    section.user-details-container
+        float: left
+        width: 48%
+        background: transparent
+        padding-top: 0px
+        padding-right: 0px
+
+        .payment-user-details-wrapper
+            width: 100%
+            float: none
+
+            .payment-user-info
+
+            
+        section.note-wrapper
+            // margin-left: 10px
+            p
+                margin: 0px
+                margin-left: 10px
+                font-size: 14px
+                color: black
+                padding: 10px 
+                border: 1px solid #eeeeee
+                +border-radius(2px)
+
+                strong
+                    color: $blue
+
+
+        ul.payment-user-details-list
+            padding-left: 10px
+            +clear 
+
+            li 
+                &#phone-num
+                    width: 45%
+                    float: right 
+
+                &#country
+                    width: 53%
+                    float: left
+
+            
+                label 
+                    color: $paleBlue
+                p 
+                    margin-bottom: 5px
+                    padding: 10px 
+                    border: 1px solid #eeeeee
+                    +border-radius(2px)
+
+
+    .shipping-method-container
+        width: 48%
+        float: left
+
+
+
+    section.po-ref-wrapper
+        // float: right
+        // width: 48%
+        padding: 20px
+        padding-top: 0px
+        +clear 
+
+        header
+            h3 
+            
+        input
+
+            display: block 
+            width: 70%
+            border-style: none
+            padding: 10px
+            border: 1px solid #cccccc
+            margin-bottom: 10px
+            +transition
+            margin-left: 10px
+
+            &:focus
+                border-color: $paleBlue
+
+
+
+
+
+    section.shipping-method-wrapper
+        padding: 20px
+        +clear 
+
+        header.shipping-method-header
+            h3 
+                label 
+                
+        label 
+            display: block
+            font-size: 16px
+            font-weight: 600
+            margin-left: 10px
+
+
+        select
+            display: block 
+            width: 70%
+            border-style: none
+            padding: 10px
+            border: 1px solid #cccccc
+            margin-bottom: 10px
+            margin-left: 10px
+            +transition
+
+            &:focus
+                border-color: $paleBlue
+
+            label 
+
+            select 
+                option 
+
+
+
+
+
+
+
+
+    section.acceptance-wrapper
+        padding: 20px
+
+        ul 
+        
+            li 
+                +clear
+                margin-left: 10px
+                margin-bottom: 10px
+                position: relative
+
+                &.checked
+                    &::before
+                        background: $blue
+
+                &::before
+                    content: '\2713'
+                    position: absolute
+                    top: 2px
+                    left: 0
+                    padding: 1px 4px
+                    background: white
+                    font-size: 8px
+                    color: white
+                    border: 1px solid $blue
+                    +border-radius(3px)
+                    +transition
+
+                input
+                    float: left
+                    width: 5%
+                    display: inline-block
+                    vertical-align: middle
+                    margin-right: 5px
+                    margin-top: 4px
+                    opacity: 0
+                    
+
+                label
+                    float: left
+                    width: 90%
+                    display: inline-block
+                    vertical-align: middle
+                    margin: 0
+                    cursor: pointer
+
+                    a 
+                        color: $blue
+
+
+
+
+
+
+    section.tax-exempt-wrapper
+        padding: 20px
+
+        .tax-exempt-checkox
+
+            input#tax-exempt-cbox
+                display: inline-block
+                vertical-align: middle
+                margin-right: 5px
+
+            label 
+                display: inline-block
+                vertical-align: middle
+                margin: 0px
+
+        .tax-exempt-cert
+            label
+
+            .tax-exempt-cert-upload
+                input
+
+                button
+                    &#browse 
+                    &#send
+
+
+            p 
+
+
+

@@ -1,6 +1,21 @@
 <?php
 
     $updates    =   array(
+                'January 19, 2018'   =>  array('creating a new <a href="shopping-cart.php">Shopping Cart</a> breadcrumbs.'),
+                'January 18, 2018'   =>  array('revision of <a href="shippingandbilling.php">Shipping and Billing/a> page.'),
+                'January 17, 2018'   =>  array(
+                                            'revision of <a href="shopping-cart.php">Shopping Cart</a> page.',
+                                            'revision of <a href="register.php">Registration</a> page.',
+                                        ),
+                'January 16, 2018'   =>  array(
+                                            'redesign the <a href="shopping-cart.php">Shopping Cart</a> page.',
+                                            'added Phone Number and Tax ID input in the Shipping and Billing form of <a href="register.php">Registration</a> page.',
+                                            'Remove the Shipping Location selection in the Shipping and Billing Details form',
+                                            'Change the background color of the Registration page',
+                                        ),
+                'January 15, 2018'   =>  array('revision of <a href="register.php">Create an Account</a> page.'),
+                'January 13, 2018'   =>  array('fixing some styles of <a href="shippingandbilling.php">Checkout</a> page.'),
+                'January 12, 2018'   =>  array('added <a href="shippingandbilling.php">Checkout</a> page.'),
                 'January 11, 2018'   =>  array('update the design of <a href="shopping-cart.php">Shopping Cart</a> page.'),
                 'January 9, 2018'   =>  array('update the design of <a href="shopping-cart.php">Shopping Cart</a> page.'),
                 'January 8, 2018'   =>  array(

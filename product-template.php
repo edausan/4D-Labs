@@ -260,7 +260,7 @@
 
                                 <div class="separator"><span>or</span></div>
 
-                                <a href="contact.php" class="request-quote">REQUEST A QUOTE FOR HIGHER QUANTITIES</a>
+                                <a href="contact" class="request-quote">REQUEST A QUOTE FOR HIGHER QUANTITIES</a>
                             </div>
 
                             

@@ -1,4 +1,5 @@
-section.shopping-cart-wrapper
+section.shopping-cart-wrapper,
+section.payments-wrapper
     font-family: 'Avenir'
     +clear
     padding: 50px 0px
@@ -10,7 +11,8 @@ section.shopping-cart-wrapper
     header.title-wrapper
         margin: 20px 0px
         h1
-            text-transform: uppercase
+            text-transform: capitalize
+            font-weight: 600
             font-size: 25px
 
             span
@@ -22,7 +24,7 @@ section.shopping-cart-wrapper
                 font-size: 14px
                 color: rgba($orange, .5)
                 text-decoration: none
-                vertical-align: middle
+                // vertical-align: middle
                 margin-left: 30px
                 border: 1px solid rgba($orange, .5)
                 +transition
@@ -37,63 +39,322 @@ section.shopping-cart-wrapper
 
 
 
+    section.related-products-wrapper
+        margin-top: 40px
+        header
+            h3 
+
+        form.related-products-form
+            ul.related-products-list
+                +clear
+                li.related-product
+                    display: inline-block
+                    border: 1px solid white
+                    padding: 8px
+                    float: left
+                    +transition
+
+                    &:hover
+                        border-color: #cccccc
+                        background: #eeeeee
+
+                        input:disabled
+                            background: #eeeeee
+
+                    a
+                        text-decoration: none
+
+                    figure
+                        width: 120px
+                        position: relative
+                        margin-bottom: 20px
+
+                        img
+                            width: 100%
+
+                    .related-product-details
+                        margin: 5px 0px
+                        span 
+                            display: block
+                            color: $paleBlue
+                            font-weight: 600
+                            
+                            input
+                                width: 200px
+                                border-style: none
+                                user-select: none 
+                                background: transparent
+                                color: $paleBlue
+
+                                &:disabled
+                                    background: transparent
+
+
+                                &#related-product-name
+                                    color: black
+                                    cursor: pointer
+
+                                    &:hover
+                                        color: $paleBlue
+
+                                &#related-product-price
+                                    color: $orange
+                                    font-weight: 600
+
+                    button.add-to-cart
+                        border-style: none
+                        background: $paleBlue
+                        color: white
+                        padding: 5px 10px
+                        +border-radius(2px)
+                        cursor: pointer
+                        +transition                        
+
+                        &:hover
+                            background: darken($paleBlue, 10%)
+                            
+
+
+
 
     section.cart-wrapper
         display: block 
         width: 100%
         +clear
-        article.cart-orders
-            width: 75%
-            float: left
-            border-right: 20px solid white
+        
+
+        article.cart
+            // border-right: 20px solid white
+
+            &.cart-orders
+                width: 100%
+
+            &.related-products-wrapper
+                width: 100%
 
             form.cart-form
+                width: 100%
+                display: block
 
-                table.shopping-cart-table
+                table.cart-table
                     width: 100%
+                    display: block
                     border-right: 10px solid white
 
                     thead
                         width: 100%
+                        border-bottom: 3px solid $paleBlue
+
                         tr
                             width: 100%
                             +clear
 
-                            th.shopcart-header
-                                width: 10%
+                            th
                                 padding: 15px 0px
-                                background: #eeeeee
-                                color: $footerGrey
+                                background: $footerGrey
+                                color: white
                                 text-align: center
-                                font-size: 14px
+                                font-size: 13px
+                                text-transform: uppercase
 
-                                &#items
-                                    width: 69%
+                                &#items 
+                                    text-align: left !important
+                                    padding-left: 16px
+                                
 
-                                &#action
-                                    width: 1%
+                                span
+                                    font-weight: 400 !important
 
-                                &#subtotal-head
-                                    // padding-left: 70px
 
                     tbody
                         tr
-                            &:nth-child(2n+1)
-                                background: whitesmoke
+                            width: 100%
+                            border-bottom: 1px solid #eeeeee
 
                             td
                                 text-align: center
-                                padding: 20px
-                                height: 128px
+                                padding: 20px 15px 
                                 font-size: 16px
+                                position: relative
                                 +clear
 
-                                figure.prod-img-container
-                                    width: 25%
-                                    height: 100%
-                                    float: left
+                                &#product-num
+                                    min-width: 1%
+                                    width: 1%
+
+                                &#image 
+                                    min-width: 10%
+                                    width: 10%
+
+                                &#product-details-wrapper
+                                    min-width: 35%
+                                    width: 35%
+
+                                &#price
+                                    width: 18%
+                                    min-width: 18%
+
+                                &#quantity
+                                    min-width: 18%
+                                    width: 18%
+
+                                &#subtotal
+                                    min-width: 18%
+                                    width: 18%
+                                    
+
+                        
+
+                                &#product-details-wrapper
+                                    font-family: 'Avenir'
+
+                                &#price 
+                                    font-family: Arial, Helvetica, sans-serif
+
+                                &#description
+                                    font-family: Arial, Helvetica, sans-serif
+                                    font-size: 12px
+                                    text-align: left
+                                    position: relative                                    
+
+                                    p
+                                        margin: 0
+                                        position: absolute
+                                        top: 20px
+                                        left: 20px
+                                        color: $grey
+
+                                &#price 
+                                    font-family: Arial, Helvetica, sans-serif
                                     position: relative
-                                    margin: 0
+                                    +clear
+
+                                    &::before
+                                        content: '$'
+                                        position: relative
+                                        border: 1px solid #cccccc
+                                        padding: 10px
+                                        color: $grey
+                                        width: 20%
+                                        float: left
+                                        border-bottom-left-radius: 5px
+                                        border-top-left-radius: 5px
+
+                                    input
+                                        color: $grey
+                                        float: right
+                                        width: 80%
+                                        border-top-left-radius: 0px
+                                        border-bottom-left-radius: 0px
+                                        border-left: none
+
+
+                                &#subtotal
+                                    font-family: Arial, Helvetica, sans-serif
+                                    position: relative
+                                    +clear
+
+                                    &::before
+                                        content: '$'
+                                        position: relative
+                                        border: 1px solid #cccccc
+                                        padding: 10px
+                                        color: $grey
+                                        float: left
+                                        width: 20%
+                                        border-bottom-left-radius: 5px
+                                        border-top-left-radius: 5px
+
+                                    input
+                                        color: $grey
+                                        float: right
+                                        width: 80%
+                                        border-top-left-radius: 0px
+                                        border-bottom-left-radius: 0px
+                                        border-left: none
+
+
+
+                                &#quantity
+                                    font-family: Arial, Helvetica, sans-serif
+                                    +clear
+
+                                    button
+                                        width: 20%
+                                        min-width: 20%
+                                        height: 46px
+                                        border: 1px solid #cccccc
+                                        background: #eeeeee
+                                        cursor: pointer
+
+                                        &:link
+                                            outline: none
+
+                                        &::-moz-focus-inner
+                                            outline: none
+
+                                        &:focus
+                                            outline: none
+
+
+                                        &:hover
+                                            background: $grey
+                                            color: white
+                                        
+                                    
+                                        &#minus 
+                                            float: left 
+                                            order: 1
+                                            +border-radius(5px 0px 0px 5px)
+                                            position: relative
+
+                                            &::before   
+                                                content: '-'
+                                                position: absolute
+                                                top: 50%
+                                                left: 50%
+                                                +transform
+
+
+                                        &#plus
+                                            float: right
+                                            order: 3
+                                            +border-radius(0px 5px 5px 0px)
+                                            position: relative
+
+                                            &::before   
+                                                content: '+'
+                                                position: absolute
+                                                top: 50%
+                                                left: 50%
+                                                +transform
+
+                                    
+
+                                    input
+                                        width: 60%
+                                        min-width: 60%
+                                        float: left
+                                        order: 2
+                                        border-left: none
+                                        border-right: none
+                                        +border-radius(0px)
+                                        text-align: center
+                                    
+
+                                &#remove 
+                                    width: 1%
+
+                                
+
+                                figure.prod-img-container
+                                    width: 80%
+                                    position: absolute
+                                    top: 50%
+                                    left: 50%
+                                    +transform
+                                    margin: 0 auto
+                                    display: block
 
                                     a
                                         text-decoration: none
@@ -103,30 +364,40 @@ section.shopping-cart-wrapper
                                             max-width: 87px
 
                                 header.prod-name
-                                    width: 75%
-                                    height: 100%
-                                    float: left
-                                    height: 100%
-                                    position: relative
+                                    width: 95%
                                     text-align: left
-                                    padding-left: 20px
 
                                     .prod-name-content
 
                                         a 
                                             text-decoration: none
-                                            color: #000000
-                                            font-weight: 600
+                                            color: black
                                             font-size: 16px
+                                            display: inline-block
+                                            
 
                                             p
                                                 text-transform: capitalize
                                                 margin: 0
+                                                line-height: 20px
+                                                display: inline-block
+                                                font-weight: 400
+                                                font-family: 'Open Sans'
 
                                             &:hover
                                                 color: $orange
 
+
+                                        label 
+                                            display: block
+                                            color: $grey
+                                            font-size: 14px
+
+
                                         details 
+                                            display: block
+                                            margin-top: 5px
+
                                             summary 
                                                 cursor: pointer
                                                 font-size: 12px
@@ -134,26 +405,27 @@ section.shopping-cart-wrapper
                                             p
                                                 font-size: 12px
                                                 color: grey
+                                                margin: 0
+                                                
+
+                                        details[open] summary ~ p
+                                            animation: sweep 300ms ease-in-out
+
+                                                
 
                                 p
 
                                 input
                                     border-style: none 
                                     text-align: center
+                                    color: $grey
                                     background: none
+                                    border: 1px solid #cccccc
+                                    padding: 10px
+                                    +border-radius
 
-
-                                &#quantity
-                                    input
-                                        border: 1px solid #eeeeee
-                                        padding: 10px
-                                        display: inline-block
-                                        +transition
-
-                                        &:focus
-                                            border-color: $orange
-
-                                &#subtotal
+                                    &:disabled
+                                        color: red
 
                                 &#remove
                                     a
@@ -174,145 +446,109 @@ section.shopping-cart-wrapper
                                         font-weight: 600
 
 
+.order-services
+    margin-top: 100px
 
 
+article.total-wrapper
+    padding: 10px
+    background: #eeeeee
+    text-align: right
+    padding-right: 93px
 
-        article.cart-summary
-            width: 25%
-            float: left
-            background: $footerGrey
-            color: white
-            padding: 30px
+    label
+        margin: 0
+        font-weight: 600
+        text-transform: uppercase
+        font-size: 18px
 
-            hr 
-                border-color: lighten($footerGrey, 10%)
+    input 
+        font-weight: 400
+        border-style: none
+        width: 150px
+        background: transparent
+        font-size: 18px
+        text-align: right
+        padding-right: 10px
+        font-family: Arial, Helvetica, sans-serif
 
-            header.cart-summary-header
-                h5
-                    text-transform: uppercase
-                    font-weight: 600
+        &:disabled
+            color: black
+            
 
-            .totals
-                +clear
-                p, input 
-                    float: left
-                p
-                    width: 75%
-                    margin: 0
+article.voucher-total-wrapper
+    padding: 20px 0px
+    +clear
 
-                input
-                    width: 25%
-                    color: white 
-                    text-align: right
-                    border-style: none
-                    background: none
-                    
+    section.voucher-total
+        float: left
 
-                &.subtotal-wrapper
-                    p
-                    
-                    input
+    section.voucher-container
+        width: 80%
 
-                &.total-wrapper
-                    font-size: 18px
-                    font-weight: 600
-                    p
-                    input 
-                        font-weight: 600
+        label
+            font-size: 18px
+            font-weight: 600
+            
 
-                &.final-total
-                    p
-                        text-align: right
+        .voucher-input
+            max-height: 41px
+            height: 41px
 
-                    input 
-                        text-align: left
-                        padding-left: 10px
-
-            p#vat
-                color: #cccccc
-
-            .coupon-wrapper
-                margin-top: 30px
-                h5 
-                    font-weight: 600
-                    margin: 0
-                p 
-                    color: #cccccc
-
-                .coupon-input
-                    input
-                        +border-radius(0px)
-
-                    button
-                        +border-radius(0px)
-                        background: lighten($footerGrey, 20%)
-                        border-color: lighten($footerGrey, 20%)
-                        color: white
-                        cursor: pointer
-
-                        &:hover
-                            background: lighten($footerGrey, 30%)
-                            border-color: lighten($footerGrey, 30%)
-
-            .checkout-wrapper
-                margin-top: 20px
-                display: block
+            input#voucher-input
+                height: 100%
+                padding: 10px
+                width: 20%
+                border-style: none
+                border: 1px solid #cccccc
+                +transition
+                +border-radius(2px)
                 text-align: center
+                text-transform: uppercase
 
-                a#proceed-checkout
-                    width: 100%
-                    display: block
-                    padding: 10px 20px
-                    background: $designer
-                    color: white
-                    cursor: pointer
-                    +transition
+                &:focus
+                    border: 1px solid $orange
 
-                    &:hover
-                        background: darken($designer, 10%)
+            button#voucher-btn
+                height: 100%
+                border-style: none
+                background: $orange
+                padding: 10px 15px
+                color: white
+                border: 1px solid $orange
+                cursor: pointer
+                +border-radius(2px)
+                +transition
+                text-transform: uppercase
+                font-weight: 600
 
-                a
-                    text-decoration: none
-                    color: #cccccc
-                    margin-top: 10px
-                    display: inline-block
-                    +transition
+                &:hover
+                    background: darken($orange, 10%)
 
-                    &:hover
-                        color: white
+    section.proceed
+        width: 20%
+        position: relative
 
+        a#proceed-btn
+            padding: 10px 20px
+            background: $designer
+            color: white
+            text-decoration: none
+            display: block
+            text-align: center
+            +border-radius(2px)
+            text-transform: uppercase
+            font-weight: 600
 
-    article.frequent-products
-        +clear
-
-        hr 
-            margin-top: 50px
-
-
-        header.also-viewed
-            margin-bottom: 30px
-            h6 
-                // text-transform: uppercase
-
-        section.freq-product
-            width: 10%
-            float: left
-            border-right: 20px solid white
-            a 
-                text-decoration: none
-                color: black
-                figure
-                    width: 100%
-
-                    img 
-                        width: 75%
-                        display: block
-                        margin: 0 auto 
-
-                header 
-                    text-align: center
-                    h5 
-                        font-size: 14px
-                    p
+            &:hover
+                background: darken($designer, 10%)
 
 
+
+@keyframes sweep
+    0%
+        opacity: 0 
+        margin-left: -10px
+    100%  
+        opacity: 1
+        margin-left: 0px

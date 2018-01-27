@@ -74,6 +74,33 @@ article.cart-breadcrumbs
                             &::after
                                 border-left: 30px solid $paleBlue !important
 
+
+                    &.pass-cart-bread
+                        background: $designer
+                        color: white
+
+                        &::after
+                            border-left: 30px solid $designer
+
+                        span#bread-icon
+                            color: $designer
+                            border-color: white !important
+
+                            i.b-icon
+                                &.b-icon-1::before
+                                    content: '\2713' !important
+
+                                &.b-icon-2::before
+                                    content: '\2713' !important
+
+                                &.b-icon-3::before
+                                    content: '\2713' !important
+
+                        &:hover
+                            &::after
+                                border-left: 30px solid $designer !important
+
+
                     span
                         vertical-align: middle
                         display: inline-block
@@ -98,3 +125,14 @@ article.cart-breadcrumbs
                                 font-size: 14px
                                 +transform
                                 font-style: normal
+
+                                &.b-icon-1::before
+                                    content: '1'
+
+                                &.b-icon-2::before
+                                    content: '2'
+
+                                &.b-icon-3::before
+                                    content: '3'
+
+

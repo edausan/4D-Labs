@@ -72,7 +72,7 @@
                 
             
                     <figure class="cat-product-img-wrapper">
-                        <a href="<?php echo $key; ?>.php">
+                        <a href="<?php echo $key; ?>">
                             <img src="img/<?php echo $key; ?>.<?php echo $value['file-type']; ?>" alt="<?php echo $key; ?>">
                         </a>
                     </figure>
@@ -84,15 +84,15 @@
                     <?php
                         if ($value['type'] == 'Embedded Graphics Controller') { ?>
                         
-                            <h4 class="cat-product-title"><a href="<?php echo $key; ?>.php"><?php echo $key; ?> Graphics Processor</a></h4>
+                            <h4 class="cat-product-title"><a href="<?php echo $key; ?>"><?php echo $key; ?> Graphics Processor</a></h4>
 
                         <?php } elseif($value['type'] == 'Integrated Development Environment') { ?>
 
-                            <h4 class="cat-product-title"><a href="<?php echo $key; ?>.php"><?php echo $key; ?> PRO IDE</a></h4>
+                            <h4 class="cat-product-title"><a href="<?php echo $key; ?>"><?php echo $key; ?> PRO IDE</a></h4>
 
                         <?php } else { ?>
 
-                            <h4 class="cat-product-title"><a href="<?php echo $key; ?>.php"><?php echo $key; ?></a></h4>
+                            <h4 class="cat-product-title"><a href="<?php echo $key; ?>"><?php echo $key; ?></a></h4>
 
                         <?php } ?>
                     
