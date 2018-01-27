@@ -5,10 +5,11 @@
 
 
 <section class="lab-container">
+
     <article class="lab-row">
     
-        
         <section class="payments-wrapper"> <!-- Payment Wrapper -->
+
             <?php 
                 $active =   array('pass-cart-bread', 'pass-cart-bread','pass-cart-bread', 'active-cart-bread', ' ');
                 $atvlink =   array('href="shopping-cart"', 'href="shippingandbilling"', 'href="shipping-method"', ' ', ' ');
@@ -26,7 +27,7 @@
                             <div class="payment-user-details-wrapper"> <!-- User Details Wrapper -->
 
                                 <header class="payment-user-details-header">
-                                    <h3>Ships to</h3>
+                                    <h3>Ships to:</h3>
                                 </header>
 
                                 <!-- User Details foreach loop -->
@@ -40,34 +41,34 @@
                                     if (!empty($email)) {
                                         
                                         $user   =   array(
-                                            'fname'  => $_SESSION['fname'],
-                                            'lname'  => $_SESSION['lname'],
-                                            'phone'  => $_SESSION['billing-phone'],
-                                            'add1'   =>  $_SESSION['billing-add1'],
-                                            'add2'   =>  $_SESSION['billing-add2'],
-                                            'state'   =>  $_SESSION['billing-state'],
-                                            'city'   =>  $_SESSION['billing-city'],
-                                            'country'   =>  $_SESSION['billing-country'],
-                                            'postal'   =>  $_SESSION['billing-postal'],
+                                            'fname'             => $_SESSION['fname'],
+                                            'lname'             => $_SESSION['lname'],
+                                            'phone'             => $_SESSION['billing-phone'],
+                                            'add1'              =>  $_SESSION['billing-add1'],
+                                            'add2'              =>  $_SESSION['billing-add2'],
+                                            'state'             =>  $_SESSION['billing-state'],
+                                            'city'              =>  $_SESSION['billing-city'],
+                                            'country'           =>  $_SESSION['billing-country'],
+                                            'postal'            =>  $_SESSION['billing-postal'],
                                             'shipping-method'   => $_SESSION['shipping-method'],
-                                            'po-ref-num'   => $_SESSION['po-ref-num'],
+                                            'po-ref-num'        => $_SESSION['po-ref-num'],
+                                            'company'           => $_SESSION['company'],
 
                                         );
                                 ?>
-                                
                                 
                                 <div class="payment-user-info"> <!-- Payment User info -->
                                     
                                     <ul class="user-details-list"> <!-- User Details List -->
 
                                         <li>
-                                            <label for="">Full Name: </label>
-                                            <p for=""><?php echo $user['fname']; ?> <?php echo $user['lname']; ?></p>
+                                            <label for="">Company: </label>
+                                            <p for=""><?php echo $user['company']; ?></p>
                                         </li>
 
                                         <li>
-                                            <label for="">Phone Number: </label>
-                                            <p for=""><?php echo $user['phone']; ?></p>
+                                            <label for="">Full Name: </label>
+                                            <p for=""><?php echo $user['fname']; ?> <?php echo $user['lname']; ?></p>
                                         </li>
 
                                         <li>
@@ -79,7 +80,12 @@
                                             <p><?php echo $user['city']; ?> <?php echo $user['state']; ?> <?php echo $user['postal']; ?></p>
                                         </li>
 
-                                        <li>
+                                        <li id="phone-num">
+                                            <label for="">Phone Number: </label>
+                                            <p for=""><?php echo $user['phone']; ?></p>
+                                        </li>
+
+                                        <li id="country">
                                             <label for="">Country: </label>
                                             <p id="billing-country-payment-detail">
                                                 <?php 
@@ -105,14 +111,14 @@
 
                             <div class="shipping-method-wrapper"> <!-- Shipping Method Wrapper -->
                                 
-                                <ul class="user-details-list"> <!-- User Details List -->
+                                <ul class="payment-user-details-list"> <!-- User Details List -->
                                     
                                     <li class="shipping-method-item"> <!-- Purchase Order Number -->
                                         <header class="payment-user-details-header">
                                             <h3>Purchase Order Number</h3>
                                         </header>
                                         
-                                        <label><?php echo $user['po-ref-num']; ?></label>
+                                        <p><?php echo $user['po-ref-num']; ?></p>
                                     </li> <!-- /Purchase Order Number -->
 
                                     
@@ -121,7 +127,7 @@
                                             <h3>Shipping Method</h3>
                                         </header>
                                         
-                                        <label><?php echo $user['shipping-method']; ?></label>
+                                        <p><?php echo $user['shipping-method']; ?></p>
                                     </li> <!-- /Shipping Method -->
 
                                 </ul> <!-- User Details List -->
@@ -129,20 +135,19 @@
                             </div> <!-- Shipping Method Wrapper -->
                             
                         </section>
-
-                        <hr>
-
                         
                         <div class="payment-method-wrapper"> <!-- Payment Method -->
                             <header class="payment-method-header">
                                 <h3><label for="select-payment-method">Payment Method</label></h3>
                             </header>
 
-                            <select name="" class="select-payment-method">
+                            <!-- <select name="" class="select-payment-method">
                                 <option value="-" disabled selected>Select your Payment Method</option>
                                 <option value="credit-card">Credit Card</option>
                                 <option value="paypal">Check / Money Order</option>
-                            </select>
+                            </select> -->
+
+                            <?php include('include/payment-method.php'); ?>
                         </div> <!-- Payment Method -->
                         
 
@@ -160,8 +165,8 @@
         </section> <!-- /Payment Wrapper -->
 
     </article>
-</section>
 
+</section>
 
 
 

@@ -33,8 +33,12 @@
                                 <?php 
                                     $email = $_SESSION['email'];
                                     
+                                    
                                     if (!empty($email)) {
                                         $_SESSION['note']   =   $_POST['notes'];
+                                        if (empty($_POST['notes'])) {
+                                            $_SESSION['note']   =   '';
+                                        }                                        
                                         
                                         $user   =   array(
                                             'fname'  => $_SESSION['fname'],

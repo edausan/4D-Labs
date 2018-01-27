@@ -5,14 +5,16 @@ section.shipping-method-wrapper
 
     section.cart-wrapper
         +clear
+        padding: 0 85px 0px 65px
 
         form#payment-method-form
-            +clear
-            padding: 0 85px 0px 45px
-
-        article.user-details
             width: 70%
             float: left
+            +clear
+            
+
+        article.user-details
+            
             +clear
 
             header 
@@ -22,80 +24,165 @@ section.shipping-method-wrapper
                     padding: 5px 10px
                     background: $paleBlue
 
-
-
             hr 
                 border-color: #cccccc
                 margin: 30px 20px 30px 0px
 
-            .payment-method-wrapper
-                width: 100%
-                float: none
-
-                header.payment-method-header
-                    h3 
-                        label 
-
-                select.select-payment-method
-                    background: none
-                    border-style: none
-                    border: 1px solid #cccccc
-                    box-shadow: none
-                    outline: none
-                    color: black
-                    padding: 10px
-                    position: relative
-                    z-index: 1001
-                    +transition
 
 section.user-details-container
-    padding: 20px
     margin-right: 20px
-    background: whitesmoke
     +clear
 
-    
+    // user Details
     .payment-user-details-wrapper
-        width: 50%
+        width: 48%
         float: left
+        margin-right: 20px
 
         header.payment-user-details-header
             h3 
 
         .payment-user-info
-            ul.payment-user-details-list
 
-                li 
+            ul
+                padding-left: 10px
+                +clear 
+
+                li
+
+                    &#phone-num
+                        width: 45%
+                        float: right 
+
+                    &#country
+                        width: 53%
+                        float: left
+
+                        select 
+                            padding: 0px
+                            border-style: none
+                            background: none
+                            width: 100%
+                            -webkit-appearance: none
+                            -moz-appearance: none
+                            text-indent: 1px
+                            text-overflow: ''
+
+                            &:disabled
+                                color: black
+
+                
+                    label 
+                        color: $paleBlue
                     p 
-                        font-weight: 600
-                        font-size: 16px
+                        margin-bottom: 5px
+                        padding: 10px 
+                        border: 1px solid #eeeeee
+                        +border-radius(2px)
 
-                        &#billing-country-payment-detail
-                            select
-                                border-style: none
-                                -webkit-appearance: none;
-                                -moz-appearance: none;
-                                text-overflow: '';
-                                padding: 0px
-                                font-size: 16px
-                                margin-left: -5px
+                    &#billing-country-payment-detail
+                        select
+                            border-style: none
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            text-overflow: '';
+                            padding: 0px
+                            font-size: 16px
+                            margin-left: -5px
 
-                                &:disabled
-                                    background: transparent 
-                                    color: black
-                                    font-weight: 600
+                            &:disabled
+                                background: transparent 
+                                color: black
+                                font-weight: 600
 
+
+    // Shipping Methods
     .shipping-method-wrapper
-        width: 50%
+        width: 48%
         float: left
 
-        ul 
+        ul.payment-user-details-list
 
             li.shipping-method-item
-                margin-bottom: 10px
+                padding: 20px
+                padding-top: 0px
+
+                p 
+                    margin-bottom: 5px
+                    padding: 10px 
+                    border: 1px solid #eeeeee
+                    +border-radius(2px)
+
+
                 h5 
                     color: $paleBlue
 
                 label 
                     
                     
+.payment-method-wrapper
+    margin-top: 20px
+    width: 94%
+    float: left
+
+    header.payment-method-header
+        h3 
+            label 
+                margin: 0
+
+    select.select-payment-method
+        background: none
+        border-style: none
+        border: 1px solid #cccccc
+        box-shadow: none
+        outline: none
+        color: black
+        padding: 10px
+        position: relative
+        z-index: 1001
+        +transition
+
+
+
+
+
+
+
+// Credit Card
+section.credit-card-payment-wrapper
+    header.credit-header
+        h3 
+        p 
+
+    figure.credit-card-logo-wrapper
+        ul 
+            li 
+                img 
+
+
+    form.credit-card-form
+    select, input
+        position: relative
+        padding: 10px
+        float: left
+        border-style: none
+        +border-radius(2px)
+        border: 1px solid #cccccc
+
+        input 
+        
+
+
+
+        option 
+            position: relative
+            display: block
+
+            &::before
+                content: 'he'
+                display: inline-block
+                position: absolute
+                top: 0
+                left: 0
+                font-size: 14px
+                color: red

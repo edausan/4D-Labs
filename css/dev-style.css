@@ -4828,23 +4828,23 @@ section.shipping-method-wrapper {
     content: '';
     display: table;
     clear: both; }
-  section.payments-wrapper section.cart-wrapper::after,
-  section.shipping-method-wrapper section.cart-wrapper::after {
-    content: '';
-    display: table;
-    clear: both; }
-  section.payments-wrapper section.cart-wrapper form#payment-method-form,
-  section.shipping-method-wrapper section.cart-wrapper form#payment-method-form {
-    padding: 0 85px 0px 45px; }
-    section.payments-wrapper section.cart-wrapper form#payment-method-form::after,
-    section.shipping-method-wrapper section.cart-wrapper form#payment-method-form::after {
+  section.payments-wrapper section.cart-wrapper,
+  section.shipping-method-wrapper section.cart-wrapper {
+    padding: 0 85px 0px 65px; }
+    section.payments-wrapper section.cart-wrapper::after,
+    section.shipping-method-wrapper section.cart-wrapper::after {
       content: '';
       display: table;
       clear: both; }
-  section.payments-wrapper section.cart-wrapper article.user-details,
-  section.shipping-method-wrapper section.cart-wrapper article.user-details {
-    width: 70%;
-    float: left; }
+    section.payments-wrapper section.cart-wrapper form#payment-method-form,
+    section.shipping-method-wrapper section.cart-wrapper form#payment-method-form {
+      width: 70%;
+      float: left; }
+      section.payments-wrapper section.cart-wrapper form#payment-method-form::after,
+      section.shipping-method-wrapper section.cart-wrapper form#payment-method-form::after {
+        content: '';
+        display: table;
+        clear: both; }
     section.payments-wrapper section.cart-wrapper article.user-details::after,
     section.shipping-method-wrapper section.cart-wrapper article.user-details::after {
       content: '';
@@ -4860,42 +4860,52 @@ section.shipping-method-wrapper {
     section.shipping-method-wrapper section.cart-wrapper article.user-details hr {
       border-color: #cccccc;
       margin: 30px 20px 30px 0px; }
-    section.payments-wrapper section.cart-wrapper article.user-details .payment-method-wrapper,
-    section.shipping-method-wrapper section.cart-wrapper article.user-details .payment-method-wrapper {
-      width: 100%;
-      float: none; }
-      section.payments-wrapper section.cart-wrapper article.user-details .payment-method-wrapper select.select-payment-method,
-      section.shipping-method-wrapper section.cart-wrapper article.user-details .payment-method-wrapper select.select-payment-method {
-        background: none;
-        border-style: none;
-        border: 1px solid #cccccc;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        outline: none;
-        color: black;
-        padding: 10px;
-        position: relative;
-        z-index: 1001;
-        -webkit-transition: 250ms ease;
-        -moz-transition: 250ms ease;
-        -o-transition: 250ms ease;
-        transition: 250ms ease; }
 
 section.user-details-container {
-  padding: 20px;
-  margin-right: 20px;
-  background: whitesmoke; }
+  margin-right: 20px; }
   section.user-details-container::after {
     content: '';
     display: table;
     clear: both; }
   section.user-details-container .payment-user-details-wrapper {
-    width: 50%;
-    float: left; }
-    section.user-details-container .payment-user-details-wrapper .payment-user-info ul.payment-user-details-list li p {
-      font-weight: 600;
-      font-size: 16px; }
-      section.user-details-container .payment-user-details-wrapper .payment-user-info ul.payment-user-details-list li p#billing-country-payment-detail select {
+    width: 48%;
+    float: left;
+    margin-right: 20px; }
+    section.user-details-container .payment-user-details-wrapper .payment-user-info ul {
+      padding-left: 10px; }
+      section.user-details-container .payment-user-details-wrapper .payment-user-info ul::after {
+        content: '';
+        display: table;
+        clear: both; }
+      section.user-details-container .payment-user-details-wrapper .payment-user-info ul li#phone-num {
+        width: 45%;
+        float: right; }
+      section.user-details-container .payment-user-details-wrapper .payment-user-info ul li#country {
+        width: 53%;
+        float: left; }
+        section.user-details-container .payment-user-details-wrapper .payment-user-info ul li#country select {
+          padding: 0px;
+          border-style: none;
+          background: none;
+          width: 100%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          text-indent: 1px;
+          -o-text-overflow: '';
+          text-overflow: ''; }
+          section.user-details-container .payment-user-details-wrapper .payment-user-info ul li#country select:disabled {
+            color: black; }
+      section.user-details-container .payment-user-details-wrapper .payment-user-info ul li label {
+        color: #327B83; }
+      section.user-details-container .payment-user-details-wrapper .payment-user-info ul li p {
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 1px solid #eeeeee;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px; }
+      section.user-details-container .payment-user-details-wrapper .payment-user-info ul li#billing-country-payment-detail select {
         border-style: none;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -4904,17 +4914,70 @@ section.user-details-container {
         padding: 0px;
         font-size: 16px;
         margin-left: -5px; }
-        section.user-details-container .payment-user-details-wrapper .payment-user-info ul.payment-user-details-list li p#billing-country-payment-detail select:disabled {
+        section.user-details-container .payment-user-details-wrapper .payment-user-info ul li#billing-country-payment-detail select:disabled {
           background: transparent;
           color: black;
           font-weight: 600; }
   section.user-details-container .shipping-method-wrapper {
-    width: 50%;
+    width: 48%;
     float: left; }
-    section.user-details-container .shipping-method-wrapper ul li.shipping-method-item {
-      margin-bottom: 10px; }
-      section.user-details-container .shipping-method-wrapper ul li.shipping-method-item h5 {
+    section.user-details-container .shipping-method-wrapper ul.payment-user-details-list li.shipping-method-item {
+      padding: 20px;
+      padding-top: 0px; }
+      section.user-details-container .shipping-method-wrapper ul.payment-user-details-list li.shipping-method-item p {
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 1px solid #eeeeee;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px; }
+      section.user-details-container .shipping-method-wrapper ul.payment-user-details-list li.shipping-method-item h5 {
         color: #327B83; }
+
+.payment-method-wrapper {
+  margin-top: 20px;
+  width: 94%;
+  float: left; }
+  .payment-method-wrapper header.payment-method-header h3 label {
+    margin: 0; }
+  .payment-method-wrapper select.select-payment-method {
+    background: none;
+    border-style: none;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    color: black;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease; }
+
+section.credit-card-payment-wrapper select, section.credit-card-payment-wrapper input {
+  position: relative;
+  padding: 10px;
+  float: left;
+  border-style: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #cccccc; }
+  section.credit-card-payment-wrapper select option, section.credit-card-payment-wrapper input option {
+    position: relative;
+    display: block; }
+    section.credit-card-payment-wrapper select option::before, section.credit-card-payment-wrapper input option::before {
+      content: 'he';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      color: red; }
 
 section.shipping-billing-userin-wrapper {
   width: 100%;
@@ -5067,7 +5130,7 @@ section.shipping-method-wrapper {
     display: table;
     clear: both; }
   section.shipping-method-wrapper form#shipping-method-form {
-    padding: 0 85px 0px 45px; }
+    padding: 0 85px 0px 65px; }
   section.shipping-method-wrapper article.shipping-method-details {
     width: 70%;
     float: left; }
@@ -5116,6 +5179,18 @@ section.shipping-method-wrapper {
       section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li#country {
         width: 53%;
         float: left; }
+        section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li#country select {
+          padding: 0px;
+          border-style: none;
+          background: none;
+          width: 100%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          text-indent: 1px;
+          -o-text-overflow: '';
+          text-overflow: ''; }
+          section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li#country select:disabled {
+            color: black; }
       section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li label {
         color: #327B83; }
       section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li p {
