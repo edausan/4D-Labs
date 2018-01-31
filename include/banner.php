@@ -8,6 +8,7 @@
 
 
         <!-- Slide One - Set the background image for this slide in the line below -->
+
         <div class="carousel-item active" style="background-image: url('img/banner1.jpg')">
             <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
@@ -15,7 +16,19 @@
             </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url('img/banner2.jpg')">
+        <?php 
+            for ($i=2; $i < 6; $i++) {
+        ?>
+        <div class="carousel-item" style="background-image: url('img/banner<?php echo $i; ?>.jpg')">
+            <div class="carousel-content">
+                <h3>4D LABS SEMICONDUCTORS</h3>
+                <p>Big Solutions in Small Packages</p>
+            </div>
+        </div>
+
+        <?php } ?>
+
+        <!-- <div class="carousel-item" style="background-image: url('img/banner2.jpg')">
             <div class="carousel-content">
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
@@ -27,8 +40,11 @@
                 <h3>4D LABS SEMICONDUCTORS</h3>
                 <p>Big Solutions in Small Packages</p>
             </div>
-        </div>
+        </div> -->
+        
     </div>
+
+    
 
 
 

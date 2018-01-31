@@ -96,7 +96,7 @@
                                             <p for=""><?php echo $user['phone']; ?></p>
                                         </li>
 
-                                        <li id="">
+                                        <li id="notes">
                                             <label for="">Notes: </label>
                                             <p for=""><?php echo $user['note']; ?></p>
                                         </li>
@@ -147,12 +147,12 @@
 
                                 <ul>
                                     <li class="shipping-preference-item">
-                                        <input type="checkbox" class="" name="ship-preference" id="terms-conditions" value="I accept 4D Labs' Terms and Conditions of Sale." >
+                                        <input type="checkbox" class="" name="ship-preference" id="terms-conditions" value="I accept 4D Labs' Terms and Conditions of Sale." required>
                                         <label for="terms-conditions">I accept 4D Labs' <a href="terms-and-conditions">Terms and Conditions</a> of Sale.</label>
                                     </li>
 
                                     <li class="shipping-preference-item">
-                                        <input type="checkbox" class="" name="ship-preference" id="duties" value="I accept payment and responsibility for all Duties and Import Taxes.">
+                                        <input type="checkbox" class="" name="ship-preference" id="duties" value="I accept payment and responsibility for all Duties and Import Taxes." required>
                                         <label for="duties">I accept payment and responsibility for all Duties and Import Taxes.</label>
                                     </li>
                                 </ul>

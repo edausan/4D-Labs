@@ -1,0 +1,215 @@
+section.support-wrapper
+    padding: 50px 0px
+    font-family: 'Avenir'
+
+    h4 
+        color: $paleBlue
+        border-bottom: 1px solid $paleBlue
+        padding-bottom: 10px
+        margin-top: 50px
+        font-weight: 600
+        text-transform: uppercase
+        margin-bottom: 40px
+
+
+    .ticket-details
+        width: 49%
+        float: left
+        margin-bottom: 20px
+
+        &.f-right
+            float: right
+
+        label 
+            color: black
+            font-size: 24px
+            font-weight: 600
+
+            span
+                color: #A5003A
+                
+            i 
+                margin-right: 5px
+                display: none
+
+    .ticket-input
+        border-style: none
+        border: 1px solid #aaaaaa
+        +border-radius
+        padding: 5px 10px
+        +transition
+        width: 100%
+        color: #666666
+        font-size: 18px
+        box-shadow: inset 0px 1px 1px transparent, inset 0px -1px 1px transparent, inset 1px 0px 1px transparent, inset -1px 0px 1px transparent
+
+        
+        &:focus
+            box-shadow: inset 0px 1px 1px $paleBlue, inset 0px -1px 1px $paleBlue, inset 1px 0px 1px $paleBlue, inset -1px 0px 1px $paleBlue
+            border-color: $paleBlue
+            color: $paleBlue
+        
+
+    .existing-ticket-wrapper
+        margin-bottom: 30px
+
+        h4 
+            color: $paleBlue
+            border-bottom: 1px solid $paleBlue
+            padding-bottom: 10px
+            text-transform: initial
+
+        .ticket-input-wrapper
+            +clear
+
+            span 
+                width 1%
+                float: left
+
+                i 
+
+            input#ticket-input
+                width: 98%
+                float: right
+                padding: 5px 10px
+
+        button#search-ticket-btn
+            border-style: none
+            padding: 5px
+            width: 25%
+            background: $paleBlue
+            color: white 
+            margin: 10px auto
+            display: block
+            +border-radius(2px)
+
+
+    .new-ticket-wrapper
+        +clear
+
+        input
+            width: 100%
+
+        select 
+
+
+    .inquiry-wrapper
+        margin-bottom: 40px
+        +clear
+
+        h4 
+
+        textarea
+            width: 100%
+
+        .ticket-details
+            width: 100%
+            
+
+            label 
+                color: black
+                font-size: 24px
+                font-weight: 600
+                display: block
+
+            input
+                width: 100%
+
+            select 
+                
+                // margin-bottom: 20px
+
+
+    .attachment-wrapper
+
+        h4 
+
+        .ticket-note-wrapper
+            border-left: 5px solid $paleBlue
+            padding: 10px
+            background: #eeeeee
+            margin-bottom: 20px
+
+            label 
+                color: $paleBlue
+
+            p 
+                margin: 0
+
+        .upload-wrapper
+            +clear
+
+            input 
+
+            button#select-btn, button#upload-btn
+                width: 15%
+                float: right
+                padding: 10px 20px 
+                border-style: none
+                background: $footerGrey
+                color: white
+                cursor: pointer
+                +transition
+                +border-radius(2px)
+
+                &:hover
+                    background: lighten($footerGrey, 10%)
+
+            button#upload-btn
+                margin-left: 10px
+                width: 10%
+                background: $blue
+
+                &.disabled
+                    background: desaturate($blue, 50%)
+                    cursor: not-allowed
+
+                    &:hover
+                        background: desaturate($blue, 50%)
+
+
+                &:hover
+                    background: darken($blue, 10%)
+
+            label
+                width: 73%
+                float: left
+                padding: 10px 20px
+                background: whitesmoke
+                color: $paleBlue
+                margin: 0
+
+        label#warning-text
+            display: block
+            color: $footerGrey
+            padding: 10px
+            border-left: 5px solid $footerGrey
+            background: lighten($footerGrey, 60%)
+            margin: 20px 0px
+            margin-top: 10px
+            +transition
+
+            &.warn
+                border-left-color: $orange
+                background: lighten($orange, 45%)
+                color: $orange
+
+            &.good
+                border-left-color: $designer
+                background: lighten($designer, 45%)
+                color: $designer
+
+    .accept-wrapper
+
+        .accept-item
+            margin-bottom: 5px
+
+            input, label
+                display: inline-block
+                vertical-align: middle
+                margin: 0
+                cursor: pointer
+
+                a 
+                    color: $paleBlue
+

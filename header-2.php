@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="default-css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
-    <!-- <link rel="stylesheet" href="css/shop-cart-carousel.css"> -->
     <link rel="stylesheet" href="css/dev-style.min.css">
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
@@ -36,7 +35,7 @@
     <section class="navigation-wrapper">
         <section class="navigation-container">
             <article class="logo-wrapper">
-                <a href="/">
+                <a href="home">
                     <img src="img/4dllogo.png" alt="">
                 </a>
             </article>

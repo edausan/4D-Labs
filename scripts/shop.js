@@ -83,4 +83,55 @@ $(function () {
       
   });
 
+
+  // Credit Card Type
+  var ccType  = $('section.credit-card-payment-wrapper .cc-input-wrapper select#cc-type');
+  
+  ccType.change(function() {
+
+    var ccVal = $(this).val();
+
+    console.log('cc-'+ccVal+'');
+
+    $(document).find('img#cc-'+ccVal+'').css({'filter':'grayscale(0%)','opacity':'1'});
+    $(document).find('img#cc-'+ccVal+'').parent('li').addClass('cc-border');
+    $(document).find('img#cc-'+ccVal+'').parent('li').siblings('li').removeClass('cc-border').children('img').css({'filter':'grayscale(100%)','opacity':'.3'});
+
+    $('section.credit-card-payment-wrapper .cc-input-wrapper input').val('');
+
+  });
+
+  // Payment Method Selector
+  var psSelectorBtn = $('.payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector');
+  var psSelector    = $(document).find('input#payment-selector');
+  var creditCard    = $(document).find('section.credit-card-payment-wrapper');
+  var paypal    = $(document).find('section.paypal-payment-wrapper');
+
+  psSelectorBtn.on('click', function() {
+      $(this).prop('disabled', true);
+      $(this).siblings('button').prop('disabled', false);
+      $(this).addClass('ps-selected');
+      $(this).siblings('button').removeClass('ps-selected');
+      psSelector.click();
+  });
+
+  paypal.hide();
+
+  psSelector.on('change', function() {
+      if ($(this).is(':checked')) {
+
+        setTimeout(function() {
+          creditCard.slideDown(350);
+        }, 355);
+        paypal.slideUp(350);
+
+      } else {
+        creditCard.slideUp(350);
+        setTimeout(function() {
+          paypal.slideDown(350);
+        }, 355);
+
+      }
+  });
+
 });

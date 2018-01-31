@@ -32,8 +32,8 @@ ul {
   margin: 0; }
 
 .lab-container {
-  width: 1320px;
-  max-width: 1320px;
+  width: 1170px;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto; }
@@ -1581,7 +1581,6 @@ section.thumb-wrapper {
       clear: both; }
     section.thumb-wrapper article.thumb-container section.thumb-row .thumbs {
       position: relative;
-      padding: 0 15px;
       float: left;
       min-height: 100%;
       overflow: hidden;
@@ -1592,11 +1591,10 @@ section.thumb-wrapper {
         position: absolute;
         top: 0;
         left: 0;
-        width: calc(100% - 30px);
+        width: 100%;
         height: 100%;
         z-index: 1001;
         background: transparent;
-        margin: 0 15px;
         -webkit-transition: 250ms ease;
         -moz-transition: 250ms ease;
         -o-transition: 250ms ease;
@@ -1614,16 +1612,36 @@ section.thumb-wrapper {
           margin: 0;
           padding: 0;
           color: white; }
-      section.thumb-wrapper article.thumb-container section.thumb-row .thumbs .thumb-img {
+      section.thumb-wrapper article.thumb-container section.thumb-row .thumbs img.thumb-img {
         position: relative;
-        width: 100%;
-        height: 334px;
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
         z-index: 1000; }
+  section.thumb-wrapper article.thumb-container section.thumb-row-1::after {
+    content: '';
+    display: table;
+    clear: both; }
   section.thumb-wrapper article.thumb-container section.thumb-row-1 .thumb-md {
-    width: 50%;
-    padding: 0 15px; }
+    width: 48%;
+    padding: 0; }
+    section.thumb-wrapper article.thumb-container section.thumb-row-1 .thumb-md#thumb-1 {
+      float: left; }
+    section.thumb-wrapper article.thumb-container section.thumb-row-1 .thumb-md#thumb-2 {
+      float: right; }
+  section.thumb-wrapper article.thumb-container section.thumb-row-2::after {
+    content: '';
+    display: table;
+    clear: both; }
   section.thumb-wrapper article.thumb-container section.thumb-row-2 .thumb-sm {
-    width: 33.333333333%; }
+    width: 31%; }
+    section.thumb-wrapper article.thumb-container section.thumb-row-2 .thumb-sm#thumb-3 {
+      float: left; }
+    section.thumb-wrapper article.thumb-container section.thumb-row-2 .thumb-sm#thumb-4 {
+      margin-left: 40px; }
+    section.thumb-wrapper article.thumb-container section.thumb-row-2 .thumb-sm#thumb-5 {
+      float: right; }
   section.thumb-wrapper article.thumb-container section.thumb-row-2 .last-thumb {
     background: #FF6600;
     width: 100%; }
@@ -1632,7 +1650,7 @@ section.news-section-wrapper {
   margin-bottom: 30px;
   font-family: 'Avenir'; }
   section.news-section-wrapper .latest-news-wrapper {
-    padding: 0px 15px; }
+    padding: 0px; }
     section.news-section-wrapper .latest-news-wrapper header.news-header h1 {
       border-bottom: 2px solid #327B83;
       color: #327B83; }
@@ -2042,7 +2060,7 @@ article.cart-breadcrumbs-new {
             display: none; }
         article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread section.bread p.bread-title {
           color: #343D44;
-          font-size: 16px; }
+          font-size: 15px; }
         article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread section.bread .bread-number-wrapper a {
           display: inline-block; }
         article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread section.bread .bread-number-wrapper p {
@@ -2093,8 +2111,7 @@ article.cart-summary {
     border: 1px solid #327B83;
     -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    background: #eff0f3;
-    padding-top: 5px; }
+    background: #eff0f3; }
     article.cart-summary section.cart-sum-wrapper .total-container {
       padding: 20px;
       background: white;
@@ -2108,7 +2125,6 @@ article.cart-summary {
     article.cart-summary section.cart-sum-wrapper hr {
       border-color: #4a5761; }
     article.cart-summary section.cart-sum-wrapper header.cart-summary-header h5 {
-      margin-bottom: 10px;
       font-weight: 600; }
     article.cart-summary section.cart-sum-wrapper .terms-wrapper {
       margin-top: 10px; }
@@ -2362,7 +2378,7 @@ article.product-details-wrapper {
         position: relative;
         text-align: center;
         cursor: pointer;
-        font-size: 13px;
+        font-size: 12px;
         -webkit-transition: 250ms ease;
         -moz-transition: 250ms ease;
         -o-transition: 250ms ease;
@@ -2386,7 +2402,7 @@ article.product-details-wrapper {
           width: 25px;
           margin: 0;
           padding: 0;
-          margin-right: 10px;
+          margin-right: 5px;
           -webkit-transition: 250ms ease;
           -moz-transition: 250ms ease;
           -o-transition: 250ms ease;
@@ -4281,7 +4297,7 @@ section.payments-wrapper {
               section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th#items,
               section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th#items {
                 text-align: left !important;
-                padding-left: 16px; }
+                padding-left: 60px; }
               section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th span,
               section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th span {
                 font-weight: 400 !important; }
@@ -4307,23 +4323,28 @@ section.payments-wrapper {
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#image,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#image {
               min-width: 10%;
-              width: 10%; }
+              width: 10%;
+              padding-top: 35px; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper {
               min-width: 35%;
-              width: 35%; }
+              width: 35%;
+              padding-left: 60px; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price {
               width: 18%;
-              min-width: 18%; }
+              min-width: 18%;
+              padding-top: 0px; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity {
               min-width: 18%;
-              width: 18%; }
+              width: 18%;
+              padding-top: 0px; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#subtotal,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#subtotal {
               min-width: 18%;
-              width: 18%; }
+              width: 18%;
+              padding-top: 0px; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper {
               font-family: 'Avenir'; }
@@ -4493,14 +4514,6 @@ section.payments-wrapper {
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td figure.prod-img-container,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td figure.prod-img-container {
               width: 80%;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              -moz-transform: translate(-50%, -50%);
-              -o-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
               margin: 0 auto;
               display: block; }
               section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td figure.prod-img-container a,
@@ -4836,30 +4849,30 @@ section.shipping-method-wrapper {
       content: '';
       display: table;
       clear: both; }
-    section.payments-wrapper section.cart-wrapper form#payment-method-form,
-    section.shipping-method-wrapper section.cart-wrapper form#payment-method-form {
-      width: 70%;
-      float: left; }
-      section.payments-wrapper section.cart-wrapper form#payment-method-form::after,
-      section.shipping-method-wrapper section.cart-wrapper form#payment-method-form::after {
-        content: '';
-        display: table;
-        clear: both; }
-    section.payments-wrapper section.cart-wrapper article.user-details::after,
-    section.shipping-method-wrapper section.cart-wrapper article.user-details::after {
+    section.payments-wrapper section.cart-wrapper form#payment-method-form::after,
+    section.shipping-method-wrapper section.cart-wrapper form#payment-method-form::after {
       content: '';
       display: table;
       clear: both; }
-    section.payments-wrapper section.cart-wrapper article.user-details header h3,
-    section.shipping-method-wrapper section.cart-wrapper article.user-details header h3 {
-      font-size: 20px;
-      color: white;
-      padding: 5px 10px;
-      background: #327B83; }
-    section.payments-wrapper section.cart-wrapper article.user-details hr,
-    section.shipping-method-wrapper section.cart-wrapper article.user-details hr {
-      border-color: #cccccc;
-      margin: 30px 20px 30px 0px; }
+    section.payments-wrapper section.cart-wrapper article.user-details,
+    section.shipping-method-wrapper section.cart-wrapper article.user-details {
+      width: 70%;
+      float: left; }
+      section.payments-wrapper section.cart-wrapper article.user-details::after,
+      section.shipping-method-wrapper section.cart-wrapper article.user-details::after {
+        content: '';
+        display: table;
+        clear: both; }
+      section.payments-wrapper section.cart-wrapper article.user-details header h3,
+      section.shipping-method-wrapper section.cart-wrapper article.user-details header h3 {
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        background: #327B83; }
+      section.payments-wrapper section.cart-wrapper article.user-details hr,
+      section.shipping-method-wrapper section.cart-wrapper article.user-details hr {
+        border-color: #eeeeee;
+        margin: 10px 0px; }
 
 section.user-details-container {
   margin-right: 20px; }
@@ -4936,7 +4949,6 @@ section.user-details-container {
         color: #327B83; }
 
 .payment-method-wrapper {
-  margin-top: 20px;
   width: 94%;
   float: left; }
   .payment-method-wrapper header.payment-method-header h3 label {
@@ -4956,28 +4968,216 @@ section.user-details-container {
     -moz-transition: 250ms ease;
     -o-transition: 250ms ease;
     transition: 250ms ease; }
-
-section.credit-card-payment-wrapper select, section.credit-card-payment-wrapper input {
-  position: relative;
-  padding: 10px;
-  float: left;
-  border-style: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  border: 1px solid #cccccc; }
-  section.credit-card-payment-wrapper select option, section.credit-card-payment-wrapper input option {
+  .payment-method-wrapper .payment-selection-wrapper {
     position: relative;
-    display: block; }
-    section.credit-card-payment-wrapper select option::before, section.credit-card-payment-wrapper input option::before {
-      content: 'he';
-      display: inline-block;
+    padding: 20px 0px; }
+    .payment-method-wrapper .payment-selection-wrapper::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .payment-method-wrapper .payment-selection-wrapper input#payment-selector {
       position: absolute;
       top: 0;
-      left: 0;
-      font-size: 14px;
-      color: red; }
+      left: 0; }
+    .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper {
+      width: 40%;
+      margin: 0 auto; }
+      .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector {
+        border-style: none;
+        padding: 10px 20px;
+        width: 50%;
+        float: left;
+        background: white;
+        border: 1px solid #327B83;
+        cursor: pointer;
+        color: #327B83;
+        -webkit-transition: 250ms ease;
+        -moz-transition: 250ms ease;
+        -o-transition: 250ms ease;
+        transition: 250ms ease; }
+        .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector:hover {
+          background: #eef8f9; }
+        .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector:disabled {
+          cursor: initial; }
+        .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector:focus, .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector:link {
+          outline: none; }
+        .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector:nth-child(2) {
+          border-left: none; }
+        .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper button.ps-selector.ps-selected {
+          background: #327B83;
+          color: white; }
+
+section.credit-card-payment-wrapper,
+section.paypal-payment-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px; }
+  section.credit-card-payment-wrapper::after,
+  section.paypal-payment-wrapper::after {
+    content: '';
+    display: table;
+    clear: both; }
+  section.credit-card-payment-wrapper header.credit-header h4,
+  section.paypal-payment-wrapper header.credit-header h4 {
+    margin: 20px 0px;
+    margin-top: 0;
+    font-weight: 700;
+    text-align: center;
+    color: #327B83; }
+    section.credit-card-payment-wrapper header.credit-header h4 span, section.credit-card-payment-wrapper header.credit-header h4 img,
+    section.paypal-payment-wrapper header.credit-header h4 span,
+    section.paypal-payment-wrapper header.credit-header h4 img {
+      display: inline-block;
+      vertical-align: middle; }
+    section.credit-card-payment-wrapper header.credit-header h4 img,
+    section.paypal-payment-wrapper header.credit-header h4 img {
+      width: 100px; }
+  section.credit-card-payment-wrapper figure.credit-card-logo-wrapper ul,
+  section.paypal-payment-wrapper figure.credit-card-logo-wrapper ul {
+    text-align: center; }
+    section.credit-card-payment-wrapper figure.credit-card-logo-wrapper ul li,
+    section.paypal-payment-wrapper figure.credit-card-logo-wrapper ul li {
+      display: inline-block;
+      margin: 0 10px;
+      border: 1px solid white;
+      -webkit-transition: 250ms ease;
+      -moz-transition: 250ms ease;
+      -o-transition: 250ms ease;
+      transition: 250ms ease;
+      padding: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px; }
+      section.credit-card-payment-wrapper figure.credit-card-logo-wrapper ul li img,
+      section.paypal-payment-wrapper figure.credit-card-logo-wrapper ul li img {
+        height: 50px;
+        -webkit-transition: 250ms ease;
+        -moz-transition: 250ms ease;
+        -o-transition: 250ms ease;
+        transition: 250ms ease; }
+  section.credit-card-payment-wrapper .cc-input-wrapper,
+  section.paypal-payment-wrapper .cc-input-wrapper {
+    width: 100%;
+    float: left; }
+    section.credit-card-payment-wrapper .cc-input-wrapper::after,
+    section.paypal-payment-wrapper .cc-input-wrapper::after {
+      content: '';
+      display: table;
+      clear: both; }
+    section.credit-card-payment-wrapper .cc-input-wrapper.cc-first,
+    section.paypal-payment-wrapper .cc-input-wrapper.cc-first {
+      margin-right: 20px; }
+    section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec,
+    section.paypal-payment-wrapper .cc-input-wrapper.cc-sec {
+      width: 42%; }
+    section.credit-card-payment-wrapper .cc-input-wrapper select, section.credit-card-payment-wrapper .cc-input-wrapper input,
+    section.paypal-payment-wrapper .cc-input-wrapper select,
+    section.paypal-payment-wrapper .cc-input-wrapper input {
+      position: relative;
+      padding: 10px;
+      float: left;
+      border-style: none;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
+      border: 1px solid #cccccc;
+      margin-bottom: 10px; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-type, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-type,
+      section.paypal-payment-wrapper .cc-input-wrapper select#cc-type,
+      section.paypal-payment-wrapper .cc-input-wrapper input#cc-type {
+        width: 41%;
+        float: left; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-num, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-num,
+      section.paypal-payment-wrapper .cc-input-wrapper select#cc-num,
+      section.paypal-payment-wrapper .cc-input-wrapper input#cc-num {
+        width: 56%;
+        float: right; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-fname, section.credit-card-payment-wrapper .cc-input-wrapper select#cc-lname, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-fname, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-lname,
+      section.paypal-payment-wrapper .cc-input-wrapper select#cc-fname,
+      section.paypal-payment-wrapper .cc-input-wrapper select#cc-lname,
+      section.paypal-payment-wrapper .cc-input-wrapper input#cc-fname,
+      section.paypal-payment-wrapper .cc-input-wrapper input#cc-lname {
+        width: 49%;
+        float: left; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-lname, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-lname,
+      section.paypal-payment-wrapper .cc-input-wrapper select#cc-lname,
+      section.paypal-payment-wrapper .cc-input-wrapper input#cc-lname {
+        float: right; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#cvv-code, section.credit-card-payment-wrapper .cc-input-wrapper input#cvv-code,
+      section.paypal-payment-wrapper .cc-input-wrapper select#cvv-code,
+      section.paypal-payment-wrapper .cc-input-wrapper input#cvv-code {
+        width: 100%;
+        float: left; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#month, section.credit-card-payment-wrapper .cc-input-wrapper input#month,
+      section.paypal-payment-wrapper .cc-input-wrapper select#month,
+      section.paypal-payment-wrapper .cc-input-wrapper input#month {
+        width: 49%;
+        float: left; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select#year, section.credit-card-payment-wrapper .cc-input-wrapper input#year,
+      section.paypal-payment-wrapper .cc-input-wrapper select#year,
+      section.paypal-payment-wrapper .cc-input-wrapper input#year {
+        width: 49%;
+        float: right; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select:invalid, section.credit-card-payment-wrapper .cc-input-wrapper input:invalid,
+      section.paypal-payment-wrapper .cc-input-wrapper select:invalid,
+      section.paypal-payment-wrapper .cc-input-wrapper input:invalid {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: #cccccc; }
+  section.credit-card-payment-wrapper .cc-geotrust-wrapper,
+  section.paypal-payment-wrapper .cc-geotrust-wrapper {
+    width: 57%;
+    float: right; }
+    section.credit-card-payment-wrapper .cc-geotrust-wrapper a img,
+    section.paypal-payment-wrapper .cc-geotrust-wrapper a img {
+      width: 100%; }
+  section.credit-card-payment-wrapper ul.cc-list,
+  section.paypal-payment-wrapper ul.cc-list {
+    width: 100%;
+    margin: 30px 0px; }
+    section.credit-card-payment-wrapper ul.cc-list::after,
+    section.paypal-payment-wrapper ul.cc-list::after {
+      content: '';
+      display: table;
+      clear: both; }
+    section.credit-card-payment-wrapper ul.cc-list li,
+    section.paypal-payment-wrapper ul.cc-list li {
+      width: 33.333333333%;
+      float: left;
+      height: 50px;
+      text-align: center; }
+      section.credit-card-payment-wrapper ul.cc-list li img,
+      section.paypal-payment-wrapper ul.cc-list li img {
+        height: 100%;
+        width: auto; }
+  section.credit-card-payment-wrapper a#pay-via-pp,
+  section.paypal-payment-wrapper a#pay-via-pp {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+    background: #003087;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+    text-transform: uppercase; }
+    section.credit-card-payment-wrapper a#pay-via-pp:hover,
+    section.paypal-payment-wrapper a#pay-via-pp:hover {
+      background: #001e54; }
+
+section.credit-card-payment-wrapper {
+  width: 60%; }
 
 section.shipping-billing-userin-wrapper {
   width: 100%;
@@ -5129,8 +5329,6 @@ section.shipping-method-wrapper {
     content: '';
     display: table;
     clear: both; }
-  section.shipping-method-wrapper form#shipping-method-form {
-    padding: 0 85px 0px 65px; }
   section.shipping-method-wrapper article.shipping-method-details {
     width: 70%;
     float: left; }
@@ -5176,6 +5374,8 @@ section.shipping-method-wrapper {
       section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li#phone-num {
         width: 45%;
         float: right; }
+      section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li#notes p {
+        min-height: 43px; }
       section.shipping-method-wrapper section.user-details-container ul.payment-user-details-list li#country {
         width: 53%;
         float: left; }
@@ -5307,6 +5507,287 @@ section.shipping-method-wrapper {
       display: inline-block;
       vertical-align: middle;
       margin: 0px; }
+
+section.confirmation-wrapper {
+  font-family: 'Avenir';
+  padding: 50px 0px;
+  margin-bottom: 50px; }
+  section.confirmation-wrapper .confirmation-container {
+    text-align: center; }
+    section.confirmation-wrapper .confirmation-container h1 {
+      font-size: 100px;
+      color: #327B83;
+      margin: 0; }
+    section.confirmation-wrapper .confirmation-container h3 {
+      font-size: 40px;
+      margin-bottom: 50px; }
+    section.confirmation-wrapper .confirmation-container p {
+      font-size: 25px;
+      display: block;
+      width: 65%;
+      margin: 0 auto;
+      margin-bottom: 50px; }
+      section.confirmation-wrapper .confirmation-container p a {
+        color: #327B83; }
+    section.confirmation-wrapper .confirmation-container a#continue-shopping {
+      padding: 10px 20px;
+      border: 1px solid #FB2800;
+      color: #FB2800;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      display: block;
+      width: 25%;
+      margin: 0 auto;
+      text-decoration: none;
+      background: white;
+      -webkit-transition: 250ms ease;
+      -moz-transition: 250ms ease;
+      -o-transition: 250ms ease;
+      transition: 250ms ease;
+      text-transform: uppercase; }
+      section.confirmation-wrapper .confirmation-container a#continue-shopping i {
+        margin-right: 5px; }
+      section.confirmation-wrapper .confirmation-container a#continue-shopping:hover {
+        background: #FB2800;
+        color: white; }
+
+h3.glossary-header {
+  padding: 20px 0px;
+  background: #343D44;
+  font-family: 'Avenir'; }
+  h3.glossary-header p {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    margin: 0; }
+
+section.glossary-wrapper {
+  font-family: 'Avenir';
+  margin-top: 60px; }
+  section.glossary-wrapper .alpha-nav {
+    padding: 5px 10px;
+    background: #EAEAEA;
+    margin-bottom: 50px; }
+    section.glossary-wrapper .alpha-nav a.alpha-link {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin: 0 2px;
+      font-weight: 600;
+      color: #327B83; }
+  section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item {
+    margin-bottom: 50px; }
+    section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item h3.glossary-item-header {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 600; }
+      section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item h3.glossary-item-header a {
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid #327B83;
+        color: #327B83;
+        padding-bottom: 10px; }
+        section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item h3.glossary-item-header a:hover {
+          color: #081314;
+          border-color: #081314; }
+    section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list {
+      padding-left: 20px; }
+      section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list li.glossary-item-title {
+        margin-bottom: 30px;
+        display: block; }
+        section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list li.glossary-item-title h6 {
+          font-weight: 600;
+          font-size: 15px; }
+          section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list li.glossary-item-title h6 a {
+            color: #327B83; }
+        section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list li.glossary-item-title ul {
+          list-style: disc !important;
+          padding-left: 20px; }
+          section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list li.glossary-item-title ul li {
+            margin-bottom: 10px; }
+            section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-item ul.glossary-title-list li.glossary-item-title ul li a {
+              color: #327B83; }
+
+section.support-wrapper {
+  padding: 50px 0px;
+  font-family: 'Avenir'; }
+  section.support-wrapper h4 {
+    color: #327B83;
+    border-bottom: 1px solid #327B83;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  section.support-wrapper .ticket-details {
+    width: 49%;
+    float: left;
+    margin-bottom: 20px; }
+    section.support-wrapper .ticket-details.f-right {
+      float: right; }
+    section.support-wrapper .ticket-details label {
+      color: black;
+      font-size: 24px;
+      font-weight: 600; }
+      section.support-wrapper .ticket-details label span {
+        color: #A5003A; }
+      section.support-wrapper .ticket-details label i {
+        margin-right: 5px;
+        display: none; }
+  section.support-wrapper .ticket-input {
+    border-style: none;
+    border: 1px solid #aaaaaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+    width: 100%;
+    color: #666666;
+    font-size: 18px;
+    -webkit-box-shadow: inset 0px 1px 1px transparent, inset 0px -1px 1px transparent, inset 1px 0px 1px transparent, inset -1px 0px 1px transparent;
+    box-shadow: inset 0px 1px 1px transparent, inset 0px -1px 1px transparent, inset 1px 0px 1px transparent, inset -1px 0px 1px transparent; }
+    section.support-wrapper .ticket-input:focus {
+      -webkit-box-shadow: inset 0px 1px 1px #327B83, inset 0px -1px 1px #327B83, inset 1px 0px 1px #327B83, inset -1px 0px 1px #327B83;
+      box-shadow: inset 0px 1px 1px #327B83, inset 0px -1px 1px #327B83, inset 1px 0px 1px #327B83, inset -1px 0px 1px #327B83;
+      border-color: #327B83;
+      color: #327B83; }
+  section.support-wrapper .existing-ticket-wrapper {
+    margin-bottom: 30px; }
+    section.support-wrapper .existing-ticket-wrapper h4 {
+      color: #327B83;
+      border-bottom: 1px solid #327B83;
+      padding-bottom: 10px;
+      text-transform: initial; }
+    section.support-wrapper .existing-ticket-wrapper .ticket-input-wrapper::after {
+      content: '';
+      display: table;
+      clear: both; }
+    section.support-wrapper .existing-ticket-wrapper .ticket-input-wrapper span {
+      float: left; }
+    section.support-wrapper .existing-ticket-wrapper .ticket-input-wrapper input#ticket-input {
+      width: 98%;
+      float: right;
+      padding: 5px 10px; }
+    section.support-wrapper .existing-ticket-wrapper button#search-ticket-btn {
+      border-style: none;
+      padding: 5px;
+      width: 25%;
+      background: #327B83;
+      color: white;
+      margin: 10px auto;
+      display: block;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px; }
+  section.support-wrapper .new-ticket-wrapper::after {
+    content: '';
+    display: table;
+    clear: both; }
+  section.support-wrapper .new-ticket-wrapper input {
+    width: 100%; }
+  section.support-wrapper .inquiry-wrapper {
+    margin-bottom: 40px; }
+    section.support-wrapper .inquiry-wrapper::after {
+      content: '';
+      display: table;
+      clear: both; }
+    section.support-wrapper .inquiry-wrapper textarea {
+      width: 100%; }
+    section.support-wrapper .inquiry-wrapper .ticket-details {
+      width: 100%; }
+      section.support-wrapper .inquiry-wrapper .ticket-details label {
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
+        display: block; }
+      section.support-wrapper .inquiry-wrapper .ticket-details input {
+        width: 100%; }
+  section.support-wrapper .attachment-wrapper .ticket-note-wrapper {
+    border-left: 5px solid #327B83;
+    padding: 10px;
+    background: #eeeeee;
+    margin-bottom: 20px; }
+    section.support-wrapper .attachment-wrapper .ticket-note-wrapper label {
+      color: #327B83; }
+    section.support-wrapper .attachment-wrapper .ticket-note-wrapper p {
+      margin: 0; }
+  section.support-wrapper .attachment-wrapper .upload-wrapper::after {
+    content: '';
+    display: table;
+    clear: both; }
+  section.support-wrapper .attachment-wrapper .upload-wrapper button#select-btn, section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn {
+    width: 15%;
+    float: right;
+    padding: 10px 20px;
+    border-style: none;
+    background: #343D44;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px; }
+    section.support-wrapper .attachment-wrapper .upload-wrapper button#select-btn:hover, section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn:hover {
+      background: #4a5761; }
+  section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn {
+    margin-left: 10px;
+    width: 10%;
+    background: #0099FF; }
+    section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn.disabled {
+      background: #408cbf;
+      cursor: not-allowed; }
+      section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn.disabled:hover {
+        background: #408cbf; }
+    section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn:hover {
+      background: #007acc; }
+  section.support-wrapper .attachment-wrapper .upload-wrapper label {
+    width: 73%;
+    float: left;
+    padding: 10px 20px;
+    background: whitesmoke;
+    color: #327B83;
+    margin: 0; }
+  section.support-wrapper .attachment-wrapper label#warning-text {
+    display: block;
+    color: #343D44;
+    padding: 10px;
+    border-left: 5px solid #343D44;
+    background: #cfd6db;
+    margin: 20px 0px;
+    margin-top: 10px;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease; }
+    section.support-wrapper .attachment-wrapper label#warning-text.warn {
+      border-left-color: #FB2800;
+      background: #ffe6e2;
+      color: #FB2800; }
+    section.support-wrapper .attachment-wrapper label#warning-text.good {
+      border-left-color: #459506;
+      background: #b9fa86;
+      color: #459506; }
+  section.support-wrapper .accept-wrapper .accept-item {
+    margin-bottom: 5px; }
+    section.support-wrapper .accept-wrapper .accept-item input, section.support-wrapper .accept-wrapper .accept-item label {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      cursor: pointer; }
+      section.support-wrapper .accept-wrapper .accept-item input a, section.support-wrapper .accept-wrapper .accept-item label a {
+        color: #327B83; }
 
 section.updates-wrapper {
   width: 100vw;

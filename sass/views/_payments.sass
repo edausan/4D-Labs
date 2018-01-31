@@ -8,12 +8,12 @@ section.shipping-method-wrapper
         padding: 0 85px 0px 65px
 
         form#payment-method-form
-            width: 70%
-            float: left
             +clear
             
 
         article.user-details
+            width: 70%
+            float: left 
             
             +clear
 
@@ -25,8 +25,8 @@ section.shipping-method-wrapper
                     background: $paleBlue
 
             hr 
-                border-color: #cccccc
-                margin: 30px 20px 30px 0px
+                border-color: #eeeeee
+                margin: 10px 0px
 
 
 section.user-details-container
@@ -121,7 +121,6 @@ section.user-details-container
                     
                     
 .payment-method-wrapper
-    margin-top: 20px
     width: 94%
     float: left
 
@@ -143,46 +142,206 @@ section.user-details-container
         +transition
 
 
+    .payment-selection-wrapper
+        position: relative
+        padding: 20px 0px
+        +clear 
+        
+        input#payment-selector
+            position: absolute
+            top: 0
+            left: 0
+
+        .payment-selector-wrapper
+            +clear 
+            width: 40%
+            margin: 0 auto
+
+            button.ps-selector
+                border-style: none
+                padding: 10px 20px
+                width: 50%
+                float: left
+                background: white
+                border: 1px solid $paleBlue
+                cursor: pointer
+                color: $paleBlue
+                +transition
+
+                &:hover
+                    background: lighten($paleBlue, 60%)
+
+                &:disabled
+                    cursor: initial
+
+                &:focus, &:link
+                    outline: none
+
+                &:nth-child(2)
+                    border-left: none
+
+
+                &.ps-selected
+                    background: $paleBlue
+                    color: white
+
+            // Credit Card
+            &#ps-cc
+
+            // PayPal
+            &#ps-pp
+
+
 
 
 
 
 
 // Credit Card
-section.credit-card-payment-wrapper
+section.credit-card-payment-wrapper,
+section.paypal-payment-wrapper
+    width: 50%
+    margin: 0 auto
+    padding: 10px
+    +clear 
+
     header.credit-header
-        h3 
+        h4
+            margin: 20px 0px
+            margin-top: 0
+            font-weight: 700
+            text-align: center
+            color: $paleBlue
+
+
+            span, img
+                display: inline-block
+                vertical-align: middle
+
+            img 
+                width: 100px
+            
         p 
 
     figure.credit-card-logo-wrapper
-        ul 
-            li 
-                img 
-
-
-    form.credit-card-form
-    select, input
-        position: relative
-        padding: 10px
-        float: left
-        border-style: none
-        +border-radius(2px)
-        border: 1px solid #cccccc
-
-        input 
         
-
-
-
-        option 
-            position: relative
-            display: block
-
-            &::before
-                content: 'he'
+        ul 
+            text-align: center
+            li 
                 display: inline-block
-                position: absolute
-                top: 0
-                left: 0
-                font-size: 14px
-                color: red
+                margin: 0 10px
+                border: 1px solid white
+                +transition
+                padding: 10px
+                +border-radius 
+
+                &.cc-border
+                    // border: 1px solid #CB2026
+
+                img 
+                    height: 50px
+                    +transition
+
+                    &#cc-mastercard,
+                    &#cc-visa
+
+
+    .cc-input-wrapper
+        width: 100%
+        float: left
+        
+        +clear
+
+        &.cc-first
+            margin-right: 20px
+
+        &.cc-sec
+            width: 42%
+
+        select, input
+            position: relative
+            padding: 10px
+            float: left
+            border-style: none
+            +border-radius(2px)
+            border: 1px solid #cccccc
+            margin-bottom: 10px
+
+            &#cc-type
+                width: 41%
+                float: left
+
+            &#cc-num
+                width: 56%
+                float: right
+
+            &#cc-fname, &#cc-lname 
+                width: 49%
+                float: left
+
+            &#cc-lname
+                float: right
+
+
+            &#cvv-code
+                width: 100%
+                float: left
+
+            &#month
+                width: 49%
+                float: left 
+
+            &#year  
+                width: 49%
+                float: right
+
+            &:invalid
+                box-shadow: none
+                border-color: #cccccc
+
+
+    .cc-geotrust-wrapper
+        width: 57%
+        float: right
+        a 
+
+            img 
+                width: 100%
+
+
+    ul.cc-list
+        width: 100%
+        +clear 
+        margin: 30px 0px
+
+        li
+            width: 33.333333333%
+            float: left
+            height: 50px
+            text-align: center
+
+            img 
+                height: 100%
+                width: auto
+
+
+    a#pay-via-pp
+        font-size: 18px
+        font-weight: 600
+        padding: 10px
+        display: block
+        background: $paypal
+        color: white
+        text-decoration: none
+        text-align: center
+        margin-top: 20px
+        +transition
+        text-transform: uppercase
+
+        &:hover
+            background: darken($paypal, 10%)
+
+
+
+section.credit-card-payment-wrapper
+    width: 60%

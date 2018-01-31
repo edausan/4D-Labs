@@ -20,7 +20,7 @@
 
                         <h2 id="corporate">Corporate</h2>
                         <ul>
-                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="about">About Us</a></li>
                             <li><a href="http://">Contact Us</a></li>
                             <li><a href="http://">News and Events</a></li>
                         </ul>
@@ -29,10 +29,10 @@
                     <div class="footer-content">
                         <h2>Products</h2>
                         <ul>
-                            <li><a href="goldelox.php">Goldelox</a></li>
-                            <li><a href="diablo16.php">Diablo16</a></li>
-                            <li><a href="picaso.php">Picaso</a></li>
-                            <li><a href="picaso-Lite.php">Picaso-Lite</a></li>
+                            <li><a href="goldelox">Goldelox</a></li>
+                            <li><a href="diablo16">Diablo16</a></li>
+                            <li><a href="picaso">Picaso</a></li>
+                            <li><a href="picaso-Lite">Picaso-Lite</a></li>
                         </ul>
 
                         
@@ -64,9 +64,9 @@
                 <article class="addlink-wrapper">
                     <div class="addtnl-links">
                         <ul>
-                            <li><a href="http://">Accessibility</a></li>
-                            <li><a href="terms-and-conditions.php">Terms & Conditions</a></li>
-                            <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                            <li><a href="glossary">Technical Glossary</a></li>
                         </ul>
                     </div>
                     
@@ -124,6 +124,7 @@
 <script src="scripts/navbar.js"></script>
 <script src="scripts/shop.js"></script>
 <script src="scripts/register.js"></script>
+<script src="scripts/support.js"></script>
 <script src="scripts/product-tabs.js"></script>
 
 </body>

@@ -1,6 +1,6 @@
 <!-- Shipping and Billing Page when user is already Logged In -->
 <?php 
-    define('TITLE', 'Confirmation');
+    define('TITLE', 'Thank You');
     include('header-2.php');
 ?>
 
@@ -9,7 +9,7 @@
 <section class="lab-container">
     <article class="lab-row">
     
-        <section class="shipping-billing-userin-wrapper">
+        <section class="confirmation-wrapper">
             
             <?php 
                 $active =   array('pass-cart-bread','pass-cart-bread','pass-cart-bread','pass-cart-bread', 'active-cart-bread',);
@@ -17,7 +17,23 @@
                 include('include/cart-breadcrumbs-2.php'); 
             ?>
 
-            <h1>Order Confirmation</h1>
+            
+
+            <div class="confirmation-container">
+
+                <h1>Thank you.</h1>
+                <h3>Your order was completed successfully.</h3>
+
+                <p>An email receipt including the details about your order has been sent to the email address provided. Please keep it for your records.</p>
+                <p>You can visit the <a href="user-account">My Account</a> page at any time to check the status of your order.</p>
+
+                <a href="" id="continue-shopping"><i class="fa fa-shopping-cart"></i> Continue Shopping</a>
+
+                <!-- An email receipt including the details bout your order has been sent to the email address provided. Please keep it for your records. 
+You can visit the My Account page at any time to check the status of your order. Or click here to print a copy of your receipt.  
+ -->
+
+            </div>
             
 
         </section> 

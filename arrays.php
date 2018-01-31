@@ -543,4 +543,38 @@
         ),
     );
 
+
+    $alphanav   =   array(
+        'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+    );
+
+
+    $glossary   =   array(
+        '#'     =>  array(
+            '200mm'     =>  array('A size of silicon wafer approximately 8 inches in diameter. Also used to refer to a <a href="#tool">tool</a> designed to process wafers of this size.'),
+            '300mm'     =>  array('A size of silicon wafer approximately 12 inches in diameter. Also used to refer to a <a href="#tool">tool</a> designed to process wafers of this size.'),
+            '4K RESOLUTION' =>  array('An alternative term for the <a href="#UHD">UHD</a> digital video format.'),
+        ),
+        'a'     =>   array(
+            'ABATEMENT'     =>   array('A process where toxic or other hazardous substances are removed from a liquid or gas. Examples include removing copper particles from CMP slurry or converting liquid or gaseous toxic effluents into safe forms for disposal.'),
+            
+            'ACCELERATOR'   =>   array('In <a href="#ion implantation">ion implantation</a>, a device used to increase the energy of an atom or molecule. (See <a href="#Extraction Electrode">Extraction Electrode)</a>'),
+
+            'ACCEPTOR'      =>   array('An impurity in a semiconductor that accepts electrons. Boron is the primary acceptor used to dope silicon in the <a href="#ion implantation">ion implantation</a> process.'),
+        ),
+
+        'b'     =>   array(
+            'BACK CONTACT'     =>   array('A metallic layer that covers the entire back surface of a solar <a href="#PV">PV</a> cell and acts as a conductor.','Also used to refer to advanced cell designs such as <a href="#EWT">EWT</a> where both terminals of the cell are located on the back side of the wafer, thus increasing the light-gathering area of the cell and hence improving conversion efficiency.'),
+
+            'BACK GLASS'    =>   array('The bottom layer of a thin film solar module, which provides rigidity and electrical insulation. Current is extracted from the module through the <a href="#PV">junction box</a> that is attached to the circuit through a hole in the back glass.'),
+
+            'BACKPLANE'      =>   array('In <a href="#TFT-LCD">TFT-LCD</a> manufacturing, the backplane is the array of <a href="#thin-film">thin-film</a> transistors that control the light output of each pixel on the display.'),
+        ),
+        'c'     =>  array(
+            '200mm'     =>  array('A size of silicon wafer approximately 8 inches in diameter. Also used to refer to a <a href="#tool">tool</a> designed to process wafers of this size.'),
+            '300mm'     =>  array('A size of silicon wafer approximately 12 inches in diameter. Also used to refer to a <a href="#tool">tool</a> designed to process wafers of this size.'),
+            '4K RESOLUTION' =>  array('An alternative term for the <a href="#UHD">UHD</a> digital video format.'),
+        ),
+    );
+
 ?>
