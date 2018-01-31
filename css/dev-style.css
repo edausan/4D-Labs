@@ -5613,6 +5613,29 @@ section.glossary-wrapper {
 section.support-wrapper {
   padding: 50px 0px;
   font-family: 'Avenir'; }
+  section.support-wrapper section.support-boxes ul.support-list::after {
+    content: '';
+    display: table;
+    clear: both; }
+  section.support-wrapper section.support-boxes ul.support-list li.support-item {
+    width: 24%;
+    float: left; }
+    section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper {
+      margin-right: 15px; }
+    section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper, section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper {
+      float: right; }
+    section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper {
+      margin-left: 15px; }
+    section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box {
+      width: 100%;
+      background: #eeeeee;
+      padding: 30px;
+      text-align: center; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper {
+        margin: 0; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box label {
+        margin: 0;
+        display: block; }
   section.support-wrapper h4 {
     color: #327B83;
     border-bottom: 1px solid #327B83;
@@ -5788,6 +5811,22 @@ section.support-wrapper {
       cursor: pointer; }
       section.support-wrapper .accept-wrapper .accept-item input a, section.support-wrapper .accept-wrapper .accept-item label a {
         color: #327B83; }
+  section.support-wrapper button#submit-btn {
+    width: 15%;
+    padding: 10px 20px;
+    border-style: none;
+    background: #459506;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    margin-top: 20px; }
 
 section.updates-wrapper {
   width: 100vw;

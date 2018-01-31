@@ -2,6 +2,45 @@ section.support-wrapper
     padding: 50px 0px
     font-family: 'Avenir'
 
+    section.support-boxes
+        ul.support-list
+            +clear
+
+            li.support-item
+                width: 24%
+                float: left
+
+                &#submit-ticket-wrapper
+                    margin-right: 15px
+
+                &#firmware-wrapper, &#forum-wrapper
+                    float: right
+
+                &#forum-wrapper
+                    margin-left: 15px
+                    
+
+                a 
+
+                article.support-box
+                    width: 100%
+                    background: #eeeeee
+                    padding: 30px
+                    text-align: center
+                    
+
+                    figure.support-icon-wrapper
+                        margin: 0
+                        img 
+
+                    label
+                        margin: 0
+                        display: block 
+
+                    a 
+
+
+
     h4 
         color: $paleBlue
         border-bottom: 1px solid $paleBlue
@@ -10,6 +49,7 @@ section.support-wrapper
         font-weight: 600
         text-transform: uppercase
         margin-bottom: 40px
+
 
 
     .ticket-details
@@ -66,8 +106,6 @@ section.support-wrapper
                 width 1%
                 float: left
 
-                i 
-
             input#ticket-input
                 width: 98%
                 float: right
@@ -90,9 +128,6 @@ section.support-wrapper
         input
             width: 100%
 
-        select 
-
-
     .inquiry-wrapper
         margin-bottom: 40px
         +clear
@@ -114,10 +149,6 @@ section.support-wrapper
 
             input
                 width: 100%
-
-            select 
-                
-                // margin-bottom: 20px
 
 
     .attachment-wrapper
@@ -212,4 +243,17 @@ section.support-wrapper
 
                 a 
                     color: $paleBlue
+
+    button#submit-btn
+        width: 15%
+        padding: 10px 20px 
+        border-style: none
+        background: $designer
+        color: white
+        cursor: pointer
+        +transition
+        +border-radius(2px)
+        margin-top: 20px
+
+                
 

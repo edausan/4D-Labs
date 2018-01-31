@@ -9,6 +9,70 @@
 
         <section class="support-wrapper">
 
+            <section class="support-boxes">
+                <ul class="support-list">
+                    <li class="support-item" id="submit-ticket-wrapper">
+                        <a href="http://">
+                            <article class="support-box" >
+                                <figure class="support-icon-wrapper">
+                                    <img src="" alt="">
+                                </figure>
+
+                                <label for="">Submit a Ticket</label>
+
+                                <a href="http://">Get support</a>
+                            </article>
+                        </a>
+                    </li>
+
+                    <li class="support-item" id="documentation-wrapper">
+                        <a href="http://">
+                            <article class="support-box" >
+                                <figure class="support-icon-wrapper">
+                                    <img src="" alt="">
+                                </figure>
+
+                                <label for="">Documentation</label>
+
+                                <a href="http://">Get support</a>
+                            </article>
+                        </a>
+                    </li>
+
+                    
+
+                    <li class="support-item" id="forum-wrapper">
+                        <a href="http://">
+                            <article class="support-box">
+                                <figure class="support-icon-wrapper">
+                                    <img src="" alt="">
+                                </figure>
+
+                                <label for="">Forum</label>
+
+                                <a href="http://">Get support</a>
+                            </article>
+                        </a>
+                    </li>
+
+                    <li class="support-item" id="firmware-wrapper">
+                        <a href="http://">
+                            <article class="support-box">
+                                <figure class="support-icon-wrapper">
+                                    <img src="" alt="">
+                                </figure>
+
+                                <label for="">Firmware</label>
+
+                                <a href="http://">Get support</a>
+                            </article>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
             <div class="existing-ticket-wrapper">
                 <h4>Do you have an existing support request that you want to view? </h4>
                 
@@ -98,7 +162,7 @@
                     </div>
                 </div>
 
-                <button>Submit</button>
+                <button id="submit-btn">Submit Ticket</button>
             </div>
 
             <div class="addl-wrapper"></div>
