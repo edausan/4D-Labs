@@ -62,6 +62,12 @@ ul {
     display: table;
     clear: both; }
 
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
 #inner-wrapper {
   padding-top: 0px !important; }
 
@@ -113,7 +119,7 @@ ul {
     margin: 0px !important;
     height: auto;
     z-index: 1002 !important;
-    background: #11252F !important; }
+    background: #032259 !important; }
     #header nav.col-full::after {
       content: '';
       display: table;
@@ -204,7 +210,7 @@ ul {
               display: none; }
             #header nav.col-full .top-navigation ul#top-nav li a:hover {
               background: #FB2800;
-              color: #11252F; }
+              color: #032259; }
       #header nav.col-full .top-navigation .search_main {
         float: none !important;
         display: block !important;
@@ -319,7 +325,7 @@ ul {
   left: 50%;
   width: 100%;
   padding: 30px;
-  background: #11252F;
+  background: #032259;
   z-index: 1000;
   -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
@@ -1316,7 +1322,7 @@ section.featured-wrapper {
       section.featured-wrapper section.featured-container article.featured section.content h3 {
         color: #327B83; }
       section.featured-wrapper section.featured-container article.featured section.content p {
-        color: #11252F;
+        color: #032259;
         font-size: 120%; }
       section.featured-wrapper section.featured-container article.featured a.learn {
         text-decoration: none;
@@ -1486,8 +1492,8 @@ section.quick-links {
             border-style: none;
             background: white;
             padding: 10px 20px;
-            border: 1px solid #11252F;
-            color: #11252F;
+            border: 1px solid #032259;
+            color: #032259;
             cursor: pointer;
             overflow: hidden;
             -webkit-border-radius: 5px;
@@ -5737,112 +5743,13 @@ section.support-wrapper {
         text-decoration: none;
         color: #343D44; }
   section.support-wrapper h4 {
-    color: #0099FF;
-    border-bottom: 1px solid #0099FF;
+    color: #032259;
+    border-bottom: 1px solid #032259;
     padding-bottom: 10px;
     font-weight: 600;
-    text-transform: uppercase;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 18px; }
-  section.support-wrapper .ticket-details {
-    width: 49%;
-    float: left;
-    margin-bottom: 20px; }
-    section.support-wrapper .ticket-details.f-right {
-      float: right; }
-  section.support-wrapper .ticket-details label {
-    position: relative;
-    -webkit-transition: 250ms ease;
-    -moz-transition: 250ms ease;
-    -o-transition: 250ms ease;
-    transition: 250ms ease;
-    color: transparent;
-    font-size: 18px;
-    display: block;
-    margin: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-    section.support-wrapper .ticket-details label span {
-      color: transparent; }
-    section.support-wrapper .ticket-details label i {
-      margin-right: 5px;
-      display: none; }
-    section.support-wrapper .ticket-details label.focused::before {
-      top: 0px;
-      color: #0099FF;
-      font-size: 14px; }
-    section.support-wrapper .ticket-details label.focused::after {
-      top: 0px;
-      font-size: 14px; }
-    section.support-wrapper .ticket-details label::after {
-      content: '*';
-      position: absolute;
-      top: 35px;
-      left: 0px;
-      color: #E84B50;
-      -webkit-transition: 250ms ease;
-      -moz-transition: 250ms ease;
-      -o-transition: 250ms ease;
-      transition: 250ms ease; }
-    section.support-wrapper .ticket-details label::before {
-      content: '';
-      position: absolute;
-      top: 35px;
-      left: 10px;
-      color: black;
-      -webkit-transition: 250ms ease;
-      -moz-transition: 250ms ease;
-      -o-transition: 250ms ease;
-      transition: 250ms ease;
-      z-index: 1000;
-      color: #B4ADB4; }
-    section.support-wrapper .ticket-details label#firstname::before {
-      content: 'First Name'; }
-    section.support-wrapper .ticket-details label#lastname::before {
-      content: 'Last Name'; }
-    section.support-wrapper .ticket-details label#email::before {
-      content: 'Email Address'; }
-    section.support-wrapper .ticket-details label#confirmemail::before {
-      content: 'Confirm Email Address'; }
-    section.support-wrapper .ticket-details label#company::before {
-      content: 'Company'; }
-    section.support-wrapper .ticket-details label#country::before {
-      content: 'Select your Country'; }
-    section.support-wrapper .ticket-details label#search-ticket::before {
-      content: 'Search existing support request'; }
-    section.support-wrapper .ticket-details label#request::before {
-      content: 'Request Subject *'; }
-    section.support-wrapper .ticket-details label#request-msg {
-      color: black; }
-      section.support-wrapper .ticket-details label#request-msg span {
-        color: #E84B50; }
-      section.support-wrapper .ticket-details label#request-msg::before, section.support-wrapper .ticket-details label#request-msg::after {
-        display: none; }
-  section.support-wrapper .ticket-input {
-    border-style: none;
-    border-bottom: 1px solid #aaaaaa;
-    padding: 5px 10px;
-    -webkit-transition: 250ms ease;
-    -moz-transition: 250ms ease;
-    -o-transition: 250ms ease;
-    transition: 250ms ease;
-    width: 100%;
-    color: #666666;
-    font-size: 18px;
-    -webkit-box-shadow: inset 0px 1px 1px transparent;
-    box-shadow: inset 0px 1px 1px transparent;
-    display: block;
-    position: relative;
-    z-index: 1001;
-    background: transparent; }
-    section.support-wrapper .ticket-input:focus {
-      -webkit-box-shadow: inset 0px -1px 1px #0099FF;
-      box-shadow: inset 0px -1px 1px #0099FF;
-      border-color: #0099FF;
-      color: #0099FF; }
   section.support-wrapper .existing-ticket-wrapper {
     margin-bottom: 30px; }
     section.support-wrapper .existing-ticket-wrapper h4 {
@@ -5888,24 +5795,6 @@ section.support-wrapper {
       cursor: pointer; }
       section.support-wrapper .existing-ticket-wrapper button#search-ticket-btn:hover {
         background: #007acc; }
-  section.support-wrapper .new-ticket-wrapper::after {
-    content: '';
-    display: table;
-    clear: both; }
-  section.support-wrapper .new-ticket-wrapper input {
-    width: 100%; }
-  section.support-wrapper .inquiry-wrapper {
-    margin-bottom: 40px; }
-    section.support-wrapper .inquiry-wrapper::after {
-      content: '';
-      display: table;
-      clear: both; }
-    section.support-wrapper .inquiry-wrapper textarea {
-      width: 100%; }
-    section.support-wrapper .inquiry-wrapper .ticket-details {
-      width: 100%; }
-      section.support-wrapper .inquiry-wrapper .ticket-details input {
-        width: 100%; }
   section.support-wrapper .attachment-wrapper .ticket-note-wrapper {
     border-left: 5px solid #459506;
     padding: 10px;
@@ -6002,29 +5891,83 @@ section.support-wrapper {
     border-radius: 2px;
     margin-top: 20px; }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-    -moz-transform: translate(-50%, -50%) rotate(0deg);
-    -o-transform: translate(-50%, -50%) rotate(0deg);
-    transform: translate(-50%, -50%) rotate(0deg); }
-  100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-    -moz-transform: translate(-50%, -50%) rotate(360deg);
-    -o-transform: translate(-50%, -50%) rotate(360deg);
-    transform: translate(-50%, -50%) rotate(360deg); } }
+form.ticket-form {
+  width: 100%; }
+  form.ticket-form fieldset.ticket-fieldset::after {
+    content: '';
+    display: table;
+    clear: both; }
+  form.ticket-form fieldset.ticket-fieldset .field-wrapper {
+    width: 48%;
+    margin-bottom: 30px; }
+    form.ticket-form fieldset.ticket-fieldset .field-wrapper::after {
+      content: '';
+      display: table;
+      clear: both; }
+    form.ticket-form fieldset.ticket-fieldset .field-wrapper#existing-ticket {
+      width: 100%; }
+    form.ticket-form fieldset.ticket-fieldset .field-wrapper span {
+      width: 5%;
+      float: left;
+      text-align: center;
+      color: #333333; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper span i {
+        display: inline-block;
+        margin-top: 10px; }
+    form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container {
+      width: 95%;
+      float: right;
+      border-bottom: 2px solid #E8E8E8;
+      position: relative; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::before, form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::after {
+        position: absolute;
+        z-index: 1000;
+        color: #79757E;
+        font-size: 14px;
+        content: '';
+        -webkit-transition: 250ms ease;
+        -moz-transition: 250ms ease;
+        -o-transition: 250ms ease;
+        transition: 250ms ease; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::before {
+        bottom: 5px;
+        left: 10px; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::after {
+        width: 0%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background: #0099FF; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container.focused::before {
+        bottom: 25px;
+        font-size: 13px;
+        color: #0099FF; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container.focused::after {
+        width: 100%; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#firstname::before {
+        content: 'First Name'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#lastname::before {
+        content: 'Last Name'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#company::before {
+        content: 'Company'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#email::before {
+        content: 'Email Address'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#country::before {
+        content: 'Country'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#subject::before {
+        content: 'Request Subject'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#existing-ticket::before {
+        content: 'Search existing support request'; }
+      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container .ticket-input {
+        width: 100%;
+        border-style: none;
+        background: none;
+        padding: 5px 10px;
+        position: relative;
+        z-index: 1001; }
 
-@keyframes rotate {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-    -moz-transform: translate(-50%, -50%) rotate(0deg);
-    -o-transform: translate(-50%, -50%) rotate(0deg);
-    transform: translate(-50%, -50%) rotate(0deg); }
-  100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-    -moz-transform: translate(-50%, -50%) rotate(360deg);
-    -o-transform: translate(-50%, -50%) rotate(360deg);
-    transform: translate(-50%, -50%) rotate(360deg); } }
+.mce-label {
+  display: none !important; }
 
 section.updates-wrapper {
   width: 100vw;
@@ -6114,14 +6057,14 @@ section.updates-wrapper {
       display: block; }
 
 #footer-wrapper {
-  background: #11252F !important; }
+  background: #032259 !important; }
 
 footer.footer-wrapper {
   padding: 0px;
   position: relative;
   display: block;
   height: auto;
-  background: #11252F; }
+  background: #032259; }
   footer.footer-wrapper article.footer-container {
     display: block;
     width: 100%;
@@ -6199,7 +6142,7 @@ footer.footer-wrapper {
           -o-transition: 250ms ease;
           transition: 250ms ease; }
           footer.footer-wrapper article.footer-container section .get-in-touch button:hover {
-            background: #11252F; }
+            background: #032259; }
           footer.footer-wrapper article.footer-container section .get-in-touch button i {
             margin-left: 5p; }
   footer.footer-wrapper article.credit-cards {

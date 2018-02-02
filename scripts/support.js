@@ -54,32 +54,31 @@ $(function() {
     });
 
 
-    var ticketInput =   $('.ticket-details input.ticket-input');
-    var ticketLabel =   $('.ticket-details label');
+    var ticketInput =   $('.field-container input.ticket-input');
+    var ticketLabel =   $('.field-container label');
 
     
-    $(document).on('focus','.ticket-details input.ticket-input', function() {
-        $(this).siblings('label').addClass('focused');
+    $(document).on('focus','.field-container input.ticket-input', function() {
+        $(this).parent('.field-container').addClass('focused');
     });
 
-    $(document).on('blur','.ticket-details input.ticket-input', function() {
+    $(document).on('blur','.field-container input.ticket-input', function() {
         if ( $(this).val().length > 1 ) {
-            $(this).siblings('label').addClass('focused');
-            
+            $(this).parent('.field-container').addClass('focused');
         } else {
-            $(this).siblings('label').removeClass('focused');
+            $(this).parent('.field-container').removeClass('focused');
         }
     });
 
-    $(document).on('focus','.ticket-details select.ticket-input', function() { 
-        $(this).siblings('label').addClass('focused');
+    $(document).on('focus','.field-container select.ticket-input', function() { 
+        $(this).parent('.field-container').addClass('focused');
     });
 
-    $(document).on('blur','.ticket-details select.ticket-input', function() {
+    $(document).on('blur','.field-container select.ticket-input', function() {
         if ( $(this).val() ) {
-            $(this).siblings('label').addClass('focused');
+            $(this).parent('.field-container').addClass('focused');
         } else {
-            $(this).siblings('label').removeClass('focused');
+            $(this).parent('.field-container').removeClass('focused');
         }
     });
 

@@ -1,3 +1,9 @@
+<div class="support-header">
+    <h1>We're here to help.</h1>
+    <p>Here at 4D Labs, we're committed to your success. We encourage you to check out our Documentation and Firmware links below, and the 4D Labs Forum for user discussions. However, if you get stuck and need technical support, please submit a support ticket, and we will get back to you as soon as possible.</p>
+</div>
+
+
 <section class="support-boxes">
     <ul class="support-list">
         <li class="support-item" id="submit-ticket-wrapper">
@@ -9,7 +15,7 @@
 
                 <label for="">Submit a Ticket</label>
 
-                <p>Open a new or view and existing support ticket.</p>
+                <p>Open a new or view an existing support ticket.</p>
 
                 <a href="http://">View Now →</a>
             </article>
@@ -24,7 +30,7 @@
 
                 <label for="">Documentation</label>
 
-                <p>Resurces to provide you with the latest Datasheets on all 4D Labs products.</p>
+                <p>Resources to provide you with the latest Datasheets on all 4D Labs Products.</p>
 
                 <a href="datasheets">View Now →</a>
             </article>

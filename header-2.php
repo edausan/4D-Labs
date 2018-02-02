@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="default-css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">

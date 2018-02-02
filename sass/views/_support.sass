@@ -155,125 +155,13 @@ section.support-wrapper
 
 
     h4 
-        color: $blue
-        border-bottom: 1px solid $blue
+        color: $darkBlue
+        border-bottom: 1px solid $darkBlue
         padding-bottom: 10px
         font-weight: 600
-        text-transform: uppercase
         margin-top: 50px
-        margin-bottom: 20px
+        margin-bottom: 30px
         font-size: 18px
-
-
-
-    .ticket-details
-        width: 49%
-        float: left
-        margin-bottom: 20px
-
-        &.f-right
-            float: right           
-
-            
-
-    .ticket-details
-        label
-            position: relative
-            +transition
-            color: transparent
-            font-size: 18px
-            display: block
-            margin: 0
-            user-select: none
-
-            span
-                color: transparent
-                
-            i 
-                margin-right: 5px
-                display: none
-
-            &.focused
-                &::before
-                    top: 0px
-                    color: $blue
-                    font-size: 14px
-
-                &::after
-                    top: 0px
-                    font-size: 14px
-
-            &::after
-                content: '*'
-                position: absolute
-                top: 35px
-                left: 0px
-                color: $red
-                +transition
-
-            &::before
-                content: ''
-                position: absolute
-                top: 35px
-                left: 10px
-                color: black
-                +transition
-                z-index: 1000
-                color: #B4ADB4
-
-            &#firstname 
-                &::before
-                    content: 'First Name'
-            &#lastname 
-                &::before
-                    content: 'Last Name'
-            &#email
-                &::before
-                    content: 'Email Address'
-            &#confirmemail
-                &::before
-                    content: 'Confirm Email Address'
-            &#company
-                &::before
-                    content: 'Company'
-            &#country
-                &::before
-                    content: 'Select your Country'
-            &#search-ticket
-                &::before
-                    content: 'Search existing support request'
-            &#request
-                &::before
-                    content: 'Request Subject *'
-
-            &#request-msg
-                color: black
-
-                span 
-                    color: $red
-
-                &::before, &::after
-                    display: none
-
-    .ticket-input
-        border-style: none
-        border-bottom: 1px solid #aaaaaa
-        padding: 5px 10px
-        +transition
-        width: 100%
-        color: #666666
-        font-size: 18px
-        box-shadow: inset 0px 1px 1px transparent
-        display: block 
-        position: relative
-        z-index: 1001
-        background: transparent
-        
-        &:focus
-            box-shadow: inset 0px -1px 1px $blue
-            border-color: $blue
-            color: $blue
-        
 
     .existing-ticket-wrapper
         margin-bottom: 30px
@@ -319,27 +207,6 @@ section.support-wrapper
 
             &:hover
                 background: darken($blue, 10%)
-
-
-    .new-ticket-wrapper
-        +clear
-
-        input
-            width: 100%
-
-    .inquiry-wrapper
-        margin-bottom: 40px
-        +clear
-
-        textarea
-            width: 100%
-
-        .ticket-details
-            width: 100%
-
-            input
-                width: 100%
-
 
     .attachment-wrapper
 
@@ -445,11 +312,3 @@ section.support-wrapper
         +transition
         +border-radius(2px)
         margin-top: 20px
-
-                
-
-@keyframes rotate
-    0%
-        +transform(translate(-50%,-50%) rotate(0deg))
-    100%
-        +transform(translate(-50%,-50%) rotate(360deg))

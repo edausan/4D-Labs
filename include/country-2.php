@@ -1,4 +1,4 @@
-<select name="" id="" class="ticket-input">
+<select name="<?php echo $selName; ?>" id="" class="ticket-input">
     <option value="0" disabled selected> </option>
     <option value="1">Afghanistan</option>
     <option value="2">Albania</option>

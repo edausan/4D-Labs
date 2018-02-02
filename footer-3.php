@@ -12,17 +12,17 @@
                     <div class="footer-content">
                         <h2>4D Labs</h2>
                         <ul>
-                            <li><a href="app notes.php">App Notes</a></li>
-                            <li><a href="http://">Distributors</a></li>
-                            <li><a href="http://">Shopping Cart</a></li>
-                            <li><a href="http://">Account</a></li>
+                            <li><a href="app notes">App Notes</a></li>
+                            <li><a href="distributors">Distributors</a></li>
+                            <li><a href="shopping-cart">Shopping Cart</a></li>
+                            <li><a href="account">Account</a></li>
                         </ul>
 
                         <h2 id="corporate">Corporate</h2>
                         <ul>
                             <li><a href="about">About Us</a></li>
-                            <li><a href="http://">Contact Us</a></li>
-                            <li><a href="http://">News and Events</a></li>
+                            <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="news-and-events">News and Events</a></li>
                         </ul>
                     </div>
 
@@ -121,11 +121,14 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tinymce/tinymce.min.js"></script>
+
 <script src="scripts/navbar.js"></script>
 <script src="scripts/shop.js"></script>
 <script src="scripts/register.js"></script>
 <script src="scripts/support.js"></script>
 <script src="scripts/product-tabs.js"></script>
+<script src="scripts/mce.js"></script>
 
 </body>
 </html>
