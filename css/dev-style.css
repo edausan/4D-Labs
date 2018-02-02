@@ -5626,9 +5626,8 @@ section.support-wrapper {
   section.support-wrapper .support-header p {
     margin: 20px 0px 50px;
     font-size: 18px;
-    text-align: center; }
-    section.support-wrapper .support-header p span {
-      color: #327B83; }
+    text-align: center;
+    color: #327B83; }
   section.support-wrapper section.support-boxes {
     margin-bottom: 80px; }
     section.support-wrapper section.support-boxes ul.support-list::after {
