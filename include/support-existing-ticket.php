@@ -1,4 +1,4 @@
-<form action="ticket-search.php" method="post" class="ticket-form existing-ticket-wrapper">
+<form action="ticket-search.php" method="post" class="ticket-form existing-ticket-wrapper submit-ticket" id="existing">
     <h4>Do you have an existing support request that you want to view?</span></h4>
     
     <fieldset class="ticket-fieldset">

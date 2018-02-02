@@ -5752,7 +5752,7 @@ section.support-wrapper {
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 30px;
-    font-size: 18px; }
+    font-size: 24px; }
   section.support-wrapper .existing-ticket-wrapper {
     margin-bottom: 30px; }
     section.support-wrapper .existing-ticket-wrapper h4 {
@@ -5797,7 +5797,7 @@ section.support-wrapper {
       transition: 250ms ease;
       cursor: pointer; }
       section.support-wrapper .existing-ticket-wrapper button#search-ticket-btn:hover {
-        background: #007acc; }
+        background: #24585e; }
   section.support-wrapper .attachment-wrapper .ticket-note-wrapper {
     border-left: 5px solid #0099FF;
     padding: 10px;
@@ -5820,6 +5820,7 @@ section.support-wrapper {
     background: #343D44;
     color: white;
     cursor: pointer;
+    font-size: 16px;
     -webkit-transition: 250ms ease;
     -moz-transition: 250ms ease;
     -o-transition: 250ms ease;
@@ -5884,6 +5885,7 @@ section.support-wrapper {
     background: #459506;
     color: white;
     cursor: pointer;
+    font-size: 18px;
     -webkit-transition: 250ms ease;
     -moz-transition: 250ms ease;
     -o-transition: 250ms ease;
@@ -5900,9 +5902,16 @@ form.ticket-form {
     content: '';
     display: table;
     clear: both; }
+  form.ticket-form fieldset.ticket-fieldset .field-row {
+    display: block; }
+    form.ticket-form fieldset.ticket-fieldset .field-row::after {
+      content: '';
+      display: table;
+      clear: both; }
   form.ticket-form fieldset.ticket-fieldset .field-wrapper {
     width: 48%;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    float: left; }
     form.ticket-form fieldset.ticket-fieldset .field-wrapper::after {
       content: '';
       display: table;
@@ -5940,7 +5949,7 @@ form.ticket-form {
         height: 2px;
         bottom: -2px;
         left: 0;
-        background: #0099FF; }
+        background: black; }
       form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container.focused::before {
         bottom: 25px;
         font-size: 13px;

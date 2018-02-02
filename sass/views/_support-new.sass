@@ -4,9 +4,14 @@ form.ticket-form
     fieldset.ticket-fieldset
         +clear
 
+        .field-row
+            display: block
+            +clear
+
         .field-wrapper
             width: 48%
             margin-bottom: 30px
+            float: left
             +clear
 
             &#existing-ticket
@@ -45,7 +50,7 @@ form.ticket-form
                     height: 2px
                     bottom: -2px
                     left: 0
-                    background: $blue
+                    background: black
 
                 &.focused
                     &::before

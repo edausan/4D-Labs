@@ -1,5 +1,5 @@
 <?php 
-    define('TITLE', 'Support');
+    define('TITLE', 'Forum');
     include('header-2.php');
 ?> 
 
@@ -7,7 +7,7 @@
 
     <article class="lab-row">
 
-        <h1>Datasheets</h1>
+        <h1>Forum</h1>
 
     </article>
 </section>

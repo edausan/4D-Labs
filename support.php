@@ -9,8 +9,6 @@
 
         <section class="support-wrapper">
 
-
-
             <!-- Support Boxes -->
             <?php include('include/support-boxes.php'); ?>
 

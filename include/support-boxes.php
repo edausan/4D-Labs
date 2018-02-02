@@ -17,55 +17,61 @@
 
                 <p>Open a new or view an existing support ticket.</p>
 
-                <a href="http://">View Now →</a>
+                <a href="#existing">View Now →</a>
             </article>
         </li>
 
         <li class="support-item" id="documentation-wrapper">
-            <article class="support-box" >
-                <figure class="support-icon-wrapper">
-                    <img src="img/support-icons/documentation.png" alt="">
-                    <img src="img/support-icons/documentation-w.png" alt="">
-                </figure>
+            <a href="documentation">
+                <article class="support-box" >
+                    <figure class="support-icon-wrapper">
+                        <img src="img/support-icons/documentation.png" alt="">
+                        <img src="img/support-icons/documentation-w.png" alt="">
+                    </figure>
 
-                <label for="">Documentation</label>
+                    <label for="">Documentation</label>
 
-                <p>Resources to provide you with the latest Datasheets on all 4D Labs Products.</p>
+                    <p>Resources to provide you with the latest Datasheets on all 4D Labs Products.</p>
 
-                <a href="datasheets">View Now →</a>
-            </article>
+                    <a href="datasheets">View Now →</a>
+                </article>
+            </a>
         </li>
 
         
 
         <li class="support-item" id="forum-wrapper">
-            <article class="support-box">
-                <figure class="support-icon-wrapper">
-                    <img src="img/support-icons/forum.png" alt="">
-                    <img src="img/support-icons/forum-w.png" alt="">
-                </figure>
+            <a href="forum">
+                <article class="support-box">
+                    <figure class="support-icon-wrapper">
+                        <img src="img/support-icons/forum.png" alt="">
+                        <img src="img/support-icons/forum-w.png" alt="">
+                    </figure>
 
-                <label for="">Forum</label>
+                    <label for="">Forum</label>
 
-                <p>Start a discussion with the community of 4D Labs staff and customers.</p>
+                    <p>Start a discussion with the community of 4D Labs staff and customers.</p>
 
-                <a href="http://">View Now →</a>
-            </article>
+                    <a href="http://">View Now →</a>
+                </article>
+            </a>
         </li>
 
         <li class="support-item" id="firmware-wrapper">
-            <article class="support-box">
-                <figure class="support-icon-wrapper">
-                    <img src="img/support-icons/firmware.png" alt="">
-                    <img src="img/support-icons/firmware-w.png" alt="">
-                </figure>
+            <a href="firmware">
+                <article class="support-box">
+                    <figure class="support-icon-wrapper">
+                        <img src="img/support-icons/firmware.png" alt="">
+                        <img src="img/support-icons/firmware-w.png" alt="">
+                    </figure>
 
-                <label for="">Firmware</label>
+                    <label for="">Firmware</label>
 
-                <p>Find the latest software and firmware for your 4D Labs product.</p>                            
+                    <p>Find the latest software and firmware for your 4D Labs product.</p>                            
 
-                <a href="http://">View Now →</a>
-            </article>
+                    <a href="http://">View Now →</a>
+                </article>
+            </a>
         </li>
 
     </ul>
