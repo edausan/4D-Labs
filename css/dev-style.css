@@ -5622,129 +5622,133 @@ section.support-wrapper {
   section.support-wrapper .support-header h1 {
     text-align: center;
     font-size: 60px;
-    color: #0099FF; }
+    color: #327B83; }
   section.support-wrapper .support-header p {
     margin: 20px 0px 50px;
     font-size: 18px;
     text-align: center; }
-  section.support-wrapper section.support-boxes ul.support-list::after {
-    content: '';
-    display: table;
-    clear: both; }
-  section.support-wrapper section.support-boxes ul.support-list li.support-item {
-    width: 24%;
-    float: left;
-    position: relative;
-    background: #eeeeee;
-    cursor: pointer;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    -webkit-transition: 250ms ease;
-    -moz-transition: 250ms ease;
-    -o-transition: 250ms ease;
-    transition: 250ms ease; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item::before {
+    section.support-wrapper .support-header p span {
+      color: #327B83; }
+  section.support-wrapper section.support-boxes {
+    margin-bottom: 80px; }
+    section.support-wrapper section.support-boxes ul.support-list::after {
       content: '';
-      width: 100%;
-      height: 3%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1000;
+      display: table;
+      clear: both; }
+    section.support-wrapper section.support-boxes ul.support-list li.support-item {
+      width: 24%;
+      float: left;
+      position: relative;
+      background: #eeeeee;
+      cursor: pointer;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       -webkit-transition: 250ms ease;
       -moz-transition: 250ms ease;
       -o-transition: 250ms ease;
       transition: 250ms ease; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item:hover label, section.support-wrapper section.support-boxes ul.support-list li.support-item:hover p, section.support-wrapper section.support-boxes ul.support-list li.support-item:hover a {
-      color: white !important;
-      cursor: pointer; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item:hover img:nth-child(2) {
-      opacity: 1 !important; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item:hover img:nth-child(1) {
-      opacity: 0; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item:hover::before {
-      height: 100%; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper {
-      margin-right: 15px; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper:hover {
-        -webkit-box-shadow: 0 8px 32px rgba(69, 149, 6, 0.3);
-        box-shadow: 0 8px 32px rgba(69, 149, 6, 0.3); }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper label {
-        color: #459506; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper::before {
-        background: #459506; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item#documentation-wrapper:hover {
-      -webkit-box-shadow: 0 8px 32px rgba(0, 153, 255, 0.3);
-      box-shadow: 0 8px 32px rgba(0, 153, 255, 0.3); }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item#documentation-wrapper label {
-      color: #0099FF; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item#documentation-wrapper::before {
-      background: #0099FF; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper {
-      float: right; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper:hover {
-        -webkit-box-shadow: 0 8px 32px rgba(112, 47, 143, 0.3);
-        box-shadow: 0 8px 32px rgba(112, 47, 143, 0.3); }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper label {
-        color: #702f8f; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper::before {
-        background: #702f8f; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper {
-      float: right;
-      margin-left: 15px; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper:hover {
-        -webkit-box-shadow: 0 8px 32px rgba(232, 75, 80, 0.3);
-        box-shadow: 0 8px 32px rgba(232, 75, 80, 0.3); }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper label {
-        color: #E84B50; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper::before {
-        background: #E84B50; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item a {
-      display: block; }
-    section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box {
-      width: 100%;
-      padding: 30px;
-      text-align: center;
-      position: relative;
-      z-index: 1001;
-      min-height: 310px;
-      height: 310px; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper {
-        margin: 0;
-        height: 100px;
+      section.support-wrapper section.support-boxes ul.support-list li.support-item::before {
+        content: '';
         width: 100%;
-        position: relative; }
-        section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -o-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          height: 70%;
-          width: auto;
-          -webkit-transition: 250ms ease;
-          -moz-transition: 250ms ease;
-          -o-transition: 250ms ease;
-          transition: 250ms ease; }
-          section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper img:nth-child(2) {
-            opacity: 0; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box label {
-        margin: 0;
-        display: block;
-        margin: 10px 0px;
-        text-transform: uppercase;
-        font-size: 20px; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box p {
-        height: 63px; }
-      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box a {
-        text-decoration: none;
-        color: #343D44; }
+        height: 3%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        -webkit-transition: 250ms ease;
+        -moz-transition: 250ms ease;
+        -o-transition: 250ms ease;
+        transition: 250ms ease; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item:hover label, section.support-wrapper section.support-boxes ul.support-list li.support-item:hover p, section.support-wrapper section.support-boxes ul.support-list li.support-item:hover a {
+        color: white !important;
+        cursor: pointer; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item:hover img:nth-child(2) {
+        opacity: 1 !important; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item:hover img:nth-child(1) {
+        opacity: 0; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item:hover::before {
+        height: 100%; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper {
+        margin-right: 15px; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper:hover {
+          -webkit-box-shadow: 0 8px 32px rgba(69, 149, 6, 0.3);
+          box-shadow: 0 8px 32px rgba(69, 149, 6, 0.3); }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper label {
+          color: #459506; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#submit-ticket-wrapper::before {
+          background: #459506; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item#documentation-wrapper:hover {
+        -webkit-box-shadow: 0 8px 32px rgba(0, 153, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 153, 255, 0.3); }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item#documentation-wrapper label {
+        color: #0099FF; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item#documentation-wrapper::before {
+        background: #0099FF; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper {
+        float: right; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper:hover {
+          -webkit-box-shadow: 0 8px 32px rgba(112, 47, 143, 0.3);
+          box-shadow: 0 8px 32px rgba(112, 47, 143, 0.3); }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper label {
+          color: #702f8f; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#firmware-wrapper::before {
+          background: #702f8f; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper {
+        float: right;
+        margin-left: 15px; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper:hover {
+          -webkit-box-shadow: 0 8px 32px rgba(232, 75, 80, 0.3);
+          box-shadow: 0 8px 32px rgba(232, 75, 80, 0.3); }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper label {
+          color: #E84B50; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item#forum-wrapper::before {
+          background: #E84B50; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item a {
+        display: block; }
+      section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        z-index: 1001;
+        min-height: 310px;
+        height: 310px; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper {
+          margin: 0;
+          height: 100px;
+          width: 100%;
+          position: relative; }
+          section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            height: 70%;
+            width: auto;
+            -webkit-transition: 250ms ease;
+            -moz-transition: 250ms ease;
+            -o-transition: 250ms ease;
+            transition: 250ms ease; }
+            section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box figure.support-icon-wrapper img:nth-child(2) {
+              opacity: 0; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box label {
+          margin: 0;
+          display: block;
+          margin: 10px 0px;
+          text-transform: uppercase;
+          font-size: 20px; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box p {
+          height: 63px; }
+        section.support-wrapper section.support-boxes ul.support-list li.support-item article.support-box a {
+          text-decoration: none;
+          color: #343D44; }
   section.support-wrapper h4 {
-    color: #032259;
-    border-bottom: 1px solid #032259;
+    color: #327B83;
+    border-bottom: 1px solid #327B83;
     padding-bottom: 10px;
     font-weight: 600;
     margin-top: 50px;
@@ -5779,8 +5783,8 @@ section.support-wrapper {
     section.support-wrapper .existing-ticket-wrapper button#search-ticket-btn {
       border-style: none;
       padding: 5px;
-      width: 25%;
-      background: #0099FF;
+      width: 10%;
+      background: #327B83;
       color: white;
       margin: 10px auto;
       display: block;
@@ -5796,12 +5800,12 @@ section.support-wrapper {
       section.support-wrapper .existing-ticket-wrapper button#search-ticket-btn:hover {
         background: #007acc; }
   section.support-wrapper .attachment-wrapper .ticket-note-wrapper {
-    border-left: 5px solid #459506;
+    border-left: 5px solid #0099FF;
     padding: 10px;
     background: #eeeeee;
     margin-bottom: 20px; }
     section.support-wrapper .attachment-wrapper .ticket-note-wrapper label {
-      color: #459506;
+      color: #0099FF;
       margin: 0; }
     section.support-wrapper .attachment-wrapper .ticket-note-wrapper p {
       margin: 0; }

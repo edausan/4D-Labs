@@ -12,7 +12,7 @@
 
 
             <!-- Support Boxes -->
-            <!-- <?php include('include/support-boxes.php'); ?> -->
+            <?php include('include/support-boxes.php'); ?>
 
             <!-- Exisiting Ticket Search Bar -->
             <?php include('include/support-existing-ticket.php'); ?>

@@ -69,6 +69,6 @@
 
     </fieldset>
 
-    <!-- <?php include('include/support-attachment.php'); ?> -->
+    <?php include('include/support-attachment.php'); ?>
 
 </form>
