@@ -2,6 +2,17 @@ section.support-wrapper
     padding: 50px 0px
     font-family: 'Avenir'
 
+    .support-header
+        h1 
+            text-align: center
+            font-size: 60px
+            color: $blue
+        p 
+            margin: 20px 0px 50px
+            font-size: 18px
+            text-align: center
+
+
     section.support-boxes
         ul.support-list
             +clear
@@ -9,46 +20,149 @@ section.support-wrapper
             li.support-item
                 width: 24%
                 float: left
+                position: relative
+                background: #eeeeee
+                cursor: pointer
+                box-shadow: 0 1px 3px rgba(black, .1)
+                +transition
+                
+
+                &::before
+                    content: ''
+                    width: 100%
+                    height: 3%
+                    position: absolute
+                    top: 0
+                    left: 0
+                    z-index: 1000
+                    +transition
+
+                &:hover
+                    
+                    label,p, a
+                        color: white !important
+                        cursor: pointer
+                    
+                    img
+                        &:nth-child(2)
+                            opacity: 1 !important
+                            // animation: rotate 15s linear infinite forwards
+
+                        &:nth-child(1)
+                            opacity: 0
+
+                        
+                    
+                    &::before
+                        height: 100%
 
                 &#submit-ticket-wrapper
                     margin-right: 15px
 
-                &#firmware-wrapper, &#forum-wrapper
+                    &:hover
+                        box-shadow: 0 8px 32px rgba($designer, .3)
+
+                    label 
+                        color: $designer
+                    
+                    &::before
+                        background: $designer
+
+                &#documentation-wrapper
+
+                    &:hover
+                        box-shadow: 0 8px 32px rgba($blue, .3)
+
+                    label 
+                        color: $blue
+
+                    &::before
+                        background: $blue
+
+                &#firmware-wrapper
                     float: right
 
+                    &:hover
+                        box-shadow: 0 8px 32px rgba($purple, .3)
+
+                    label 
+                        color: $purple                    
+
+                    &::before
+                        background: $purple
+
                 &#forum-wrapper
+                    float: right
                     margin-left: 15px
+
+                    &:hover
+                        box-shadow: 0 8px 32px rgba($red, .3)
+                    
+                    label 
+                        color: $red 
+
+                    &::before
+                        background: $red
                     
 
                 a 
+                    display: block
+
 
                 article.support-box
                     width: 100%
-                    background: #eeeeee
                     padding: 30px
                     text-align: center
+                    position: relative
+                    z-index: 1001
+                    min-height: 310px
+                    height: 310px
                     
 
                     figure.support-icon-wrapper
                         margin: 0
+                        height: 100px
+                        width: 100%
+                        position: relative
+
                         img 
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            +transform(translate(-50%, -50%))
+                            height: 70%
+                            width: auto
+                            +transition
+
+                            &:nth-child(2)
+                                opacity: 0
 
                     label
                         margin: 0
                         display: block 
+                        margin: 10px 0px
+                        text-transform: uppercase
+                        font-size: 20px
+                    
+                    p 
+                        height: 63px
+
 
                     a 
+                        text-decoration: none
+                        color: $footerGrey
 
 
 
     h4 
-        color: $paleBlue
-        border-bottom: 1px solid $paleBlue
+        color: $blue
+        border-bottom: 1px solid $blue
         padding-bottom: 10px
-        margin-top: 50px
         font-weight: 600
         text-transform: uppercase
-        margin-bottom: 40px
+        margin-top: 50px
+        margin-bottom: 20px
+        font-size: 18px
 
 
 
@@ -58,48 +172,128 @@ section.support-wrapper
         margin-bottom: 20px
 
         &.f-right
-            float: right
+            float: right           
 
-        label 
-            color: black
-            font-size: 24px
-            font-weight: 600
+            
+
+    .ticket-details
+        label
+            position: relative
+            +transition
+            color: transparent
+            font-size: 18px
+            display: block
+            margin: 0
+            user-select: none
 
             span
-                color: #A5003A
+                color: transparent
                 
             i 
                 margin-right: 5px
                 display: none
 
+            &.focused
+                &::before
+                    top: 0px
+                    color: $blue
+                    font-size: 14px
+
+                &::after
+                    top: 0px
+                    font-size: 14px
+
+            &::after
+                content: '*'
+                position: absolute
+                top: 35px
+                left: 0px
+                color: $red
+                +transition
+
+            &::before
+                content: ''
+                position: absolute
+                top: 35px
+                left: 10px
+                color: black
+                +transition
+                z-index: 1000
+                color: #B4ADB4
+
+            &#firstname 
+                &::before
+                    content: 'First Name'
+            &#lastname 
+                &::before
+                    content: 'Last Name'
+            &#email
+                &::before
+                    content: 'Email Address'
+            &#confirmemail
+                &::before
+                    content: 'Confirm Email Address'
+            &#company
+                &::before
+                    content: 'Company'
+            &#country
+                &::before
+                    content: 'Select your Country'
+            &#search-ticket
+                &::before
+                    content: 'Search existing support request'
+            &#request
+                &::before
+                    content: 'Request Subject *'
+
+            &#request-msg
+                color: black
+
+                span 
+                    color: $red
+
+                &::before, &::after
+                    display: none
+
     .ticket-input
         border-style: none
-        border: 1px solid #aaaaaa
-        +border-radius
+        border-bottom: 1px solid #aaaaaa
         padding: 5px 10px
         +transition
         width: 100%
         color: #666666
         font-size: 18px
-        box-shadow: inset 0px 1px 1px transparent, inset 0px -1px 1px transparent, inset 1px 0px 1px transparent, inset -1px 0px 1px transparent
-
+        box-shadow: inset 0px 1px 1px transparent
+        display: block 
+        position: relative
+        z-index: 1001
+        background: transparent
         
         &:focus
-            box-shadow: inset 0px 1px 1px $paleBlue, inset 0px -1px 1px $paleBlue, inset 1px 0px 1px $paleBlue, inset -1px 0px 1px $paleBlue
-            border-color: $paleBlue
-            color: $paleBlue
+            box-shadow: inset 0px -1px 1px $blue
+            border-color: $blue
+            color: $blue
         
 
     .existing-ticket-wrapper
         margin-bottom: 30px
 
         h4 
-            color: $paleBlue
-            border-bottom: 1px solid $paleBlue
-            padding-bottom: 10px
             text-transform: initial
+            position: relative
+
+            span 
+                color: $red
+                position: absolute
+                bottom: 10px
+                right: 10px
+                font-style: italic
+                font-size: 14px
+                font-weight: normal
 
         .ticket-input-wrapper
+            width: 100%
+            float: none
             +clear
 
             span 
@@ -107,7 +301,7 @@ section.support-wrapper
                 float: left
 
             input#ticket-input
-                width: 98%
+                width: 100%
                 float: right
                 padding: 5px 10px
 
@@ -115,11 +309,16 @@ section.support-wrapper
             border-style: none
             padding: 5px
             width: 25%
-            background: $paleBlue
+            background: $blue
             color: white 
             margin: 10px auto
             display: block
             +border-radius(2px)
+            +transition
+            cursor: pointer
+
+            &:hover
+                background: darken($blue, 10%)
 
 
     .new-ticket-wrapper
@@ -132,20 +331,11 @@ section.support-wrapper
         margin-bottom: 40px
         +clear
 
-        h4 
-
         textarea
             width: 100%
 
         .ticket-details
             width: 100%
-            
-
-            label 
-                color: black
-                font-size: 24px
-                font-weight: 600
-                display: block
 
             input
                 width: 100%
@@ -156,13 +346,14 @@ section.support-wrapper
         h4 
 
         .ticket-note-wrapper
-            border-left: 5px solid $paleBlue
+            border-left: 5px solid $designer
             padding: 10px
             background: #eeeeee
             margin-bottom: 20px
 
             label 
-                color: $paleBlue
+                color: $designer
+                margin: 0
 
             p 
                 margin: 0
@@ -257,3 +448,8 @@ section.support-wrapper
 
                 
 
+@keyframes rotate
+    0%
+        +transform(translate(-50%,-50%) rotate(0deg))
+    100%
+        +transform(translate(-50%,-50%) rotate(360deg))
