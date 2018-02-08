@@ -129,6 +129,8 @@
 <script src="scripts/support.js"></script>
 <script src="scripts/product-tabs.js"></script>
 <script src="scripts/mce.js"></script>
+<script src="scripts/documentation.js"></script>
+<script src="scripts/parametric-search.js"></script>
 
 </body>
 </html>

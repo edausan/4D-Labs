@@ -1,0 +1,112 @@
+section.compare-popup-wrapper
+    background: rgba(black,.5)
+    position: fixed
+    width: 100vw
+    height: 100vh
+    opacity: 0
+    z-index: 1005
+    +transition(350ms ease)
+
+    &.pop
+        opacity: 1
+
+        .compare-popup
+            +transform(translate(-50%, -60%))
+
+    .compare-popup
+        background: white 
+        width: 1000px
+        height: auto
+        position: absolute
+        top: 50%
+        left: 50%
+        +transform(translate(-50%, -150%))
+        +border-radius(5px)
+        box-shadow: 0 8px 32px rgba(black, .5)
+        overflow: hidden
+        +transition(350ms ease)
+
+        header.popup-header
+            width: 100%
+            padding: 15px 40px
+            background: #F4F4F4
+            border-bottom: 1px solid #e5e5e5
+            +clear
+
+            h3 
+                float: left 
+                font-size: 20px
+                font-weight: 600
+
+            button#compare-x-btn
+                float: right 
+                border-style: none
+                background: none 
+                color: black
+                opacity: .5
+                cursor: pointer
+                font-size: 20px
+
+                &:hover
+                    opacity: .7
+
+        .compare-tb-wrapper
+            width: 100%
+            padding: 15px
+
+            .compare-table-data-wrapper
+                height: 40vh
+                overflow-y: auto 
+
+            table.compare-table
+                border: 1px solid #cccccc
+                width: 100%
+                position: relative
+                
+
+                &#compare-table-header
+                    max-height: 46px
+
+                &#compare-table-data
+                    
+                
+                thead 
+                    width: 100%
+
+                    tr  
+                        background: #E9E9E9
+                        width: 100%
+                        border-bottom: 1px solid #cccccc
+                        display: flex
+
+                        th.compare-th
+                            // width: 16.66666666666667%
+                            padding: 12px 10px
+                            flex-grow: 1
+
+                            &.compared-prod
+
+                                a 
+
+                tbody 
+                    tr 
+                        border-bottom: 1px solid #eeeeee
+                        td 
+                            padding: 12px 10px
+                            background: #FFFFFF
+                            width: 16.66666666666667%
+
+
+
+        button.compare-close-btn
+            padding: 5px 30px
+            background: $paleBlue
+            color: white 
+            +border-radius(2px)
+            margin: 20px
+            float: right
+            border-style: none
+            cursor: pointer
+
+            &:hover
+                background: darken($paleBlue, 10%)

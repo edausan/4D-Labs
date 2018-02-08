@@ -1,0 +1,109 @@
+section.datasheet-wrapper,
+section.firmware-wrapper,
+    width: 100%
+    position: relative
+    font-family: Arial, Helvetica, sans-serif
+    +clear 
+
+    .doc-container
+        margin: 50px 0px
+        +clear
+
+    article.datasheet-content
+        width: 100%
+        float: right
+
+        h1 
+            color: $paleBlue
+
+        .datasheet-search
+            width: 100%
+            margin-bottom: 40px
+
+            label 
+                margin-right: 100px
+
+            select.datasheet-list
+                padding: 10px 20px
+                +border-radius 
+                border-style: none
+                border: 1px solid #cccccc
+                margin-right: 50px
+                +transition
+
+                &:focus
+                    border-color: $paleBlue
+            
+            input#datasheet-search-input
+                @extend select.datasheet-list
+                width: 25%
+                padding: 10px
+
+                &.hidden
+                    display: none
+
+            button#datasheet-search-btn
+                @extend select.datasheet-list
+                background: $orange
+                color: white 
+                border-color: $orange
+                margin: 0
+                width: 15%
+                cursor: pointer
+                +transition
+
+                &:focus
+                    border-color: $orange
+
+                &:hover
+                    background: darken($orange, 10%)
+
+
+        .datasheet-table-wrapper
+            width: 100%
+
+            table.datasheet-table
+                width: 100%
+
+                thead 
+                    tr 
+                        th 
+                            color: $paleBlue
+                            font-size: 16px
+                            border-bottom: 1px solid #cccccc
+                            
+                            &#products 
+                                width: 15%
+                                border-right: 1px solid #cccccc
+
+                            &#document-title
+                                width: 70%
+                                padding-left: 10px
+                            
+                            &#last-updated
+                                width: 15%
+                                border-left: 1px solid #cccccc
+                                padding-left: 10px
+
+                tbody
+                    tr 
+                        border-bottom: 1px solid #cccccc
+                        
+                        td
+                            padding: 5px 0px
+
+                            &#products-td
+                                border-right: 1px solid #cccccc
+
+                            &#doc-title-td
+                                padding-left: 10px
+
+                                a
+                                    color: $paleBlue
+
+                            &#last-updated-td
+                                border-left: 1px solid #cccccc
+                                padding-left: 10px
+
+
+    

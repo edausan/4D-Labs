@@ -1,7 +1,7 @@
 <?php 
-    define('TITLE', 'Firmware');
+    define('TITLE', 'Datasheets');
     include('header-2.php');
-    $breads =   array('support','firmware');
+    $breads =   array('support','datasheets');
 ?> 
 
 <section class="lab-container">
@@ -11,11 +11,11 @@
 
     <article class="lab-row">
 
-        <section class="firmware-wrapper">
+        <section class="datasheet-wrapper">
 
             <div class="doc-container">
                 <?php
-                    include('include/firmware-content.php');
+                    include('include/datasheet-content.php');
                 ?>
             </div>
             

@@ -24,6 +24,7 @@
 </head>
 <?php include('arrays.php'); ?>
 <body>
+<?php include('include/parametric-compare-popup.php'); ?>
 
     <div class="to-top">
         <i class="fa fa-chevron-up"></i>

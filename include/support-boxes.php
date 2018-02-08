@@ -22,7 +22,7 @@
         </li>
 
         <li class="support-item" id="documentation-wrapper">
-            <a href="documentation">
+            <a href="datasheets">
                 <article class="support-box" >
                     <figure class="support-icon-wrapper">
                         <img src="img/support-icons/documentation.png" alt="">

@@ -342,7 +342,7 @@
                                                                     "failure to use updated or modified versions of these Products provided by 4D Labs Semiconductors to avoid infringement.",
                                                                 ),
 
-                                                                "4D Labs Semiconductors' products are not fault tolerant nor designed, manufactured or intended for use or resale as on line control equipment in hazardous environments requiring fail-safe performance, such as in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, direct life support machines or weapons systems in which the failure of the product could lead directly to death, personal injury or severe physical or environmental damage (\"High Risk Activities.\"). 4D Labs Semiconductors and its suppliers specifically disclaim any expressed or implied warranty of fitness for High Risk Activities. Use of 4D Labs Semiconductors' products and devices in \"High Risk Activities\" and in any other application is entirely at the Customers' risk, and the Customer agrees to defend, indemnify and hold harmless 4D Labs Semiconductors from any and all damages, claims, suits, or expenses resulting from such use. No licenses are conveyed, implicitly or otherwise, under any 4D Labs Semiconductors intellectual property rights.",
+                                                                "4D Labs Semiconductors' products are not fault tolerant nor designed, manufactured or intended for use or resale as on line control equipment in hazardous environments requiring fail-safe performance, such as in the operation of nuclear facilities, aircraft navigation or communication Labs, air traffic control, direct life support machines or weapons Labs in which the failure of the product could lead directly to death, personal injury or severe physical or environmental damage (\"High Risk Activities.\"). 4D Labs Semiconductors and its suppliers specifically disclaim any expressed or implied warranty of fitness for High Risk Activities. Use of 4D Labs Semiconductors' products and devices in \"High Risk Activities\" and in any other application is entirely at the Customers' risk, and the Customer agrees to defend, indemnify and hold harmless 4D Labs Semiconductors from any and all damages, claims, suits, or expenses resulting from such use. No licenses are conveyed, implicitly or otherwise, under any 4D Labs Semiconductors intellectual property rights.",
                                     ),
 
                                     'Shipping Policy'  =>  array(''),
@@ -576,5 +576,287 @@
             '4K RESOLUTION' =>  array('An alternative term for the <a href="#UHD">UHD</a> digital video format.'),
         ),
     );
+
+    $sidebarFilters =   array(
+
+        'Category'  =>  array(
+                            'Processors'            =>  4,
+                            'Modules'               =>  1,
+                            'Chipsets'              =>  4,
+                            'Dvelopment Tools'      =>  1,
+                        ),
+
+        'communication protocols'  =>  array(
+                            'UART'                  =>  4,
+                            'I2C'                   =>  3,
+                            'SPI'                   =>  4,
+                            '1-Wire'                =>  3,
+                            '8bit Bus Interface'    =>  1,
+                            '16bit Bus Interface'   =>  1,
+                        ),
+        
+        'package type'  =>  array(
+                            'Canned Module'         =>  1,
+                            'QFN'                   =>  1,
+                            'TQFP'                  =>  3,
+                        ),
+
+        'flash size'  =>  array(
+                            '10 kB'                 =>  1,
+                            '14 kB'                 =>  2,
+                            '192 kB'                =>  1,
+                        ),
+                        
+        'RAM Size'  =>  array(
+                            '510 B'                 =>  1,
+                            '14 kB'                 =>  2,
+                            '32 kB'                 =>  1,
+                        ),
+
+        'gpio'  =>  array(
+                            'Digital I/O'            =>  3,
+                            'Analog Input'           =>  2,
+                            'PWM Output'             =>  1,
+                            'Pulse Counters'         =>  1,
+                            'Quadrature Input'       =>  1,
+                    ),
+
+    );
+
+    $catProductView =   array(
+
+            'goldelox'  =>  array(
+                                    'file-type'         =>  'png',
+                                    'type'              => 'Embedded Graphics Controller',
+
+                                    'parametric-data'   =>   array(
+                                                                'Part Number'           =>  '4DLS-GOLDELOX',
+                                                                'Status'                =>  'In Production',
+                                                                'Package Type'          =>  '28 pin QFN',
+                                                                'Supply Voltage'        =>  '3.3 Volts @12mA typical',
+                                                                'Clock Speed (Max)'     =>  '12 MHz',
+                                                                'Data Processing'       =>  '16 bit',
+                                                                'Internal Flash'        =>  '10 kB',
+                                                                'Internal SRAM'         =>  '510 bytes',
+                                                                'SPI Interface'         =>  1,
+                                                                'UART Interface'        =>  1,
+                                                                'GPIO Pins'             =>  2,
+                                                                'Timer'                 =>  '4 x 16bit user timers with 1ms resolution',
+                                                                'Operating Temperature' =>  '-40 to +80 ℃',
+                                                                'Display Interface'     =>  '80-Series 8 bit wide CPU data interface',
+                                                                'RoHS Certified'        =>  'Yes',
+                                                            ),
+                            ),
+
+            'diablo16'  =>  array(
+                                    'file-type'         =>  'png',
+                                    'type'              => 'Embedded Graphics Controller',
+                                    'parametric-data'   =>   array(
+                                                                'Part Number'           =>  '4DLS-Diablo16',
+                                                                'Status'                =>  'In Production',
+                                                                'Package Type'          =>  '64 pin TQFP ',
+                                                                'Supply Voltage'        =>  '3.3 Volts @12mA typical',
+                                                                'Clock Speed (Max)'     =>  '70 MHz',
+                                                                'Data Processing'       =>  '16 bit',
+                                                                'Internal Flash'        =>  '32 kB x 6 banks',
+                                                                'Internal SRAM'         =>  '32 kB',
+                                                                'I2C Interface'         =>  '3x I2C channels available',
+                                                                'SPI Interface'         =>  '1x dedicated for SD Card and 3x configurable',
+                                                                'UART Interface'        =>  '1x dedicated and 3x configurable',
+                                                                'GPIO Pins'             =>  16,
+                                                                'Timer'                 =>  '8 x 16 bit timers with 1 millisecond resolution.',
+                                                                'Operating Temperature' =>  '-40 to +80℃',
+                                                                'Display Interface'     =>  '80-Series 16-bit',
+                                                                'RoHS Certified'        =>  'Yes',
+                                                            )
+                            ),
+
+
+            'picaso'  =>  array(
+                                    'file-type'         =>  'png',
+                                    'type'              => 'Embedded Graphics Controller',
+                                    'parametric-data'   =>   array(
+                                                                'Part Number'           =>  '4DLS-Picaso',
+                                                                'Status'                =>  'In Production',
+                                                                'Package Type'          =>  '64 pin TQFP ',
+                                                                'Supply Voltage'        =>  '3.3 Volts @12mA typical',
+                                                                'Clock Speed (Max)'     =>  '70 MHz',
+                                                                'Data Processing'       =>  '16 bit',
+                                                                'Internal Flash'        =>  '32 kB x 6 banks',
+                                                                'Internal SRAM'         =>  '32 kB',
+                                                                'I2C Interface'         =>  '3x I2C channels available',
+                                                                'SPI Interface'         =>  '1x dedicated for SD Card and 3x configurable',
+                                                                'UART Interface'        =>  '1x dedicated and 3x configurable',
+                                                                'GPIO Pins'             =>  16,
+                                                                'Timer'                 =>  '8 x 16 bit timers with 1 millisecond resolution.',
+                                                                'Operating Temperature' =>  '-40 to +80℃',
+                                                                'Display Interface'     =>  '80-Series 16-bit',
+                                                                'RoHS Certified'        =>  'Yes',
+                                                            )
+                            ),
+
+
+            'picaso-Lite'  =>  array(
+                                    'file-type'         =>  'png',
+                                    'type'              => 'Embedded Graphics Controller',
+                                    'parametric-data'   =>   array(
+                                                                'Part Number'           =>  '4DLS-Picaso-Lite',
+                                                                'Status'                =>  'In Production',
+                                                                'Package Type'          =>  '64 pin TQFP ',
+                                                                'Supply Voltage'        =>  '3.3 Volts @12mA typical',
+                                                                'Clock Speed (Max)'     =>  '70 MHz',
+                                                                'Data Processing'       =>  '16 bit',
+                                                                'Internal Flash'        =>  '32 kB x 6 banks',
+                                                                'Internal SRAM'         =>  '32 kB',
+                                                                'I2C Interface'         =>  '3x I2C channels available',
+                                                                'SPI Interface'         =>  '1x dedicated for SD Card and 3x configurable',
+                                                                'UART Interface'        =>  '1x dedicated and 3x configurable',
+                                                                'GPIO Pins'             =>  16,
+                                                                'Timer'                 =>  '8 x 16 bit timers with 1 millisecond resolution.',
+                                                                'Operating Temperature' =>  '-40 to +80℃',
+                                                                'Display Interface'     =>  '80-Series 16-bit',
+                                                                'RoHS Certified'        =>  'Yes',
+                                                            )
+                            ),
+
+            'workshop4'  =>  array(
+                                    'file-type'         =>  'png',
+                                    'type'              => 'Integrated Development Environment',
+                                    'parametric-data'   =>   array(
+                                                                
+
+                                                                'Description'   =>  'Workshop4 is a comprehensive software IDE for Microsoft Windows that provides an integrated software development platform for all of the 4D family of processors and modules. The IDE combines the Editor, Compiler, Linker and Downloader to develop complete 4DGL application code. All user application code is developed within the Workshop4 IDE.',
+                                                                
+                                                            )
+                            ),
+            '4DLS-u7-09S'  =>  array(
+                                    'file-type'         =>  'gif',
+                                    'type'              => '0.9" SMT TFT LCD SPI Display',
+                                    'parametric-data'   =>   array(
+                                                                
+
+                                                                'Description'   =>  '0.9" SMT TFT LCD SPI Display',
+
+                                                            )
+                            ),
+    );
+
+    $products = array(
+ 
+        // Oder Details
+        'goldelox' =>  array(   
+                                'Price'                 =>  array(
+                                                            '$USD'      =>  '4,681.60',
+                                                            '500+'      =>  '$6.15',
+                                                            '1000+'     =>  '$5.27',
+                                                            '2000+'     =>  '$5.15',
+                                                            '5000+'     =>  '$5.00',
+                                                            '10000+'    =>  '$4.50',
+                                                            'Need more? <a href="">Request a Quote</a>'
+                                                        ),
+                                'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">600</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
+                                'Manufacturer'          =>  array('4D Labs'),
+                                'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
+                                'Status'                =>  array('In Production'),
+                                'Package-Type'          =>  array('28 pin QFN'),
+                                'Supply-Voltage'        =>  array('3.3 Volts @12mA typical'),
+                                'Clock-Speed'           =>  array('12 MHz'),
+                                'Data-Processing'       =>  array('16 bit'),
+                                'Internal-Flash'        =>  array('10 kB'),
+                                'Internal-SRAM'         =>  array('510 bytes'),
+                                'Communication-Protocols'         =>  array(1),
+                                'GPIO-Pins'             =>  array(2),
+                                'Timer'                 =>  array('4 x 16bit user timers with 1ms resolution'),
+                                'Operating-Temperature' =>  array('-40 to +80 ℃'),
+                                'Display-Interface'     =>  array('80-Series 8 bit wide CPU data interface'),
+                            ),
+        'diablo16' =>  array(
+                                'Price'                 =>  array(
+                                                            '$USD'      =>  '4,681.60',
+                                                            '500+'      =>  '$6.15',
+                                                            '1000+'     =>  '$5.27',
+                                                            '2000+'     =>  '$5.15',
+                                                            '5000+'     =>  '$5.00',
+                                                            '10000+'    =>  '$4.50',
+                                                            'Need more? <a href="">Request a Quote</a>'
+                                                        ),
+                                'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">1200</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
+                                'Manufacturer'          =>  array('4D Labs'),
+                                'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
+                                'Status'                =>  array('In Production'),
+                                'Package-Type'          =>  array('64 pin TQFP '),
+                                'Supply-Voltage'        =>  array('3.3 Volts @12mA typical'),
+                                'Clock-Speed'     =>  array('70 MHz'),
+                                'Data-Processing'       =>  array('16 bit'),
+                                'Internal-Flash'        =>  array('32 kB x 6 banks'),
+                                'Internal-SRAM'         =>  array('32 kB)'),
+                                'Communication-Protocols'         =>  array('3x I2C channels available, 1x dedicated for SD Card and 3x configurable, 1x dedicated and 3x configurable'),
+                                'GPIO-Pins'             =>  array(16),
+                                'Timer'                 =>  array('8 x 16 bit timers with 1 millisecond resolution.'),
+                                'Operating-Temperature' =>  array('-40 to +80℃'),
+                                'Display-Interface'     =>  array('80-Series 16-bit'),
+                            ),
+        'picaso' =>  array(
+                                'Price'                 =>  array(
+                                                            '$USD'      =>  '4,681.60',
+                                                            '500+'      =>  '$6.15',
+                                                            '1000+'     =>  '$5.27',
+                                                            '2000+'     =>  '$5.15',
+                                                            '5000+'     =>  '$5.00',
+                                                            '10000+'    =>  '$4.50',
+                                                            'Need more? <a href="">Request a Quote</a>'
+                                                        ),
+                                'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">800</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
+                                'Manufacturer'          =>  array('4D Labs'),
+                                'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
+                                'Status'                =>  array('In Production'),
+                                'Package-Type'          =>  array('64 pin TQFP '),
+                                'Supply-Voltage'        =>  array('3.3 Volts @12mA typical'),
+                                'Clock-Speed'     =>  array('70 MHz'),
+                                'Data-Processing'       =>  array('16 bit'),
+                                'Internal-Flash'        =>  array('32 kB x 6 banks'),
+                                'Internal-SRAM'         =>  array('32 kB'),
+                                'Communication-Protocols'         =>  array('3x I2C channels available, 1x dedicated for SD Card and 3x configurable, 1x dedicated and 3x configurable'),
+                                'GPIO-Pins'             =>  array(16),
+                                'Timer'                 =>  array('8 x 16 bit timers with 1 millisecond resolution.'),
+                                'Operating-Temperature' =>  array('-40 to +80℃'),
+                                'Display-Interface'     =>  array('80-Series 16-bit'),
+                            ),
+        'picaso-Lite' =>  array(
+                                'Price'                 =>  array(
+                                                            '$USD'      =>  '4,681.60',
+                                                            '500+'      =>  '$6.15',
+                                                            '1000+'     =>  '$5.27',
+                                                            '2000+'     =>  '$5.15',
+                                                            '5000+'     =>  '$5.00',
+                                                            '10000+'    =>  '$4.50',
+                                                            '<span id="request-quote">Need more? <a href="">Request a Quote</a></span>'
+                                                        ),
+                                'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">800</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
+                                'Manufacturer'          =>  array('4D Labs'),
+                                'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
+                                'Status'                =>  array('In Production'),
+                                'Package-Type'          =>  array('64 pin TQFP '),
+                                'Supply-Voltage'        =>  array('3.3 Volts @12mA typical'),
+                                'Clock-Speed'     =>  array('70 MHz'),
+                                'Data-Processing'       =>  array('16 bit'),
+                                'Internal-Flash'        =>  array('32 kB x 6 banks'),
+                                'Internal-SRAM'         =>  array('32 kB'),
+                                'Communication-Protocols'         =>  array('3x I2C channels available, 1x dedicated for SD Card and 3x configurable, 1x dedicated and 3x configurable'),
+                                'GPIO-Pins'             =>  array(16),
+                                'Timer'                 =>  array('8 x 16 bit timers with 1 millisecond resolution.'),
+                                'Operating-Temperature' =>  array('-40 to +80℃'),
+                                'Display-Interface'     =>  array('80-Series 16-bit'),
+                            ),
+
+    );
+
+    $partName   =   array(
+                        'goldelox' => '4DLS-GOLDELOX',
+                        'diablo16' => '4DLS-Diablo16',
+                        'picaso' => '4DLS-Picaso',
+                        'picaso-Lite' => '4DLS-Picaso-Lite',
+                        'picaso-Liter' => '4DLS-Picaso-Lite'
+                    );
 
 ?>
