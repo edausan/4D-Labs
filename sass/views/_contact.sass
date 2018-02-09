@@ -1,0 +1,69 @@
+section.contact-wrapper
+    padding: 50px 0px
+
+    header.contact-header 
+        margin: 0px 0px 50px
+        border-bottom: 1px solid #cccccc
+        padding-bottom: 10px
+
+        h1 
+            margin: 0
+
+    article.contact-form-wrapper
+
+        form.contact-form
+
+            textarea
+                width: 100%
+                +border-radius(5px)
+                border-style: none 
+                border: 1px solid #cccccc
+                +transition
+                padding: 10px
+
+                &:focus
+                    border-color: black
+
+
+            button.contact-submit
+                border-style: none
+                padding: 10px 20px
+                background: $paleBlue
+                color: white 
+                display: block
+                width: 15%
+                +border-radius(2px)
+                margin: 20px auto 0px
+                cursor: pointer
+
+                &:hover
+                    background: darken($paleBlue, 10%)
+
+
+
+    article.headquarters-wrapper
+        +clear
+        margin-top: 50px
+        border-top: 1px solid $paleBlue
+        padding: 30px 0px
+
+        .headquarters
+            width: 49%
+            +clear
+
+            &#headquarter-1
+                float: left
+            &#headquarter-2
+                float: right
+
+            h2 
+                color: $red
+
+            label 
+                margin-bottom: 5px
+                font-weight: 600
+                font-size: 18px
+
+            ul 
+                width: 33.333333333%
+                float: left

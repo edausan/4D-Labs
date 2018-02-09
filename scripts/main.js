@@ -11,9 +11,11 @@ $(function() {
     dynamicallyLoadScript('scripts/shop.js');
     dynamicallyLoadScript('scripts/register.js');
     dynamicallyLoadScript('scripts/product-tabs.js');
+    dynamicallyLoadScript('scripts/support.js');
     dynamicallyLoadScript('scripts/mce.js');
     dynamicallyLoadScript('scripts/documentation.js');
     dynamicallyLoadScript('scripts/parametric-search.js');
+    dynamicallyLoadScript('scripts/contact.js');
 });
 
 

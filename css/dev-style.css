@@ -6020,86 +6020,92 @@ section.support-wrapper {
 
 form.ticket-form {
   width: 100%; }
-  form.ticket-form fieldset.ticket-fieldset::after {
+
+fieldset.ticket-fieldset::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.field-row {
+  display: block; }
+  .field-row::after {
     content: '';
     display: table;
     clear: both; }
-  form.ticket-form fieldset.ticket-fieldset .field-row {
-    display: block; }
-    form.ticket-form fieldset.ticket-fieldset .field-row::after {
+
+.field-wrapper {
+  width: 48%;
+  margin-bottom: 30px; }
+  .field-wrapper::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .field-wrapper#existing-ticket {
+    width: 100%; }
+  .field-wrapper span {
+    width: 5%;
+    float: left;
+    text-align: center;
+    color: #333333; }
+    .field-wrapper span i {
+      display: inline-block;
+      margin-top: 10px; }
+  .field-wrapper .field-container {
+    width: 95%;
+    float: right;
+    border-bottom: 2px solid #E8E8E8;
+    position: relative; }
+    .field-wrapper .field-container::before, .field-wrapper .field-container::after {
+      position: absolute;
+      z-index: 1000;
+      color: #79757E;
+      font-size: 14px;
       content: '';
-      display: table;
-      clear: both; }
-  form.ticket-form fieldset.ticket-fieldset .field-wrapper {
-    width: 48%;
-    margin-bottom: 30px;
-    float: left; }
-    form.ticket-form fieldset.ticket-fieldset .field-wrapper::after {
-      content: '';
-      display: table;
-      clear: both; }
-    form.ticket-form fieldset.ticket-fieldset .field-wrapper#existing-ticket {
+      -webkit-transition: 250ms ease;
+      -moz-transition: 250ms ease;
+      -o-transition: 250ms ease;
+      transition: 250ms ease; }
+    .field-wrapper .field-container::before {
+      bottom: 5px;
+      left: 10px; }
+    .field-wrapper .field-container::after {
+      width: 0%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background: black; }
+    .field-wrapper .field-container.focused::before {
+      bottom: 30px;
+      font-size: 13px;
+      color: #0099FF; }
+    .field-wrapper .field-container.focused::after {
       width: 100%; }
-    form.ticket-form fieldset.ticket-fieldset .field-wrapper span {
-      width: 5%;
-      float: left;
-      text-align: center;
-      color: #333333; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper span i {
-        display: inline-block;
-        margin-top: 10px; }
-    form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container {
-      width: 95%;
-      float: right;
-      border-bottom: 2px solid #E8E8E8;
-      position: relative; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::before, form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::after {
-        position: absolute;
-        z-index: 1000;
-        color: #79757E;
-        font-size: 14px;
-        content: '';
-        -webkit-transition: 250ms ease;
-        -moz-transition: 250ms ease;
-        -o-transition: 250ms ease;
-        transition: 250ms ease; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::before {
-        bottom: 5px;
-        left: 10px; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container::after {
-        width: 0%;
-        height: 2px;
-        bottom: -2px;
-        left: 0;
-        background: black; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container.focused::before {
-        bottom: 30px;
-        font-size: 13px;
-        color: #0099FF; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container.focused::after {
-        width: 100%; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#firstname::before {
-        content: 'First Name'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#lastname::before {
-        content: 'Last Name'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#company::before {
-        content: 'Company'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#email::before {
-        content: 'Email Address'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#country::before {
-        content: 'Country'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#subject::before {
-        content: 'Request Subject'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container#existing-ticket::before {
-        content: 'Search existing support request'; }
-      form.ticket-form fieldset.ticket-fieldset .field-wrapper .field-container .ticket-input {
-        width: 100%;
-        border-style: none;
-        background: none;
-        padding: 5px 10px;
-        position: relative;
-        font-size: 18px;
-        z-index: 1001; }
+    .field-wrapper .field-container#firstname::before {
+      content: 'First Name'; }
+    .field-wrapper .field-container#lastname::before {
+      content: 'Last Name'; }
+    .field-wrapper .field-container#company::before {
+      content: 'Company'; }
+    .field-wrapper .field-container#email::before {
+      content: 'Email Address'; }
+    .field-wrapper .field-container#country::before {
+      content: 'Country'; }
+    .field-wrapper .field-container#subject::before {
+      content: 'Request Subject'; }
+    .field-wrapper .field-container#existing-ticket::before {
+      content: 'Search existing support request'; }
+    .field-wrapper .field-container#name::before {
+      content: 'Name'; }
+    .field-wrapper .field-container#inquiry::before {
+      content: 'Inquiry Type'; }
+    .field-wrapper .field-container .ticket-input {
+      width: 100%;
+      border-style: none;
+      background: none;
+      padding: 5px 10px;
+      position: relative;
+      font-size: 18px;
+      z-index: 1001; }
 
 .mce-label {
   display: none !important; }
@@ -6738,6 +6744,72 @@ div#prod-quantity {
   float: left;
   width: 100%;
   color: #b3b3b3; }
+
+section.contact-wrapper {
+  padding: 50px 0px; }
+  section.contact-wrapper header.contact-header {
+    margin: 0px 0px 50px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px; }
+    section.contact-wrapper header.contact-header h1 {
+      margin: 0; }
+  section.contact-wrapper article.contact-form-wrapper form.contact-form textarea {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #cccccc;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+    padding: 10px; }
+    section.contact-wrapper article.contact-form-wrapper form.contact-form textarea:focus {
+      border-color: black; }
+  section.contact-wrapper article.contact-form-wrapper form.contact-form button.contact-submit {
+    border-style: none;
+    padding: 10px 20px;
+    background: #327B83;
+    color: white;
+    display: block;
+    width: 15%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    margin: 20px auto 0px;
+    cursor: pointer; }
+    section.contact-wrapper article.contact-form-wrapper form.contact-form button.contact-submit:hover {
+      background: #24585e; }
+  section.contact-wrapper article.headquarters-wrapper {
+    margin-top: 50px;
+    border-top: 1px solid #327B83;
+    padding: 30px 0px; }
+    section.contact-wrapper article.headquarters-wrapper::after {
+      content: '';
+      display: table;
+      clear: both; }
+    section.contact-wrapper article.headquarters-wrapper .headquarters {
+      width: 49%; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters::after {
+        content: '';
+        display: table;
+        clear: both; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters#headquarter-1 {
+        float: left; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters#headquarter-2 {
+        float: right; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters h2 {
+        color: #E84B50; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters label {
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 18px; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters ul {
+        width: 33.333333333%;
+        float: left; }
 
 section.updates-wrapper {
   width: 100vw;

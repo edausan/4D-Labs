@@ -1,99 +1,105 @@
 form.ticket-form
     width: 100%
 
-    fieldset.ticket-fieldset
-        +clear
+fieldset.ticket-fieldset
+    +clear
 
-        .field-row
-            display: block
-            +clear
+.field-row
+    display: block
+    +clear
 
-        .field-wrapper
-            width: 48%
-            margin-bottom: 30px
-            float: left
-            +clear
+.field-wrapper
+    width: 48%
+    margin-bottom: 30px
+    // float: left
+    +clear
 
-            &#existing-ticket
+    &#existing-ticket
+        width: 100%
+
+    span 
+        width: 5%
+        float: left
+        text-align: center
+        color: #333333
+
+        i 
+            display: inline-block 
+            margin-top: 10px
+
+    .field-container
+        width: 95%
+        float: right
+        border-bottom: 2px solid #E8E8E8
+        position: relative
+
+        &::before, &::after
+            position: absolute
+            z-index: 1000
+            color: #79757E
+            font-size: 14px
+            content: ''
+            +transition
+
+        &::before
+            bottom: 5px
+            left: 10px
+
+        &::after
+            width: 0%
+            height: 2px
+            bottom: -2px
+            left: 0
+            background: black
+
+        &.focused
+            &::before
+                bottom: 30px
+                font-size: 13px
+                color: $blue
+
+            &::after
                 width: 100%
 
-            span 
-                width: 5%
-                float: left
-                text-align: center
-                color: #333333
 
-                i 
-                    display: inline-block 
-                    margin-top: 10px
-
-            .field-container
-                width: 95%
-                float: right
-                border-bottom: 2px solid #E8E8E8
-                position: relative
-
-                &::before, &::after
-                    position: absolute
-                    z-index: 1000
-                    color: #79757E
-                    font-size: 14px
-                    content: ''
-                    +transition
-
-                &::before
-                    bottom: 5px
-                    left: 10px
-
-                &::after
-                    width: 0%
-                    height: 2px
-                    bottom: -2px
-                    left: 0
-                    background: black
-
-                &.focused
-                    &::before
-                        bottom: 30px
-                        font-size: 13px
-                        color: $blue
-
-                    &::after
-                        width: 100%
+        &#firstname 
+            &::before
+                content: 'First Name'
+        &#lastname 
+            &::before
+                content: 'Last Name'
+        &#company 
+            &::before
+                content: 'Company'
+        &#email 
+            &::before
+                content: 'Email Address'
+        &#country 
+            &::before
+                content: 'Country'
+        &#subject 
+            &::before
+                content: 'Request Subject'
+                
+        &#existing-ticket 
+            &::before
+                content: 'Search existing support request'
+        &#name
+            &::before
+                content: 'Name'
+        &#inquiry
+            &::before
+                content: 'Inquiry Type'
 
 
-                &#firstname 
-                    &::before
-                        content: 'First Name'
-                &#lastname 
-                    &::before
-                        content: 'Last Name'
-                &#company 
-                    &::before
-                        content: 'Company'
-                &#email 
-                    &::before
-                        content: 'Email Address'
-                &#country 
-                    &::before
-                        content: 'Country'
-                &#subject 
-                    &::before
-                        content: 'Request Subject'
-                        
-                &#existing-ticket 
-                    &::before
-                        content: 'Search existing support request'
-
-
-                .ticket-input
-                    width: 100%
-                    border-style: none
-                    background: none
-                    padding: 5px 10px
-                    position: relative
-                    font-size: 18px
-                    z-index: 1001
+        .ticket-input
+            width: 100%
+            border-style: none
+            background: none
+            padding: 5px 10px
+            position: relative
+            font-size: 18px
+            z-index: 1001
 
 
 .mce-label

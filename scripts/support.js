@@ -63,7 +63,7 @@ $(function() {
     });
 
     $(document).on('blur','.field-container input.ticket-input', function() {
-        if ( $(this).val().length > 1 ) {
+        if ( $(this).val().length >= 1 ) {
             $(this).parent('.field-container').addClass('focused');
         } else {
             $(this).parent('.field-container').removeClass('focused');
