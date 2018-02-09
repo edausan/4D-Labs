@@ -21,7 +21,7 @@
                         <h2 id="corporate">Corporate</h2>
                         <ul>
                             <li><a href="about">About Us</a></li>
-                            <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="contact">Contact Us</a></li>
                             <li><a href="news-and-events">News and Events</a></li>
                         </ul>
                     </div>
