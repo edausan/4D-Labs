@@ -6746,7 +6746,8 @@ div#prod-quantity {
   color: #b3b3b3; }
 
 section.contact-wrapper {
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  font-family: 'Avenir'; }
   section.contact-wrapper header.contact-header {
     margin: 0px 0px 50px;
     border-bottom: 1px solid #cccccc;
@@ -6785,7 +6786,7 @@ section.contact-wrapper {
       background: #24585e; }
   section.contact-wrapper article.headquarters-wrapper {
     margin-top: 50px;
-    border-top: 1px solid #327B83;
+    border-top: 1px solid #E84B50;
     padding: 30px 0px; }
     section.contact-wrapper article.headquarters-wrapper::after {
       content: '';

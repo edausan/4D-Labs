@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="headquarters" id="headquarter-2">
-                    <h2>4D Systems Philippines Inc</h2>
+                    <h2>4D Labs Philippines</h2>
                     <ul>
                         <li>
                             <label for="">Address</label>

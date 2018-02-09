@@ -1,5 +1,5 @@
 <?php 
-    define('TITLE', 'Support');
+    define('TITLE', 'Distributors');
     include('header-2.php');
 ?> 
 
