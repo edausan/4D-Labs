@@ -5,16 +5,18 @@
 
 
 <section class="lab-container">
-
     <article class="lab-row">
 
-            <?php
-                $title      =   'contact';
-                $breads     =   array($title);
-                include('include/coming-soon.php'); 
-            ?>       
+        <section class="contact-wrapper">
+            
+            <header class="contact-header">
+                <h1>Contact Us</h1>
+            </header>
+
+            <article class="contact-form-wrapper">
 
                 <form action="" method="post" class="contact-form ticket-form">
+
                     <div class="field-row" id="">
                         <div class="field-wrapper"> <!-- Inquiry Type -->
 
