@@ -8,7 +8,7 @@
     <!-- <article class="about-banner"><figure></figure></article> -->
 
     <!-- About Us Nav -->
-    <nav class="about-nav">
+    <nav class="about-nav" id="about-nav">
         <article class="lab-container">
             <ul class="about-nav-list">
                 <li><a href="#about">4D Labs</a></li>

@@ -1,6 +1,7 @@
 .small
     min-width: 95px
     max-width: 95px
+    font-size: 14px
 
 .medium
     min-width: 140px
@@ -17,6 +18,7 @@ section.parametric-wrapper
 
     .para-category-wrapper
         padding: 30px
+        padding-bottom: 0px
         display: inline-block
         +border-radius
 
@@ -142,6 +144,38 @@ section.parametric-wrapper
             display: inline-block
             width: 85%
             float: left
+            position: relative
+            cursor: grab
+            +transition(300ms ease) 
+
+            // scroll buttons
+            button.scroll-btn
+                border-style: none
+                padding: 10px 20px
+                background: white 
+                border: 1px #eeeeee
+                +border-radius(2px)
+                box-shadow: 0 8px 25px rgba(black, .2)
+                cursor: pointer
+                position: fixed
+                bottom: 5%
+                +transform(translateY(-50%))
+                z-index: 1004
+                opacity: .7
+                +transition
+
+                &:hover
+                    opacity: 1
+                    box-shadow: 0 8px 25px rgba(black, .4)
+
+                &:link, &:focus
+                    outline: none
+
+                &#scroll-left 
+                    left: 47%
+
+                &#scroll-right
+                    right: 47%
         
 
         table.parametric-table
@@ -168,6 +202,12 @@ section.parametric-wrapper
                         
                         th 
                             +clear
+                            
+                            .th-wrapper
+                                font-size: 14px !important
+                                span
+                                    font-size: 14px !important
+
                             &#compare 
                                 width: 20%
 
@@ -191,6 +231,7 @@ section.parametric-wrapper
 
                             &#part-name 
                                 width: 80%
+
                                 +clear 
 
                                 span#sorter 
@@ -207,6 +248,8 @@ section.parametric-wrapper
                                     border-right: none
                                     +border-radius(2px 0px 0px 2px)
                                     +transition
+                                    font-size: 11px
+
 
                                     &:focus
                                         border-color: $paleBlue
@@ -218,7 +261,7 @@ section.parametric-wrapper
                                 i 
                                     width: 10%
                                     height: 32px
-                                    padding: 10px 10px 0px 5px
+                                    padding: 10px 10px 0px 0px
                                     float: left
                                     border: 1px solid #cccccc
                                     border-left: none
@@ -226,6 +269,7 @@ section.parametric-wrapper
                                     color: #cccccc
                                     background: white
                                     +transition
+                                    font-size: 11px
                                 
 
             thead 
@@ -235,7 +279,6 @@ section.parametric-wrapper
                         border-right: 1px solid white
                         vertical-align: bottom
                         cursor: pointer
-                        font-size: 11px
                         font-weight: 600
                         height: 88px
                         +clear
@@ -251,11 +294,18 @@ section.parametric-wrapper
 
                             ul 
                                 li 
+                                    vertical-align: middle
+
                                     label 
                                         vertical-align: middle
                                         margin: 0
                                         text-transform: uppercase
                                         cursor: pointer
+                                        
+                                    input 
+                                        vertical-align: middle
+
+                                    
                             span#sorter 
                                 float: right
                                 color: $orange
@@ -272,6 +322,7 @@ section.parametric-wrapper
                         th 
                             cursor: auto
                             vertical-align: top
+                            font-size: 11px !important
 
                             
                             &#Price
@@ -388,9 +439,36 @@ td#Price
     float: right
 
 
-
+// Part Name Link
 a.para-prod-name-link
-    color: $paleBlue !important                
+    color: $paleBlue !important
+    text-transform: uppercase      
+    font-size: 16px 
+    display: block
+    margin-bottom: 10px
+    font-weight: 600
+
+// Part Name Datasheet
+.datasheet-download
+    display: inline-block
+    // padding: 5px 10px 5px 5px
+    // border: 1px solid #cccccc
+    +border-radius(2px)
+    +transition
+    
+    // &:hover
+    //     border-color: $paleBlue
+
+    //     span 
+    //         color: $paleBlue
+
+    span 
+        color: $orange
+        // +transition
+
+    #part-name-ds
+        width: 25px
+
 
 
 

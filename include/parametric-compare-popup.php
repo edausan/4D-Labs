@@ -10,8 +10,9 @@
                 <thead>
                     <tr>
                         <th class="compare-th">Parameters</th>
-                        <?php foreach ($partName as $prodName => $part) : ?>
-                            <th class="compare-th compared-prod"><a href="<?php echo $prodName; ?>"><?php echo $part; ?></a></th>
+                        <?php foreach ($partName as $prodName => $part) :?>
+                            
+                            <th class="compare-th compared-prod"><a href="<?php echo $prodName; ?>"><?php echo $part['part-name']; ?></a></th>
                         <?php endforeach; ?>
                     </tr>
                 </thead>

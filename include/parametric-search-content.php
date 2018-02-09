@@ -1,14 +1,12 @@
 <section class="parametric-wrapper">
 
-    
-    
-    <section class="lab-container">
-        <article class="lab-row">
+    <!-- <section class="lab-container"> -->
+        <!-- <article class="lab-row"> -->
             <div class="para-category-wrapper">
 
                 <h1>Parametric Search</h1>
 
-                <div class="para-description">
+                <!-- <div class="para-description">
                     <div id="para-icon-wrapper"><span><i class="fa fa-exclamation"></i></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nobis eius est minus vel sunt quibusdam, sit dicta molestias modi, provident distinctio ducimus magnam ex ut debitis ipsam reiciendis? Similique.</p>
                 </div>
@@ -22,10 +20,10 @@
                     <option value="Developments Tools">Developments Tools</option>
                 </select>
 
-                <h3 id="para-category-label">Processors</h3>
+                <h3 id="para-category-label">Processors</h3> -->
             </div>
-        </article>
-    </section>
+        <!-- </article> -->
+    <!-- </section> -->
     
 
     <div class="menu-bar">
@@ -66,13 +64,22 @@
                 <?php foreach ($partName as $key => $value) : ?>
                     <tr class="para-tbody-row" id="<?php echo $key; ?>">
                             <td id="para-prod-cbox"><div class="th-wrapper"><input type="checkbox" name="" id="" class="compare-cbox"></div></td>
-                            <td id="para-prod-name"><div class="th-wrapper"><a href="<?php echo $key; ?>" class="para-prod-name-link"><?php echo $value; ?></a></div></td>
+                            <td id="para-prod-name">
+                                <div class="th-wrapper">
+                                    <a href="" class="para-prod-name-link"><?php echo $value['part-name']; ?></a>
+                                    <a href="<?php echo $value['datasheet']; ?>"> <div class="datasheet-download"><img src="img/pdf.png" alt="" id="part-name-ds"> <span> Download Datasheet</span></div></a>
+                                </div>
+                            </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
 
-        <div class="para-tb-2-wrapper">
+        <div class="para-tb-2-wrapper dragscroll" title="Drag to scroll">
+            <!-- <button class="scroll-btn" id="scroll-left"><i class="fa fa-chevron-left"></i></button>
+            <button class="scroll-btn" id="scroll-right"><i class="fa fa-chevron-right"></i></button> -->
+
+
             <table class="parametric-table" id="para-tb-2">
 
                 <thead>
@@ -99,9 +106,9 @@
                     <tr class="para-input-wrapper" id="para-input-wrapper">
                         <th class="large " id="Quantity">
                             <div class="th-wrapper" id="prod-quantity">
-                                <input type="text" placeholder="Quantity" min="1">
+                                <!-- <input type="text" placeholder="Quantity" min="1">
                                 <button class="quantity-btn" id="minus"><i class="fa fa-minus"></i></button>
-                                <button class="quantity-btn" id="plus"><i class="fa fa-plus"></i></button>
+                                <button class="quantity-btn" id="plus"><i class="fa fa-plus"></i></button> -->
                                 
                             </div>
 
@@ -110,7 +117,7 @@
 
                         <th class="large" id="Price">
                             <div class="th-wrapper">
-                                <ul>
+                                <!-- <ul>
                                     <li>
                                         <label for="from">From:</label>
                                         <input type="text" class="price-range" id="from" name="price-range-from" placeholder="$0.00">
@@ -120,7 +127,7 @@
                                         <label for="to">To:</label>
                                         <input type="text" class="price-range" id="to" name="price-range-to" placeholder="$0.00">
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
@@ -188,7 +195,7 @@
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
 
-                        <th class="small" id="SPI-Interface">
+                        <th class="small" id="communication-protocols">
                             <div class="th-wrapper">
                                 <ul>
                                     <li>
@@ -265,7 +272,7 @@
                                 </div>
                                 <button id="para-add-to-cart-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
 
-                                <p>Min: <span>160</span> Mult: <span>160</span></p>
+                                <!-- <p>Min: <span>160</span> Mult: <span>160</span></p> -->
                             </td>
                             <?php foreach ($value as $key => $val) : ?>
                                 <td id="<?php echo $key; ?>">

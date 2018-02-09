@@ -852,11 +852,18 @@
     );
 
     $partName   =   array(
-                        'goldelox' => '4DLS-GOLDELOX',
-                        'diablo16' => '4DLS-Diablo16',
-                        'picaso' => '4DLS-Picaso',
-                        'picaso-Lite' => '4DLS-Picaso-Lite',
-                        'picaso-Liter' => '4DLS-Picaso-Lite'
+                        'goldelox' => array(
+                                        'part-name' => '4DLS-GOLDELOX', 
+                                        'datasheet' =>  'http://4dlabs.com.au/4DLS-DS-GOLDELOX.html'
+                                    ),
+                        'diablo16' => array(
+                                        'part-name' => '4DLS-Diablo16', 
+                                        'datasheet' => 'http://4dlabs.com.au/4DLS-DS-DIABLO16.html'),
+                        'picaso' => array(
+                                        'part-name' => '4DLS-Picaso', 
+                                        'datasheet' =>  'http://4dlabs.com.au/4DLS-DS-PICASO.html'),
+                        'picaso-Lite' => array(
+                                        'part-name' => '4DLS-Picaso-Lite', 
+                                        'datasheet' => 'http://4dlabs.com.au/4DLS-DS-PICASO-LITE.html'),
                     );
-
 ?>

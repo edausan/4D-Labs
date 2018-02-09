@@ -121,4 +121,61 @@ $(function() {
         }, 250);
     });
 
+
+    // $('button#scroll-right').click(function() {
+    //     $('.para-tb-2-wrapper').animate({
+    //       scrollLeft: "+=300px"
+    //     }, 250);
+    //  });
+     
+    //    $('button#scroll-left').click(function() {
+    //     $('.para-tb-2-wrapper').animate({
+    //       scrollLeft: "-=300px"
+    //     }, 250);
+    // });
+
+
+    var resetFilterBtn  =   $('#reset-filter');
+    var paraCbox        =   $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th .th-wrapper input');
+    var thWrap          =   $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper');
+
+    resetFilterBtn.click(function() {
+
+        paraCbox.prop('checked', false);
+        $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li label').css({'color':'black'});
+        thWrap.removeClass('changed');
+    });
+
+    paraCbox.change(function() {
+        var thID = $(this).parents('th').attr('id');
+
+        if ($(this).is(':checked')) {
+            $(document).find('table.parametric-table thead tr th#'+thID+' .th-wrapper').addClass('changed');
+        } else {
+            $(document).find('table.parametric-table thead tr th#'+thID+' .th-wrapper').removeClass('changed'); 
+        }
+
+    });
+
+
+
+    var quantityInput   =   $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity input');
+    var scrollTable     =   $('section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper');
+
+    scrollTable.scroll(function() {
+        quantityInput.blur();
+    }).mousedown(function() {
+        quantityInput.blur();
+    });
+
+    
+    quantityInput.click(function() {
+        $(this).focus();
+    });
+    
+
+
+
+    
+
 });

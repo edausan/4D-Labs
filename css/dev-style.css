@@ -18,8 +18,11 @@
   font-family: 'Open Sans';
   src: url(../fonts/OpenSans-Regular.ttf); }
 
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../fonts/Helvetica-Regular.ttf); }
+
 body, html {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0; }
 
@@ -2880,7 +2883,7 @@ article.product-details-wrapper {
 
 .cat-product-container {
   margin: 50px 0px;
-  font-family: 'Avenir'; }
+  font-family: 'Helvetica' !important; }
   .cat-product-container::after {
     content: '';
     display: table;
@@ -3027,6 +3030,9 @@ article.product-details-wrapper {
 .appnote-details {
   padding-left: 10px !important; }
 
+#appnotes-wrapper {
+  font-family: 'Open Sans' !important; }
+
 details.appnote-cat-details {
   padding: 0px !important;
   margin-top: 10px; }
@@ -3064,7 +3070,7 @@ details.appnote-cat-details {
 
 article.appnote-wrapper,
 details.appnote-cat-details {
-  font-family: 'Avenir'; }
+  font-family: 'Open Sans'; }
   article.appnote-wrapper header.appnote-header h2,
   details.appnote-cat-details header.appnote-header h2 {
     color: #327B83;
@@ -6218,7 +6224,8 @@ section.firmware-wrapper {
 
 .small {
   min-width: 95px;
-  max-width: 95px; }
+  max-width: 95px;
+  font-size: 14px; }
 
 .medium {
   min-width: 140px;
@@ -6233,6 +6240,7 @@ section.parametric-wrapper {
   padding: 0px 0px 50px; }
   section.parametric-wrapper .para-category-wrapper {
     padding: 30px;
+    padding-bottom: 0px;
     display: inline-block;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -6365,7 +6373,49 @@ section.parametric-wrapper {
       overflow-x: auto;
       display: inline-block;
       width: 85%;
-      float: left; }
+      float: left;
+      position: relative;
+      cursor: -webkit-grab;
+      cursor: grab;
+      -webkit-transition: 300ms ease;
+      -moz-transition: 300ms ease;
+      -o-transition: 300ms ease;
+      transition: 300ms ease; }
+      section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper button.scroll-btn {
+        border-style: none;
+        padding: 10px 20px;
+        background: white;
+        border: 1px #eeeeee;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        position: fixed;
+        bottom: 5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1004;
+        opacity: .7;
+        -webkit-transition: 250ms ease;
+        -moz-transition: 250ms ease;
+        -o-transition: 250ms ease;
+        transition: 250ms ease; }
+        section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper button.scroll-btn:hover {
+          opacity: 1;
+          -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); }
+        section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper button.scroll-btn:link, section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper button.scroll-btn:focus {
+          outline: none; }
+        section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper button.scroll-btn#scroll-left {
+          left: 47%; }
+        section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper button.scroll-btn#scroll-right {
+          right: 47%; }
     section.parametric-wrapper .parametric-table-wrapper table.parametric-table::after {
       content: '';
       display: table;
@@ -6391,6 +6441,10 @@ section.parametric-wrapper {
             content: '';
             display: table;
             clear: both; }
+          section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th .th-wrapper {
+            font-size: 14px !important; }
+            section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th .th-wrapper span {
+              font-size: 14px !important; }
           section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th#compare {
             width: 20%; }
             section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th#compare button#compare-btn {
@@ -6435,7 +6489,8 @@ section.parametric-wrapper {
               -webkit-transition: 250ms ease;
               -moz-transition: 250ms ease;
               -o-transition: 250ms ease;
-              transition: 250ms ease; }
+              transition: 250ms ease;
+              font-size: 11px; }
               section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th#part-name input:focus {
                 border-color: #327B83; }
                 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th#part-name input:focus ~ i {
@@ -6444,7 +6499,7 @@ section.parametric-wrapper {
             section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr th#part-name i {
               width: 10%;
               height: 32px;
-              padding: 10px 10px 0px 5px;
+              padding: 10px 10px 0px 0px;
               float: left;
               border: 1px solid #cccccc;
               border-left: none;
@@ -6457,13 +6512,13 @@ section.parametric-wrapper {
               -webkit-transition: 250ms ease;
               -moz-transition: 250ms ease;
               -o-transition: 250ms ease;
-              transition: 250ms ease; }
+              transition: 250ms ease;
+              font-size: 11px; }
     section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th {
       background: #F4F4F4;
       border-right: 1px solid white;
       vertical-align: bottom;
       cursor: pointer;
-      font-size: 11px;
       font-weight: 600;
       height: 88px; }
       section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th::after {
@@ -6480,11 +6535,15 @@ section.parametric-wrapper {
           clear: both; }
         section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper.changed {
           border-bottom-color: #327B83; }
-        section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li label {
-          vertical-align: middle;
-          margin: 0;
-          text-transform: uppercase;
-          cursor: pointer; }
+        section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li {
+          vertical-align: middle; }
+          section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li label {
+            vertical-align: middle;
+            margin: 0;
+            text-transform: uppercase;
+            cursor: pointer; }
+          section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li input {
+            vertical-align: middle; }
         section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper span#sorter {
           float: right;
           color: #FB2800; }
@@ -6492,7 +6551,8 @@ section.parametric-wrapper {
         background: #eaeaea; }
     section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th {
       cursor: auto;
-      vertical-align: top; }
+      vertical-align: top;
+      font-size: 11px !important; }
       section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th#Price label {
         display: block; }
       section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th#Price input {
@@ -6588,7 +6648,27 @@ td#Price .para-id:last-child {
   float: right; }
 
 a.para-prod-name-link {
-  color: #327B83 !important; }
+  color: #327B83 !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600; }
+
+.datasheet-download {
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease; }
+  .datasheet-download span {
+    color: #FB2800; }
+  .datasheet-download #part-name-ds {
+    width: 25px; }
 
 div#prod-quantity {
   display: -webkit-box !important;

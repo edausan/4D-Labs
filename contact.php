@@ -4,9 +4,9 @@
 ?> 
 
 
-<section class="solutions-wrapper">
+<section class="lab-container">
 
-    <article class="lab-container">
+    <article class="lab-row">
 
             <?php
                 $title      =   'contact';

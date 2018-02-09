@@ -3,7 +3,7 @@
 ?>
 
 <section class="lab-row">
-    <article class="cat-product-container">
+    <article class="cat-product-container" id="appnotes-wrapper">
         <aside class="sidebar-wrapper">
             <section class="product-search-wrapper">
                 <form action="" class="cat-search-form">

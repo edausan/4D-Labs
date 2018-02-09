@@ -122,15 +122,20 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tinymce/tinymce.min.js"></script>
+<script src="js/dragscroll.js"></script>
 
-<script src="scripts/navbar.js"></script>
+
+
+<!-- <script src="scripts/navbar.js"></script>
 <script src="scripts/shop.js"></script>
 <script src="scripts/register.js"></script>
 <script src="scripts/support.js"></script>
 <script src="scripts/product-tabs.js"></script>
 <script src="scripts/mce.js"></script>
 <script src="scripts/documentation.js"></script>
-<script src="scripts/parametric-search.js"></script>
+<script src="scripts/parametric-search.js"></script> -->
+
+<script src="scripts/main.js"></script>
 
 </body>
 </html>
