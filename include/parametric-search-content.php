@@ -67,7 +67,7 @@
                             <td id="para-prod-name">
                                 <div class="th-wrapper">
                                     <a href="" class="para-prod-name-link"><?php echo $value['part-name']; ?></a>
-                                    <a href="<?php echo $value['datasheet']; ?>"> <div class="datasheet-download"><img src="img/pdf.png" alt="" id="part-name-ds"> <span> Download Datasheet</span></div></a>
+                                    <a href="<?php echo $value['datasheet']; ?>"> <div class="datasheet-download"><img src="img/download-datasheet.png" alt="" id="part-name-ds"></div></a>
                                 </div>
                             </td>
                     </tr>

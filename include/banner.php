@@ -3,6 +3,8 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
 
@@ -27,20 +29,6 @@
         </div>
 
         <?php } ?>
-
-        <!-- <div class="carousel-item" style="background-image: url('img/banner2.jpg')">
-            <div class="carousel-content">
-                <h3>4D LABS SEMICONDUCTORS</h3>
-                <p>Big Solutions in Small Packages</p>
-            </div>
-        </div>
-
-        <div class="carousel-item" style="background-image: url('img/banner3.jpg')">
-            <div class="carousel-content">
-                <h3>4D LABS SEMICONDUCTORS</h3>
-                <p>Big Solutions in Small Packages</p>
-            </div>
-        </div> -->
         
     </div>
 
