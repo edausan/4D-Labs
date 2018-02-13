@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/dev-style.min.css">
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <?php include('arrays.php'); ?>
 <body>

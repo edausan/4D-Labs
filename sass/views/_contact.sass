@@ -42,6 +42,18 @@ section.contact-wrapper
         float: left
 
         form.contact-form
+            .field-wrapper 
+                .field-container
+                    .focused
+                        &::before
+                            color: black !important
+                    
+
+            input
+                &:invalid
+                    border-color: none
+                    box-shadow: none
+                    outline: none
 
             textarea
                 width: 100%
@@ -50,10 +62,14 @@ section.contact-wrapper
                 border: 1px solid #cccccc
                 +transition
                 padding: 10px
-                max-height: 204px
+                max-height: 159px
 
                 &:focus
                     border-color: black
+
+                &:invalid 
+                    box-shadow: none
+                    outline: none
 
             #inquiry-wrapper
                 width: 100%
@@ -61,20 +77,28 @@ section.contact-wrapper
                 #inquiry-type
                     width: 100%
 
+            .captcha-btn-section
+                vertical-align: middle
+                margin-top: 30px
+                +clear
 
-            button.contact-submit
-                border-style: none
-                padding: 10px 20px
-                background: $paleBlue
-                color: white 
-                display: block
-                width: 15%
-                +border-radius(2px)
-                margin: 20px auto 0px
-                cursor: pointer
+                .g-recaptcha
+                    vertical-align: middle
+                    float: left
 
-                &:hover
-                    background: darken($paleBlue, 10%)
+                button.contact-submit
+                    border-style: none
+                    padding: 10px 20px
+                    background: $paleBlue
+                    color: white 
+                    width: 15%
+                    +border-radius(2px)
+                    float: right
+                    vertical-align: middle
+                    cursor: pointer
+
+                    &:hover
+                        background: darken($paleBlue, 10%)
 
 
 

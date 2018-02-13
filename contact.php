@@ -1,6 +1,26 @@
 <?php 
     define('TITLE', 'Contact');
     include('header-2.php');
+
+    require_once "recaptchalib.php";
+
+    // your secret key
+    $secret = "6Lek-kUUAAAAAJR92O8CwDpE_ZjHFQLmT8aK08zc";
+    
+    // empty response
+    $response = null;
+    
+    // check secret key
+    $reCaptcha = new ReCaptcha($secret);
+
+    // if submitted check response
+    if (isset($_POST["g-recaptcha-response"])) {
+        $response = $reCaptcha->verifyResponse(
+            $_SERVER["REMOTE_ADDR"],
+            $_POST["g-recaptcha-response"]
+        );
+    }
+
 ?> 
 
 <section class="lab-container-fluid">
@@ -18,6 +38,12 @@
                     <header class="contact-header">
                         <h1>Contact Us</h1>
                     </header>
+
+                        <?php
+                            if ($response != null && $response->success) {
+                                echo "Hi " . $_POST["contact-name"] . " (" . $_POST["contact-email"] . "), thanks for contacting us!";
+                            } else {
+                        ?>
 
                         <form action="" method="post" class="contact-form ticket-form">
 
@@ -45,7 +71,7 @@
                                     <span><i class="fa fa-user-circle"></i></span>
 
                                     <div class="field-container" id="name">
-                                        <input name="ticket-name" class="ticket-input" type="text" placeholder="">
+                                        <input name="contact-name" class="ticket-input" type="text" placeholder="" required>
                                     </div> 
                                 </div> <!-- /name -->
 
@@ -53,7 +79,7 @@
                                     <span><i class="fa fa-building"></i></span>
 
                                     <div class="field-container" id="company">
-                                        <input name="ticket-name" class="ticket-input" type="text" placeholder="">
+                                        <input name="contact-company" class="ticket-input" type="text" placeholder="">
                                     </div> 
                                 </div> <!-- /Company -->
                                 
@@ -64,7 +90,7 @@
                                     <span><i class="fa fa-envelope"></i></span>
 
                                     <div class="field-container" id="email">
-                                        <input name="ticket-name" class="ticket-input" type="email" placeholder="">
+                                        <input name="contact-email" class="ticket-input" type="email" placeholder="" required>
                                     </div> 
                                 </div> <!-- /Email -->
 
@@ -80,11 +106,18 @@
 
                             <div class="field-row" id="row-3">
                                 <label for="comment">Comment / Message</label>
-                                <textarea name="" id="comment" cols="30" rows="5" ></textarea>
-                                <button class="contact-submit" type="submit">Submit</button>
+                                <textarea name="contact-message" id="comment" cols="30" rows="5" required></textarea>
+                                
+                            </div>
+
+                            <div class="captcha-btn-section">
+                                <div class="g-recaptcha" data-sitekey="6Lek-kUUAAAAAEzF1r_T1XLIvCwyMzqQ6-q_3EMm"></div>
+                                <button name="contact-submit" class="contact-submit" type="submit">Submit</button>
                             </div>
                     
                         </form>
+
+                        <?php } ?>
 
 
 
