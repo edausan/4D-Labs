@@ -6745,72 +6745,120 @@ div#prod-quantity {
   width: 100%;
   color: #b3b3b3; }
 
+figure.contact-banner {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin-bottom: 400px;
+  background: url("../img/map.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  figure.contact-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); }
+
 section.contact-wrapper {
-  padding: 50px 0px;
-  font-family: 'Avenir'; }
+  font-family: 'Avenir';
+  position: absolute;
+  width: 1170px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -35%);
+  -moz-transform: translate(-50%, -35%);
+  -o-transform: translate(-50%, -35%);
+  -ms-transform: translate(-50%, -35%);
+  transform: translate(-50%, -35%);
+  background: white;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
+  section.contact-wrapper::after {
+    content: '';
+    display: table;
+    clear: both; }
   section.contact-wrapper header.contact-header {
     margin: 0px 0px 50px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #327B83;
     padding-bottom: 10px; }
     section.contact-wrapper header.contact-header h1 {
-      margin: 0; }
-  section.contact-wrapper article.contact-form-wrapper form.contact-form textarea {
-    width: 100%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    border-style: none;
-    border: 1px solid #cccccc;
-    -webkit-transition: 250ms ease;
-    -moz-transition: 250ms ease;
-    -o-transition: 250ms ease;
-    transition: 250ms ease;
-    padding: 10px; }
-    section.contact-wrapper article.contact-form-wrapper form.contact-form textarea:focus {
-      border-color: black; }
-  section.contact-wrapper article.contact-form-wrapper form.contact-form button.contact-submit {
-    border-style: none;
-    padding: 10px 20px;
-    background: #327B83;
-    color: white;
-    display: block;
-    width: 15%;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
-    margin: 20px auto 0px;
-    cursor: pointer; }
-    section.contact-wrapper article.contact-form-wrapper form.contact-form button.contact-submit:hover {
-      background: #24585e; }
+      margin: 0;
+      color: #327B83; }
+  section.contact-wrapper article.contact-form-wrapper {
+    padding: 50px;
+    width: 60%;
+    float: left; }
+    section.contact-wrapper article.contact-form-wrapper form.contact-form textarea {
+      width: 100%;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      border-style: none;
+      border: 1px solid #cccccc;
+      -webkit-transition: 250ms ease;
+      -moz-transition: 250ms ease;
+      -o-transition: 250ms ease;
+      transition: 250ms ease;
+      padding: 10px;
+      max-height: 204px; }
+      section.contact-wrapper article.contact-form-wrapper form.contact-form textarea:focus {
+        border-color: black; }
+    section.contact-wrapper article.contact-form-wrapper form.contact-form #inquiry-wrapper {
+      width: 100%; }
+      section.contact-wrapper article.contact-form-wrapper form.contact-form #inquiry-wrapper #inquiry-type {
+        width: 100%; }
+    section.contact-wrapper article.contact-form-wrapper form.contact-form button.contact-submit {
+      border-style: none;
+      padding: 10px 20px;
+      background: #327B83;
+      color: white;
+      display: block;
+      width: 15%;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
+      margin: 20px auto 0px;
+      cursor: pointer; }
+      section.contact-wrapper article.contact-form-wrapper form.contact-form button.contact-submit:hover {
+        background: #24585e; }
   section.contact-wrapper article.headquarters-wrapper {
-    margin-top: 50px;
-    border-top: 1px solid #E84B50;
-    padding: 30px 0px; }
+    width: 40%;
+    float: right;
+    padding: 70px 50px 50px;
+    background: #327B83; }
     section.contact-wrapper article.headquarters-wrapper::after {
       content: '';
       display: table;
       clear: both; }
     section.contact-wrapper article.headquarters-wrapper .headquarters {
-      width: 49%; }
+      width: 100%;
+      margin-bottom: 30px; }
       section.contact-wrapper article.headquarters-wrapper .headquarters::after {
         content: '';
         display: table;
         clear: both; }
-      section.contact-wrapper article.headquarters-wrapper .headquarters#headquarter-1 {
-        float: left; }
-      section.contact-wrapper article.headquarters-wrapper .headquarters#headquarter-2 {
-        float: right; }
       section.contact-wrapper article.headquarters-wrapper .headquarters h2 {
-        color: #E84B50; }
+        color: white;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600; }
       section.contact-wrapper article.headquarters-wrapper .headquarters label {
-        margin-bottom: 5px;
+        margin: 0px;
         font-weight: 600;
-        font-size: 18px; }
-      section.contact-wrapper article.headquarters-wrapper .headquarters ul {
-        width: 33.333333333%;
-        float: left; }
+        font-size: 18px;
+        color: #f2f2f2;
+        width: 50%; }
+        section.contact-wrapper article.headquarters-wrapper .headquarters label i {
+          width: 20px;
+          color: white; }
+      section.contact-wrapper article.headquarters-wrapper .headquarters ul li {
+        color: #e6e6e6;
+        font-size: 16px; }
 
 section.updates-wrapper {
   width: 100vw;

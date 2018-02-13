@@ -1,16 +1,45 @@
+figure.contact-banner
+    width: 100%
+    height: 50vh
+    position: relative
+    margin-bottom: 400px
+    background: url('../img/map.png') no-repeat
+    background-size: cover
+    background-attachment: fixed
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(black, .8)
+
 section.contact-wrapper
-    padding: 50px 0px
     font-family: 'Avenir'
+    position: absolute
+    width: 1170px
+    top: 50%
+    left: 50%
+    +transform(translate(-50%, -35%))
+    background: white
+    box-shadow: 0 8px 20px rgba(black, .3)
+    +clear
 
     header.contact-header 
         margin: 0px 0px 50px
-        border-bottom: 1px solid #cccccc
+        border-bottom: 1px solid $paleBlue
         padding-bottom: 10px
 
         h1 
             margin: 0
+            color: $paleBlue
 
     article.contact-form-wrapper
+        padding: 50px
+        width: 60%
+        float: left
 
         form.contact-form
 
@@ -21,9 +50,16 @@ section.contact-wrapper
                 border: 1px solid #cccccc
                 +transition
                 padding: 10px
+                max-height: 204px
 
                 &:focus
                     border-color: black
+
+            #inquiry-wrapper
+                width: 100%
+
+                #inquiry-type
+                    width: 100%
 
 
             button.contact-submit
@@ -43,28 +79,38 @@ section.contact-wrapper
 
 
     article.headquarters-wrapper
+        width: 40%
+        float: right
         +clear
-        margin-top: 50px
-        border-top: 1px solid $red
-        padding: 30px 0px
+        padding: 70px 50px 50px
+        background: $paleBlue
 
         .headquarters
-            width: 49%
+            width: 100%
             +clear
-
-            &#headquarter-1
-                float: left
-            &#headquarter-2
-                float: right
+            margin-bottom: 30px
 
             h2 
-                color: $red
+                color: white
+                text-transform: uppercase
+                font-size: 25px
+                font-weight: 600
 
             label 
-                margin-bottom: 5px
+                margin: 0px
                 font-weight: 600
                 font-size: 18px
+                color: darken(white, 5%)
+                width: 50%
+
+                i 
+                    width: 20px
+                    color: white
 
             ul 
-                width: 33.333333333%
-                float: left
+                // margin-left: 10px
+
+                li 
+                    color: darken(white, 10%)
+                    font-size: 16px
+                    
