@@ -1,0 +1,63 @@
+section.new-thumbnails-wrapper
+    padding: 50px 0px
+    font-family: 'Helvetica'
+
+    header.new-thumbnails-header
+        text-align: center
+        margin: 0px 0px 50px 
+        text-transform: uppercase
+
+        h3 
+
+
+    .thumbnails-container
+        +clear 
+
+        .thumbnails-item
+            width: 49%
+            margin-bottom: 50px
+            +clear 
+
+            &:hover
+                figure.thumb-wrapper
+                    opacity: 1
+            
+            figure.thumb-wrapper
+                width: 30%
+                float: left
+                position: relative
+                max-height: 162.6px
+                height: 162.6px
+                overflow: hidden
+                background: #eeeeee
+                opacity: .9
+                margin: 0
+                +transition
+
+                img 
+                    height: 100%
+                    position: absolute
+                    top: 0
+                    left: 50%
+                    +transform(translateX(-50%))
+
+            .thumb-content
+                width: 70%
+                float: left
+                padding-left: 20px
+                p 
+
+                a 
+                    color: $orange
+
+                header.thumb-header
+                    a 
+                        text-decoration: none
+                
+                        h3 
+                            color: $paleBlue
+                            +transition
+                            font-family: 'Lato'
+            
+                            &:hover
+                                color: darken($paleBlue, 10%)

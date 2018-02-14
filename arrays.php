@@ -1002,4 +1002,32 @@
                                                 'Workshop4 PRO IDE' => 'Workshop4 is a comprehensive software IDE for Microsoft Windows that provides an integrated software development platform for all of the 4D family of processors and modules.'
                                             ),
                     );
+
+
+    $thumbnails =   array(
+        'Graphics Solution'  =>   array(
+                            'page'          =>  'products',
+                            'img'           =>  'thumb-2.jpg',
+                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'class'         =>  'fleft'
+                        ),
+        'OptoElectronics'  =>   array(
+                            'page'          =>  'products',
+                            'img'           =>  'thumb-3.jpg',
+                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'class'         =>  'fright'
+                        ),
+        'Systems In Modules (SIM)'  =>   array(
+                            'page'          =>  'sim-modules',
+                            'img'           =>  'sim-modules.png',
+                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'class'         =>  'fleft'
+                        ),
+        'Software IDE Platforms'  =>   array(
+                            'page'          =>  'workshop4',
+                            'img'           =>  'workshop4.png',
+                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'class'         =>  'fright'
+                        ),
+                    );
 ?>
