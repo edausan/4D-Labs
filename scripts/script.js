@@ -13,7 +13,7 @@ $(function() {
 
         searchForm.removeClass('focused');
         searchIcon.removeClass('focus');
-    });
+    });    
 
 
 

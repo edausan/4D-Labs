@@ -8,6 +8,7 @@ $(function() {
     }
     
     dynamicallyLoadScript('scripts/navbar.js');
+    dynamicallyLoadScript('scripts/home.js');
     dynamicallyLoadScript('scripts/shop.js');
     dynamicallyLoadScript('scripts/register.js');
     dynamicallyLoadScript('scripts/product-tabs.js');

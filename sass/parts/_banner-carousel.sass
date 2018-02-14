@@ -1,6 +1,6 @@
 .carousel
     .carousel-inner
-        height: 580px
+        // max-height: 580px
         .carousel-item
             background-position: 50%
 
@@ -22,14 +22,12 @@
                 z-index: 1002
                 
                 display: inline-block
+
                 h3
                     font-family: 'Sony Sketch'
                     font-size: 60px
                     margin: 0
                     padding: 10px 20px
-                    // background: $paleBlue
-                    // background: #8E0E0E
-                    // box-shadow: 0 8px 32px rgba(black, .3)
                     +transform(translateX(-50%))
                     +transition(500ms cubic-bezier(.94,.11,.65,.98))
                     opacity: 0
@@ -40,10 +38,6 @@
                     font-size: 30px
                     margin: 0
                     padding: 0px 20px 20px
-                    // background: $paleBlue
-                    // padding: 0px 40px
-                    // background: white
-                    // box-shadow: 0 8px 32px rgba(black, .2)
                     +transform(translateX(50%))
                     +transition(500ms cubic-bezier(.94,.11,.65,.98))
                     opacity: 0
@@ -59,10 +53,9 @@
     .carousel-inner
         // height: 300px
         
-        .carousel-item
-            height: 45vh !important
-            
-            background-size: auto 100%
+        .carousel-item            
+            // background-size: cover
+
             &::before
                 content: ''
                 position: absolute
