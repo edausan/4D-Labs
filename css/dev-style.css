@@ -2650,6 +2650,139 @@ section.news-and-events-wrapper {
           section.news-and-events-wrapper .news-container .news-item .news-content-wrapper .news-content p {
             min-height: 126px; }
 
+.app-newsletter-wrapper {
+  width: 100%;
+  height: 100%;
+  background: white;
+  background-size: cover;
+  font-family: 'Lato Light';
+  position: relative; }
+  .app-newsletter-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/newsletter-home.png") #A4CE36 no-repeat;
+    opacity: .7;
+    background-size: cover;
+    z-index: 1000; }
+
+section.appnote-home-wrapper {
+  padding: 22px 0px 40px;
+  position: relative;
+  z-index: 1001; }
+  section.appnote-home-wrapper::after {
+    content: '';
+    display: table;
+    clear: both; }
+  section.appnote-home-wrapper .appnote-content {
+    width: 50%;
+    padding: 26px 10px; }
+    section.appnote-home-wrapper .appnote-content h2 {
+      font-family: 'Lato';
+      font-weight: 600;
+      font-size: 32px; }
+    section.appnote-home-wrapper .appnote-content p {
+      font-family: 'Lato Light';
+      font-size: 24px; }
+    section.appnote-home-wrapper .appnote-content a {
+      font-size: 14px;
+      text-decoration: none;
+      padding: 10px 20px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -o-border-radius: 30px;
+      border-radius: 30px;
+      background: #459506;
+      color: white;
+      margin: 0;
+      text-transform: uppercase;
+      -webkit-transition: 250ms ease;
+      -moz-transition: 250ms ease;
+      -o-transition: 250ms ease;
+      transition: 250ms ease; }
+      section.appnote-home-wrapper .appnote-content a:hover {
+        background: #50ae07; }
+  section.appnote-home-wrapper .featured-article {
+    width: 50%; }
+    section.appnote-home-wrapper .featured-article .article-container {
+      padding: 22px;
+      background: white;
+      border: 1px solid #459506;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -o-border-radius: 12px;
+      border-radius: 12px; }
+      section.appnote-home-wrapper .featured-article .article-container::after {
+        content: '';
+        display: table;
+        clear: both; }
+      section.appnote-home-wrapper .featured-article .article-container header.article-header {
+        display: block; }
+        section.appnote-home-wrapper .featured-article .article-container header.article-header label {
+          font-size: 14px;
+          text-transform: uppercase;
+          margin: 0;
+          font-family: 'Lato';
+          font-weight: 400; }
+        section.appnote-home-wrapper .featured-article .article-container header.article-header a {
+          text-decoration: none; }
+        section.appnote-home-wrapper .featured-article .article-container header.article-header h5 {
+          font-size: 24px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 600;
+          color: black;
+          -webkit-transition: 250ms ease;
+          -moz-transition: 250ms ease;
+          -o-transition: 250ms ease;
+          transition: 250ms ease; }
+          section.appnote-home-wrapper .featured-article .article-container header.article-header h5:hover {
+            color: #50ae07; }
+      section.appnote-home-wrapper .featured-article .article-container img {
+        float: right;
+        width: 100px;
+        max-width: 100px;
+        margin: 0 0 20px 20px; }
+      section.appnote-home-wrapper .featured-article .article-container p {
+        width: 100%;
+        font-size: 14px;
+        font-family: 'Lato';
+        font-weight: 400; }
+
+section.newsletter-home-wrapper {
+  background: #48A9C5;
+  padding: 40px 0px;
+  position: relative;
+  z-index: 1001; }
+  section.newsletter-home-wrapper p {
+    display: inline-block;
+    color: white;
+    font-size: 23px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin: 0; }
+  section.newsletter-home-wrapper button {
+    padding: 10px 20px;
+    background: #032259;
+    color: white;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    border-style: none;
+    text-transform: uppercase;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+    cursor: pointer; }
+    section.newsletter-home-wrapper button:hover {
+      background: #05358a; }
+    section.newsletter-home-wrapper button i {
+      margin-right: 10px; }
+
 article.product-details-wrapper {
   margin-top: 20px;
   font-family: 'Avenir'; }

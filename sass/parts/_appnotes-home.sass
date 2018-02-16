@@ -1,0 +1,130 @@
+.app-newsletter-wrapper
+    width: 100%
+    height: 100%
+    background: white
+    background-size: cover
+    font-family: 'Lato Light'
+    position: relative
+
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: url('../img/newsletter-home.png') #A4CE36 no-repeat
+        opacity: .7
+        background-size: cover
+        z-index: 1000
+    
+
+section.appnote-home-wrapper
+    padding: 22px 0px 40px
+    position: relative
+    z-index: 1001
+    +clear
+
+    .appnote-content
+        width: 50%
+        padding: 26px 10px
+
+        h2 
+            font-family: 'Lato'
+            font-weight: 600
+            font-size: 32px
+
+        p 
+            font-family: 'Lato Light'
+            font-size: 24px
+
+        a 
+            font-size: 14px 
+            text-decoration: none
+            padding: 10px 20px
+            +border-radius(30px)
+            background: $designer
+            color: white
+            margin: 0
+            text-transform: uppercase
+            +transition
+
+            &:hover
+                background: lighten($designer, 5%)
+
+    .featured-article
+        width: 50%
+
+        .article-container
+            padding: 22px
+            background: white 
+            border: 1px solid darken($designer, 0%)
+            +border-radius(12px)
+            +clear
+
+            header.article-header
+                display: block
+                
+                label 
+                    font-size: 14px
+                    text-transform: uppercase
+                    margin: 0
+                    font-family: 'Lato'
+                    font-weight: 400
+
+                a 
+                    text-decoration: none
+
+                h5 
+                    font-size: 24px
+                    font-family: 'Lato', sans-serif
+                    font-weight: 600
+                    color: black
+                    +transition
+
+                    &:hover
+                        color: lighten($designer, 5%)
+            
+            img
+                float: right
+                width: 100px
+                max-width: 100px
+                margin: 0 0 20px 20px
+
+            p 
+                width: 100%
+                font-size: 14px
+                font-family: 'Lato'
+                font-weight: 400
+
+
+section.newsletter-home-wrapper
+    background: #48A9C5
+    padding: 40px 0px
+    position: relative
+    z-index: 1001
+    
+    p 
+        display: inline-block
+        color: white
+        font-size: 23px
+        font-family: 'Lato', sans-serif
+        font-weight: 600
+        margin: 0
+
+    button 
+        padding: 10px 20px
+        background: $darkBlue
+        color: white 
+        +border-radius(25px)
+        border-style: none
+        text-transform: uppercase
+        +transition
+        cursor: pointer
+
+        &:hover
+            background: lighten($darkBlue, 10%)
+
+        i 
+            margin-right: 10px
