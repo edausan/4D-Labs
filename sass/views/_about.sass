@@ -533,140 +533,140 @@ section.about-wrapper
 
 
 
-    section.learn-nav
+section.learn-nav
 
-        ul.learn-list
-            +clear 
+    ul.learn-list
+        +clear 
 
-            li.learn
-                width: 50%
-                float: left 
+        li.learn
+            width: 50%
+            float: left 
 
-                a
-                    padding: 60px
-                    text-decoration: none
-                    color: $footerGrey
+            a
+                padding: 60px
+                text-decoration: none
+                color: $footerGrey
+                +transition
+
+                header
+                    padding: 50px 50px 80px
+                    z-index: 1001
+                    position: relative
+                    label
+                        font-size: 30px
+                        cursor: pointer
+                    h1
+                        font-size: 64px
+                        text-transform: uppercase
+                        margin-bottom: 80px
+
+                    span.arrow
+                        display: block
+                        height: 2px 
+                        width: 100px
+                        background: $paleBlue
+                        position: relative
+                        z-index: 1002
+                        +transition
+
+                        &::before,
+                        &::after
+                            content: ''
+                            position: absolute
+                            background: inherit
+                            height: inherit
+                            
+                        &::before
+                            width: 50%
+                            bottom: 0
+                            right: 0
+                            transform-origin: bottom right
+                            +transform(rotate(45deg))
+
+                        &::after
+                            width: 50%
+                            top: 0
+                            right: 0
+                            transform-origin: top right
+                            +transform(rotate(-45deg))
+
+
+                        &.arrow-left
+                            background: $paleBlue
+                            +transform(rotate(-180deg))
+                            margin-left: 10%
+
+                        &.arrow-right
+                            margin-left: 90%
+                            background: $orange
+                            +transform(translateX(-100%))
+
+
+            &.learn-product
+                background: #EFF0F1
+                position: relative
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    right: 100%
+                    width: 500%
+                    height: 100%
+                    background: inherit
+
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: -400%
+                    width: 500%
+                    height: 3%
+                    background: $paleBlue
+                    z-index: 1000
                     +transition
 
+
+            &.learn-software
+                background: #F6F6F7
+                position: relative
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 100%
+                    width: 500%
+                    height: 100%
+                    background: inherit
+
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 0
+                    right: -400%
+                    width: 500%
+                    height: 3%
+                    background: $orange
+                    z-index: 1000
+                    +transition
+
+            &:hover
+                &::after
+                    height: 100%
+
+                a
+                    color: white
+
                     header
-                        padding: 50px 50px 80px
-                        z-index: 1001
-                        position: relative
-                        label
-                            font-size: 30px
-                            cursor: pointer
-                        h1
-                            font-size: 64px
-                            text-transform: uppercase
-                            margin-bottom: 80px
-
-                        span.arrow
-                            display: block
-                            height: 2px 
-                            width: 100px
-                            background: $paleBlue
-                            position: relative
-                            z-index: 1002
-                            +transition
-
-                            &::before,
-                            &::after
-                                content: ''
-                                position: absolute
-                                background: inherit
-                                height: inherit
-                                
-                            &::before
-                                width: 50%
-                                bottom: 0
-                                right: 0
-                                transform-origin: bottom right
-                                +transform(rotate(45deg))
-
-                            &::after
-                                width: 50%
-                                top: 0
-                                right: 0
-                                transform-origin: top right
-                                +transform(rotate(-45deg))
-
-
+                        span
                             &.arrow-left
-                                background: $paleBlue
-                                +transform(rotate(-180deg))
-                                margin-left: 10%
+                                background: white
+                                margin-left: 0%
 
                             &.arrow-right
-                                margin-left: 90%
-                                background: $orange
-                                +transform(translateX(-100%))
-
-
-                &.learn-product
-                    background: #EFF0F1
-                    position: relative
-
-                    &::before
-                        content: ''
-                        position: absolute
-                        top: 0
-                        right: 100%
-                        width: 500%
-                        height: 100%
-                        background: inherit
-
-                    &::after
-                        content: ''
-                        position: absolute
-                        top: 0
-                        left: -400%
-                        width: 500%
-                        height: 3%
-                        background: $paleBlue
-                        z-index: 1000
-                        +transition
-
-
-                &.learn-software
-                    background: #F6F6F7
-                    position: relative
-
-                    &::before
-                        content: ''
-                        position: absolute
-                        top: 0
-                        left: 100%
-                        width: 500%
-                        height: 100%
-                        background: inherit
-
-                    &::after
-                        content: ''
-                        position: absolute
-                        top: 0
-                        right: -400%
-                        width: 500%
-                        height: 3%
-                        background: $orange
-                        z-index: 1000
-                        +transition
-
-                &:hover
-                    &::after
-                        height: 100%
-
-                    a
-                        color: white
-
-                        header
-                            span
-                                &.arrow-left
-                                    background: white
-                                    margin-left: 0%
-
-                                &.arrow-right
-                                    background: white
-                                    margin-left: 100%
+                                background: white
+                                margin-left: 100%
 
 article#addtnl-3
     font-family: 'Avenir'

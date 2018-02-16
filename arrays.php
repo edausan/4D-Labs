@@ -1005,29 +1005,69 @@
 
 
     $thumbnails =   array(
-        'Graphics Solution'  =>   array(
+        'Graphics Solutions'  =>   array(
                             'page'          =>  'products',
-                            'img'           =>  'thumb-2.jpg',
-                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'img'           =>  'goldelox.png',
+                            'description'   =>  '4D Labs also offers chip solutions adding more functionalities to your display applications including touch, audio, and wireless connectivity.',
                             'class'         =>  'fleft'
                         ),
         'OptoElectronics'  =>   array(
                             'page'          =>  'products',
-                            'img'           =>  'thumb-3.jpg',
-                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'img'           =>  'lcd.png',
+                            'description'   =>  '4D Labs also offers chip solutions adding more functionalities to your display applications including touch, audio, and wireless connectivity.',
                             'class'         =>  'fright'
                         ),
         'Systems In Modules (SIM)'  =>   array(
                             'page'          =>  'sim-modules',
                             'img'           =>  'sim-modules.png',
-                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'description'   =>  '4D Labs also offers chip solutions adding more functionalities to your display applications including touch, audio, and wireless connectivity.',
                             'class'         =>  'fleft'
                         ),
         'Software IDE Platforms'  =>   array(
                             'page'          =>  'workshop4',
                             'img'           =>  'workshop4.png',
-                            'description'   =>  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum eligendi sequi iusto quaerat delectus accusamus animi illo ratione ipsum, error voluptatum!',
+                            'description'   =>  '4D Labs also offers chip solutions adding more functionalities to your display applications including touch, audio, and wireless connectivity.',
+                            'class'         =>  'fright'
+                        ),
+        'Chipset Solutions'  =>   array(
+                            'page'          =>  'products',
+                            'img'           =>  'goldelox.png',
+                            'description'   =>  '4D Labs also offers chip solutions adding more functionalities to your display applications including touch, audio, and wireless connectivity.',
+                            'class'         =>  'fleft'
+                        ),
+        'Development Resources'  =>   array(
+                            'page'          =>  'products',
+                            'img'           =>  'lcd.png',
+                            'description'   =>  '4D Labs offers powerful integrated development environments that allows users to create projects with no coding at all or be more powerful using 4D graphics language.',
                             'class'         =>  'fright'
                         ),
                     );
+
+
+    $news =     array(
+        'Nov 11, 2017'  =>  array(
+                                'title'     =>  '4D Systems adds smallest 0.9” Display module to its Internet of Displays range',
+                                'content'   =>  '4D Systems is leading the way with its Internet of Display modules. Today they announced the latest addition to the range with its smallest LCD display yet. At 0.9-inch and powered by the popular Wi-Fi enabled ESP8266, it is ideal for miniature IoT projects.',
+                                'thumb'     =>  'IoD09.jpg',
+                                'link'      =>  'http://www.4dsystems.com.au/article.php?id=2964'
+                            ),
+        'Jul 26, 2017'  =>  array(
+                                'title'     =>  '4D Systems adds smart widgets editor tool to Workshop4 PRO IDE',
+                                'content'   =>  'Workshop4 PRO enhances the standard features of the base version of the Workshop4 IDE with options that extend productivity for developing advanced GUIs for embedded applications.',
+                                'thumb'     =>  'ws4.jpg',
+                                'link'      =>  'http://www.4dsystems.com.au/article.php?id=2961'
+                            ),
+        'Sep 13, 2017'  =>  array(
+                                'title'     =>  'Building easy access to Big Data',
+                                'content'   =>  'The infrastructure to support the Internet of Things is evolving, and a large part of that infrastructure is what we now call the cloud. As the IoT matures, it is pioneering new concepts such as distributed intelligence; edge-nodes that operate autonomously, creating and acting on data that is passed to the cloud and accessible from anywhere.',
+                                'thumb'     =>  'build.jpg',
+                                'link'      =>  'http://www.4dsystems.com.au/article.php?id=2960'
+                            ),
+        'June 09, 2017'  =>  array(
+                                'title'     =>  'TFT LCD display series for BeagleBone Black incorporates touch sensing over I2C',
+                                'content'   =>  '4D Systems announces the launch of the gen4 CAPE series of TFT LCD display capes designed specifically for use with the BeagleBone Black single board computer. The series comprises 4.3-, 5.0- and 7.0- inch models, each equipped with a 30-pin robust FPC cable that plugs into the supplied gen4 CAPE adapter board.',
+                                'thumb'     =>  'bbb.jpg',
+                                'link'      =>  'http://www.4dsystems.com.au/article.php?id=2959'
+                            ),
+                );
 ?>

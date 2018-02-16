@@ -1,0 +1,82 @@
+section.news-and-events-wrapper
+    background: $footerGrey
+    padding: 20px
+    box-shadow: inset 20px 0px 50px rgba(black, .4)
+    background: url('../img/gradient.jpg') #0A414A no-repeat
+    background-size: cover
+    background-position: 50%
+    background-attachment: fixed
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(black, .4)
+        z-index: 1000
+
+
+    header.news-header
+        text-align: center
+        margin: 0px 0px 10px
+        position: relative
+        z-index: 1001
+
+        h3 
+            color: white 
+            text-transform: uppercase
+            margin-bottom: 0px
+
+    .news-container
+        position: relative
+        z-index: 1001
+        +clear 
+
+        .news-item
+            width: 25%
+            float: left
+            padding: 10px
+
+            .news-content-wrapper
+                position: relative
+                min-height: 430px
+                background: white
+                box-shadow: 0 8px 15px rgba(black, .2)
+
+                figure.news-thumb
+                    min-height: 137px
+                    margin: 0
+
+                    img 
+                        width: 100%
+
+                .news-content
+                    padding: 20px
+                    a 
+                        &:hover
+                            text-decoration-color: $paleBlue
+                    h5
+                        color: $paleBlue
+
+                    strong 
+                        display: block 
+                        position: absolute
+                        bottom: 15px
+                        left: 50%
+                        width: 100%
+                        padding: 0 20px
+                        +transform(translateX(-50%))
+                        +clear
+
+                        span 
+                            color: $paleBlue
+                        
+                        a
+                            float: right
+                            color: $blue
+                            
+                    p 
+                        min-height: 126px

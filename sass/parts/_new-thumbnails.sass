@@ -1,13 +1,29 @@
+section.thumb-wrapper-container
+    position: relative
+
+.thumb-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    // background: #EFF0F1
+    z-index: 1000
+
 section.new-thumbnails-wrapper
     padding: 50px 0px
     font-family: 'Helvetica'
+    position: relative
+    z-index: 1001
 
     header.new-thumbnails-header
         text-align: center
         margin: 0px 0px 50px 
         text-transform: uppercase
+        color: $paleBlue
 
-        h3 
+        h2 
+            color: $paleBlue !important
 
 
     .thumbnails-container
@@ -15,7 +31,7 @@ section.new-thumbnails-wrapper
 
         .thumbnails-item
             width: 49%
-            margin-bottom: 50px
+            margin-bottom: 100px
             +clear 
 
             &:hover
@@ -29,13 +45,12 @@ section.new-thumbnails-wrapper
                 max-height: 162.6px
                 height: 162.6px
                 overflow: hidden
-                background: #eeeeee
                 opacity: .9
                 margin: 0
                 +transition
 
                 img 
-                    height: 100%
+                    width: 100%
                     position: absolute
                     top: 0
                     left: 50%
@@ -46,18 +61,27 @@ section.new-thumbnails-wrapper
                 float: left
                 padding-left: 20px
                 p 
+                    font-size: 16px
+                    font-family: 'Lato'
 
                 a 
-                    color: $orange
+                    color: $paleBlue
 
                 header.thumb-header
                     a 
                         text-decoration: none
                 
-                        h3 
+                        p 
                             color: $paleBlue
+                            font-weight: 400
                             +transition
-                            font-family: 'Lato'
+                            font-family: 'Lato Light' !important
+                            font-size: 24px
+                            padding-bottom: 16px
+                            background-image: linear-gradient(to right, #d2d3d4 33.3333333333%, rgba(255,255,255,0) 0%)
+                            background-position: bottom
+                            background-size: 6px 2px
+                            background-repeat: repeat-x
             
                             &:hover
                                 color: darken($paleBlue, 10%)

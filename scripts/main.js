@@ -17,6 +17,7 @@ $(function() {
     dynamicallyLoadScript('scripts/documentation.js');
     dynamicallyLoadScript('scripts/parametric-search.js');
     dynamicallyLoadScript('scripts/contact.js');
+    dynamicallyLoadScript('scripts/news.js');
 });
 
 
