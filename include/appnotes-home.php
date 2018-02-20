@@ -11,7 +11,7 @@
 
                         <div class="appnote-content fleft">
                             <h2>Application Notes Library</h2>
-                            <p>Application Notes, Code Examples and tools to facilitate your research.</p>
+                            <p>Application Notes, Code Examples and tools to facilitate your development.</p>
 
                             <a href="app notes">All Application Notes</a>
                         </div>

@@ -1,7 +1,7 @@
 .app-newsletter-wrapper
     width: 100%
     height: 100%
-    background: white
+    background: #eeeeee
     background-size: cover
     font-family: 'Lato Light'
     position: relative
@@ -14,7 +14,6 @@
         left: 0
         width: 100%
         height: 100%
-        background: url('../img/newsletter-home.png') #A4CE36 no-repeat
         opacity: .7
         background-size: cover
         z-index: 1000
@@ -44,14 +43,15 @@ section.appnote-home-wrapper
             text-decoration: none
             padding: 10px 20px
             +border-radius(30px)
-            background: $designer
+            background: $paleBlue
             color: white
             margin: 0
             text-transform: uppercase
             +transition
+            font-weight: 400
 
             &:hover
-                background: lighten($designer, 5%)
+                background: lighten($paleBlue, 5%)
 
     .featured-article
         width: 50%
@@ -59,7 +59,7 @@ section.appnote-home-wrapper
         .article-container
             padding: 22px
             background: white 
-            border: 1px solid darken($designer, 0%)
+            border: 1px solid $paleBlue
             +border-radius(12px)
             +clear
 

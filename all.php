@@ -7,6 +7,5 @@
     include('include/thumbnails.php');
     include('include/appnotes-home.php');
     include('include/news.php');
-    // include('include/newsletter-home.php');
     include('footer-3.php');
 ?>

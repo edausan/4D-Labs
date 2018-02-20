@@ -18,6 +18,8 @@ $(function() {
     dynamicallyLoadScript('scripts/parametric-search.js');
     dynamicallyLoadScript('scripts/contact.js');
     dynamicallyLoadScript('scripts/news.js');
+    dynamicallyLoadScript('scripts/product-thumb-slider.js');
+    dynamicallyLoadScript('scripts/product-price.js');
 });
 
 

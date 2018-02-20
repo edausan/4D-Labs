@@ -56,7 +56,7 @@
                             foreach ($appnote['processor'] as $key => $val) {
                         ?>
 
-                            <a href="<?php echo $key; ?>.php" title="<?php echo $val; ?>" target="_blank" class="<?php echo $key; ?>"><?php echo $val; ?></a>
+                            <a href="<?php echo $key; ?>.php" title="<?php echo $val; ?>" rel="noopener noreferrer" target="_blank" class="<?php echo $key; ?>"><?php echo $val; ?></a>
                         
                         <?php } ?>
 
@@ -86,7 +86,7 @@
                                 ?>
                                 
                                     <li>
-                                        <a href="appnotes.php?appnote=<?php echo $val['link']; ?>" target="_blank"><?php echo $key; ?></a>  <span><?php echo $val['diff']; ?></span>
+                                        <a href="appnotes.php?appnote=<?php echo $val['link']; ?>" rel="noopener noreferrer" target="_blank"><?php echo $key; ?></a>  <span><?php echo $val['diff']; ?></span>
                                     </li>
                                 
                                 
@@ -104,7 +104,7 @@
                                 foreach($appnote['downloads'] as $fileType => $downloadLink) {
                             ?>
                                 <li>
-                                    <a href="<?php echo $downloadLink; ?>" target="_blank">
+                                    <a href="<?php echo $downloadLink; ?>" rel="noopener noreferrer" target="_blank">
                                         <img src="img/<?php echo $fileType; ?>.png" alt="">
                                     </a>
                                 </li>

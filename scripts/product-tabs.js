@@ -1,9 +1,9 @@
 $(function() {
 
     // Product Tabs
-    var tabs        = $('article.product-details-wrapper section.product-tabs article.tabs-wrapper ul.tabs li.tab');
-    var tabContent  = $('article.product-details-wrapper section.product-tabs article.tab-content');
-    var orderTab = $('article.product-details-wrapper section.product-tabs article.tabs-wrapper ul.tabs li.tab.order');
+    var tabs        = $('section.product-tabs article.tabs-wrapper ul.tabs li.tab');
+    var tabContent  = $('section.product-tabs article.tab-content');
+    var orderTab = $('section.product-tabs article.tabs-wrapper ul.tabs li.tab.order');
 
     tabs.click(function() {
         var tabId = $(this).attr('id');

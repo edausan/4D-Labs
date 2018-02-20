@@ -21,7 +21,7 @@
 
                                 'The combined blocks of <strong>EVE</strong>, the built-in graphics and system functions and the low level drivers make up and define the personality of the <strong>GOLDELOX</strong> Processor (analogy to that of a soft silicon). This is referred to as the Personality-module-micro-Code or PmmC (Firmware in general) for short.',
                             ),
-
+        'short-description'   =>  'The <strong>Goldelox</strong> processor is a custom embedded graphics controller designed to interface with many popular <strong>OLED</strong> and <strong>LCD display</strong> panels. Powerful graphics,  text, image, animation and countless more features are built right inside the chip. It offers a simple <strong>plug-n-play</strong> interface to many 8bit 80-Series colour LCD and OLED displays.',
         // Prduct Description
         'description'   =>  array(
                                 'The Goldelox processor is a custom embedded graphics controller designed to interface with many popular OLED and LCD display panels. Powerful graphics, text, image, animation and countless more features are built right inside the chip. It offers a simple plug-n-play interface to many 8bit 80-Series colour LCD and OLED displays.',
@@ -121,8 +121,7 @@
                                 'Data Processing'       =>  '16 bit',
                                 'Internal Flash'        =>  '10 kB',
                                 'Internal SRAM'         =>  '510 bytes',
-                                'SPI Interface'         =>  1,
-                                'UART Interface'        =>  1,
+                                'Communication Protocols' => array('SPI Interface'=>1, 'UART Interface'=>1),
                                 'GPIO Pins'             =>  2,
                                 'Timer'                 =>  '4 x 16bit user timers with 1ms resolution',
                                 'Operating Temperature' =>  '-40 to +80 ℃',
@@ -157,6 +156,19 @@
                                 'Reel of 1600' => 'To purchase full reel, order in multiples of 1600',
 
                             ),
+        'product-price' =>  array(
+            'in-stock'  =>  '12500',
+            'min'       =>  '2500',
+            'mult'      =>  '2500',
+            'price'     =>  '4.4875',
+            'quantity'  =>  array(
+                '2500' =>  '4.4875',
+                '5000' =>  '3.59',
+                '10000' =>  '2.99167',
+                '15000' =>  '2.76154',
+                '25000' =>  '2.56429',
+            ),
+        ),
         
                 )
 
@@ -166,15 +178,15 @@
 
 
 <section class="product-wrapper">
-    <article class="lab-container">
+    <!-- <article class="lab-container"> -->
         
             <?php
                 $title      =   'goldelox';
                 $breads     =   array('products', $title);
-                include('product-template.php');
+                include('include/product-page.php');
             ?>
 
-    </article>
+    <!-- </article> -->
 </section>
 
 

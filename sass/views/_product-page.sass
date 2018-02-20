@@ -99,420 +99,420 @@ article.product-details-wrapper
 
 
 
-    section.product-tabs
-        margin: 60px 0px
-        background: white
-        box-shadow: 0 8px 22px rgba(black, .050)
+section.product-tabs
+    margin: 60px 0px
+    background: white
+    // box-shadow: 0 8px 22px rgba(black, .050)
 
-        article.tabs-wrapper
-            
-            ul.tabs
-                +clear
+    article.tabs-wrapper
+        
+        ul.tabs
+            +clear
+            overflow: hidden
+            background: $footerGrey
+            border-bottom: 5px solid $paleBlue
+
+            &.orderActive
+                border-bottom-color: $orange
+
+            $class-slug: tab
+            @for $i from 1 through 5
+                li.#{$class-slug}:nth-child(#{$i})
+                    z-index: 1005 - $i
+
+            li.tab
+                float: left
+                width: 16.66666666666667%
+                color: $footerWhite
+                position: relative
+                text-align: center
+                cursor: pointer
+                font-size: 12px
+                +transition
                 overflow: hidden
+                text-transform: uppercase
+                +transform(scale(.90))
+                transform-origin: bottom
                 background: $footerGrey
-                border-bottom: 5px solid $paleBlue
 
-                &.orderActive
-                    border-bottom-color: $orange
-
-                $class-slug: tab
-                @for $i from 1 through 5
-                    li.#{$class-slug}:nth-child(#{$i})
-                        z-index: 1005 - $i
-
-                li.tab
-                    float: left
-                    width: 16.66666666666667%
-                    color: $footerWhite
-                    position: relative
-                    text-align: center
-                    cursor: pointer
-                    font-size: 12px
+                .ico-svg
+                    fill: white
+                    stroke: white
+                    display: inline-block
+                    vertical-align: middle
+                    width: 25px
+                    margin: 0
+                    padding: 0
+                    margin-right: 5px
                     +transition
-                    overflow: hidden
-                    text-transform: uppercase
-                    +transform(scale(.90))
-                    transform-origin: bottom
-                    background: $footerGrey
 
-                    .ico-svg
-                        fill: white
-                        stroke: white
-                        display: inline-block
-                        vertical-align: middle
-                        width: 25px
-                        margin: 0
-                        padding: 0
-                        margin-right: 5px
-                        +transition
- 
-                    &:hover
-                        background: darken($paleBlue, 10%)
-                    
-                    &.active
-                        background: $paleBlue
-                        z-index: 1006
-                        box-shadow: 10px 0px 32px rgba(black, .1), -10px 0px 32px rgba(black, .1)
-                        +transform(scale(1))
-
-                    label
-                        position: relative
-                        margin: 0
-                        padding: 20px
-                        cursor: pointer
-                        z-index: 1001
-
-                        span
-                            display: inline-block
-                            vertical-align: middle
-                            margin: 0
-                            padding: 0
-
-                li.tab.order
-                    position: relative
-                    border-left: 5px solid white
-                    background: $orange
+                &:hover
+                    background: darken($paleBlue, 10%)
+                
+                &.active
+                    background: $paleBlue
+                    z-index: 1006
+                    box-shadow: 10px 0px 32px rgba(black, .1), -10px 0px 32px rgba(black, .1)
                     +transform(scale(1))
 
-                    label 
-                        span 
-                            font-weight: 600                
-
-
-        article.tab-content
-            padding: 50px
-            background: white
-            border: 1px solid whitesmoke
-
-            .tab-content
-
-                &.tab-hidden
-                    display: none
-
-                i
-                    font-size: 8px
+                label
                     position: relative
-                    vertical-align: middle
-                p
-                    display: inline-block
-                    position: relative
-                    vertical-align: middle
-                    padding: 0
                     margin: 0
-                h2 
-                    color: $paleBlue
-                    text-transform: capitalize
-                    margin-bottom: 30px
-                    font-size: 40px
+                    padding: 20px 10px
+                    cursor: pointer
+                    z-index: 1001
 
-            .description-wrapper
-                h2
-                    
-                p
-                    margin-bottom: 20px
+                    span
+                        display: inline-block
+                        vertical-align: middle
+                        margin: 0
+                        padding: 0
+
+            li.tab.order
+                position: relative
+                border-left: 5px solid white
+                background: $orange
+                +transform(scale(1))
+
+                label 
+                    span 
+                        font-weight: 600                
+
+
+    article.tab-content
+        padding: 50px
+        background: white
+        border: 1px solid whitesmoke
+
+        .tab-content
+
+            &.tab-hidden
+                display: none
+
+            i
+                font-size: 8px
+                position: relative
+                vertical-align: middle
+            p
+                display: inline-block
+                position: relative
+                vertical-align: middle
+                padding: 0
+                margin: 0
+            h2 
+                color: $paleBlue
+                text-transform: capitalize
+                margin-bottom: 30px
+                font-size: 40px
+
+        .description-wrapper
+            h2
+                
+            p
+                margin-bottom: 20px
+                font-size: 20px
+
+        .specs-wrapper
+            +clear
+            h2
+            ul.specs-list
+                padding: 0px 30px
+                float: left
+                width: 50%
+                list-style-type: disc
+
+                li.specs
+                    margin-bottom: 10px
                     font-size: 20px
+                    i
+                        color: $paleBlue
 
-            .specs-wrapper
+                    ul.sub-specs
+                        padding-left: 40px
+                        list-style-type: disc
+
+                        li
+                            margin-bottom: 5px
+
+        .downloads-wrapper
+            h2
+            ul.download-category-list
                 +clear
-                h2
-                ul.specs-list
-                    padding: 0px 30px
-                    float: left
-                    width: 50%
-                    list-style-type: disc
+                li.download-category
+                    font-size: 20px
+                    
 
-                    li.specs
-                        margin-bottom: 10px
-                        font-size: 20px
-                        i
+                    strong
+                        padding: 10px
+                        background: #f5f5f5
+                        
+                        color: white
+                        display: block
+
+                        img
+                            width: 15px
+                            margin-right: 10px
+                        p
+                            margin: 0
+                            padding: 0
+                            color: darkred
+
+                    ul.download-list
+                        padding: 20px 0px
+                        +clear
+                        li.download-item
+                            float: left
+                            width: 50%
+                            padding: 30px 20px
+                            font-size: 18px
+                            +clear
+                            figure.file-icon
+                                float: left
+                                width: 10%
+                                margin: 0
+                                img
+                                    width: 80%
+
+                            .download-details
+                                float: left
+                                width: 90%
+
+                                a
+                                    color: red
+                                    font-weight: 600
+                                p
+                                    display: block
+
+                                    &#rev
+                                        color: grey
+                                        font-size: 14px
+
+
+
+
+        .product-video-wrapper
+            h2
+            iframe
+                height: 600px
+
+
+        .dev-tools-wrapper
+            header.dev-tools-header
+                text-align: center
+                margin-bottom: 20px
+                h2
+                    text-align: left
+                h5
+                    font-weight: 600
+                    font-size: 200%
+                    color: red
+                p
+                    font-size: 120%
+
+            figure.dev-tool-img
+                width: 100%
+                img
+                    width: 100%
+
+
+            article.dev-tool-description
+                padding: 20px
+                p
+
+            article.dev-tool-environment
+
+                .environment
+                    padding: 20px
+                    +clear
+                    figure.environment-thumb
+                        float: left
+                        width: 8%
+                        img
+
+                    section.environment-details
+                        float: left
+                        width: 92%
+
+                        h3
+
+                            &#designer 
+                                color: #6AA910 
+
+                            &#viSi 
+                                color: #037298
+                            
+                            &#serial 
+                                color: black
+
+                            &#viSi-Genie
+                                color: #876001
+                            
+                        p
+
+        .order-details-wrapper  
+            +clear   
+            h2 
+                display: none
+
+            
+            .order-container
+                +clear
+                form.order-form
+                    padding: 0px 20px
+                    float: left
+                    width: 65%
+                    +clear
+
+                    figure.order-img-wrapper
+                        float: left
+                        width: 35%
+                        vertical-align: middle
+                        height: 227px
+                        
+                        img
+                            width: 80%
+                            margin: 0 auto
+                            display: block
+
+                        figcaption
+                            text-align: center
+                            padding: 10px 0px
+                            font-weight: 600
                             color: $paleBlue
 
-                        ul.sub-specs
-                            padding-left: 40px
-                            list-style-type: disc
+                    .form-input
+                        width: 65%
+                        float: left
+                        padding: 0px 20px
+                        vertical-align: middle
 
-                            li
-                                margin-bottom: 5px
+                        label
+                            font-size: 150%
+                            margin-bottom: 20px
 
-            .downloads-wrapper
-                h2
-                ul.download-category-list
-                    +clear
-                    li.download-category
-                        font-size: 20px
+                        input
+                            width: 100% !important
+                            display: block
+                            margin-bottom: 20px
+
+                        button
+                            font-size: 16px
+                            background: $orange
+                            border-color: $orange
+                            width: 100%
+                            +transition
+                            cursor: pointer
+                            text-transform: uppercase
+
+                            i
+                                font-size: 16px
+                                vertical-align: middle
+                            span
+                                vertical-align: middle
+                                margin-left: 10px
+
+                            &:hover
+                                background: darken($orange, 10%)
+
+                        .separator
+                            width: 24px
+                            height: 24px
+                            border: 1px solid #cccccc 
+                            +border-radius(100%)
+                            position: relative
+                            margin: 20px auto
+
+                            &::before,
+                            &::after
+                                content: ''
+                                position: absolute
+                                top: 50%
+                                display: block
+                                width: 232px
+                                height: 1px
+                                background: #cccccc
+
+                            &::before
+                                left: 0%
+                                +transform(translateX(-100%))
+
+                            &::after
+                                right: 0%
+                                +transform(translateX(100%))
+
+                            span 
+                                position: absolute
+                                display: block
+                                top: 50%
+                                left: 50%
+                                color: #cccccc
+                                +transform
+
+                        a.request-quote
+                            display: block
+                            text-align: center
+                            padding: 10px 0px
+                            background: #eeeeee
+                            color: grey
+                            +border-radius(5px)
+                            text-decoration: none
+                            +transition
+                            text-transform: uppercase
+
+                            &:hover
+                                background: #cccccc
+
+                table.quantity-table
+                    float: left
+                    width: 30%
+                    padding: 20px
+
+                    thead 
+                        tr 
+
+                    tbody 
+                        tr
+                            td
+
+
+            .reel-order
+                text-align: center
+                background: $paleBlue
+                // border-left: 5px solid $orange
+
+                .reel-order-content
+                    padding: 10px
+                    display: inline-block
+
+                    i
+                        font-size: 14px
+                        vertical-align: middle
+                        display: inline-block
+                        color: white
+                        margin-right: 2px
+
+                    label
+                        padding: 0
+                        margin: 0
+                        color: white
+                        text-transform: uppercase
+                        margin-right: 10px
+                        vertical-align: middle
+                        
                         
 
                         strong
-                            padding: 10px
-                            background: #f5f5f5
-                            
-                            color: white
-                            display: block
-
-                            img
-                                width: 15px
-                                margin-right: 10px
-                            p
-                                margin: 0
-                                padding: 0
-                                color: darkred
-
-                        ul.download-list
-                            padding: 20px 0px
-                            +clear
-                            li.download-item
-                                float: left
-                                width: 50%
-                                padding: 30px 20px
-                                font-size: 18px
-                                +clear
-                                figure.file-icon
-                                    float: left
-                                    width: 10%
-                                    margin: 0
-                                    img
-                                        width: 80%
-
-                                .download-details
-                                    float: left
-                                    width: 90%
-
-                                    a
-                                        color: red
-                                        font-weight: 600
-                                    p
-                                        display: block
-
-                                        &#rev
-                                            color: grey
-                                            font-size: 14px
-
-
-
-
-            .product-video-wrapper
-                h2
-                iframe
-                    height: 600px
-
-
-            .dev-tools-wrapper
-                header.dev-tools-header
-                    text-align: center
-                    margin-bottom: 20px
-                    h2
-                        text-align: left
-                    h5
-                        font-weight: 600
-                        font-size: 200%
-                        color: red
                     p
-                        font-size: 120%
+                        color: white
+                        margin: 0
+                        padding: 0
+                        vertical-align: middle
 
-                figure.dev-tool-img
-                    width: 100%
-                    img
-                        width: 100%
-
-
-                article.dev-tool-description
-                    padding: 20px
-                    p
-
-                article.dev-tool-environment
-
-                    .environment
-                        padding: 20px
-                        +clear
-                        figure.environment-thumb
-                            float: left
-                            width: 8%
-                            img
-
-                        section.environment-details
-                            float: left
-                            width: 92%
-
-                            h3
-
-                                &#designer 
-                                    color: #6AA910 
-
-                                &#viSi 
-                                    color: #037298
-                                
-                                &#serial 
-                                    color: black
-
-                                &#viSi-Genie
-                                    color: #876001
-                                
-                            p
-
-            .order-details-wrapper  
-                +clear   
-                h2 
-                    display: none
+            hr
+                margin: 40px 0px
+                border-color: whitesmoke
 
                 
-                .order-container
-                    +clear
-                    form.order-form
-                        padding: 0px 20px
-                        float: left
-                        width: 65%
-                        +clear
-
-                        figure.order-img-wrapper
-                            float: left
-                            width: 35%
-                            vertical-align: middle
-                            height: 227px
-                            
-                            img
-                                width: 80%
-                                margin: 0 auto
-                                display: block
-
-                            figcaption
-                                text-align: center
-                                padding: 10px 0px
-                                font-weight: 600
-                                color: $paleBlue
-
-                        .form-input
-                            width: 65%
-                            float: left
-                            padding: 0px 20px
-                            vertical-align: middle
-
-                            label
-                                font-size: 150%
-                                margin-bottom: 20px
-
-                            input
-                                width: 100% !important
-                                display: block
-                                margin-bottom: 20px
-
-                            button
-                                font-size: 16px
-                                background: $orange
-                                border-color: $orange
-                                width: 100%
-                                +transition
-                                cursor: pointer
-                                text-transform: uppercase
-
-                                i
-                                    font-size: 16px
-                                    vertical-align: middle
-                                span
-                                    vertical-align: middle
-                                    margin-left: 10px
-
-                                &:hover
-                                    background: darken($orange, 10%)
-
-                            .separator
-                                width: 24px
-                                height: 24px
-                                border: 1px solid #cccccc 
-                                +border-radius(100%)
-                                position: relative
-                                margin: 20px auto
-
-                                &::before,
-                                &::after
-                                    content: ''
-                                    position: absolute
-                                    top: 50%
-                                    display: block
-                                    width: 232px
-                                    height: 1px
-                                    background: #cccccc
-
-                                &::before
-                                    left: 0%
-                                    +transform(translateX(-100%))
-
-                                &::after
-                                    right: 0%
-                                    +transform(translateX(100%))
-
-                                span 
-                                    position: absolute
-                                    display: block
-                                    top: 50%
-                                    left: 50%
-                                    color: #cccccc
-                                    +transform
-
-                            a.request-quote
-                                display: block
-                                text-align: center
-                                padding: 10px 0px
-                                background: #eeeeee
-                                color: grey
-                                +border-radius(5px)
-                                text-decoration: none
-                                +transition
-                                text-transform: uppercase
-
-                                &:hover
-                                    background: #cccccc
-
-                    table.quantity-table
-                        float: left
-                        width: 30%
-                        padding: 20px
-
-                        thead 
-                            tr 
-
-                        tbody 
-                            tr
-                                td
-
-
-                .reel-order
-                    text-align: center
-                    background: $paleBlue
-                    // border-left: 5px solid $orange
-
-                    .reel-order-content
-                        padding: 10px
-                        display: inline-block
-
-                        i
-                            font-size: 14px
-                            vertical-align: middle
-                            display: inline-block
-                            color: white
-                            margin-right: 2px
-
-                        label
-                            padding: 0
-                            margin: 0
-                            color: white
-                            text-transform: uppercase
-                            margin-right: 10px
-                            vertical-align: middle
-                            
-                            
-
-                            strong
-                        p
-                            color: white
-                            margin: 0
-                            padding: 0
-                            vertical-align: middle
-
-                hr
-                    margin: 40px 0px
-                    border-color: whitesmoke
-
-                    
 .order-services
     margin-top: 40px
     +clear

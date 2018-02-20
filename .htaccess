@@ -1,3 +1,5 @@
+ErrorDocument 404 /404.php
+ErrorDocument 404 /4DLabs-dev/404.php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]

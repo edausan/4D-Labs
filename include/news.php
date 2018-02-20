@@ -6,7 +6,7 @@
                 <section class="lab-row">
 
                     <header class="news-header">
-                        <h3>News and events</h3>
+                        <h3>News and Events</h3>
                     </header>
 
                     <div class="news-container">

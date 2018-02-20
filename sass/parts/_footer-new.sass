@@ -1,0 +1,120 @@
+footer.footer-new-wrapper
+    background: #232323
+    // border-top: 10px solid $paleBlue
+    +clear
+
+    .footer-container
+        width: 20%
+        float: left
+        padding: 0px 10px 40px
+        position: relative
+
+        // &::before
+        //     content: ''
+        //     position: absolute
+        //     top: 0
+        //     left: 0
+        //     width: 1px
+        //     height: 50%
+        //     background: white 
+
+        figure.footer-logo
+            width: 100%
+            min-height: 167px
+            vertical-align: middle
+            position: relative
+
+            img 
+                width: 70%
+                padding-top: 60px
+
+        h4 
+            color: white
+            padding-top: 66px
+            font-size: 16px
+            font-weight: 600
+            font-family: 'Lato'
+            border-left: 1px solid #666666
+            padding-left: 25px
+
+
+        ul.footer-list
+            list-style: outside
+            color: $paleBlue
+            padding-left: 40px
+
+            li.footer-item
+                padding: 3px 0px
+
+                a 
+                    color: #999
+                    text-decoration: none
+                    font-family: 'Lato Light'
+
+                    &:hover
+                        color: $paleBlue
+
+
+            &#social-media
+                padding-left: 0
+
+                li 
+                    display: inline-block
+                    margin-right: 8px
+
+                    a 
+
+
+                    span 
+                        display: block 
+                        width: 36px
+                        height: 36px
+                        position: relative
+                        +border-radius(100%)
+                        border: 1px solid white
+                        background: transparent
+
+                        &:hover
+                            border-color: $paleBlue
+
+                            i 
+                                color: $paleBlue
+
+                        
+
+                        i 
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            +transform
+                            color: white
+
+section.copyright-wrapper
+    background: #1E1E1E
+    padding: 32px 0 70px 0
+    +clear 
+
+    p 
+        margin: 0
+        position: relative
+        color: white
+        font-family: 'Lato Light'
+        display: inline-block
+
+
+    .payment-method-wrapper
+        float: right 
+        display: inline-block
+        width: auto
+
+        ul.cc-list
+            display: inline-block
+
+            li 
+                display: inline-block
+                height: 30px
+                margin-left: 10px
+
+                img
+                    height: 100%
+                    filter: grayscale(100%)

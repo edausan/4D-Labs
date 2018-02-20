@@ -19,6 +19,7 @@
                                 'Ideal as a standalone embedded graphics processor or interface to any host controller as a graphics co-processor.',
                                 'Built in high performance virtual processor engine (EVE) with an extensive byte-code instruction set optimised for 4DGL, the high level 4D Graphics Language.',
                             ),
+        'short-description'=>'The Diablo16 processor is a custom embedded 4DGL graphics controller designed to interface with many popular OLED and LCD display panels. With its powerful graphics, text, image, and animation abilities built-in, along with numerous more features makes the Diablo16 a single chip solution for a wide variety of LCD and OLED display solutions.',
 
         // Prduct Description
         'description'   =>  array(
@@ -122,9 +123,11 @@
                                 'Data Processing'       =>  '16 bit',
                                 'Internal Flash'        =>  '32 kB x 6 banks',
                                 'Internal SRAM'         =>  '32 kB',
-                                'I2C Interface'         =>  '3x I2C channels available',
-                                'SPI Interface'         =>  '1x dedicated for SD Card and 3x configurable',
-                                'UART Interface'        =>  '1x dedicated and 3x configurable',
+                                'Communication Protocols' => array(
+                                        'SPI Interface' => '1x dedicated for SD Card and 3x configurable', 
+                                        'UART Interface'        =>  '1x dedicated and 3x configurable',
+                                        'I2C Interface'         =>  '3x I2C channels available',
+                                ),
                                 'GPIO Pins'             =>  16,
                                 'Timer'                 =>  '8 x 16 bit timers with 1 millisecond resolution.',
                                 'Operating Temperature' =>  '-40 to +80℃',
@@ -154,6 +157,19 @@
                                                                 ),
 
                             ),
+        'product-price' =>  array(
+            'in-stock'  =>  '17500',
+            'min'       =>  '3000',
+            'mult'      =>  '3000',
+            'price'     =>  '4.4875',
+            'quantity'  =>  array(
+                '3000' =>  '4.4875',
+                '6000' =>  '3.59',
+                '12000' =>  '2.99167',
+                '18000' =>  '2.76154',
+                '30000' =>  '2.56429',
+            ),
+        ),
         
                 )
 
@@ -163,15 +179,15 @@
 
 
 <section class="product-wrapper">
-    <article class="lab-container">
+    <!-- <article class="lab-container"> -->
 
             <?php
                 $title      =   'diablo16';
                 $breads     =   array('products', $title);
-                include('product-template.php'); 
+                include('include/product-page.php'); 
             ?>
 
-    </article>
+    <!-- </article> -->
 </section>
 
 

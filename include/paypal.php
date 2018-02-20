@@ -10,6 +10,6 @@
             <li><img src="img/footer-icons/americanexpress.png" alt=""></li>
         </ul>
 
-        <a id="pay-via-pp" target="_blank" href="https://www.paypal.com/webapps/hermes?token=5AW59846A3681754H&useraction=commit&rm=2&mfid=1517196651082_4beeefed81f5b#/checkout/guest">Pay via PayPal</a>
+        <a id="pay-via-pp" rel="noopener noreferrer" target="_blank" href="https://www.paypal.com/webapps/hermes?token=5AW59846A3681754H&useraction=commit&rm=2&mfid=1517196651082_4beeefed81f5b#/checkout/guest">Pay via PayPal</a>
     </header>
 </section>
