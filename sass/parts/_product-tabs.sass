@@ -1,0 +1,37 @@
+section#product-page-tabs
+
+    ul.tabs 
+        background: none
+
+        &.orderActive
+            border-bottom-color: $paleBlue
+
+        li.tab 
+            +transform(scale(1))
+            width: auto
+            margin-right: 5px
+            border-radius: 5px 5px 0px 0px
+            overflow: hidden
+            background: #eeeeee
+            color: $paleBlue
+            box-shadow: inset 0px 2px 3px rgba(255,255,255,.3), inset 0px 5px 5px rgba(255,255,255,.3)
+            border: 1px solid $paleBlue
+            border-bottom: none
+
+            &.active
+                background: $paleBlue
+                color: white
+
+                .ico-svg
+                    fill: white
+                    stroke: white
+
+            .ico-svg
+                fill: $paleBlue
+                stroke: $paleBlue
+
+            label
+                padding: 10px 20px
+
+        li.tab.order
+            border-left: none

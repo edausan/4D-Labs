@@ -19,16 +19,20 @@
                         <div class="product-head" id="product-title">
                             <header>
                                 <h1><?php echo $product['name']; ?></h1>
-                                <h3><?php echo $product['order-details']['Part Number']; ?></h3>
-                                <h5>Graphics Processor <?php echo $product['order-details']['Package Type']; ?></h5>
+                                <div class="sub-head">
+                                    <h3>Manufacturer Part#: <span><?php echo $product['order-details']['Part Number']; ?></span></h3>
+                                    <h5><?php echo $product['order-details']['Package Type']; ?> Graphics Processor</h5>
+                                </div>                                
                             </header>
                             <p><?php echo $product['short-description']; ?></p>
 
+                            <a href="workshop4">Download the Workshop4 PRO IDE »</a>
+
                             <div class="product-overview">
                                 <ul>
-                                    <li><a href=""><img src="" alt=""> <i class="fa fa-play"></i> <span>Product Overview</span></a></li>
-                                    <li><a href=""><img src="" alt=""> <i class="fa fa-file"></i> <span>Datasheet</span></a></li>
-                                    <li><a href=""><img src="" alt=""> <i class="fa fa-book"></i> <span>Manual</span></a></li>
+                                    <li><a class="hideVideo" id="view-product-video"><img src="img/product-page-icons/product-overview.png" alt=""> <span>Product Video</span></a></li>
+                                    <li><a href=""><img src="img/product-page-icons/datasheet.png" alt=""> <span>Datasheet</span></a></li>
+                                    <li><a href=""><img src="img/product-page-icons/manual.png" alt=""> <span>Manual</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -55,7 +59,7 @@
 
                     <section class="quote-parametric-wrapper"> <!-- Quote and Parametric Details Wrapper -->
 
-                        <div class="parametric-wrapper"> <!-- Parametric Details Wrapper -->
+                        <div class="parametric-wrapper bordered"> <!-- Parametric Details Wrapper -->
                                                       
                             <ul class="parametric-details-list">
                                 <li class="parametric-detail"><strong>Part Number:</strong> <span><?php echo $product['order-details']['Part Number']; ?></span></li>
@@ -69,11 +73,13 @@
                                 <li class="parametric-detail"><strong>Internal Flash:</strong> <span><?php echo $product['order-details']['Internal Flash']; ?></span></li>
                                 <li class="parametric-detail"><strong>Internal SRAM:</strong> <span><?php echo $product['order-details']['Internal SRAM']; ?></span></li>
                                 <li class="parametric-detail"><strong>Communication Protocols:</strong>
-                                    <ul id="comm-protocols">
-                                    <?php foreach ($product['order-details']['Communication Protocols'] as $key => $value) : ?>
-                                        <li class="parametric-detail"><?php echo $key; ?>: <?php echo $value; ?></li>
-                                    <?php endforeach; ?>
-                                    </ul>
+                                    <span>
+                                        <ul id="comm-protocols">
+                                        <?php foreach ($product['order-details']['Communication Protocols'] as $key => $value) : ?>
+                                            <li class="parametric-detail"><?php echo $key; ?>: <?php echo $value; ?></li>
+                                        <?php endforeach; ?>
+                                        </ul>
+                                    </span>
                                 </li>
                                 <li class="parametric-detail"><strong>GPIO Pins:</strong> <span><?php echo $product['order-details']['GPIO Pins']; ?></span></li>
                             </ul>

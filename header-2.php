@@ -71,6 +71,7 @@
 </script>
 
 <?php include('include/parametric-compare-popup.php'); ?>
+<?php include('include/product-video-popup.php'); ?>
 
     <div class="to-top">
         <i class="fa fa-chevron-up"></i>

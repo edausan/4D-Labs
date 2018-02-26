@@ -122,19 +122,6 @@ $(function() {
     });
 
 
-    // $('button#scroll-right').click(function() {
-    //     $('.para-tb-2-wrapper').animate({
-    //       scrollLeft: "+=300px"
-    //     }, 250);
-    //  });
-     
-    //    $('button#scroll-left').click(function() {
-    //     $('.para-tb-2-wrapper').animate({
-    //       scrollLeft: "-=300px"
-    //     }, 250);
-    // });
-
-
     var resetFilterBtn  =   $('#reset-filter');
     var paraCbox        =   $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th .th-wrapper input');
     var thWrap          =   $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper');

@@ -1,56 +1,56 @@
 <!-- Tabs -->
-<section class="product-tabs">
+<section class="product-tabs" id="product-page-tabs">
     <article class="tabs-wrapper">
-            <ul class="tabs">
-                <li class="tab active" id="description">
-                    <label>
-                        <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/tab-icons.svg#description" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                        <span>Description</span>
-                    </label>
-                </li>
-                <li class="tab" id="specifications">
-                    <label> 
-                        <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/tab-icons.svg#specs" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                        <span>Specifications</span>
-                    </label>
-                </li>
-                <li class="tab " id="downloads">
-                    <label>
-                        <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/tab-icons.svg#downloads" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                        <span>Downloads</span>
-                    </label>
-                </li>
-                <li class="tab" id="product-video">
-                    <label>
-                        <svg class="ico-svg video" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/tab-icons.svg#video" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                        <span>Product Video</span>
-                    </label>
-                </li>
-                <li class="tab" id="dev-tools">
-                    <label>
-                        <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/tab-icons.svg#devtools" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                        <span>Development Tools</span>
-                    </label>
-                </li>
-                <li class="tab order" id="order-details">
-                    <label>
-                        <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/tab-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                        <span>Order Now</span>
-                    </label>
-                </li>
-            </ul>
+        <ul class="tabs">
+            <li class="tab active" id="description">
+                <label>
+                    <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/tab-icons.svg#description" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <span>Description</span>
+                </label>
+            </li>
+            <li class="tab" id="specifications">
+                <label> 
+                    <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/tab-icons.svg#specs" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <span>Specifications</span>
+                </label>
+            </li>
+            <li class="tab " id="downloads">
+                <label>
+                    <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/tab-icons.svg#downloads" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <span>Downloads</span>
+                </label>
+            </li>
+            <li class="tab" id="product-video">
+                <label>
+                    <svg class="ico-svg video" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/tab-icons.svg#video" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <span>Product Video</span>
+                </label>
+            </li>
+            <li class="tab" id="dev-tools">
+                <label>
+                    <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/tab-icons.svg#devtools" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <span>Development Tools</span>
+                </label>
+            </li>
+            <!-- <li class="tab order" id="order-details">
+                <label>
+                    <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/tab-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <span>Order Now</span>
+                </label>
+            </li> -->
+        </ul>
     </article>  
 
     <!-- Tab Content -->

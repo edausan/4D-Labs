@@ -128,7 +128,7 @@ $(function() {
 
 
 
-    var breadLinks = $('.breadcrumbs ul.breadcrumbs-list li:last-child a');
+    var breadLinks = $('ul.breadcrumbs-list li:last-child a');
 
     breadLinks.removeAttr('href');
     
