@@ -4514,16 +4514,25 @@ article#addtnl-3 {
 section.register-wrapper {
   width: 100%;
   height: 100vh;
-  background: url("../img/register2.jpg") no-repeat;
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
   position: relative;
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   padding: 50px 0px;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative; }
+  section.register-wrapper input.reg-input, section.register-wrapper form.registration-form .input-wrapper textarea, section.register-wrapper form.registration-form .input-wrapper select, section.register-wrapper select {
+    color: white !important; }
+    section.register-wrapper input.reg-input::-webkit-input-placeholder, section.register-wrapper form.registration-form .input-wrapper textarea::-webkit-input-placeholder, section.register-wrapper form.registration-form .input-wrapper select::-webkit-input-placeholder, section.register-wrapper select::-webkit-input-placeholder {
+      color: #cccccc !important; }
+    section.register-wrapper input.reg-input:-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper textarea:-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper select:-ms-input-placeholder, section.register-wrapper select:-ms-input-placeholder {
+      color: #cccccc !important; }
+    section.register-wrapper input.reg-input::-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper textarea::-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper select::-ms-input-placeholder, section.register-wrapper select::-ms-input-placeholder {
+      color: #cccccc !important; }
+    section.register-wrapper input.reg-input::placeholder, section.register-wrapper form.registration-form .input-wrapper textarea::placeholder, section.register-wrapper form.registration-form .input-wrapper select::placeholder, section.register-wrapper select::placeholder {
+      color: #cccccc !important; }
   section.register-wrapper form.registration-form {
     width: 100%;
     height: 100%;
@@ -4671,7 +4680,8 @@ section.register-wrapper {
       overflow: hidden;
       margin-bottom: 10px;
       padding: 0px 10px;
-      z-index: 1002; }
+      z-index: 1002;
+      color: white; }
       section.register-wrapper form.registration-form .input-wrapper::after {
         content: '';
         display: table;
@@ -4713,7 +4723,7 @@ section.register-wrapper {
         -o-box-shadow: none;
         box-shadow: none;
         outline: none;
-        color: white;
+        color: white !important;
         padding: 10px;
         position: relative;
         z-index: 1001;
@@ -4834,21 +4844,6 @@ section.register-wrapper {
             color: white; }
             section.register-wrapper form.registration-form .sub-btn-wrapper a#login:hover p, section.register-wrapper form.registration-form .sub-btn-wrapper button#login:hover p {
               color: #81d0ff; }
-  section.register-wrapper a#goto {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: #1A82BF;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: .7;
-    -webkit-transition: 250ms ease;
-    -moz-transition: 250ms ease;
-    -ms-transition: 250ms ease;
-    -o-transition: 250ms ease;
-    transition: 250ms ease; }
-    section.register-wrapper a#goto:hover {
-      opacity: 1; }
   section.register-wrapper a#forgotpass {
     position: relative;
     z-index: 1001;
@@ -4930,6 +4925,22 @@ section.register-wrapper {
     -ms-transform: translateY(-50%) scale(0);
     -o-transform: translateY(-50%) scale(0);
     transform: translateY(-50%) scale(0); }
+
+a#goto {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #327B83;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: .7;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease; }
+  a#goto:hover {
+    opacity: 1; }
 
 section.shopping-cart-wrapper,
 section.payments-wrapper {

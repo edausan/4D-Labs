@@ -237,10 +237,11 @@
 
                     </form>
 
-                    <a href="/" id="goto">Go to 4DLabs.com.au</a>
+                    
 
                 </section>
             </article>
+            <a href="home" id="goto">Go to 4DLabs.com.au</a>
         </section>
 
         

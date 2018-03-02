@@ -8,16 +8,22 @@ $bgImg: url('../img/register2.jpg') no-repeat
 section.register-wrapper
     width: 100%
     height: 100vh
-    background: $bgImg
+    // background: $bgImg
     background-size: cover
     background-position: 50%
     background-attachment: fixed
     position: relative
-    font-family: 'Avenir', Arial, Helvetica, sans-serif
+    font-family: $lato
     padding: 50px 0px
     overflow-y: auto
     overflow-x: hidden
     position: relative
+
+    input.reg-input, select 
+        color: white !important
+
+        &::placeholder
+            color: #cccccc !important
 
     
 
@@ -143,6 +149,7 @@ section.register-wrapper
             padding: 0px 10px
             +clear
             z-index: 1002
+            color: white
 
             &.invalid
                 background: rgba(255, 0, 0, .2)
@@ -174,7 +181,7 @@ section.register-wrapper
                 border-style: none
                 +boxShadow(none)
                 outline: none
-                color: white
+                color: white !important
                 padding: 10px
                 position: relative
                 z-index: 1001
@@ -294,18 +301,7 @@ section.register-wrapper
                         p
                             color: lighten($picaso-lite, 10%)
 
-    a#goto
-        position: fixed
-        bottom: 20px
-        right: 20px
-        color: $picaso
-        text-decoration: none
-        font-weight: 600
-        opacity: .7
-        +transition
 
-        &:hover
-            opacity: 1
 
     a#forgotpass 
         position: relative
@@ -374,3 +370,17 @@ section.register-wrapper
         &::before
             opacity: 0
             +transform(translateY(-50%) scale(0))
+
+
+a#goto
+    position: fixed
+    bottom: 50px
+    right: 50px
+    color: $paleBlue
+    text-decoration: none
+    font-weight: 600
+    opacity: .7
+    +transition
+
+    &:hover
+        opacity: 1
