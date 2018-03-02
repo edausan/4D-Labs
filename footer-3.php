@@ -85,18 +85,38 @@
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
-<script>
-    $(function() {
-        FB.AppEvents.logEvent("viewed site");
-    });
-</script>
-
+<script src="js/jquery.details.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tinymce/tinymce.min.js"></script>
 <script src="js/dragscroll.js"></script>
 
 <script src="scripts/main.js"></script>
+
+<script>
+$(document).ready(function() {
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+   window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1971476612882479',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.12'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+});
+</script>
 
 </body>
 

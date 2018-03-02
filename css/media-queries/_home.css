@@ -1,0 +1,8 @@
+@media all and (min-width: 768px), print {
+  section.navigation-container {
+    width: 100%;
+    background: red; }
+    section.navigation-container article.logo-wrapper {
+      width: 100%; }
+    section.navigation-container article.navbar-wrapper {
+      width: 100%; } }

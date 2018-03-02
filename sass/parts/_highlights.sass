@@ -1,5 +1,5 @@
 section.highlights-wrapper  
-    font-family: 'Helvetica'
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif
 
     ul.highlights-list
         +clear 
@@ -12,35 +12,6 @@ section.highlights-wrapper
             height: 311px
             background: #E9ECEE
 
-            // &#goldelox 
-            //     #highlights-title
-            //         color: $designer
-            //     &::before
-            //         background: $designer
-                    
-            // &#diablo16 
-            //     #highlights-title
-            //         color: $orange
-                    
-            // &#parametric-search 
-                
-            //     #highlights-title
-            //         color: $blue
-            //     &::before
-            //         background: $blue
-
-            // &#picaso
-            //     #highlights-title
-            //         color: $darkBlue
-            //     &::before
-            //         background: $darkBlue
-
-            // &#workshop4 
-            //     #highlights-title
-            //         color: red
-            //     &::before
-            //         background: red
-
             &::before
                 content: ''
                 width: 100%
@@ -49,7 +20,7 @@ section.highlights-wrapper
                 top: 0
                 left: 0
                 background: $paleBlue
-                z-index: 1001
+                z-index: 1000
                 +transition
 
             &:hover
@@ -70,6 +41,7 @@ section.highlights-wrapper
                 color: white
                 position: relative
                 z-index: 1002
+                display: block
                 
                 +clear
                 position: relative
@@ -89,7 +61,7 @@ section.highlights-wrapper
                     header.highlights-header
 
                         #highlights-title
-                            font-family: 'Lato'
+                            font-family: 'Lato', Arial, Helvetica, sans-serif
                             text-transform: uppercase
                             font-size: 19px
                             font-weight: 600

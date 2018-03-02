@@ -1,6 +1,6 @@
 section.news-section-wrapper
     margin-bottom: 30px
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
 
     .latest-news-wrapper
         padding: 0px
@@ -31,7 +31,7 @@ section.news-section-wrapper
                     +transition
 
             &:hover
-                box-shadow: 0 8px 32px rgba(black, .1)
+                +boxShadow(0 8px 32px rgba(black, .1))
 
                 .news-thumb-wrapper
                     img

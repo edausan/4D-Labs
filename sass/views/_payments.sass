@@ -1,6 +1,6 @@
 section.payments-wrapper,
 section.shipping-method-wrapper
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
     +clear 
 
     section.cart-wrapper
@@ -133,7 +133,7 @@ section.user-details-container
         background: none
         border-style: none
         border: 1px solid #cccccc
-        box-shadow: none
+        +boxShadow(none)
         outline: none
         color: black
         padding: 10px
@@ -257,15 +257,23 @@ section.paypal-payment-wrapper
 
         &.cc-sec
             width: 42%
+        
+        .name-row,
+        .cc-type-row
+            +clear 
+            width: 100%
 
         select, input
             position: relative
             padding: 10px
             float: left
             border-style: none
-            +border-radius(2px)
-            border: 1px solid #cccccc
+            // +border-radius(2px)
+            border: 1px solid #e5e5e5
             margin-bottom: 10px
+            +transition
+
+            
 
             &#cc-type
                 width: 41%
@@ -296,8 +304,11 @@ section.paypal-payment-wrapper
                 float: right
 
             &:invalid
-                box-shadow: none
+                +boxShadow(none)
                 border-color: #cccccc
+
+            &:focus
+                border-color: $paleBlue
 
 
     .cc-geotrust-wrapper
@@ -339,7 +350,8 @@ section.paypal-payment-wrapper
         text-transform: uppercase
 
         &:hover
-            background: darken($paypal, 10%)
+            background: whitesmoke
+            color: $paypal
 
 
 

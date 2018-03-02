@@ -79,13 +79,13 @@
             <i class="fa fa-check"></i>
         </div>
 
-        <div class="cbox" id="just-check">
+        <div class="cbox">
             <input type="checkbox" name="save-details" id="save-details" class="">
             <label for="save-details">Save these details to my account (current details in your account will be overwritten).</label>
             <i class="fa fa-check"></i>
         </div>
 
-        <button id="save-details-btn" type="submit">Proceed to Shipping Method</button>
+        <button id="save-details-btn" type="submit">Proceed to Shipping Method <i class="fa fa-chevron-right"></i></button>
     </div>
 
 </div>

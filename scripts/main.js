@@ -1,5 +1,6 @@
 $(function() {
     
+    $('details').details();
 
     function dynamicallyLoadScript(url) {
         var script = document.createElement("script"); // Make a script DOM node
@@ -21,6 +22,7 @@ $(function() {
     dynamicallyLoadScript('scripts/product-thumb-slider.js');
     dynamicallyLoadScript('scripts/product-price.js');
     dynamicallyLoadScript('scripts/product-video-popup.js');
+    dynamicallyLoadScript('scripts/mobile-navbar.js');
 });
 
 

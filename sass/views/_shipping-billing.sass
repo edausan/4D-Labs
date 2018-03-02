@@ -25,19 +25,20 @@ section.shipping-billing-userin-wrapper
                 margin-bottom: 30px
 
         .billing-details-input-wrapper
-            padding: 20px
+            padding: 40px
             width: 48%
-            background: whitesmoke
+            // background: whitesmoke
             float: left
+            border: 1px solid #e5e5e5
 
 
         .shipping-details-input-wrapper
-            padding: 20px
-            background: whitesmoke
+            padding: 40px
             width: 48%
             float: right
             opacity: 1
             position: relative
+            border: 1px solid #e5e5e5
 
             &.translate-to-right
                 opacity: 0
@@ -50,7 +51,7 @@ section.shipping-billing-userin-wrapper
 
             label
                 display: block
-                font-weight: 600
+                // font-weight: 600
                 color: $paleBlue
                 cursor: pointer
 
@@ -66,13 +67,12 @@ section.shipping-billing-userin-wrapper
                 width: 100%
                 margin-bottom: 10px
                 padding: 10px
-                border: 1px solid #cccccc
+                border: 1px solid #e5e5e5
                 position: relative
                 +transition
 
                 &:focus
                     border-color: $paleBlue
-                    background: whitesmoke
 
             &.half-wrapper
                 width: 49%
@@ -110,26 +110,36 @@ section.shipping-billing-userin-wrapper
             width: 100%
             margin-bottom: 10px
             padding: 10px
-            border: 1px solid #cccccc
+            border: 1px solid #e5e5e5
             position: relative
             +transition
 
             &:focus
                 border-color: $paleBlue
+                box-shadow: none
+                outline: none
 
         .shipping-details-cbox
             +clear
             .cbox
+                width: 100%
+                +clear 
+                vertical-align: top
                 input
-                label 
+                    float: left
+                    width: 5%
+                label
+                    float: right 
+                    width: 95% !important
+                    margin: 0
                 i
 
             button#save-details-btn
                 border-style: none
                 padding: 10px 20px 
-                background: $designer
+                background: $paleBlue
                 color: white 
-                +border-radius
+                // +border-radius
                 float: right 
                 margin-top: 20px
                 text-transform: uppercase
@@ -137,16 +147,27 @@ section.shipping-billing-userin-wrapper
                 cursor: pointer
                 +transition
 
+                i 
+                    margin-left: 5px
+
                 &:hover
-                    background: darken($designer, 10%)
+                    background: whitesmoke
+                    color: $paleBlue
 
 
     .cbox
+        input
         label 
             color: black
 
         i 
             color: black
+            top: 0
+            +transform(translateY(50%))
 
         &::before
-            background: rgba($paleBlue, .5)
+            +border-radius(0px)
+            background: #e5e5e5 
+            top: 0
+            +transform(translateY(50%))
+            // background: rgba($paleBlue, .5)

@@ -17,14 +17,14 @@ figure.contact-banner
         background: rgba(black, .8)
 
 section.contact-wrapper
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
     position: absolute
     width: 1170px
     top: 50%
     left: 50%
     +transform(translate(-50%, -35%))
     background: white
-    box-shadow: 0 8px 20px rgba(black, .3)
+    +boxShadow(0 8px 20px rgba(black, .3))
     +clear
 
     header.contact-header 
@@ -52,7 +52,7 @@ section.contact-wrapper
             input
                 &:invalid
                     border-color: none
-                    box-shadow: none
+                    +boxShadow(none)
                     outline: none
 
             textarea
@@ -68,7 +68,7 @@ section.contact-wrapper
                     border-color: black
 
                 &:invalid 
-                    box-shadow: none
+                    +boxShadow(none)
                     outline: none
 
             #inquiry-wrapper

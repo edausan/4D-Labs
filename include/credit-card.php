@@ -20,21 +20,29 @@
 
 
     <div class="cc-input-wrapper cc-first">
-        <!-- Credit Card Type -->
-        <select name="cc-type" id="cc-type" class="" required>
-            <option value="" disabled selected>Credit Card Type</option>
-            <option value="mastercard">MasterCard</option>
-            <option value="visa">Visa</option>
-        </select> 
+        
 
-        <!-- Credit Card Number -->
-        <input type="text" name="cc-num" id="cc-num" placeholder="Credit Card Number" required>
+        <div class="cc-type-row">
+            <!-- Credit Card Type -->
+            <select name="cc-type" id="cc-type" class="fleft" required>
+                <option value="" disabled selected>Credit Card Type</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="visa">Visa</option>
+            </select> 
 
-        <!-- First Name -->
-        <input type="text" name="cc-fname" id="cc-fname" placeholder="First Name" required>
+            <!-- Credit Card Number -->
+            <input type="text" class="fright" name="cc-num" id="cc-num" placeholder="Credit Card Number" required>
+        </div>
+        
 
-        <!-- Last Name -->
-        <input type="text" name="cc-lname" id="cc-lname" placeholder="Last Name" required>
+        <div class="name-row">
+            <!-- First Name -->
+            <input type="text" class="fleft" name="cc-fname" id="cc-fname" placeholder="First Name" required>
+
+            <!-- Last Name -->
+            <input type="text" class="fright" name="cc-lname" id="cc-lname" placeholder="Last Name" required>
+        </div>
+        
 
     </div>
     

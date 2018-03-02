@@ -1,29 +1,9 @@
 <section class="parametric-wrapper">
 
-    <!-- <section class="lab-container"> -->
-        <!-- <article class="lab-row"> -->
-            <div class="para-category-wrapper">
-
-                <h1>Parametric Search</h1>
-
-                <!-- <div class="para-description">
-                    <div id="para-icon-wrapper"><span><i class="fa fa-exclamation"></i></span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nobis eius est minus vel sunt quibusdam, sit dicta molestias modi, provident distinctio ducimus magnam ex ut debitis ipsam reiciendis? Similique.</p>
-                </div>
-
-                <label for="para-category">Category</label>
-
-                <select name="para-category" id="para-category">
-                    <option value="Processors" selected>Processors</option>
-                    <option value="SIM Modules">SIM Modules</option>
-                    <option value="Chipsets">Chipsets</option>
-                    <option value="Developments Tools">Developments Tools</option>
-                </select>
-
-                <h3 id="para-category-label">Processors</h3> -->
-            </div>
-        <!-- </article> -->
-    <!-- </section> -->
+    <div class="para-category-wrapper">
+        <h1>Parametric Part Number Search</h1>
+        <p for="">Use the Parametric Search to find or build a part to your specifications.</p>
+    </div>
     
 
     <div class="menu-bar">
@@ -66,8 +46,14 @@
                             <td id="para-prod-cbox"><div class="th-wrapper"><input type="checkbox" name="" id="" class="compare-cbox"></div></td>
                             <td id="para-prod-name">
                                 <div class="th-wrapper">
-                                    <a href="" class="para-prod-name-link"><?php echo $value['part-name']; ?></a>
-                                    <a href="<?php echo $value['datasheet']; ?>"> <div class="datasheet-download"><img src="img/download-datasheet.png" alt="" id="part-name-ds"></div></a>
+                                    <a href="<?php echo $key; ?>" class="para-prod-name-link"><?php echo $value['part-name']; ?></a>
+                                    <a href="<?php echo $key; ?>"><img id="para-prod-thumb" src="img/<?php echo $key; ?>.png" alt="<?php echo $value['part-name']; ?>"></a>
+                                    <a href="<?php echo $value['datasheet']; ?>"> 
+                                        <div class="datasheet-download">
+                                            <img src="img/pdf-download-2.png" alt="" id="part-name-ds">
+                                            <!-- <span>Datasheet</span> -->
+                                        </div>
+                                    </a>
                                 </div>
                             </td>
                     </tr>
@@ -84,7 +70,7 @@
 
                 <thead>
                     <tr>
-                        <th class="large " id="Quantity"><div class="th-wrapper changed"><span>Quantity</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large " id="Quantity"><div class="th-wrapper"><span>Quantity</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="large" id="Price"><div class="th-wrapper"><span>Price</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Availability"><div class="th-wrapper"><span>Availability</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Manufacturer"><div class="th-wrapper"><span>Manufacturer</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>

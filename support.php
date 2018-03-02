@@ -3,20 +3,42 @@
     include('header-2.php');
 ?> 
 
-<section class="lab-container">
+<section class="lab-container-fluid">
 
     <article class="lab-row">
 
-        <section class="support-wrapper">
+        <div class="support-banner-wrapper">
+            <figure class="support-banner">
+                <section class="lab-container">
+                    <article class="lab-row">
+                        <figcaption>
+                            <h1>We're here to help.</h1>
+                            <p>Here at 4D Labs, we're committed to your success. </p>
+                        </figcaption>
+                    </article>
+                </section>
+                
+            </figure>
+        </div> 
 
-            <!-- Support Boxes -->
-            <?php include('include/support-boxes.php'); ?>
+        <section class="lab-container">
 
-            <!-- Exisiting Ticket Search Bar -->
-            <?php include('include/support-existing-ticket.php'); ?>
+            <article class="lab-row">
 
-            <!-- Request New Ticket Form -->
-            <?php include('include/support-form.php'); ?>
+                <section class="support-wrapper">
+
+                    <!-- Support Boxes -->
+                    <?php include('include/support-boxes.php'); ?>
+
+                    <!-- Exisiting Ticket Search Bar -->
+                    <?php include('include/support-existing-ticket.php'); ?>
+
+                    <!-- Request New Ticket Form -->
+                    <?php include('include/support-form.php'); ?>
+
+                </section>
+
+            </article>
 
         </section>
     

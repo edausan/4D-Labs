@@ -156,7 +156,8 @@
                     </section>
 
                     <section class="voucher-total proceed">
-                        <a id="proceed-btn" href="shippingandbilling">Proceed to Checkout</a>
+                        <a id="proceed-btn" href="products"><i class="fa fa-chevron-left" id="shopping"></i> Continue Shopping</a>
+                        <a id="proceed-btn" href="shippingandbilling">Proceed to Checkout <i class="fa fa-chevron-right" id="checkout"></i></a>
                     </section>
 
                     

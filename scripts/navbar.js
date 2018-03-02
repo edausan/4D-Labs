@@ -192,7 +192,10 @@ $(function() {
 
 
     var aboutNav            =   $('section.about-wrapper nav.about-nav');
-    var aboutNavTop         =   aboutNav.offset().top;
+    if (aboutNav.length) {
+        var aboutNavTop         =   aboutNav.offset().top;
+    }
+    
     var descList            =   $('section.about-wrapper article.about-description ul.desc-list');
     var aboutBanner         =   $('section.about-wrapper article.about-desc .overlay');
     var addntlBanner        =   $('section.about-wrapper article#addtnl-1');

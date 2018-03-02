@@ -1,11 +1,11 @@
 article.product-details-wrapper
     margin-top: 20px
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
 
     header.product-header
         padding: 20px 40px
         background: $paleBlue
-        box-shadow: 0 15px 20px -10px rgba(black, .3)
+        +boxShadow(0 15px 20px -10px rgba(black, .3))
         position: relative
         z-index: 1002
         +clear
@@ -102,7 +102,6 @@ article.product-details-wrapper
 section.product-tabs
     margin: 60px 0px
     background: white
-    // box-shadow: 0 8px 22px rgba(black, .050)
 
     article.tabs-wrapper
         
@@ -152,7 +151,7 @@ section.product-tabs
                 &.active
                     background: $paleBlue
                     z-index: 1006
-                    box-shadow: 10px 0px 32px rgba(black, .1), -10px 0px 32px rgba(black, .1)
+                    +boxShadow2(10px 0px 32px rgba(black, .1), -10px 0px 32px rgba(black, .1))
                     +transform(scale(1))
 
                 label

@@ -1,6 +1,6 @@
 section.shopping-cart-wrapper,
 section.payments-wrapper
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
     +clear
     padding: 50px 0px
 
@@ -138,11 +138,11 @@ section.payments-wrapper
                 table.cart-table
                     width: 100%
                     display: block
-                    border-right: 10px solid white
+                    // border-right: 10px solid white
 
                     thead
                         width: 100%
-                        border-bottom: 3px solid $paleBlue
+                        border-bottom: 1px solid #e5e5e5
 
                         tr
                             width: 100%
@@ -150,8 +150,10 @@ section.payments-wrapper
 
                             th
                                 padding: 15px 0px
-                                background: $footerGrey
-                                color: white
+                                // background: $footerGrey
+                                border: 1px solid #e5e5e5
+                                color: black
+                                font-weight: 600
                                 text-align: center
                                 font-size: 13px
                                 text-transform: uppercase
@@ -168,7 +170,7 @@ section.payments-wrapper
                     tbody
                         tr
                             width: 100%
-                            border-bottom: 1px solid #eeeeee
+                            border: 1px solid #e5e5e5
 
                             td
                                 text-align: center
@@ -176,6 +178,11 @@ section.payments-wrapper
                                 font-size: 16px
                                 position: relative
                                 +clear
+
+                                input, button
+                                    +border-radius(0px !important) 
+                                    border-color: #e5e5e5 !important
+
 
                                 &#product-num
                                     min-width: 1%
@@ -195,6 +202,7 @@ section.payments-wrapper
                                     width: 18%
                                     min-width: 18%
                                     padding-top: 0px
+                                    
 
                                 &#quantity
                                     min-width: 18%
@@ -210,7 +218,7 @@ section.payments-wrapper
                         
 
                                 &#product-details-wrapper
-                                    font-family: 'Avenir'
+                                    font-family: 'Avenir', Arial, Helvetica, sans-serif
 
                                 &#price 
                                     font-family: Arial, Helvetica, sans-serif
@@ -236,13 +244,13 @@ section.payments-wrapper
                                     &::before
                                         content: '$'
                                         position: relative
-                                        border: 1px solid #cccccc
+                                        border: 1px solid #e5e5e5
                                         padding: 10px
                                         color: $grey
                                         width: 20%
                                         float: left
-                                        border-bottom-left-radius: 5px
-                                        border-top-left-radius: 5px
+                                        // border-bottom-left-radius: 5px
+                                        // border-top-left-radius: 5px
 
                                     input
                                         color: $grey
@@ -251,6 +259,7 @@ section.payments-wrapper
                                         border-top-left-radius: 0px
                                         border-bottom-left-radius: 0px
                                         border-left: none
+                                        min-height: 46px
 
 
                                 &#subtotal
@@ -261,13 +270,11 @@ section.payments-wrapper
                                     &::before
                                         content: '$'
                                         position: relative
-                                        border: 1px solid #cccccc
+                                        border: 1px solid #e5e5e5
                                         padding: 10px
                                         color: $grey
                                         float: left
                                         width: 20%
-                                        border-bottom-left-radius: 5px
-                                        border-top-left-radius: 5px
 
                                     input
                                         color: $grey
@@ -276,6 +283,7 @@ section.payments-wrapper
                                         border-top-left-radius: 0px
                                         border-bottom-left-radius: 0px
                                         border-left: none
+                                        min-height: 46px
 
 
 
@@ -283,13 +291,18 @@ section.payments-wrapper
                                     font-family: Arial, Helvetica, sans-serif
                                     +clear
 
+                                    input
+                                        min-height: 46px
+
                                     button
                                         width: 20%
                                         min-width: 20%
                                         height: 46px
-                                        border: 1px solid #cccccc
-                                        background: #eeeeee
+                                        border: 1px solid #e5e5e5
+                                        background: white
+                                        color: $paleBlue
                                         cursor: pointer
+                                        +transition
 
                                         &:link
                                             outline: none
@@ -302,7 +315,7 @@ section.payments-wrapper
 
 
                                         &:hover
-                                            background: $grey
+                                            background: $paleBlue
                                             color: white
                                         
                                     
@@ -348,6 +361,7 @@ section.payments-wrapper
 
                                 &#remove 
                                     width: 1%
+                                    border-right: 1px solid #e5e5e5
 
                                 
 
@@ -386,10 +400,10 @@ section.payments-wrapper
                                                 line-height: 20px
                                                 display: inline-block
                                                 font-weight: 400
-                                                font-family: 'Open Sans'
+                                                font-family: 'Open Sans', Arial, Helvetica, sans-serif
 
                                             &:hover
-                                                color: $orange
+                                                color: $paleBlue
 
 
                                         label 
@@ -402,9 +416,15 @@ section.payments-wrapper
                                             display: block
                                             margin-top: 5px
 
+                                            
+
                                             summary 
                                                 cursor: pointer
                                                 font-size: 12px
+
+                                                &:focus, &:link
+                                                    outline: none
+                                                    box-shadow: none
 
                                             p
                                                 font-size: 12px
@@ -456,28 +476,29 @@ section.payments-wrapper
 
 article.total-wrapper
     padding: 10px
-    background: #eeeeee
+    background: white
     text-align: right
-    padding-right: 93px
+    padding-right: 0px
 
     label
         margin: 0
         font-weight: 600
         text-transform: uppercase
-        font-size: 18px
+        font-size: 30px
+        color: $paleBlue
 
     input 
         font-weight: 400
         border-style: none
         width: 150px
         background: transparent
-        font-size: 18px
+        font-size: 30px
         text-align: right
-        padding-right: 10px
         font-family: Arial, Helvetica, sans-serif
+        color: $paleBlue
 
         &:disabled
-            color: black
+            color: $paleBlue
             
 
 article.voucher-total-wrapper
@@ -488,7 +509,7 @@ article.voucher-total-wrapper
         float: left
 
     section.voucher-container
-        width: 80%
+        width: 60%
 
         label
             font-size: 18px
@@ -498,15 +519,15 @@ article.voucher-total-wrapper
         .voucher-input
             max-height: 41px
             height: 41px
+            vertical-align: top
 
             input#voucher-input
-                height: 100%
                 padding: 10px
                 width: 20%
                 border-style: none
-                border: 1px solid #cccccc
+                border: 1px solid #e5e5e5
                 +transition
-                +border-radius(2px)
+                // +border-radius(2px)
                 text-align: center
                 text-transform: uppercase
 
@@ -514,38 +535,61 @@ article.voucher-total-wrapper
                     border: 1px solid $orange
 
             button#voucher-btn
-                height: 100%
+                min-height: 43px
                 border-style: none
                 background: $orange
                 padding: 10px 15px
                 color: white
-                border: 1px solid $orange
+                // border: 1px solid $orange
                 cursor: pointer
-                +border-radius(2px)
+                // +border-radius(2px)
                 +transition
                 text-transform: uppercase
                 font-weight: 600
 
                 &:hover
-                    background: darken($orange, 10%)
+                    background: whitesmoke
+                    color: $orange
 
     section.proceed
-        width: 20%
+        width: 40%
         position: relative
 
         a#proceed-btn
             padding: 10px 20px
-            background: $designer
+            background: $paleBlue
             color: white
             text-decoration: none
-            display: block
+            // display: block
+            width: 49%
+            float: left
             text-align: center
-            +border-radius(2px)
+            // +border-radius(2px)
             text-transform: uppercase
             font-weight: 600
+            +transition
+
+            &:nth-child(1)
+                float: left
+                background: whitesmoke 
+                color: $paleBlue
+
+                &:hover
+                    background: $paleBlue
+                    color: white
+
+            &:nth-child(2)
+                float: right
+            
+            i 
+                &#shopping 
+                    margin-right: 5px
+                &#checkout 
+                    margin-left: 5px
 
             &:hover
-                background: darken($designer, 10%)
+                background: whitesmoke
+                color: $paleBlue
 
 
 

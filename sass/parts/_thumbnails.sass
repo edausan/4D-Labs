@@ -54,13 +54,13 @@ section.thumbnails-wrapper
                 padding: 20px
                 height: 334px
                 // cursor: pointer
-                box-shadow: 0 2px 10px rgba(black, .1)
+                +boxShadow(0 2px 10px rgba(black, .1))
                 overflow: hidden
                 border: 3px solid white
                 +transition
 
                 &:hover
-                    box-shadow: 0 8px 22px rgba(black, .2)
+                    +boxShadow(0 8px 22px rgba(black, .2))
                     border-color: transparent
 
                     .product
@@ -167,11 +167,7 @@ section.thumbnails-wrapper
                         +transform(rotate(20deg))
                         +transition(350ms ease)
                         z-index: 1001
-                        box-shadow: -8px 0 32px rgba(black, .4)
-
-
-
-
+                        +boxShadow(-8px 0 32px rgba(black, .4))
 
                 &.thumbs-row-1
                     background-size: 100% auto
@@ -181,14 +177,14 @@ section.thumbnails-wrapper
                         
                         &::before
                             left: 15%
-                            box-shadow: -8px 0 32px rgba(black, .5)
+                            +boxShadow(-8px 0 32px rgba(black, .5))
 
                 &.thumbs-row-2
                     background-size: auto 100%
                     background-position: 50%
 
                     &:hover
-                        box-shadow: -8px 0 32px rgba(black, 1)
+                        +boxShadow(-8px 0 32px rgba(black, 1))
                         &::before
                             left: 5%
                 

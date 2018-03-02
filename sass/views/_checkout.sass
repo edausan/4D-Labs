@@ -1,6 +1,6 @@
 section.checkout-wrapper
     padding: 50px 0px
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
     +clear
     article.checkout-account
         width: 45%
@@ -29,8 +29,8 @@ section.checkout-wrapper
                     padding: 10px 20px
                     border-style: none
                     border: 1px solid #cccccc
-                    box-shadow: none
-                    +border-radius
+                    +boxShadow(none)
+                    // +border-radius
                     +transition
 
                     &:focus
@@ -66,41 +66,36 @@ section.checkout-wrapper
                 button#checkout-signin-btn
                     float: right
                     border-style: none
-                    background: $designer
-                    +border-radius
+                    background: $paleBlue
+                    // +border-radius
                     padding: 10px 20px
                     color: white
                     cursor: pointer
                     +transition
                     
                     &:hover
-                        background: darken($designer, 5%)
-                        
-                        i 
-                            +transform(translateX(50%))
+                        background: whitesmoke
+                        color: $paleBlue
 
                     i
                         display: inline-block
                         margin-right: 10px
-                        +transform(translateX(0%))
-                        +transition
 
                     
 
         a#checkout-signup-btn
             text-decoration: none
-            color: white 
-            background: $picaso
+            color: $picaso
+            background: whitesmoke
             padding: 10px 20px
             cursor: pointer
-            +border-radius
             +transition
             
 
             &:hover
-                background: darken($picaso, 10%)
+                background: $picaso
+                color: white
 
             i
                 display: inline-block
                 margin-right: 10px
-                +transition

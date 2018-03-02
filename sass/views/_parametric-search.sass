@@ -13,7 +13,7 @@
 
 
 section.parametric-wrapper
-    font-family: 'Open Sans'
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif
     padding: 0px 0px 50px
 
     .para-category-wrapper
@@ -25,6 +25,9 @@ section.parametric-wrapper
         h1
             color: $paleBlue
             margin: 0
+
+        p 
+            font-size: 20px
 
         .para-description
             padding: 10px
@@ -155,7 +158,7 @@ section.parametric-wrapper
                 background: white 
                 border: 1px #eeeeee
                 +border-radius(2px)
-                box-shadow: 0 8px 25px rgba(black, .2)
+                +boxShadow(0 8px 25px rgba(black, .2))
                 cursor: pointer
                 position: fixed
                 bottom: 5%
@@ -166,7 +169,7 @@ section.parametric-wrapper
 
                 &:hover
                     opacity: 1
-                    box-shadow: 0 8px 25px rgba(black, .4)
+                    +boxShadow(0 8px 25px rgba(black, .4))
 
                 &:link, &:focus
                     outline: none
@@ -190,7 +193,7 @@ section.parametric-wrapper
             &#para-tb-1
                 width: 15%
                 float: left 
-                box-shadow: 12px 0px 20px -16px rgba(black, .2)
+                +boxShadow(12px 0px 20px -16px rgba(black, .2))
                 position: relative
                 z-index: 1001
                 background: white
@@ -205,6 +208,7 @@ section.parametric-wrapper
                             
                             .th-wrapper
                                 font-size: 14px !important
+                                +clear
                                 span
                                     font-size: 14px !important
 
@@ -448,27 +452,31 @@ a.para-prod-name-link
     margin-bottom: 10px
     font-weight: 600
 
+img#para-prod-thumb
+    width: 50px
+    // margin: 0 auto
+    // display: block
+    // margin-right: 10px
+
 // Part Name Datasheet
 .datasheet-download
     display: inline-block
-    // padding: 5px 10px 5px 5px
-    // border: 1px solid #cccccc
     +border-radius(2px)
     +transition
-    
-    // &:hover
-    //     border-color: $paleBlue
+    margin: 15px auto 0px
+    display: block
+    opacity: .8
+    // text-align: center
 
-    //     span 
-    //         color: $paleBlue
+    &:hover
+        opacity: 1
 
     span 
-        color: $orange
-        // +transition
+        color: $paleBlue
 
     #part-name-ds
-        height: 35px
-
+        width: 100px
+        
 
 
 

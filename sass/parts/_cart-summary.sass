@@ -5,14 +5,14 @@ article.cart-summary
     section.cart-sum-wrapper
         color: $footerGrey
         padding: 20px
-        border: 1px solid $paleBlue
-        box-shadow: 0 3px 10px rgba(black, .3)
-        background: lighten(#E1E3E8, 5%)
+        border: 1px solid #e5e5e5
+        // +boxShadow(0 3px 10px rgba(black, .3))
+        // background: lighten(#E1E3E8, 5%)
 
         .total-container
             padding: 20px
             background: white
-            box-shadow: 0 3px 8px rgba(black, .2)
+            +boxShadow(0 3px 8px rgba(black, .2))
             +border-radius(2px)
             margin-top: 10px
 
@@ -96,7 +96,7 @@ article.cart-summary
                     +border-radius(0px)
                     
                     &:focus
-                        box-shadow: none
+                        +boxShadow(none)
                         outline: none
                         border-color: $paleBlue
 
@@ -119,9 +119,9 @@ article.cart-summary
             a#proceed-checkout,
             button#proceed-checkout
                 width: 100%
-                display: block
+                display: inline-block
                 padding: 10px 20px
-                background: $designer
+                background: $paleBlue
                 color: white
                 cursor: pointer
                 font-size: 18px
@@ -130,8 +130,12 @@ article.cart-summary
                 font-weight: 600
                 +transition
 
+                i 
+                    margin-left: 5px
+
                 &:hover
-                    background: darken($designer, 10%)
+                    background: whitesmoke
+                    color: $paleBlue
 
             a
                 text-decoration: none

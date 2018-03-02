@@ -26,21 +26,24 @@ $(function() {
         p.find(c).css({'height':''+ph+'px'});
     }
 
+    // $('.cbox label').click(function() {
+        
+    // });
+
+    // if 
+    $(document).on('click', '.cbox', function() {
+        $(this).find('input').click();
+    });
+
+    $(document).on('click', '.cbox label', function() {
+        $(this).siblings('input').click();
+    });
+
 
     // checkbox wrapper for opening shipping and billing fields
     var newsletter      =   $(document).find('#open-other-details');
     // checkbox input for opening shipping and billing fields
     var newsletterCbox  =   newsletter.children('input');
-
-    // click event of checkbox wrapper and trigger click event of child checkbox
-    newsletter.click(function() {
-        $(this).children('input').click();
-    });
-
-    // 
-    $(document).on('click','#just-check',function() {
-        $(this).find('input#same-with-bill').click();
-    });
 
     if ($(document).find('.cbox input#same-with-billing').is(':checked')) {
         $(document).find('.cbox input#same-with-billing').siblings('i').addClass('showCheck');
@@ -97,7 +100,8 @@ $(function() {
 
     billingSelect.removeAttr('disabled');
 
-    $(document).on('change','#just-check input',function() {
+    $(document).on('change','.cbox input',function() {
+        // alert('checked');
         if ($(this).is(':checked')) {
             $(this).siblings('i').addClass('showCheck');
             $(this).parent('.cbox').addClass('hideBox');

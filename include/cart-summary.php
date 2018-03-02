@@ -64,7 +64,7 @@
         </div> -->
 
         <div class="checkout-wrapper">
-            <button id="proceed-checkout" type="submit"><?php echo $proceed; ?></button>
+            <button id="proceed-checkout" type="submit"><?php echo $proceed; ?> <i class="fa fa-chevron-right"></i></button>
         </div>
     </section>
 </article>

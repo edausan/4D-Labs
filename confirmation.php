@@ -5,7 +5,6 @@
 ?>
 
 
-
 <section class="lab-container">
     <article class="lab-row">
     
@@ -27,11 +26,7 @@
                 <p>An email receipt including the details about your order has been sent to the email address provided. Please keep it for your records.</p>
                 <p>You can visit the <a href="user-account">My Account</a> page at any time to check the status of your order.</p>
 
-                <a href="" id="continue-shopping"><i class="fa fa-shopping-cart"></i> Continue Shopping</a>
-
-                <!-- An email receipt including the details bout your order has been sent to the email address provided. Please keep it for your records. 
-You can visit the My Account page at any time to check the status of your order. Or click here to print a copy of your receipt.  
- -->
+                <a href="products" id="continue-shopping"><i class="fa fa-shopping-cart"></i> Continue Shopping</a>
 
             </div>
             

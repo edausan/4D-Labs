@@ -29,7 +29,7 @@
                             padding: 20px
                             margin: 0 0px 20px
                             height: 600px !important
-                            box-shadow: 0 1px 3px 0px rgba(black, .1)
+                            +boxShadow(0 1px 3px 0px rgba(black, .1))
                             cursor: pointer
                             border: 2px solid white !important
                             +transition(150ms ease)
@@ -57,7 +57,7 @@
                                     +transition
 
                             &:hover
-                                box-shadow: 0 5px 10px -5px rgba(black, .3)
+                                +boxShadow(0 5px 10px -5px rgba(black, .3))
                                 border-color: $orange !important
 
                                 .action-btn

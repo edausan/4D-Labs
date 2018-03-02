@@ -1,9 +1,9 @@
 .cat-product-container
     +clear
     margin: 50px 0px
-    font-family: 'Helvetica' !important
+    font-family: 'Lato', Arial, Helvetica, sans-serif !important
 
-    // Sidebar
+    // Sidebar 
     aside.sidebar-wrapper
         float: left
         width: 25%
@@ -21,7 +21,7 @@
                     border-right: none
                     &:focus
                         outline: none
-                        box-shadow: none
+                        +boxShadow(none)
                         border-color: $orange
 
                 button
@@ -91,7 +91,8 @@
                     height: auto
 
                     &:focus
-                        box-shadow: none
+                        +boxShadow(none)
+                        
 
                     option
                     

@@ -48,7 +48,6 @@ $(function() {
         $(this).siblings('button').removeClass('active-size');
     });
 
-
     var th = $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th');
 
     th.click(function() {
@@ -139,7 +138,9 @@ $(function() {
         if ($(this).is(':checked')) {
             $(document).find('table.parametric-table thead tr th#'+thID+' .th-wrapper').addClass('changed');
         } else {
-            $(document).find('table.parametric-table thead tr th#'+thID+' .th-wrapper').removeClass('changed'); 
+            if (!$(this).parent('li').siblings('li').children('input').is(':checked')) {
+                $(document).find('table.parametric-table thead tr th#'+thID+' .th-wrapper').removeClass('changed');
+            }
         }
 
     });

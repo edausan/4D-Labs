@@ -1,6 +1,7 @@
 
 section.about-wrapper
-    font-family: 'Avenir'
+    font-family: 'Avenir', Arial, Helvetica, sans-serif
+    font-family: 
 
     article.about-banner
         height: 450px
@@ -291,20 +292,20 @@ section.about-wrapper
 
 
     article#addtnl-1 
-        height: 100vh
+        // height: 100vh
         background: url('../img/about-banners/about-banner-2.jpg') #060405 no-repeat
         background-size: cover
         background-position: 50% 50%
         background-attachment: fixed
 
-        header 
-            background: none
+        .about-4dl
+            margin-bottom: 50px
             h1
+                color: white
 
-        p
-
-        ul
-            margin-top: 60px
+            p
+                font-weight: 400
+                opacity: .8
 
 
 
@@ -705,11 +706,11 @@ article#addtnl-3
 
         img
             width: 100%
-            filter: grayscale(30%)
+            +filter(grayscale(30%))
             +transition
 
             &:hover
-                filter: grayscale(0%)
+                +filter(grayscale(0%))
 
 
 

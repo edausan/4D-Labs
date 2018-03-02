@@ -41,30 +41,11 @@
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    
 </head>
 <body dir="ltr">
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{1971476612882479}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{v2.12}'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 
 <section class="compare-popup-wrapper">
     <div class="compare-popup">
@@ -294,6 +275,8 @@
                 </a>
             </article>
 
+            <button id="open-mnav"><span><i class="fa fa-bars"></i></span></button>
+
             <article class="navbar-wrapper">
                 
                 <section class="menu-bar">
@@ -360,12 +343,30 @@
                         <li><a href="app notes">App Notes</a></li>
                         <li><a href="support">Support</a></li>
                         <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <!-- <li><a href="contact">Contact</a></li> -->
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </nav>
             </article>
 
+            <section class="lab-container">
+    <article class="lab-row">
+        <div id="overlay"></div>
+        <div class="mobile-navbar-wrapper">
+            <ul>
+                <li><a href="home"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="products"><i class="fa fa-shopping-basket"></i> Products</a></li>
+                <li><a href="solutions"><i class="fa fa-wrench"></i> Solutions</a></li>
+                <li><a href="app notes"><i class="fa fa-book"></i> App Notes</a></li>
+                <li><a href="support"><i class="fa fa-comments"></i> Support</a></li>
+                <li><a href="about"><i class="fa fa-users"></i> About</a></li>
+                <li><hr></li>
+                <li><a href="register"><i class="fa fa-sign-in"></i> Sign In</a></li>
+                <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </div>
+    </article>
+</section>
         </section>
     </section>
 
@@ -376,6 +377,8 @@
         </form>
     </section>
 </header>
+
+
 
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -935,18 +938,38 @@
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
-<script>
-    $(function() {
-        FB.AppEvents.logEvent("viewed site");
-    });
-</script>
-
+<script src="js/jquery.details.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tinymce/tinymce.min.js"></script>
 <script src="js/dragscroll.js"></script>
 
 <script src="scripts/main.js"></script>
+
+<script>
+$(document).ready(function() {
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+   window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1971476612882479',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.12'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+});
+</script>
 
 </body>
 

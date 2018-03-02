@@ -1,0 +1,254 @@
+section.about-wrapper
+    font-family: $lato
+    font-size: 16px
+
+    .welcome-wrapper
+        padding: 100px 0px 
+        background: $footer1
+        color: white
+        position: relative
+
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: url('../img/about-banners/about-banner1.jpg') no-repeat;
+            background-size: cover
+            background-position: top
+            background-attachment: fixed
+            opacity: .1
+            +filter(grayscale(100%) blur(2px))
+            z-index: 1000
+
+        h1 
+            margin-bottom: 0
+            color: $red1
+            position: relative
+            font-family: $lato
+            z-index: 1001
+
+        img 
+            position: relative
+            z-index: 1001
+            margin: 20px 0 50px
+            width: 65%
+        p 
+            width: 690px
+            color: #999999
+            font-size: 20px
+            line-height: 1.6
+            font-family: $latolight
+            position: relative
+            z-index: 1001
+
+
+    .history-wrapper
+        padding: 50px 0px 
+
+        header.history-header
+            text-align: center
+            padding: 0px 0px 50px
+
+            h1 
+                font-size: 54px
+                text-transform: capitalize
+                color: $paleBlue
+
+        .history-item
+            display: block
+            +clear
+
+            .history 
+                position: relative
+                padding: 50px 0px
+                margin-top: -4px
+                width: 70%
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    width: 57.5%
+                    height: 100%
+                    border: 4px solid $paleBlue
+
+
+                &.fleft
+                    text-align: right
+                    &::before
+                        right: -50px
+                        border-left: none
+                        border-radius: 0 20px 20px 0
+
+                
+
+                &.fright
+                    text-align: left
+
+                    &::before
+                        left: -50px
+                        border-right: none
+                        border-radius: 20px 0 0 20px
+
+
+                .content
+                    position: relative
+                    width: 100%
+                    background: #F4F4F4
+                    padding: 60px
+
+                    figure 
+                        display: inline-block
+                        vertical-align: middle
+                        margin: 0
+                        position: relative
+
+                        img 
+                            width: 120px
+                    
+
+                    header
+                        display: inline-block
+                        vertical-align: top
+                        h1 
+                            margin: 0
+
+                    p 
+                        position: relative
+                        vertical-align: middle
+                        width: 600px
+                        display: inline-block
+                        text-align: left
+                        margin: 0
+                        padding: 0 20px
+                        font-size: 18px
+                        font-family: $latolight
+
+        .milestone
+            width: 56%
+            position: absolute
+            height: 100%
+
+            &::after
+                content: ''
+                position: absolute
+                +transform( rotate(45deg))
+                width: 30px
+                height: 30px
+                border: 4px solid $paleBlue
+                background: white
+                z-index: 1001
+
+
+        div#history-1
+            .history
+                &.fleft
+                    .milestone
+                        top: 0
+                        right: 0
+
+                        &::after
+                            top: -63px !important
+                            left: 10px
+        div#history-2
+            .history
+                &.fright
+                    .milestone
+                        top: 0
+                        left: 0
+
+                        &::after
+                            top: -63px !important
+                            right: 10px
+        div#history-3
+            .history
+                &.fleft
+                    .milestone
+                        top: 0
+                        right: 0
+
+                        &::after
+                            bottom: -63px !important
+                            left: 10px
+        div#history-4
+            .history
+                &.fright
+                    .milestone
+                        top: 0
+                        left: 0
+
+                        &::after
+                            bottom: -63px !important
+                            right: 10px
+
+    .other-descriptions
+        padding: 50px 0px
+        .about-descriptions
+            +clear
+
+            header 
+                h1 
+                    font-size: 24px
+                    color: $paleBlue
+                    padding: 30px 0px
+                    margin: 0
+                    font-weight: 600
+            p 
+                font-family: $latolight
+                margin: 0
+                padding: 0 0 30px
+                display: block
+                font-size: 18px
+                // width: 48%
+
+                &.fleft,
+                &.fright
+                    width: 48%
+
+
+    .about-contact-wrapper
+        background: #eeeeee
+        padding: 50px 0
+        +clear 
+        .contact-item
+            width: 50%
+            float: left
+            +clear
+
+            label
+                display: block
+                width: 100%
+                color: $paleBlue
+            h2 
+                width: 100%
+                margin-bottom: 30px
+            p
+                width: 40%
+                float: left
+                font-family: $latolight
+            ul 
+                width: 50%
+                float: right
+                li 
+                    font-family: $latolight
+
+                    span 
+                        width: 25px
+                        display: inline-block
+                        color: #777777
+
+.leftToDefault
+    .content
+        figure, p 
+            left: 0 !important
+            opacity: 1 !important
+
+.rightToDefault
+    .content
+        figure, p 
+            right: 0 !important
+            opacity: 1 !important
+

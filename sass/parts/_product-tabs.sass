@@ -7,6 +7,8 @@ section#product-page-tabs
             border-bottom-color: $paleBlue
 
         li.tab 
+            height: 46px
+            max-height: 46px
             +transform(scale(1))
             width: auto
             margin-right: 5px
@@ -14,9 +16,12 @@ section#product-page-tabs
             overflow: hidden
             background: #eeeeee
             color: $paleBlue
-            box-shadow: inset 0px 2px 3px rgba(255,255,255,.3), inset 0px 5px 5px rgba(255,255,255,.3)
+            +boxShadow2(inset 0px 2px 3px rgba(255,255,255,.3), inset 0px 5px 5px rgba(255,255,255,.3))
             border: 1px solid $paleBlue
             border-bottom: none
+            position: relative
+
+            
 
             &.active
                 background: $paleBlue
@@ -29,9 +34,19 @@ section#product-page-tabs
             .ico-svg
                 fill: $paleBlue
                 stroke: $paleBlue
+                position: relative
+                max-height: 25px
 
             label
+                position: relative
                 padding: 10px 20px
+                max-height: 46px
+                // color: white
+                // position: absolute
+                // top: 50%
+                // left: 50%
+                // +transform
+                
 
         li.tab.order
             border-left: none

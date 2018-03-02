@@ -1,5 +1,5 @@
 section.product-page-wrapper
-    font-family: 'Lato Light'
+    font-family: $lato
     position: 
     z-index: 1006
 
@@ -24,6 +24,8 @@ section.product-page-wrapper
                     font-size: 55px
                     line-height: 60px
                     margin-bottom: 16px
+                    font-weight: 400
+                    font-family: $latolight
 
                 .sub-head
                     padding-left: 10px
@@ -31,21 +33,23 @@ section.product-page-wrapper
 
                     h3 
                         margin: 0
-                        font-weight: 600
+                        font-weight: 400
+                        font-family: $latolight
 
                         span
                             color: $paleBlue
+                            font-family: $lato
                     
                     h5 
                         margin-bottom: 20px
 
             p 
                 font-size: 16px
-                font-family: 'Helvetica'
+                font-family: $helvetica
 
             a 
                 font-size: 16px
-                font-family: 'Lato'
+                font-family: $lato
                 color: #73BF44
 
             .product-overview
@@ -189,12 +193,10 @@ section.quote-parametric-wrapper
                 border: 1px solid $paleBlue
                 background: $paleBlue !important
                 color: white !important
-                // +border-radius(5px 5px 0px 0px)
 
             span
                 border: 1px solid $paleBlue
                 border-top: none
-                // +border-radius(0px 0px 5px 5px)
                 
                 ul
                     list-style: none !important
@@ -267,7 +269,7 @@ section.quote-parametric-wrapper
             background: darken($paleBlue, 10%)
 
         &:focus
-            box-shadow: none
+            +boxShadow(none)
             outline: none
     
         i 
@@ -289,7 +291,7 @@ section.quote-parametric-wrapper
 
 
 article.price-container
-    font-family: Arial, Helvetica, sans-serif
+    font-family: $arial
     font-size: 16px
 
     &.dark
@@ -373,7 +375,7 @@ article.price-container
 
         input
             border-style: none
-            background: inherit
+            background: transparent
             text-align: right
             
 
@@ -389,11 +391,10 @@ article.price-container
         span
             margin-left: 10px
             font-weight: 600
-            font-family: 'Lato'
+            font-family: $lato
             color: black
 
             input#price 
-                // width: 50px
             
             
 
@@ -474,7 +475,6 @@ article.price-container
                     float: left
                     text-align: left
                     padding-left: 10px
-                    // font-weight: 600
                     
 
             ul.price-quantity-list
@@ -504,7 +504,6 @@ article.price-container
                             margin: 0
                         span 
                             float: right
-                            // font-weight: 600
 
     #subtotal-wrapper
         padding-bottom: 30px
@@ -514,7 +513,6 @@ article.price-container
 
         .subtotal
             +clear
-            // margin-bottom: 5px
 
             label
                 font-weight: 600
@@ -526,12 +524,22 @@ article.price-container
 
 // Product Tabs
 section.product-tabs 
+    article.tabs-wrapper 
+        ul.tabs 
+            li.tab 
+                label 
+                    span
+                        font-size: 16px !important
+                        text-transform: capitalize !important
+                        font-weight: 600
+
+
     article.tab-content 
         padding-top: 20px
         p,
         li,
         a,
-            font-family: 'Helvetica' !important
+            font-family: $helvetica !important
             font-size: 16px !important
 
         h2 
@@ -550,19 +558,19 @@ section.product-tabs
                         float: right
 
         .description-wrapper
-            font-family: 'Helvetica' !important
+            font-family: $helvetica !important
 
         .specs-wrapper
-            font-family: 'Helvetica' !important
+            font-family: $helvetica !important
 
         .downloads-wrapper
-            font-family: 'Helvetica' !important
+            font-family: $helvetica !important
 
         .product-video-wrapper
-            font-family: 'Helvetica' !important
+            font-family: $helvetica !important
 
         .dev-tools-wrapper
-            font-family: 'Helvetica' !important
+            font-family: $helvetica !important
 
 
 // Product Video Popup
@@ -599,7 +607,7 @@ section.product-video-popup
         
         &:link, &:focus
             outline: none
-            box-shadow: none
+            +boxShadow(none)
 
 
         i 
@@ -612,8 +620,7 @@ section.product-video-popup
         .product-video-wrapper
 
             .product-video
-                +transform(translateY(-50%) !important) 
-    // display: none
+                +transform(translateY(-50%) !important)
 
     .product-video-wrapper
         position: relative
@@ -626,7 +633,7 @@ section.product-video-popup
             left: 0
             width: 100%
             +transform(translateY(-150%))
-            box-shadow: 0 8px 32px rgba(black, .5)
+            +boxShadow(0 8px 32px rgba(black, .5))
             +clear
             +transition(350ms ease)
 

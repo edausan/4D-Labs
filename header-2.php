@@ -44,31 +44,12 @@
     <link rel="stylesheet" href="css/dev-style.min-dist.css">
     
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    
 </head>
 <?php include('arrays.php'); ?>
 <body dir="ltr">
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{1971476612882479}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{v2.12}'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 
 <?php include('include/parametric-compare-popup.php'); ?>
 <?php include('include/product-video-popup.php'); ?>
@@ -87,6 +68,8 @@
                     <img src="img/4dllogo.png" alt="">
                 </a>
             </article>
+
+            <button id="open-mnav"><span><i class="fa fa-bars"></i></span></button>
 
             <article class="navbar-wrapper">
                 
@@ -160,11 +143,13 @@
                         <li><a href="app notes">App Notes</a></li>
                         <li><a href="support">Support</a></li>
                         <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <!-- <li><a href="contact">Contact</a></li> -->
                         <li><a id="search"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </nav>
             </article>
+
+            <?php include('include/mobile-navbar.php'); ?>
 
         </section>
     </section>
@@ -176,5 +161,7 @@
         </form>
     </section>
 </header>
+
+
 
 

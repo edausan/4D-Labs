@@ -6,6 +6,7 @@
 =transform($val:  translate(-50%, -50%))
     -webkit-transform: $val
     -moz-transform: $val
+    -ms-transform: $val
     -o-transform: $val
     transform: $val
 
@@ -13,20 +14,40 @@
 =transition($val: 250ms ease)
     -webkit-transition: $val
     -moz-transition: $val
+    -ms-transition: $val
     -o-transition: $val
     transition: $val
 
-// ---- Boder Radius ------
+// ---- Border Radius ------
 =border-radius($val: 5px)
     -webkit-border-radius: $val
     -moz-border-radius: $val
+    -ms-border-radius: $val
     -o-border-radius: $val
     border-radius: $val
 
+// ---- Filter ------ 
+=filter($val)
+    -webkit-filter: $val
+    -moz-filter: $val
+    -ms-filter: $val
+    -o-filter: $val
+    filter: $val
 
+// ---- Filter ------ 
+=boxShadow($val)
+    -webkit-box-shadow: $val
+    -moz-box-shadow: $val
+    -ms-box-shadow: $val
+    -o-box-shadow: $val
+    box-shadow: $val
 
-
-
+=boxShadow2($val, $val2)
+    -webkit-box-shadow: $val, $val2
+    -moz-box-shadow: $val, $val2
+    -ms-box-shadow: $val, $val2
+    -o-box-shadow: $val, $val2
+    box-shadow: $val, $val2
 
 
 // -------------------------
@@ -34,42 +55,84 @@
 // -------------------------
 @font-face 
     font-family: 'PT Sans'
-    src: url(../fonts/PT_Sans-Web-Regular.ttf)
+    src: url('../fonts/PTSans-Regular.woff') format('woff'), 
+    url('../fonts/PTSans-Regular.ttf') format('truetype'), 
+    url('../fonts/PTSans-Regular.svg#PTSans-Regular') format('svg'),
+    url('../fonts/PT_Sans-Web-Regular.eot'),
+    url('../fonts/PT_Sans-Web-Regular.woff2') format('woff2'), 
+    url('../fonts/PT_Sans-Web-Regular.eot?#iefix') format('embedded-opentype')
+    font-weight: normal
+    font-style: normal
 
 @font-face 
     font-family: 'Sony Sketch'
-    src: url(../fonts/Sony_Sketch_EF.ttf), url('../Sony_Sketch_EF.ttf')
-
-@font-face 
-    font-family: 'Roboto Medium'
-    src: url(../fonts/Roboto-Medium.ttf)
+    src: url('../fonts/SonySketchEF.woff') format('woff'), 
+    url('../fonts/SonySketchEF.ttf') format('truetype'), 
+    url('../fonts/SonySketchEF.svg#SonySketchEF') format('svg')
+    url('../fonts/Sony_Sketch_EF.eot'),
+    url('../fonts/Sony_Sketch_EF.woff2') format('woff2'), 
+    url('../fonts/Sony_Sketch_EF.eot?#iefix') format('embedded-opentype')
+    font-weight: normal
+    font-style: normal
 
 @font-face 
     font-family: 'Avenir'
-    src: url(../fonts/AvenirLTStd-Light.ttf)
+    src: url('../fonts/AvenirLTStd-Light.eot'),
+    url('../fonts/AvenirLTStd-Light.woff2') format('woff2'), 
+    url('../fonts/AvenirLTStd-Light.woff') format('woff'), 
+    url('../fonts/AvenirLTStd-Light.ttf') format('truetype'), 
+    url('../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg'), 
+    url('../fonts/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype')
+    font-weight: normal
+    font-style: normal
 
 @font-face 
-    font-family: 'Open Sans'
-    src: url(../fonts/OpenSans-Regular.ttf)
+    font-family: 'Lato Regular'
+    src: url('../fonts/Lato-Regular.eot'),
+    url('../fonts/Lato-Regular.woff2') format('woff2'),
+    url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype'),
+    url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg'),
+    url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'Lato Light'
+    src: url('../fonts/Lato-Light.eot'),
+    url('../fonts/Lato-Light.woff2') format('woff2'),
+    url('../fonts/Lato-Light.woff') format('woff'),
+    url('../fonts/Lato-Light.ttf') format('truetype'),
+    url('../fonts/Lato-Light.svg#Lato-Light') format('svg'),
+    url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype')
+    font-weight: normal
+    font-style: normal
 
 @font-face 
     font-family: 'Helvetica'
-    src: url(../fonts/Helvetica-Regular.ttf)
+    src: url('Helvetica-Regular.eot'),
+    url('../fonts/Helvetica-Regular.woff2') format('woff2'),
+    url('../fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype')
+    url('../fonts/HelveticaNeueLT-Roman.woff') format('woff'),
+    url('../fonts/HelveticaNeueLT-Roman.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueLT-Roman.svg#HelveticaNeueLT-Roman') format('svg')
+    font-weight: normal
+    font-style: normal
 
-@font-face 
-    font-family: 'Lato'
-    src: url(../fonts/Lato-Regular.ttf)
 
-@font-face 
-    font-family: 'Lato Light'
-    src: url(../fonts/Lato-Light.ttf)
-
+$arial: Arial, Helvetica, sans-serif
+$lato: 'Lato Regular', Arial, Helvetica, sans-serif
+$latolight: 'Lato Light', Arial, Helvetica, sans-serif
+$helvetica: 'Helvetica', Arial, Helvetica, sans-serif
+$sony: 'Sony Sketch', Arial, Helvetica, sans-serif
+$avenir: 'Avenir', Arial, Helvetica, sans-serif
+$opensans: 'Open Sans', Arial, Helvetica, sans-serif
 
 // --------------------------
 // ----- Default Styles -----
 // --------------------------
 body, html
-    // font-family: 'PT Sans', Arial, Helvetica, sans-serif
+    font-family: $arial
     padding: 0
     margin: 0
     
@@ -88,12 +151,17 @@ ul
     padding: 0
     margin: 0
 
-input, 
-select
+input, select, details, button
     outline: none
     box-shadow: none
     border-style: none
+
+    &:focus, &:link
+        outline: none
+        box-shadow: none
+        border-style: none
     
+
 .scrollOff
     overflow: hidden
 
@@ -118,7 +186,6 @@ select
     margin-left: -15px
     margin-right: -15px
     +clear
-
 
 .fleft
     float: left

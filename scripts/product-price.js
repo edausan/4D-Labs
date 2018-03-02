@@ -5,14 +5,24 @@ $(function() {
     var qInput      =   $('.quantity-field input#quantity-input');
     var price       =   $('#price-wrapper input#price');
     var subtotal    =   $('#subtotal-wrapper .subtotal input');
-    var stockVal    =   $('#stock-wrapper input#stock-val').val();
-    var stock       =   stockVal.replace(/,/g, '');
+    var stocks       =   $('#stock-wrapper input#stock-val');
+    var stockVal    =   stocks.val();
+    if(stocks.length) {
+        var stock       =   stockVal.replace(/,/g, '');
+    }
+    
     var stockNotif  =   $('span#stock-notif');
 
     stockNotif.hide();
 
-    var q = parseInt($('input#min-quantity').val().replace(/,/g, ''));
-    var qp = parseInt($('input#min-quantity').val().replace(/,/g, ''));
+    var minQV   =   $('input#min-quantity');
+
+    if(minQV.length) {
+        var qVal = $('input#min-quantity').val().replace(/,/g, '');
+    }
+
+    var q = parseInt(qVal);
+    var qp = parseInt(qVal);
     var unitPrice = price.val();
 
     qInput.keyup(function() {

@@ -1,8 +1,4 @@
-<div class="support-header">
-    <h1>We're here to help.</h1>
-    <p>Here at 4D Labs, we're committed to your success. We encourage you to check out our Documentation and Firmware links below, and the 4D Labs Forum for user discussions. However, if you get stuck and need technical support, please submit a support ticket, and we will get back to you as soon as possible.</p>
-</div>
-
+<p id="support-description">We encourage you to check out our Documentation and Firmware links below, and the 4D Labs Forum for user discussions. However, if you get stuck and need technical support, please submit a support ticket, and we will get back to you as soon as possible.</p>
 
 <section class="support-boxes">
     <ul class="support-list">
