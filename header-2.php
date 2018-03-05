@@ -1,6 +1,16 @@
 <?php
     session_start();
+
+    if (isset($_POST['logout'])) {
+        session_destroy();
+        $url='home';
+        echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
+    } else  if (isset($_POST['signin'])) {
+        $_SESSION['email'] = $_POST['email'];
+    }
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,28 +93,33 @@
                             <!-- Change the div element to 'form' -->
                             <!-- also change the 'div.account-form' to 'form.account-form in navbar-3.sass' -->
                             <!-- also change the 'div.account-form' to 'form.account-form in navbar.js'  -->
-                            <div class="account-form">
-                                <span class="close-form-btn"><i class="fa fa-close"></i></span>
-                                <h4>Sign In </h4>
+                            <form class="account-form" action="#" method="post">
+                                <?php if (!empty($_SESSION['email'])) : ?>
 
-                                <p class="notif"><i class="fa fa-exclamation-circle"></i></p>
+                                    <?php 
 
-                                <label for="email-add">Email Address</label>
-                                <input type="email" name="email-add" id="email-add">
+                                        if (empty($_SESSION['fname']) && empty($_SESSION['lname'])) {
+                                            $_SESSION['fname'] = "User's";
+                                            $_SESSION['lname'] = "Name";
+                                        }
+                                    
+                                    ?>
 
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password">
+                                    <label><strong><?php echo $_SESSION['fname']; ?> <?php echo $_SESSION['lname']; ?></strong></label>
+                                    <p><?php echo $_SESSION['email']; ?></p>
+                                    <a href="shopping-cart"><i class="fa fa-shopping-cart"></i>Shopping Cart</a>
 
-                                <button class="submit" id="submit">Sign In <i class="fa fa-paper-plane"></i></button>
+                                    <button type="submit" name="logout">Logout</button>
 
-                                <hr>
+                                <?php else : ?>
 
-                                <div class="account-bottom">
-                                    <a href="">Forgot your password?</a>
-                                    <p>Don't have an account? <a href="register.php">Register Now</a></p>
-                                </div>
+                                    <?php include('include/signin-form.php'); ?>
+
+                                <?php endif; ?>
                                 
-                            </div>
+                            </form>
+
+                            
                         </li>
                         <!-- /account form -->
 

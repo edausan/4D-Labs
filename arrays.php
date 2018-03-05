@@ -536,11 +536,6 @@
             'The GOLDELOX is a custom embedded graphics controller designed to interface with many popular OLED and LCD display panels.',
             '$29.00',
         ),
-        'workshop4-2'  =>  array(
-            'Workshop4 Pro IDE',
-            'Workshop4 delivers a comprehensive interface enriched with features for optimal software development for any user.',
-            '$39.00',
-        ),
     );
 
 

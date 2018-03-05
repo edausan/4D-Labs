@@ -67,7 +67,7 @@
         ?>  
     </div>
 
-    <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Notes (Optional)"></textarea>
+    <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Notes (Optional)"><?php echo $notes; ?></textarea>
 
     
 

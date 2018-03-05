@@ -1,14 +1,14 @@
 $(function() {
-    var formInputs = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form input');
+    var formInputs = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form input');
     var searchBtn   = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a#search');
     var searchBar   = $('header.header-wrapper section.search-bar-wrapper');
     var clearBtn    = $('header.header-wrapper section.search-bar-wrapper form.search-bar span.clear-btn');
     var searchInput = $('header.header-wrapper section.search-bar-wrapper form.search-bar input');
 
     var accountBtn  = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li a#account');
-    var accountForm = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form');
+    var accountForm = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form');
 
-    var accFormCloseBtn = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form span.close-form-btn');
+    var accFormCloseBtn = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form span.close-form-btn');
 
     searchBtn.click(function() {
         closeAccForm();
@@ -277,10 +277,10 @@ $(function() {
     // ----- this is only a sample form validation ------
     // --------------------------------------------------
 
-    var emailAdd = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form input#email-add');
-    var password = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form input#password');
-    var submitBtn = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form button#submit');
-    var notif = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li div.account-form p.notif');
+    var emailAdd = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form input#email-add');
+    var password = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form input#password');
+    var submitBtn = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form button#submit');
+    var notif = $('header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li .account-form p.notif');
 
     submitBtn.click(function() {
         $('.notif').show();

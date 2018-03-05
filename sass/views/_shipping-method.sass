@@ -5,7 +5,7 @@ section.shipping-method-wrapper
     form#shipping-method-form
     
     article.shipping-method-details
-        width: 70%
+        width: 68%
         float: left
         +clear 
 
@@ -15,17 +15,21 @@ section.shipping-method-wrapper
         header
             h3 
                 font-size: 20px
-                color: white
-                padding: 5px 10px
-                background: $paleBlue
+                color: black
+                font-weight: 600
+                padding: 5px 0px
+
+        section
+            padding: 30px
 
 
     section.user-details-container
-        float: left
-        width: 48%
+        display: block
         background: transparent
         padding-top: 0px
         padding-right: 0px
+        border: 1px solid #e5e5e5
+        margin-right: 0px !important
 
         .payment-user-details-wrapper
             width: 100%
@@ -47,21 +51,28 @@ section.shipping-method-wrapper
 
 
         ul.payment-user-details-list
-            padding-left: 10px
+            padding: 0px
             +clear 
 
             li 
+                position: relative
                 &#phone-num
-                    width: 45%
+                    width: 100%
                     float: right 
 
 
                 &#notes 
+                    width: 100%
+                    float: left
                     p 
                         min-height: 43px
 
                 &#country
                     width: 53%
+                    float: left
+
+                &#changeadd
+                    width: 100%
                     float: left
 
                     select 
@@ -81,22 +92,17 @@ section.shipping-method-wrapper
             
                 label 
                     color: $paleBlue
+                    margin: 0 !important
+                    margin-top: 10px !important
                 p 
                     margin-bottom: 5px
-                    padding: 10px 
-                    border: 1px solid #eeeeee
-                    +border-radius(2px)
-
-
-    .shipping-method-container
-        width: 48%
-        float: left
-
+                    border: none !important
+                    padding: 0 !important
 
 
     section.po-ref-wrapper
-        padding: 20px
-        padding-top: 0px
+        border: 1px solid #e5e5e5
+        width: 100%
         +clear 
 
         header
@@ -117,11 +123,9 @@ section.shipping-method-wrapper
                 border-color: $paleBlue
 
 
-
-
-
     section.shipping-method-wrapper
-        padding: 20px
+        border: 1px solid #e5e5e5
+        width: 100%
         +clear 
 
         header.shipping-method-header
@@ -154,14 +158,10 @@ section.shipping-method-wrapper
                 option 
 
 
-
-
-
-
-
-
     section.acceptance-wrapper
-        padding: 20px
+        border: 1px solid #e5e5e5
+        width: 100%
+        
 
         ul 
         
@@ -210,12 +210,7 @@ section.shipping-method-wrapper
                         color: $paleBlue
 
 
-
-
-
-
     section.tax-exempt-wrapper
-        padding: 20px
 
         .tax-exempt-checkox
 
@@ -242,5 +237,29 @@ section.shipping-method-wrapper
 
             p 
 
+    .shipping-method-container
+        display: block
+
+        section 
+            margin-top: 30px
+            
+            input[type=text], select 
+                width: 100% !important
+                margin: 0 !important
 
 
+
+a#change-add
+    margin-top: 20px
+    text-decoration: none
+    padding: 10px
+    background: $footer1
+    color: white 
+    display: block
+    width: 40%
+    text-align: center
+    +transition
+
+    &:hover
+        color: $footer1
+        background: whitesmoke

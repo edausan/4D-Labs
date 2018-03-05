@@ -1,7 +1,6 @@
 <?php 
     define('TITLE', 'Shopping Cart');
     include('header-2.php');
-    
 ?>
 
 
@@ -44,7 +43,6 @@
                                     <th class="shopcart-header" id=""><span>#</span></th>
                                     <th class="shopcart-header" id="image"><span>Image</span></th>
                                     <th class="shopcart-header" id="items"><span>Item(s)</span></th>
-                                    <!-- <th class="shopcart-header" id="">Description</th> -->
                                     <th class="shopcart-header"><span>Unit Price (US$)</span></th>
                                     <th class="shopcart-header"><span>Quantity</span></th>
                                     <th class="shopcart-header" id="subtotal-head"><span>Subtotal</span></th>
@@ -93,10 +91,6 @@
                                                 </div>
                                             </header>
                                         </td>
-
-                                        <!-- <td id="description">
-                                            <p><?php echo $details[3]; ?></p>
-                                        </td> -->
                                         
                                         <td id="price">
                                             <input type="text" name="price" id="price-input" value="<?php echo $details[1]; ?>"
@@ -147,8 +141,6 @@
                 <article class="voucher-total-wrapper">
 
                     <section class="voucher-total voucher-container">
-                        <!-- <label for="voucher-input">Voucher</label> -->
-
                         <div class="voucher-input">
                             <input id="voucher-input" type="text" placeholder="Voucher">
                             <button id="voucher-btn">Ok</button>
@@ -164,57 +156,6 @@
                 </article>
                 <!-- /Total -->
 
-                <!-- Cart Summary -->
-                <!-- <article class="cart-summary">
-                    <section class="cart-sum-wrapper">
-                        <header class="cart-summary-header">
-                            <h5>Total</h5>
-                        </header>
-
-                        <ul class="totals subtotal-wrapper">
-                            <li>
-                                <p>(3) Items Subtotal (US$)</p>
-                                <input type="text" value="$443.50">
-                            </li>
-                        </ul>
-
-                        <hr>
-
-                        <div class="totals total-wrapper">
-                            <p>Order Total (US$)</p>
-                            <input type="text" value="$443.50">
-                        </div>
-
-                        <hr>
-                        
-
-                        <p id="vat">Shipping will be calculated at Checkout.</p>
-
-
-                        <div class="coupon-wrapper">
-                            <h5>Promo Code</h5>
-                            <p>If you have a coupon, enter it here. Your order will be updated to reflect the promo.</p>
-
-                            <div class="input-group coupon-input">
-                                <input type="text" class="form-control" placeholder="Enter promo code here">
-                                <button class="btn btn-default input-group-addon">Apply</button>
-                            </div>
-                        </div>
-
-                        <div class="checkout-wrapper">
-                            <a id="proceed-checkout" href="shippingandbilling.php">Proceed to Checkout</a>
-                            <a href="">Ship to multiple address</a>
-                        </div>
-
-                    </section>
-
-                    <section class="continue-shop-wrapper">
-                        <a href="products.php">
-                            <i class="fa fa-shopping-basket"></i> Continue Shopping</a>
-                    </section>
-
-                </article> -->
-                <!-- /Cart Summary -->
 
             </section>
             <!-- /Cart Section -->

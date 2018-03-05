@@ -2,6 +2,11 @@
     define('TITLE', 'Shipping and Billing');
     include('header-2.php');
     
+    if (!empty($_SESSION['email'])) {
+        $url='sb-loggedin';
+        echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
+    }
+
 ?>
 
 <section class="lab-container">
@@ -23,19 +28,25 @@
                 <form action="sb-loggedin" method="post" class="checkout-have-account">
 
                     <!-- HIDDEN DATA -->
-                    <!-- Just for the mock and flow of the site -->
+                    <!-- Just for the mock and flow of the cart -->
                     <div class="hidden-data" hidden>
-                        <!-- <input type="text" name="firstname" value="Jane">
-                        <input type="text" name="lastname" value="Doe">
-                        <input type="text" name="address" value="Block 1 Lot 2 Phase 3 Villa Subdivision"> -->
                         <input type="text" name="log" value="1">
                     </div>
                     <!-- /HIDDEN DATA -->
 
                     
                     <div class="checkout-input-wrapper">
-                        <input type="email" class="checkout-input" name="email" id="email" placeholder="Email Address" value="janedoe@email.com" required>
-                        <input type="password" class="checkout-input" name="password" id="password" placeholder="Password" value="12345678" pattern=".{8,}" minlength="8" required>
+                        <div class="login-wrapper">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <input type="email" class="checkout-input" name="email" id="email" placeholder="Email Address" value="janedoe@email.com" required>
+                        </div>
+
+                        <div class="login-wrapper">
+                            <span><i class="fa fa-key"></i></span>
+                            <input type="password" class="checkout-input" name="password" id="password" placeholder="Password" value="12345678" pattern=".{8,}" minlength="8" required>
+                        </div>
+                        
+                        
                     </div>
 
                     <div class="action-wrapper">

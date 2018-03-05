@@ -3,13 +3,18 @@ section.checkout-wrapper
     font-family: 'Avenir', Arial, Helvetica, sans-serif
     +clear
     article.checkout-account
-        width: 45%
+        width: 49%
         float: left
-        padding: 50px 0px 70px
+        margin: 50px 0px 70px
+        background: whitesmoke
+        padding: 40px
+        float: right
+        min-height: 325px
 
 
         &#login-wrapper
-            padding-left: 65px
+            float: left
+            // padding-left: 65px
 
         header.checkout-account-header
             h3 
@@ -17,20 +22,36 @@ section.checkout-wrapper
                 color: grey
 
         form.checkout-have-account
-            width: 75%
+            width: 100%
 
 
             .checkout-input-wrapper
+
+                .login-wrapper
+                    +clear
+                    span
+                        width: 7%
+                        float: left
+                        min-height: 43px
+                        background: #eeeeee
+                        border: 1px solid #cccccc
+                        border-right: none
+                        position: relative
+                        
+                        i 
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            +transform
                 
                 input.checkout-input
-                    width: 100%
-                    display: block
+                    width: 93%
                     margin-bottom: 10px
                     padding: 10px 20px
                     border-style: none
                     border: 1px solid #cccccc
                     +boxShadow(none)
-                    // +border-radius
+                    float: right
                     +transition
 
                     &:focus
@@ -43,7 +64,7 @@ section.checkout-wrapper
                         border-color: $paleBlue
 
                     &[type=email]:valid
-                        border-color: $designer
+                        // border-color: $designer
 
                     &[type=email]:valid:focus
                         border-color: $paleBlue
@@ -66,16 +87,17 @@ section.checkout-wrapper
                 button#checkout-signin-btn
                     float: right
                     border-style: none
-                    background: $paleBlue
-                    // +border-radius
+                    background: $diablo
                     padding: 10px 20px
+                    border: 1px solid $diablo
                     color: white
                     cursor: pointer
                     +transition
                     
                     &:hover
                         background: whitesmoke
-                        color: $paleBlue
+                        color: $diablo
+                        border-color: $diablo
 
                     i
                         display: inline-block
@@ -89,12 +111,14 @@ section.checkout-wrapper
             background: whitesmoke
             padding: 10px 20px
             cursor: pointer
+            border: 1px solid $picaso
             +transition
             
 
             &:hover
                 background: $picaso
                 color: white
+                border-color: $picaso
 
             i
                 display: inline-block

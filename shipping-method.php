@@ -2,6 +2,42 @@
 <?php 
     define('TITLE', 'Shipping Method');
     include('header-2.php');
+
+    $email = $_SESSION['email']; 
+
+                                    
+    if (empty($email)) {
+        $email = $_POST['billing-email'];
+    }
+
+    if (!empty($email)) {
+        if (!empty($_POST['billing-firstname'])) {
+            $_SESSION['fname']              = $_POST['billing-firstname'];
+            $_SESSION['lname']              = $_POST['billing-lastname'];
+            $_SESSION['company']            = $_POST['billing-company'];
+            $_SESSION['billing-add1']       = $_POST['billing-address1'];
+            $_SESSION['billing-add2']       = $_POST['billing-address2'];
+            $_SESSION['billing-city']       = $_POST['billing-city'];
+            $_SESSION['billing-state']      = $_POST['billing-state'];
+            $_SESSION['billing-postal']     = $_POST['billing-postal'];
+            $_SESSION['billing-phone']      = $_POST['billing-phone'];
+            $_SESSION['billing-country']    = $_POST['billing-country'];
+            $_SESSION['notes']              = $_POST['notes'];
+        }
+        
+        $user   =   array(
+            'fname'  => $_SESSION['fname'],
+            'lname'  => $_SESSION['lname'],
+            'company'  => $_SESSION['company'],
+            'phone'  => $_SESSION['billing-phone'],
+            'add1'   =>  $_SESSION['billing-add1'],
+            'add2'   =>  $_SESSION['billing-add2'],
+            'state'   =>  $_SESSION['billing-state'],
+            'city'   =>  $_SESSION['billing-city'],
+            'country'   =>  $_SESSION['billing-country'],
+            'postal'   =>  $_SESSION['billing-postal'],
+            'note'   =>  $_SESSION['notes'],
+        );
 ?>
 
 <section class="lab-container">
@@ -17,7 +53,7 @@
 
             
             <form action="payments" method="post" class="" id="shipping-method-form"> <!-- Shipping Method Form -->
-                    
+                
                 <section class="cart-wrapper"> <!-- Cart Wrapper -->
                 
                     <article class="shipping-method-details"> <!-- User Details Wrapper -->
@@ -26,33 +62,8 @@
                             
                             <div class="payment-user-details-wrapper"> <!-- User Details Wrapper -->
                                 <header class="payment-user-details-header">
-                                    <h3>Ships to:</h3>
+                                    <h3>Shipping Information:</h3>
                                 </header>
-
-                                <!-- User Details foreach loop -->
-                                <?php 
-                                    $email = $_POST['billing-email'];                                    
-                                    
-                                    if (!empty($email)) {
-                                        $_SESSION['note']   =   $_POST['notes'];
-                                        if (empty($_POST['notes'])) {
-                                            $_SESSION['note']   =   '';
-                                        }                       
-                                        
-                                        $user   =   array(
-                                            'fname'  => $_SESSION['fname'],
-                                            'lname'  => $_SESSION['lname'],
-                                            'company'  => $_SESSION['company'],
-                                            'phone'  => $_SESSION['billing-phone'],
-                                            'add1'   =>  $_SESSION['billing-add1'],
-                                            'add2'   =>  $_SESSION['billing-add2'],
-                                            'state'   =>  $_SESSION['billing-state'],
-                                            'city'   =>  $_SESSION['billing-city'],
-                                            'country'   =>  $_SESSION['billing-country'],
-                                            'postal'   =>  $_SESSION['billing-postal'],
-                                            'note'   =>  $_SESSION['note'],
-                                        );
-                                ?>
                                 
                                 <div class="payment-user-info">
 
@@ -95,20 +106,23 @@
                                             <p for=""><?php echo $user['phone']; ?></p>
                                         </li>
 
-                                        <li id="notes">
-                                            <label for="">Notes: </label>
-                                            <p for=""><?php echo $user['note']; ?></p>
+                                        <?php if (!empty($_SESSION['notes'])) : ?>
+
+                                            <li id="notes">
+                                                <label for="">Notes: </label>
+                                                <p for=""><?php echo $user['note']; ?></p>
+                                            </li>
+                                        <?php endif; ?>
+
+                                        <li id="changeadd">
+                                            <a href="sb-loggedin" id="change-add">Change Shipping Information</a>
                                         </li>
 
                                     </ul> <!-- /User Details List -->
 
                                 </div>
 
-                                <?php } else { 
-                                        $url='shippingandbilling';
-                                        echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
-                                        } 
-                                ?>  
+                                
                             </div> <!-- /User Details Wrapper -->
                             
                         </section> <!-- /User Details Wrapper -->
@@ -119,7 +133,7 @@
                                 <header>
                                     <h3>Purchase Order Number</h3>
                                 </header>
-                                <input type="text" class="sb-input" name="po-ref-num" id="po-ref-num" placeholder="Purchase Order Number" required>
+                                <input type="text" class="sb-input" name="po-ref-num" id="po-ref-num" placeholder="ex. PO-0004" required>
                             </section> <!-- Purchase Order Number -->
                             
                             <section class="shipping-method-wrapper"> <!-- Shipping Method -->
@@ -172,6 +186,12 @@
         
     </article> 
 </section>
+
+<?php } else { 
+        $url='shippingandbilling';
+        echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
+        } 
+?>  
 
 
 <?php include('footer-3.php'); ?>

@@ -26,7 +26,7 @@
                 <section class="lab-row">
 
                     <form action="sb-loggedin" class="registration-form" method="post">
-                        <input type="text" name="log" value="0" hidden>
+                        <input type="text" name="log" value="2" hidden>
 
                         <!-- Personal Information Form -->
                         <div class="personal-info-wrapper translate-right">
@@ -100,7 +100,7 @@
                             
 
                             <div class="sub-btn-wrapper">
-                                <button href="" id="submit"><span>Sign Up</span></button>
+                                <button href="" id="submit" name="signup-submit"><span>Sign Up</span></button>
                                 <a href="login" id="login"><span>Already have an account?<p>Click here to sign in.</p></span></a>
                             </div>
 
