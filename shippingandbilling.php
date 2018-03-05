@@ -63,6 +63,8 @@
                     <h3>Don't have an account yet?</h3>
                     <p>Please sign up. Creating a 4D Labs account is quick and easy.</p>
                 </header>
+
+                <div class="spacer"></div>
                 
                 <a href="register" id="checkout-signup-btn" name="checkout-signup-btn"><i class="fa fa-plus"></i> Click here to Sign up.</a>
             

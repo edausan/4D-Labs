@@ -24,23 +24,37 @@
 
         <div class="cc-type-row">
             <!-- Credit Card Type -->
-            <select name="cc-type" id="cc-type" class="fleft" required>
-                <option value="" disabled selected>Credit Card Type</option>
-                <option value="mastercard">MasterCard</option>
-                <option value="visa">Visa</option>
-            </select> 
-
+            <div>
+                <label for="cc-type">Payment Method:</label>
+                <select name="cc-type" id="cc-type" class="fleft" required>
+                    <option value="" disabled selected>Choose your Payment Method</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="visa">Visa</option>
+                </select>
+            </div>
+             
             <!-- Credit Card Number -->
-            <input type="text" class="fright" name="cc-num" id="cc-num" placeholder="Credit Card Number" required>
+            <div>
+                <label for="cc-num">Credit Card Number:</label>
+                <input type="text" class="fright" name="cc-num" id="cc-num" placeholder="ex. 1234 5678 0000 1234" required>
+            </div>
+            
         </div>
         
 
         <div class="name-row">
             <!-- First Name -->
-            <input type="text" class="fleft" name="cc-fname" id="cc-fname" placeholder="First Name" required>
+            <div>
+                <label for="cc-fname">First Name:</label>
+                <input type="text" class="fleft" name="cc-fname" id="cc-fname" placeholder="First Name" required>
+            </div>            
 
             <!-- Last Name -->
-            <input type="text" class="fright" name="cc-lname" id="cc-lname" placeholder="Last Name" required>
+            <div>
+                <label for="cc-lname">Last Name:</label>
+                <input type="text" class="fright" name="cc-lname" id="cc-lname" placeholder="Last Name" required>
+            </div>
+            
         </div>
         
 
@@ -48,11 +62,50 @@
     
 
     <div class="cc-input-wrapper cc-sec">
-        <!-- CVV Code -->
-        <input type="text" name="cvv-code" id="cvv-code" placeholder="CVV Code" required>
+        <label for="month">Expiry Date:</label>
+
+        <!-- Year -->
+        <div>
+            <select name="Year" id="year" required>
+                <option value="" disabled selected>YYYY</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+            </select>
+            
+            <select name="month" id="month" required>
+                <option value="" disabled selected>Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        
+        </div>
+        
 
         <!-- Month -->
-        <select name="month" id="month" required>
+        <!-- <select name="month" id="month" required>
             <option value="" disabled selected>MM</option>
             <option value="01">01</option>
             <option value="02">02</option>
@@ -66,27 +119,12 @@
             <option value="10">10</option>
             <option value="11">11</option>
             <option value="12">12</option>
-        </select>
+        </select> -->
+        
 
-        <!-- Year -->
-        <select name="Year" id="year" required>
-            <option value="" disabled selected>YYYY</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2027</option>
-            <option value="2028">2028</option>
-            <option value="2029">2029</option>
-            <option value="2030">2030</option>
-            <option value="2031">2031</option>
-            <option value="2032">2032</option>
-        </select>
+        <!-- CVV Code -->
+        <label for="cvv-code">CVV Code:</label>
+        <input type="text" name="cvv-code" id="cvv-code" placeholder="ex. 234" required title="Enter the last 3 digits of your credit card number">
     </div>
 
     <div class="cc-geotrust-wrapper">

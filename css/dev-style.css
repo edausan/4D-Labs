@@ -909,8 +909,7 @@ header.header-wrapper {
       display: table;
       clear: both; }
     header.header-wrapper section.navigation-wrapper section.navigation-container {
-      max-width: 1320px;
-      width: 1320px;
+      width: 100%;
       position: relative;
       margin: 0 auto;
       z-index: 1001;
@@ -924,21 +923,26 @@ header.header-wrapper {
         float: left;
         height: 100px;
         position: relative; }
+        header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper a {
+          display: block; }
         header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper img {
           position: absolute;
-          left: 10px;
+          left: 0px;
           bottom: -10px;
           width: 90%; }
       header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper {
         width: 75%;
         float: left;
-        padding: 10px; }
+        padding: 10px;
+        padding-right: 0px; }
+        header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper ul {
+          padding-right: 0px !important; }
         header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar {
           position: relative;
           z-index: 4; }
           header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul {
             text-align: right;
-            padding: 10px 10px 0px; }
+            padding: 10px 0px 0px; }
             header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li {
               display: inline-block;
               margin: 0 5px;
@@ -4944,7 +4948,7 @@ a#goto {
 
 section.shopping-cart-wrapper,
 section.payments-wrapper {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   padding: 50px 0px; }
   section.shopping-cart-wrapper::after,
   section.payments-wrapper::after {
@@ -5003,6 +5007,7 @@ section.payments-wrapper {
       border: 1px solid white;
       padding: 8px;
       float: left;
+      width: 20%;
       -webkit-transition: 250ms ease;
       -moz-transition: 250ms ease;
       -ms-transition: 250ms ease;
@@ -5126,9 +5131,6 @@ section.payments-wrapper {
               section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th#items {
                 text-align: left !important;
                 padding-left: 60px; }
-              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th span,
-              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table thead tr th span {
-                font-weight: 400 !important; }
         section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr,
         section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr {
           width: 100%;
@@ -5182,15 +5184,8 @@ section.payments-wrapper {
               min-width: 18%;
               width: 18%;
               padding-top: 0px; }
-            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper,
-            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper {
-              font-family: 'Avenir', Arial, Helvetica, sans-serif; }
-            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price,
-            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price {
-              font-family: Arial, Helvetica, sans-serif; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#description,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#description {
-              font-family: Arial, Helvetica, sans-serif;
               font-size: 12px;
               text-align: left;
               position: relative; }
@@ -5203,7 +5198,6 @@ section.payments-wrapper {
                 color: #7C7C83; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price {
-              font-family: Arial, Helvetica, sans-serif;
               position: relative; }
               section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price::after,
               section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#price::after {
@@ -5230,7 +5224,6 @@ section.payments-wrapper {
                 min-height: 46px; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#subtotal,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#subtotal {
-              font-family: Arial, Helvetica, sans-serif;
               position: relative; }
               section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#subtotal::after,
               section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#subtotal::after {
@@ -5255,106 +5248,103 @@ section.payments-wrapper {
                 border-bottom-left-radius: 0px;
                 border-left: none;
                 min-height: 46px; }
-            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity,
-            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity {
-              font-family: Arial, Helvetica, sans-serif; }
-              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity::after,
-              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity::after {
-                content: '';
-                display: table;
-                clear: both; }
-              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input,
-              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input {
-                min-height: 46px; }
-              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button,
-              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button {
-                width: 20%;
-                min-width: 20%;
-                height: 46px;
-                border: 1px solid #e5e5e5;
-                background: white;
-                color: #327B83;
-                cursor: pointer;
-                -webkit-transition: 250ms ease;
-                -moz-transition: 250ms ease;
-                -ms-transition: 250ms ease;
-                -o-transition: 250ms ease;
-                transition: 250ms ease; }
-                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:link,
-                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:link {
-                  outline: none; }
-                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button::-moz-focus-inner,
-                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button::-moz-focus-inner {
-                  outline: none; }
-                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:focus,
-                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:focus {
-                  outline: none; }
-                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:hover,
-                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:hover {
-                  background: #327B83;
-                  color: white; }
-                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus,
-                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus {
-                  float: left;
-                  -webkit-box-ordinal-group: 2;
-                  -ms-flex-order: 1;
-                  order: 1;
-                  -webkit-border-radius: 5px 0px 0px 5px;
-                  -moz-border-radius: 5px 0px 0px 5px;
-                  -ms-border-radius: 5px 0px 0px 5px;
-                  -o-border-radius: 5px 0px 0px 5px;
-                  border-radius: 5px 0px 0px 5px;
-                  position: relative; }
-                  section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus::before,
-                  section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus::before {
-                    content: '-';
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    -moz-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    -o-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%); }
-                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus,
-                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus {
-                  float: right;
-                  -webkit-box-ordinal-group: 4;
-                  -ms-flex-order: 3;
-                  order: 3;
-                  -webkit-border-radius: 0px 5px 5px 0px;
-                  -moz-border-radius: 0px 5px 5px 0px;
-                  -ms-border-radius: 0px 5px 5px 0px;
-                  -o-border-radius: 0px 5px 5px 0px;
-                  border-radius: 0px 5px 5px 0px;
-                  position: relative; }
-                  section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus::before,
-                  section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus::before {
-                    content: '+';
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    -moz-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    -o-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%); }
-              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input,
-              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input {
-                width: 60%;
-                min-width: 60%;
+            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity::after,
+            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity::after {
+              content: '';
+              display: table;
+              clear: both; }
+            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input,
+            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input {
+              min-height: 46px; }
+            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button,
+            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button {
+              width: 20%;
+              min-width: 20%;
+              height: 46px;
+              border: 1px solid #e5e5e5;
+              background: white;
+              color: #327B83;
+              cursor: pointer;
+              -webkit-transition: 250ms ease;
+              -moz-transition: 250ms ease;
+              -ms-transition: 250ms ease;
+              -o-transition: 250ms ease;
+              transition: 250ms ease; }
+              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:link,
+              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:link {
+                outline: none; }
+              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button::-moz-focus-inner,
+              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button::-moz-focus-inner {
+                outline: none; }
+              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:focus,
+              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:focus {
+                outline: none; }
+              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:hover,
+              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button:hover {
+                background: #327B83;
+                color: white; }
+              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus,
+              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus {
                 float: left;
-                -webkit-box-ordinal-group: 3;
-                -ms-flex-order: 2;
-                order: 2;
-                border-left: none;
-                border-right: none;
-                -webkit-border-radius: 0px;
-                -moz-border-radius: 0px;
-                -ms-border-radius: 0px;
-                -o-border-radius: 0px;
-                border-radius: 0px;
-                text-align: center; }
+                -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                order: 1;
+                -webkit-border-radius: 5px 0px 0px 5px;
+                -moz-border-radius: 5px 0px 0px 5px;
+                -ms-border-radius: 5px 0px 0px 5px;
+                -o-border-radius: 5px 0px 0px 5px;
+                border-radius: 5px 0px 0px 5px;
+                position: relative; }
+                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus::before,
+                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#minus::before {
+                  content: '-';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -moz-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  -o-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+              section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus,
+              section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus {
+                float: right;
+                -webkit-box-ordinal-group: 4;
+                -ms-flex-order: 3;
+                order: 3;
+                -webkit-border-radius: 0px 5px 5px 0px;
+                -moz-border-radius: 0px 5px 5px 0px;
+                -ms-border-radius: 0px 5px 5px 0px;
+                -o-border-radius: 0px 5px 5px 0px;
+                border-radius: 0px 5px 5px 0px;
+                position: relative; }
+                section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus::before,
+                section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity button#plus::before {
+                  content: '+';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -moz-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  -o-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+            section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input,
+            section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#quantity input {
+              width: 60%;
+              min-width: 60%;
+              float: left;
+              -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+              order: 2;
+              border-left: none;
+              border-right: none;
+              -webkit-border-radius: 0px;
+              -moz-border-radius: 0px;
+              -ms-border-radius: 0px;
+              -o-border-radius: 0px;
+              border-radius: 0px;
+              text-align: center; }
             section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#remove,
             section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#remove {
               width: 1%;
@@ -5387,8 +5377,7 @@ section.payments-wrapper {
                   margin: 0;
                   line-height: 20px;
                   display: inline-block;
-                  font-weight: 400;
-                  font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
+                  font-weight: 400; }
                 section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td header.prod-name .prod-name-content a:hover,
                 section.payments-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td header.prod-name .prod-name-content a:hover {
                   color: #327B83; }
@@ -5475,7 +5464,6 @@ article.total-wrapper {
     background: transparent;
     font-size: 30px;
     text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
     color: #327B83; }
     article.total-wrapper input:disabled {
       color: #327B83; }
@@ -5581,25 +5569,28 @@ article.voucher-total-wrapper {
 
 section.checkout-wrapper {
   padding: 50px 0px;
-  font-family: 'Avenir', Arial, Helvetica, sans-serif; }
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif; }
   section.checkout-wrapper::after {
     content: '';
     display: table;
     clear: both; }
   section.checkout-wrapper article.checkout-account {
     width: 49%;
-    float: left;
     margin: 50px 0px 70px;
     background: whitesmoke;
     padding: 40px;
     float: right;
     min-height: 325px; }
+    section.checkout-wrapper article.checkout-account::after {
+      content: '';
+      display: table;
+      clear: both; }
     section.checkout-wrapper article.checkout-account#login-wrapper {
       float: left; }
     section.checkout-wrapper article.checkout-account header.checkout-account-header p {
       color: grey; }
     section.checkout-wrapper article.checkout-account form.checkout-have-account {
-      width: 100%; }
+      display: block; }
       section.checkout-wrapper article.checkout-account form.checkout-have-account .checkout-input-wrapper .login-wrapper::after {
         content: '';
         display: table;
@@ -5647,8 +5638,7 @@ section.checkout-wrapper {
         section.checkout-wrapper article.checkout-account form.checkout-have-account .checkout-input-wrapper input.checkout-input[type=email]:valid:focus {
           border-color: #327B83; }
       section.checkout-wrapper article.checkout-account form.checkout-have-account .action-wrapper {
-        position: relative;
-        padding: 10px 0px; }
+        position: relative; }
         section.checkout-wrapper article.checkout-account form.checkout-have-account .action-wrapper::after {
           content: '';
           display: table;
@@ -5704,9 +5694,13 @@ section.checkout-wrapper {
         display: inline-block;
         margin-right: 10px; }
 
+.spacer {
+  min-height: 116px;
+  width: 100%; }
+
 section.payments-wrapper,
 section.shipping-method-wrapper {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif; }
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif; }
   section.payments-wrapper::after,
   section.shipping-method-wrapper::after {
     content: '';
@@ -5891,7 +5885,7 @@ section.user-details-container {
 
 section.credit-card-payment-wrapper,
 section.paypal-payment-wrapper {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding: 10px; }
   section.credit-card-payment-wrapper::after,
@@ -5945,6 +5939,10 @@ section.paypal-payment-wrapper {
   section.paypal-payment-wrapper .cc-input-wrapper {
     width: 100%;
     float: left; }
+    section.credit-card-payment-wrapper .cc-input-wrapper label,
+    section.paypal-payment-wrapper .cc-input-wrapper label {
+      color: #327B83;
+      margin-top: 10px; }
     section.credit-card-payment-wrapper .cc-input-wrapper::after,
     section.paypal-payment-wrapper .cc-input-wrapper::after {
       content: '';
@@ -5955,7 +5953,29 @@ section.paypal-payment-wrapper {
       margin-right: 20px; }
     section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec,
     section.paypal-payment-wrapper .cc-input-wrapper.cc-sec {
-      width: 42%; }
+      width: 58%; }
+      section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec::after,
+      section.paypal-payment-wrapper .cc-input-wrapper.cc-sec::after {
+        content: '';
+        display: table;
+        clear: both; }
+      section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec input, section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec select,
+      section.paypal-payment-wrapper .cc-input-wrapper.cc-sec input,
+      section.paypal-payment-wrapper .cc-input-wrapper.cc-sec select {
+        width: 49%; }
+        section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec input#month, section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec select#month,
+        section.paypal-payment-wrapper .cc-input-wrapper.cc-sec input#month,
+        section.paypal-payment-wrapper .cc-input-wrapper.cc-sec select#month {
+          float: left; }
+        section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec input#year, section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec select#year,
+        section.paypal-payment-wrapper .cc-input-wrapper.cc-sec input#year,
+        section.paypal-payment-wrapper .cc-input-wrapper.cc-sec select#year {
+          float: right; }
+        section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec input#cvv-code, section.credit-card-payment-wrapper .cc-input-wrapper.cc-sec select#cvv-code,
+        section.paypal-payment-wrapper .cc-input-wrapper.cc-sec input#cvv-code,
+        section.paypal-payment-wrapper .cc-input-wrapper.cc-sec select#cvv-code {
+          float: left;
+          width: 100%; }
     section.credit-card-payment-wrapper .cc-input-wrapper .name-row,
     section.credit-card-payment-wrapper .cc-input-wrapper .cc-type-row,
     section.paypal-payment-wrapper .cc-input-wrapper .name-row,
@@ -5974,6 +5994,7 @@ section.paypal-payment-wrapper {
       position: relative;
       padding: 10px;
       float: left;
+      width: 100%;
       border-style: none;
       border: 1px solid #e5e5e5;
       margin-bottom: 10px;
@@ -5982,42 +6003,10 @@ section.paypal-payment-wrapper {
       -ms-transition: 250ms ease;
       -o-transition: 250ms ease;
       transition: 250ms ease; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-type, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-type,
-      section.paypal-payment-wrapper .cc-input-wrapper select#cc-type,
-      section.paypal-payment-wrapper .cc-input-wrapper input#cc-type {
-        width: 41%;
-        float: left; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-num, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-num,
-      section.paypal-payment-wrapper .cc-input-wrapper select#cc-num,
-      section.paypal-payment-wrapper .cc-input-wrapper input#cc-num {
-        width: 56%;
-        float: right; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-fname, section.credit-card-payment-wrapper .cc-input-wrapper select#cc-lname, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-fname, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-lname,
-      section.paypal-payment-wrapper .cc-input-wrapper select#cc-fname,
-      section.paypal-payment-wrapper .cc-input-wrapper select#cc-lname,
-      section.paypal-payment-wrapper .cc-input-wrapper input#cc-fname,
-      section.paypal-payment-wrapper .cc-input-wrapper input#cc-lname {
-        width: 49%;
-        float: left; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#cc-lname, section.credit-card-payment-wrapper .cc-input-wrapper input#cc-lname,
-      section.paypal-payment-wrapper .cc-input-wrapper select#cc-lname,
-      section.paypal-payment-wrapper .cc-input-wrapper input#cc-lname {
-        float: right; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#cvv-code, section.credit-card-payment-wrapper .cc-input-wrapper input#cvv-code,
-      section.paypal-payment-wrapper .cc-input-wrapper select#cvv-code,
-      section.paypal-payment-wrapper .cc-input-wrapper input#cvv-code {
-        width: 100%;
-        float: left; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#month, section.credit-card-payment-wrapper .cc-input-wrapper input#month,
-      section.paypal-payment-wrapper .cc-input-wrapper select#month,
-      section.paypal-payment-wrapper .cc-input-wrapper input#month {
-        width: 49%;
-        float: left; }
-      section.credit-card-payment-wrapper .cc-input-wrapper select#year, section.credit-card-payment-wrapper .cc-input-wrapper input#year,
-      section.paypal-payment-wrapper .cc-input-wrapper select#year,
-      section.paypal-payment-wrapper .cc-input-wrapper input#year {
-        width: 49%;
-        float: right; }
+      section.credit-card-payment-wrapper .cc-input-wrapper select option:selected, section.credit-card-payment-wrapper .cc-input-wrapper input option:selected,
+      section.paypal-payment-wrapper .cc-input-wrapper select option:selected,
+      section.paypal-payment-wrapper .cc-input-wrapper input option:selected {
+        color: red; }
       section.credit-card-payment-wrapper .cc-input-wrapper select:invalid, section.credit-card-payment-wrapper .cc-input-wrapper input:invalid,
       section.paypal-payment-wrapper .cc-input-wrapper select:invalid,
       section.paypal-payment-wrapper .cc-input-wrapper input:invalid {
@@ -6025,16 +6014,16 @@ section.paypal-payment-wrapper {
         -moz-box-shadow: none;
         -ms-box-shadow: none;
         -o-box-shadow: none;
-        box-shadow: none;
-        border-color: #cccccc; }
+        box-shadow: none; }
       section.credit-card-payment-wrapper .cc-input-wrapper select:focus, section.credit-card-payment-wrapper .cc-input-wrapper input:focus,
       section.paypal-payment-wrapper .cc-input-wrapper select:focus,
       section.paypal-payment-wrapper .cc-input-wrapper input:focus {
         border-color: #327B83; }
   section.credit-card-payment-wrapper .cc-geotrust-wrapper,
   section.paypal-payment-wrapper .cc-geotrust-wrapper {
-    width: 57%;
-    float: right; }
+    width: 40%;
+    float: right;
+    text-align: right; }
     section.credit-card-payment-wrapper .cc-geotrust-wrapper a img,
     section.paypal-payment-wrapper .cc-geotrust-wrapper a img {
       width: 100%; }
@@ -6079,13 +6068,10 @@ section.paypal-payment-wrapper {
       background: whitesmoke;
       color: #003087; }
 
-section.credit-card-payment-wrapper {
-  width: 60%; }
-
 section.shipping-billing-userin-wrapper {
   width: 100%;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   padding: 50px 0px;
   overflow-x: hidden; }
   section.shipping-billing-userin-wrapper::after {
@@ -6477,7 +6463,7 @@ a#change-add {
     background: whitesmoke; }
 
 section.confirmation-wrapper {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   padding: 50px 0px;
   margin-bottom: 50px; }
   section.confirmation-wrapper .confirmation-container {
@@ -8426,7 +8412,7 @@ section.about-wrapper {
   font-size: 16px; }
   section.about-wrapper .welcome-wrapper {
     padding: 100px 0px;
-    background: #232323;
+    background: #8b0000;
     color: white;
     position: relative; }
     section.about-wrapper .welcome-wrapper::before {
@@ -8449,7 +8435,7 @@ section.about-wrapper {
       z-index: 1000; }
     section.about-wrapper .welcome-wrapper h1 {
       margin-bottom: 0;
-      color: #9C0000;
+      color: white;
       position: relative;
       font-family: "Lato Regular", Arial, Helvetica, sans-serif;
       z-index: 1001; }
@@ -8460,7 +8446,7 @@ section.about-wrapper {
       width: 65%; }
     section.about-wrapper .welcome-wrapper p {
       width: 690px;
-      color: #999999;
+      color: whitesmoke;
       font-size: 20px;
       line-height: 1.6;
       font-family: "Lato Light", Arial, Helvetica, sans-serif;
@@ -8594,8 +8580,9 @@ section.about-wrapper {
       section.about-wrapper .other-descriptions .about-descriptions p.fleft, section.about-wrapper .other-descriptions .about-descriptions p.fright {
         width: 48%; }
   section.about-wrapper .about-contact-wrapper {
-    background: #eeeeee;
-    padding: 50px 0; }
+    background: #232323;
+    padding: 50px 0;
+    color: white !important; }
     section.about-wrapper .about-contact-wrapper::after {
       content: '';
       display: table;

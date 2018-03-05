@@ -1,6 +1,6 @@
 section.shopping-cart-wrapper,
 section.payments-wrapper
-    font-family: 'Avenir', Arial, Helvetica, sans-serif
+    font-family: $lato
     +clear
     padding: 50px 0px
 
@@ -47,11 +47,13 @@ section.payments-wrapper
         form.related-products-form
             ul.related-products-list
                 +clear
+
                 li.related-product
                     display: inline-block
                     border: 1px solid white
                     padding: 8px
                     float: left
+                    width: 20%
                     +transition
 
                     &:hover
@@ -159,10 +161,6 @@ section.payments-wrapper
                                 &#items 
                                     text-align: left !important
                                     padding-left: 60px
-                                
-
-                                span
-                                    font-weight: 400 !important
 
 
                     tbody
@@ -216,13 +214,13 @@ section.payments-wrapper
                         
 
                                 &#product-details-wrapper
-                                    font-family: 'Avenir', Arial, Helvetica, sans-serif
+                                    // font-family: 'Avenir', Arial, Helvetica, sans-serif
 
                                 &#price 
-                                    font-family: Arial, Helvetica, sans-serif
+                                    // font-family: Arial, Helvetica, sans-serif
 
                                 &#description
-                                    font-family: Arial, Helvetica, sans-serif
+                                    // font-family: Arial, Helvetica, sans-serif
                                     font-size: 12px
                                     text-align: left
                                     position: relative                                    
@@ -235,7 +233,7 @@ section.payments-wrapper
                                         color: $grey
 
                                 &#price 
-                                    font-family: Arial, Helvetica, sans-serif
+                                    // font-family: Arial, Helvetica, sans-serif
                                     position: relative
                                     +clear
 
@@ -260,7 +258,7 @@ section.payments-wrapper
 
 
                                 &#subtotal
-                                    font-family: Arial, Helvetica, sans-serif
+                                    // font-family: Arial, Helvetica, sans-serif
                                     position: relative
                                     +clear
 
@@ -285,7 +283,7 @@ section.payments-wrapper
 
 
                                 &#quantity
-                                    font-family: Arial, Helvetica, sans-serif
+                                    // font-family: Arial, Helvetica, sans-serif
                                     +clear
 
                                     input
@@ -393,7 +391,7 @@ section.payments-wrapper
                                                 line-height: 20px
                                                 display: inline-block
                                                 font-weight: 400
-                                                font-family: 'Open Sans', Arial, Helvetica, sans-serif
+                                                // font-family: 'Open Sans', Arial, Helvetica, sans-serif
 
                                             &:hover
                                                 color: $paleBlue
@@ -487,7 +485,7 @@ article.total-wrapper
         background: transparent
         font-size: 30px
         text-align: right
-        font-family: Arial, Helvetica, sans-serif
+        // font-family: Arial, Helvetica, sans-serif
         color: $paleBlue
 
         &:disabled
