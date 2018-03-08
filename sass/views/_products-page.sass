@@ -10,14 +10,15 @@ section.product-page-wrapper
         +clear 
 
         .product-head
-            float: left
 
             &#product-title
                 width: 55%
                 padding-right: 20px
+                float: left
 
             &#product-img
-                width: 45%
+                width: 30%
+                float: right
 
             header
                 h1 
@@ -46,6 +47,7 @@ section.product-page-wrapper
             p 
                 font-size: 16px
                 font-family: $helvetica
+                text-align: justify
 
             a 
                 font-size: 16px
@@ -136,391 +138,7 @@ section.product-page-wrapper
 
                     img
                         width: 60px
-    
-section.quote-parametric-wrapper
-    padding: 30px 0px
-    position: relative
-    +clear
 
-    &::before
-        content: ''
-        position: absolute
-        top: 0
-        left: 50%
-        +transform(translateX(-50%))
-        background: inherit
-        width: 1000%
-        height: 100%
-        z-index: 1000
-        border-top: 1px solid #E5E5E5
-        border-bottom: 1px solid #E5E5E5
-
-
-
-    .parametric-wrapper
-        position: relative
-        width: 60%
-        float: left
-        +clear
-        z-index: 1001
-        border-right: 1px solid #E5E5E5
-        padding-right: 20px
-        height: 100%
-
-        &.bordered
-            strong
-                    padding-left: 10px 
-                    border-left: 1px solid #888888
-
-            span 
-                padding-left: 10px 
-                border-left: 1px solid $paleBlue
-
-                ul
-                    list-style: none !important
-                    padding-left: 0px !important
-
-                    li
-                        margin-bottom: 0 !important
-
-
-        &.contained
-            strong, 
-            span 
-                padding: 10px
-        
-            strong
-                border: 1px solid $paleBlue
-                background: $paleBlue !important
-                color: white !important
-
-            span
-                border: 1px solid $paleBlue
-                border-top: none
-                
-                ul
-                    list-style: none !important
-                    padding-left: 0px !important
-
-                    li:last-child
-                        margin-bottom: 0
-
-
-
-        
-        ul.parametric-details-list 
-            width: 33.333333333%
-            float: left
-            padding: 0 10px
-
-            li.parametric-detail
-                margin-bottom: 15px
-
-                .border-left
-                    
-                        
-                strong
-                    display: block
-                    font-size: 14px
-                    font-weight: 600
-                    color: #888888
-
-                span
-                    font-size: 18px
-                    color: $paleBlue
-                    background: white 
-                    display: block
-
-                    
-
-                ul#comm-protocols
-                    list-style: outside
-                    padding-left: 14px
-
-
-    .product-price-wrapper
-        width: 40%
-        float: right
-        position: relative
-        z-index: 1001
-
-
-
-.quote-wrapper
-    position: relative
-    z-index: 1001
-    font-size: 14px
-    margin-top: 10px
-    +clear
-    
-
-    button
-        border-style: none
-        padding: 10px 20px
-        background: $paleBlue
-        color: white 
-        cursor: pointer
-        +transition
-        text-transform: uppercase
-        float: right
-        width: 100%
-
-        &:hover
-            background: darken($paleBlue, 10%)
-
-        &:focus
-            +boxShadow(none)
-            outline: none
-    
-        i 
-            margin-right: 10px
-    a 
-        color: #888888
-        text-transform: uppercase
-        padding: 10px 20px
-        +border-radius(21px)
-        border: 1px solid #888888
-        text-decoration: none
-        +transition
-        float: right
-        display: none
-
-        &:hover
-            color: $blue
-            border-color: $blue
-
-
-article.price-container
-    font-family: $arial
-    font-size: 16px
-
-    &.dark
-        .price-quantity
-            background: $footer1 !important
-            color: white
-
-            input, span 
-                color: white !important
-
-        #stock-wrapper
-            input, label
-                color: $paleBlue !important
-
-        #quantity-wrapper
-
-            .quantity-title
-
-                input
-                    color: #a2a4a7 !important
-
-                p
-
-                    &#lead-time
-                        span 
-                            color: #a2a4a7 !important
-
-            .quantity-field
-                background: none !important
-                padding: 0px !important
-
-                input
-                    background: white 
-                    color: $footer1 !important
-                    padding: 5px 10px
-                    +border-radius(5px)
-                    text-align: center !important
-
-                button
-                    padding: 5px 10px
-                    background: white !important
-                    +border-radius(100%)
-                    width: 34px !important
-                    height: 34px !important
-
-                    &:hover
-                        background: #eeeeee !important
-
-                    &#q-plus
-                        margin-right: 5px
-
-
-            ul.price-quantity-list
-                li 
-                    &.active-q
-                        span 
-                            color: $paleBlue !important
-
-    
-
-    .price-quantity
-        display: block
-        padding: 30px 30px 20px
-        background: white
-        position: relative
-        +clear
-
-        &::before
-            content: ''
-            position: absolute
-            bottom: 0
-            left: 50%
-            +transform(translateX(-50%))
-            width: 90%
-            height: 1px
-            background: lighten($footer1, 10%)
-
-
-        label
-            margin: 0 
-
-        input
-            border-style: none
-            background: transparent
-            text-align: right
-            
-
-
-    #price-wrapper
-        font-size: 16px
-
-        label
-        input, span
-            float: right
-            color: #a2a4a7
-
-        span
-            margin-left: 10px
-            font-weight: 600
-            font-family: $lato
-            color: black
-
-            input#price 
-            
-            
-
-    #stock-wrapper
-        font-weight: 600
-        color: $paleBlue
-
-        label
-        input
-            float: right
-            font-weight: 600
-            color: $paleBlue
-
-    #quantity-wrapper
-        +clear
-
-        span#stock-notif
-            display: block
-            font-size: 12px
-            padding: 5px 10px
-            background: lighten(red, 45%)
-            color: red !important
-            margin-bottom: 10px
-            font-weight: 600
-
-        .quantity-title
-            width: 55%
-            float: left
-            
-
-            label 
-                font-weight: 600
-                margin: 0
-            
-            p 
-                font-size: 14px
-                font-weight: 600
-                margin: 0
-
-                span 
-                    display: inline-block
-
-                input
-                    width: 40px
-                    text-align: left 
-
-                &#lead-time
-                    font-size: 12px
-
-                    span
-                        
-
-            
-        .quantity-input
-            width: 40%
-            float: right
-
-            .quantity-field
-                background: whitesmoke
-                padding: 5px
-                +clear
-
-                button
-                    width: 25%
-                    float: right
-                    background: inherit
-                    border-style: none
-                    cursor: pointer
-
-                    &:hover
-                        background: darken(#DCDCDC, 10%)
-
-                    &:link, &:focus
-                        outline: none
-
-                input 
-                    width: 50%
-                    float: left
-                    text-align: left
-                    padding-left: 10px
-                    
-
-            ul.price-quantity-list
-                margin-top: 20px
-                li 
-                    color: #a2a4a7
-                    +clear
-
-                    &.active-q
-                        color: $paleBlue
-                        
-                        label
-                            font-weight: 600
-
-
-                    p 
-                        +clear
-                        margin: 0
-                        font-size: 13px
-                        width: 65%
-                        float: right
-
-                        label
-                            float: left
-                            text-align: right !important
-                            width: 30%
-                            margin: 0
-                        span 
-                            float: right
-
-    #subtotal-wrapper
-        padding-bottom: 30px
-
-        &::before
-            display: none
-
-        .subtotal
-            +clear
-
-            label
-                font-weight: 600
-
-            input
-                float: right
-                font-weight: 600
-                color: black
 
 // Product Tabs
 section.product-tabs 
@@ -532,6 +150,15 @@ section.product-tabs
                         font-size: 16px !important
                         text-transform: capitalize !important
                         font-weight: 600
+
+                &.order
+                    background: $orange !important
+                    color: white !important
+                    border-color: $orange !important
+
+                    .ico-svg
+                        fill: white !important
+                        stroke: white !important
 
 
     article.tab-content 
@@ -641,3 +268,39 @@ section.product-video-popup
                 min-height: 600px
                 margin: 0
                 float: left
+
+
+section.diagram-parametric-wrapper
+    width: 100%
+    +clear 
+
+    .diagram-wrapper
+        width: 53.5%
+        float: left
+        figure
+            width: 100%
+            img 
+                width: 100%
+    
+    .parametric-wrapper 
+        width: 28.5%
+        float: right
+        padding: 10px 0px
+
+        ul.parametric-details-list
+            li.parametric-detail
+                margin-bottom: 5px
+                width: 100%
+                +clear
+                strong
+                    color: $paleBlue
+                    display: inline-block
+                    width: 50%
+                    float: left
+                span 
+                    width: 50%
+                    float: right
+                
+                ul#comm-protocols
+                    li 
+                        margin-bottom: 0

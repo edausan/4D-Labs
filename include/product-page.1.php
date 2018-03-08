@@ -28,13 +28,13 @@
 
                             <a href="workshop4">Download the Workshop4 PRO IDE »</a>
 
-                            <!-- <div class="product-overview">
+                            <div class="product-overview">
                                 <ul>
                                     <li><a class="hideVideo" id="view-product-video"><img src="img/product-page-icons/product-overview.png" alt=""> <span>Product Video</span></a></li>
                                     <li><a href=""><img src="img/product-page-icons/datasheet.png" alt=""> <span>Datasheet</span></a></li>
                                     <li><a href=""><img src="img/product-page-icons/manual.png" alt=""> <span>Manual</span></a></li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </div>
 
                         <div class="product-head" id="product-img">
@@ -57,13 +57,10 @@
 
                     </section> <!-- Product Details Wrapper -->
 
-                    <section class="diagram-parametric-wrapper">
-                        <div class="diagram-wrapper">
-                            <figure>
-                                <img src="img/product-diagram/diagram.png" alt="">
-                            </figure>
-                        </div>
-                        <div class="parametric-wrapper">
+                    <section class="quote-parametric-wrapper"> <!-- Quote and Parametric Details Wrapper -->
+
+                        <div class="parametric-wrapper bordered"> <!-- Parametric Details Wrapper -->
+                                                      
                             <ul class="parametric-details-list">
                                 <li class="parametric-detail"><strong>Part Number:</strong> <span><?php echo $product['order-details']['Part Number']; ?></span></li>
                                 <li class="parametric-detail"><strong>Status:</strong> <span><?php echo $product['order-details']['Status']; ?></span></li>
@@ -92,8 +89,15 @@
                                 <li class="parametric-detail"><strong>Display Interface:</strong> <span><?php echo $product['order-details']['Display Interface']; ?></span></li>
                                 <li class="parametric-detail"><strong>RoHS Certified:</strong> <span><?php echo $product['order-details']['RoHS Certified']; ?></span></li>
                             </ul>
+                        </div> <!-- Parametric Details Wrapper -->
+
+                        <div class="product-price-wrapper">
+                            <?php include('include/product-price.php'); ?>
                         </div>
-                    </section>
+
+                    </section> <!-- Quote and Parametric Details Wrapper -->
+
+                    
 
                     <?php include('product-page-tabs.php'); ?>
 
