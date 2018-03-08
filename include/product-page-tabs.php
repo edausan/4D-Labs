@@ -26,14 +26,14 @@
                     <span>Downloads</span>
                 </label>
             </li>
-            <li class="tab" id="product-video">
+            <!-- <li class="tab" id="product-video">
                 <label>
                     <svg class="ico-svg video" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/tab-icons.svg#video" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                     </svg>
                     <span>Product Video</span>
                 </label>
-            </li>
+            </li> -->
             <li class="tab" id="dev-tools">
                 <label>
                     <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
@@ -42,14 +42,14 @@
                     <span>Development Tools</span>
                 </label>
             </li>
-            <!-- <li class="tab order" id="order-details">
+            <li class="tab order" id="order-details">
                 <label>
                     <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/tab-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                     </svg>
                     <span>Order Now</span>
                 </label>
-            </li> -->
+            </li>
         </ul>
     </article>  
 
@@ -153,10 +153,10 @@
 
 
         <!-- Product Video -->
-        <div class="tab-content tab-hidden product-video-wrapper" id="product-video">
+        <!-- <div class="tab-content tab-hidden product-video-wrapper" id="product-video">
             <h2><?php echo $product['title']; ?> Product Video</h2>
-            <iframe src="<?php echo $product['video-src']; ?>" allowfullscreen="true" frameborder="0" width="100%"></iframe>
-        </div>
+            <iframe src="" data-src="<?php echo $product['video-src']; ?>" allowfullscreen="true" frameborder="0" width="100%"></iframe>
+        </div> -->
         <!-- /Product Video -->
 
 

@@ -6,7 +6,7 @@
 
             <ul class="highlights-list">
                 <?php foreach ($highlights as $highlight => $value) : ?>
-
+                    
                 <li id="<?php echo $highlight; ?>" class="highlights-item">
                     <a href="<?php echo $highlight; ?>">
                         <div class="highlights-container">
@@ -16,8 +16,11 @@
                                 <h4 id="highlights-title"><?php echo $hlkey; ?></h4>
                             </header>
                             <p><?php echo $hlval; ?></p>
-                            <figure class="highlights-figure"><img src="img/<?php echo $highlight; ?>.png" alt=""></figure>
-
+                            <?php if ($highlight == 'sim-modules' || $highlight == 'workshop4' || $highlight == 'goldelox') : ?>
+                                <figure class="highlights-figure"><img src="img/thumbnails/<?php echo $highlight; ?>.png" alt=""></figure>
+                            <?php  else : ?>
+                                <figure class="highlights-figure"><img src="img/<?php echo $highlight; ?>.png" alt=""></figure>
+                            <?php endif; ?>
                             <?php endforeach; ?>
                         </div>
                     </a>

@@ -16,6 +16,7 @@
             <?php 
                 $active =   array('pass-cart-bread', 'active-cart-bread', ' ');
                 $atvlink =   array('href="shopping-cart"', ' ', ' ', ' ', ' ');
+                $processTitle = 'Shipping and Billing Address';
                 include('include/cart-breadcrumbs-2.php'); 
             ?>
         

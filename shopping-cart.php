@@ -12,6 +12,7 @@
             <?php 
                 $active =   array('active-cart-bread', ' ', ' ', ' ', ' ');
                 $atvlink =   array(' ', ' ', ' ', ' ', ' ');
+                $processTitle = 'Items in you Cart';
                 include('include/cart-breadcrumbs-2.php'); 
             ?>
 

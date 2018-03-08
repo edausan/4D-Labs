@@ -1,0 +1,126 @@
+.account-form
+    font-family: $lato
+    position: absolute
+    top: 10%
+    right: 0
+    width: 500px
+    background: white
+    padding: 30px 30px 20px
+    text-align: left
+    box-shadow: 0 8px 32px rgba(black, .2)
+    border-bottom: 5px solid $paleBlue
+    overflow: hidden
+    opacity: 0
+    display: none
+    z-index: 4
+    +transition
+
+    &.viewForm
+        display: block
+
+    span.close-form-btn  
+        position: absolute
+        top: 10px
+        right: 10px
+        font-size: 100%
+        padding: 3px
+        background: whitesmoke
+        color: white
+        +border-radius
+        cursor: pointer
+
+        &:hover
+            background: #eeeeee
+
+    h4,
+    label,
+    input,
+    button
+        display: block
+
+
+    h4
+        margin-bottom: 20px
+        position: relative
+
+    p.notif
+        display: none
+        padding: 5px 10px
+        
+
+        &.notvalid
+            display: block
+            background: rgba(255, 0, 0, .2)
+            color: red
+
+        &.valid
+            display: block
+            background: rgba(0, 255, 0, .2)
+            color: green
+
+
+        
+        
+    label
+        margin: 0px
+
+    input
+        width: 100%
+        padding: 5px
+        border-style: none
+        border-bottom: 1px solid #eeeeee
+        margin-bottom: 10px
+        +transition
+
+        &[type=email]:invalid
+            background: rgba(255, 0, 0, .2)
+            border-color: rgba(255, 0, 0, .2)
+            outline: none
+
+        &[type=email]:valid
+            border-color: #eeeeee
+
+        &[type=email]:valid:focus
+            border-bottom-color: $paleBlue
+        
+        &:focus
+            border-bottom-color: $paleBlue
+            
+
+    button
+        margin: 20px 0px
+        border-style: none
+        background: $paleBlue
+        color: white
+        padding: 8px 16px
+        +border-radius
+        cursor: pointer
+        width: 30%
+
+
+        &:hover
+            background: #AD2005
+
+    hr
+        margin: 20px -30px
+
+    .account-bottom
+        text-align: center
+
+        a
+            text-align: center
+            padding: 0px
+            margin-right: 5px
+            color: $paleBlue
+
+            &:hover
+                color: #AD2005
+
+        p
+            text-align: center
+            margin: 0
+            display: inline-block
+            margin-left: 5px
+            
+            a
+                display: inline-block

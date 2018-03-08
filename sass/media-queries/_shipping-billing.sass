@@ -1,0 +1,78 @@
+section.checkout-wrapper 
+    article.checkout-account
+        width: 100%
+        padding: 20px 30px
+        margin: 0 0 20px
+        height: auto 
+        min-height: auto 
+
+        &#login-wrapper
+
+        
+        .spacer
+            display: none 
+
+        a#checkout-signup-btn
+            display: block 
+            text-align: center
+
+
+    form.checkout-have-account 
+        .checkout-input-wrapper 
+            .login-wrapper 
+                span
+                    min-height: 46px !important
+                    width: 10% !important
+            
+            input.checkout-input
+                width: 90% !important
+
+
+        .action-wrapper 
+            a#forgot-pass
+                width: 100%
+                text-align: center
+                display: block
+
+            button#checkout-signin-btn
+                width: 100%
+                margin-top: 10px
+
+
+section.shipping-billing-userin-wrapper 
+    form.sb-form 
+        padding: 20px
+
+        .sb-input-wrapper
+            width: 100%
+            padding: 20px
+            
+
+            &.translate-to-right
+                +transform(translateX(0%))
+
+            &#shipping-details-wrapper
+                margin-top: 20px
+
+                &.translate-to-right
+                    display: none
+                
+
+        .sb-input-container
+            width: 100% !important
+
+        
+        .shipping-details-cbox 
+            .cbox 
+                &.hideBox
+
+                &::before
+                    top: 5px
+                input
+
+                label
+                    width: 90% !important
+
+            button#save-details-btn
+                width: 100%
+                font-size: 14px !important

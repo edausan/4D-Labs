@@ -1,4 +1,5 @@
 <article class="cart-breadcrumbs-new">
+    <p class="mobile-cart-process-title"><?php echo $processTitle; ?></p>
     <ul class="cart-bread-list-new">
         <li class="cart-bread bread-arrow ">
             <section class="bread <?php echo $active[0] ?>">

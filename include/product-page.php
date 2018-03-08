@@ -40,18 +40,18 @@
                         <div class="product-head" id="product-img">
                             <figure class="product-thumb">
                                 <div class="product-thumb-wrapper">
-                                    <img id="" src="img/goldelox.png" alt="">
-                                    <img id="" src="img/picaso.png" alt="">
-                                    <img id="" src="img/diablo16.png" alt="">
-                                    <img id="" src="img/picaso-Lite.png" alt="">
+                                    <img id="" src="img/product-page-icons/goldelox.png" alt="">
+                                    <img id="" src="img/product-page-icons/picaso.png" alt="">
+                                    <img id="" src="img/product-page-icons/diablo16.png" alt="">
+                                    <img id="" src="img/product-page-icons/picaso-Lite.png" alt="">
                                 </div>
                             </figure>
 
                             <ul class="product-thumb-list">
-                                <li class="active-thumb" id="prod-thumb-1" data-move="0"><img src="img/goldelox.png" alt=""></li>
-                                <li id="prod-thumb-2" data-move="25"><img src="img/picaso.png" alt=""></li>
-                                <li id="prod-thumb-3" data-move="50"><img src="img/diablo16.png" alt=""></li>
-                                <li id="prod-thumb-4" data-move="75"><img src="img/picaso-Lite.png" alt=""></li>
+                                <li class="active-thumb" id="prod-thumb-1" data-move="0"><img src="img/product-page-icons/goldelox.png" alt=""></li>
+                                <li id="prod-thumb-2" data-move="25"><img src="img/product-page-icons/picaso.png" alt=""></li>
+                                <li id="prod-thumb-3" data-move="50"><img src="img/product-page-icons/diablo16.png" alt=""></li>
+                                <li id="prod-thumb-4" data-move="75"><img src="img/product-page-icons/picaso-Lite.png" alt=""></li>
                             </ul>
                         </div>
 

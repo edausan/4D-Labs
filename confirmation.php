@@ -13,6 +13,7 @@
             <?php 
                 $active =   array('pass-cart-bread','pass-cart-bread','pass-cart-bread','pass-cart-bread', 'active-cart-bread',);
                 $atvlink =   array('href="shopping-cart.php"', 'href="shippingandbilling.php"', 'href="shipping-method.php"', 'href="payments.php"', ' ');
+                $processTitle = 'Order Confirmation';
                 include('include/cart-breadcrumbs-2.php'); 
             ?>
 

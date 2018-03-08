@@ -1,4 +1,9 @@
 section.shopping-cart-wrapper 
+    header.title-wrapper 
+        padding: 0 15px !important
+        h1
+            span
+
     section.cart-wrapper 
         article.cart 
             form.cart-form 
@@ -26,3 +31,85 @@ section.shopping-cart-wrapper
                                     min-width: 100% !important
                                     width: 100% !important
                                     display: block
+
+                                header.prod-name 
+                                    .prod-name-content 
+                                        a 
+                                            p
+                                                color: $paleBlue
+
+
+        article.total-wrapper
+            width: 100%
+            padding: 15px
+            text-align: center
+
+        article.voucher-total-wrapper
+            width: 100%
+            padding: 0px 15px
+
+            section.voucher-container
+                width: 100% !important
+
+                .voucher-input 
+                    input#voucher-input
+                        width: 83%
+                        padding: 5px 10px
+
+                    button#voucher-btn
+                        border: 1px solid $orange
+                        float: right
+                        min-height: 36px
+                        padding: 0 15px
+
+            section.proceed
+                width: 100%
+                margin-top: 20px
+
+                a#proceed-btn
+                    width: 100%
+                    font-size: 14px
+                    font-weight: 400
+                    
+                    &:nth-child(2)
+                        margin-top: 10px
+        
+    .order-services 
+        .services 
+            width: 100% !important
+            padding: 0 15px 
+            .service
+                margin-top: 30px
+
+
+    section.related-products-wrapper
+        header
+            padding: 0 15px
+            h3 
+                    
+
+        form.related-products-form 
+            ul.related-products-list 
+                li.related-product
+                    width: 100%
+                    border: 1px solid #eeeeee
+                    border-left: none
+                    border-right: none
+                    padding: 20px 15px
+                    text-align: center
+                    
+                    a 
+                        figure 
+                            margin: 0 auto 
+                    
+                    .related-product-details
+                        text-align: center
+
+                        span 
+                            input
+                                text-align: center
+                                width: 100%
+
+
+                    button.add-to-cart
+                        width: 50%

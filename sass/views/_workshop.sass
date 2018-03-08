@@ -1,0 +1,170 @@
+article#addtnl-3
+    font-family: $lato
+    height: 100%
+    background: url('../img/about-banners/about-ws4.jpg') #E3EBED no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    background-attachment: fixed
+    padding: 50px 0px
+    
+    header
+        background-color: $paleBlue
+        padding: 20px 40px
+        color: white  
+        text-transform: uppercase
+        position: relative
+        width: 60%
+        text-align: right
+
+        &::before
+            content: ''
+            position: absolute
+            width: 100vw
+            height: 100%
+            background: $paleBlue
+            top: 0
+            right: 100%
+
+        h1
+            width: 100%
+    p
+        color: #53565a
+        margin-top: 40px
+        font-size: 16px
+        width: 60%
+
+    figure.ws4-content
+        width: 50%
+        margin-left: 5%
+        margin-top: 20px
+
+        img
+            width: 100%
+            +filter(grayscale(30%))
+            +transition
+
+            &:hover
+                +filter(grayscale(0%))
+
+
+.workshop
+    width: 60%
+    margin-top: 50px
+
+    h1 
+        padding: 10px 20px
+        background: $paleBlue
+        color: white 
+        margin: 0
+        font-size: 20px 
+        // text-transform: uppercase
+        font-weight: 600
+
+    ul
+        +clear 
+
+    &.workshop-environments-wrapper
+        ul 
+            padding: 20px 0px
+            li 
+                +clear
+                margin-bottom: 20px
+
+                figure 
+                    width: 12%
+                    float: left
+                    img 
+                        width: 100%
+                
+                .details 
+                    width: 88%
+                    float: right
+                    padding-left: 20px
+
+                    label 
+                        font-size: 20px
+                        color: $paleBlue
+                        font-weight: 600
+                        
+                    p
+                        width: 100% !important
+                        margin-top: 0px !important
+                        display: block 
+
+
+    &.smart-widgets-wrapper
+
+        .sub-header
+            position: relative
+            text-align: center
+            border-top: 2px solid $footer1
+            overflow: hidden
+            h2 
+                color: white
+                text-transform: uppercase
+                font-size: 18px
+                font-weight: 600
+                display: inline-block
+                background: $footer1
+                color: white 
+                padding: 10px 20px
+                position: relative
+                +border-radius(0 0 10px 10px)
+
+                &::before
+                    content: ''
+        
+        ul 
+            margin: 30px 0px
+            li 
+                width: 33.333333333%
+                float: left
+
+                figure 
+                    width: 100%
+                    padding: 0px
+                    margin: 0
+                    img 
+                        width: 50%
+                        margin: 0 auto 
+                        display: block 
+
+                label 
+                    text-align: center
+                    display: block 
+                    font-size: 20px
+
+        figure.sw-editor
+            width: 100%
+            margin-top: 10px
+            box-shadow: 0 8px 15px rgba(black,.4)
+            img 
+                width: 100% 
+                   
+        p.sw-editor-title
+            width: 100% !important
+            margin: 30px 0px !important
+            font-weight: 600
+            font-size: 20px 
+
+        ul.sw-editor-details
+            margin-top: 0px 
+            list-style: outside
+
+            li 
+                display: block 
+                width: 100%
+                margin-bottom: 10px
+                font-size: 16px
+                vertical-align: top
+                +clear 
+
+                i 
+                    width: 2%
+                    float: left
+                    font-size: 8px
+                    margin-top: 7px
+                    
+                span 
+                    width: 98%
+                    float: left

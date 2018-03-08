@@ -39,9 +39,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
-    <link rel="stylesheet" href="css/dev-style.min-dist.css">
+    <!-- <link rel="stylesheet" href="css/dev-style.min-dist.css"> -->
     
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
     
 </head>
 <body dir="ltr">
@@ -250,7 +250,7 @@
             <article class="product-video-wrapper">
             
                 <div class="product-video">
-                    <iframe id="player" src="https://www.youtube.com/embed/-UTcaTWEIjw?list=PLJvG8tpO5OSV3W9lNT-5zJ57bvY5tWFTO" allowfullscreen="true" frameborder="0" width="100%"></iframe>
+                    <iframe id="player" src="" data-src="https://www.youtube.com/embed/-UTcaTWEIjw?list=PLJvG8tpO5OSV3W9lNT-5zJ57bvY5tWFTO" allowfullscreen="true" frameborder="0" width="100%"></iframe>
                     <button id="vid-popup-x"><i class="fa fa-close"></i> close</button>
                 </div>
 
@@ -294,28 +294,25 @@
                                     <!-- also change the 'div.account-form' to 'form.account-form in navbar.js'  -->
                                     <form class="account-form" action="#" method="post">
                                         
-                                            <!-- <form class="account-form"> -->
-    <span class="close-form-btn"><i class="fa fa-close"></i></span>
-    <h4>Sign In </h4>
+                                            <span class="close-form-btn"><i class="fa fa-close"></i></span>
+<h4>Sign In </h4>
 
-    <p class="notif"><i class="fa fa-exclamation-circle"></i></p>
+<p class="notif"><i class="fa fa-exclamation-circle"></i></p>
 
-    <label for="email-add">Email Address</label>
-    <input type="email" name="email" id="email-add">
+<label for="email-add">Email Address</label>
+<input type="email" name="email" id="email-add">
 
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
+<label for="password">Password</label>
+<input type="password" name="password" id="password">
 
-    <button class="submit" id="submit" name="signin">Sign In <i class="fa fa-paper-plane"></i></button>
+<button class="submit" id="submit" name="signin">Sign In <i class="fa fa-paper-plane"></i></button>
 
-    <hr>
+<hr>
 
-    <div class="account-bottom">
-        <a href="">Forgot your password?</a>
-        <p>Don't have an account? <a href="register.php">Register Now</a></p>
-    </div>
-    
-<!-- </form> -->
+<div class="account-bottom">
+    <a href="">Forgot your password?</a>
+    <p>Don't have an account? <a href="register.php">Register Now</a></p>
+</div>
                                                                                 
                                     </form>
 
@@ -363,15 +360,41 @@
         <div id="overlay"></div>
         <div class="mobile-navbar-wrapper">
             <ul>
-                <li><a href="home"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="products"><i class="fa fa-shopping-basket"></i> Products</a></li>
-                <li><a href="solutions"><i class="fa fa-wrench"></i> Solutions</a></li>
-                <li><a href="app notes"><i class="fa fa-book"></i> App Notes</a></li>
-                <li><a href="support"><i class="fa fa-comments"></i> Support</a></li>
-                <li><a href="about"><i class="fa fa-users"></i> About</a></li>
+                <li><a href="home"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="products"><i class="fa fa-shopping-basket"></i>Products</a></li>
+                <li><a href="solutions"><i class="fa fa-wrench"></i>Solutions</a></li>
+                <li><a href="app notes"><i class="fa fa-book"></i>App Notes</a></li>
+                <li><a href="support"><i class="fa fa-comments"></i>Support</a></li>
+                <li><a href="about"><i class="fa fa-users"></i>About Us</a></li>
+                <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
                 <li><hr></li>
-                <li><a href="register"><i class="fa fa-sign-in"></i> Sign In</a></li>
-                <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                <li>
+                    <form class="account-form" action="#" method="post">
+                        
+                            <span class="close-form-btn"><i class="fa fa-close"></i></span>
+<h4>Sign In </h4>
+
+<p class="notif"><i class="fa fa-exclamation-circle"></i></p>
+
+<label for="email-add">Email Address</label>
+<input type="email" name="email" id="email-add">
+
+<label for="password">Password</label>
+<input type="password" name="password" id="password">
+
+<button class="submit" id="submit" name="signin">Sign In <i class="fa fa-paper-plane"></i></button>
+
+<hr>
+
+<div class="account-bottom">
+    <a href="">Forgot your password?</a>
+    <p>Don't have an account? <a href="register.php">Register Now</a></p>
+</div>
+                                                
+                    </form>
+                </li>
+                <!-- <li><a href="register"><i class="fa fa-sign-in"></i> Sign In</a></li> -->
+                
             </ul>
         </div>
     </article>
@@ -457,7 +480,7 @@
         <section class="highlights-wrapper">
 
             <ul class="highlights-list">
-                
+                                    
                 <li id="goldelox" class="highlights-item">
                     <a href="goldelox">
                         <div class="highlights-container">
@@ -466,13 +489,12 @@
                                 <h4 id="highlights-title">Goldelox Processor</h4>
                             </header>
                             <p>The GOLDELOX is a custom embedded graphics controller designed to interface with many popular OLED and LCD display panels.</p>
-                            <figure class="highlights-figure"><img src="img/goldelox.png" alt=""></figure>
-
-                                                    </div>
+                                                            <figure class="highlights-figure"><img src="img/thumbnails/goldelox.png" alt=""></figure>
+                                                                                </div>
                     </a>
                 </li>
 
-                
+                                    
                 <li id="pixxi" class="highlights-item">
                     <a href="pixxi">
                         <div class="highlights-container">
@@ -481,13 +503,12 @@
                                 <h4 id="highlights-title">Pixxi Processor</h4>
                             </header>
                             <p>The Pixxi processor is a great addition to the 4D labs processor range, providing more power, more FLASH, more RAM and more features than the Picaso Processor.</p>
-                            <figure class="highlights-figure"><img src="img/pixxi.png" alt=""></figure>
-
-                                                    </div>
+                                                            <figure class="highlights-figure"><img src="img/pixxi.png" alt=""></figure>
+                                                                                </div>
                     </a>
                 </li>
 
-                
+                                    
                 <li id="parametric-search" class="highlights-item">
                     <a href="parametric-search">
                         <div class="highlights-container">
@@ -496,13 +517,12 @@
                                 <h4 id="highlights-title">Parametric Search</h4>
                             </header>
                             <p>A parametric search allows queries using multiple criteria to narrow the results.</p>
-                            <figure class="highlights-figure"><img src="img/parametric-search.png" alt=""></figure>
-
-                                                    </div>
+                                                            <figure class="highlights-figure"><img src="img/parametric-search.png" alt=""></figure>
+                                                                                </div>
                     </a>
                 </li>
 
-                
+                                    
                 <li id="sim-modules" class="highlights-item">
                     <a href="sim-modules">
                         <div class="highlights-container">
@@ -511,13 +531,12 @@
                                 <h4 id="highlights-title">SIM Modules</h4>
                             </header>
                             <p>Picaso is a custom embedded 4DGL graphics controller designed to interface with many popular OLED and LCD display panels.</p>
-                            <figure class="highlights-figure"><img src="img/sim-modules.png" alt=""></figure>
-
-                                                    </div>
+                                                            <figure class="highlights-figure"><img src="img/thumbnails/sim-modules.png" alt=""></figure>
+                                                                                </div>
                     </a>
                 </li>
 
-                
+                                    
                 <li id="workshop4" class="highlights-item">
                     <a href="workshop4">
                         <div class="highlights-container">
@@ -526,9 +545,8 @@
                                 <h4 id="highlights-title">Workshop4 PRO IDE</h4>
                             </header>
                             <p>Workshop4 is a comprehensive software IDE for Microsoft Windows that provides an integrated software development platform for all of the 4D family of processors and modules.</p>
-                            <figure class="highlights-figure"><img src="img/workshop4.png" alt=""></figure>
-
-                                                    </div>
+                                                            <figure class="highlights-figure"><img src="img/thumbnails/workshop4.png" alt=""></figure>
+                                                                                </div>
                     </a>
                 </li>
 
@@ -949,38 +967,26 @@
 
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/jquery.details.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tinymce/tinymce.min.js"></script>
 <script src="js/dragscroll.js"></script>
+<script async src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/recaptcha.js"></script>
 
 <script src="scripts/main.js"></script>
+<script async src="http://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
+<script async src="https://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
 
-<script>
-$(document).ready(function() {
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-
-   window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1971476612882479',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v2.12'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-});
+<script async>
+function init() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
 </script>
 
 </body>
