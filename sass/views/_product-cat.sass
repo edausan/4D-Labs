@@ -1,13 +1,54 @@
 .cat-product-container
     +clear
     margin: 50px 0px
-    font-family: 'Lato', Arial, Helvetica, sans-serif !important
+    font-family: $lato
+    position: relative
+
+    button#showAside 
+        padding: 10px 20px
+        background: $paleBlue
+        color: white 
+        cursor: pointer
+        margin: 0 auto 
+        width: 129px
+        display: none
+        margin-top: 50px
+
+    button#hideAside 
+        width: 50px
+        height: 50px
+        background: black
+        position: fixed
+        bottom: 100px
+        right: 30px
+        +transform(translateX(300%))
+        color: white 
+        cursor: pointer
+        display: none
+        z-index: 1007
+        +transition
+
+        i 
+            position: absolute
+            top: 50%
+            left: 50%
+            +transform
+
+        &.showHideAside
+            +transform(translateX(0%))
+            
+    
 
     // Sidebar 
     aside.sidebar-wrapper
         float: left
         width: 25%
         padding-right: 40px
+        margin-top: 50px
+        position: relative
+        +transition
+
+        
 
         section.product-search-wrapper
             form.cat-search-form
@@ -19,10 +60,12 @@
                 input
                     outline: none
                     border-right: none
+
                     &:focus
                         outline: none
                         +boxShadow(none)
-                        border-color: $orange
+                        border: 1px solid $orange
+                        border-right: none
 
                 button
                     background: $orange
@@ -63,6 +106,7 @@
     section.cat-product-result
         float: left
         width: 75%
+        margin-top: 50px
 
         article.show-count
             border-bottom: 1px solid #eeeeee
@@ -114,6 +158,7 @@
                     width: 10%
                     margin: 0
                     vertical-align: middle
+
                     a
                         img 
                             width: 100%
@@ -183,4 +228,4 @@
 
 
 
-    
+        

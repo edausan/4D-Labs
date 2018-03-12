@@ -184,62 +184,84 @@ section.about-wrapper
                             bottom: -63px !important
                             right: 10px
 
-    .other-descriptions
-        padding: 50px 0px
-        .about-descriptions
-            +clear
+    // .other-descriptions
+    //     padding: 50px 0px
+    //     .about-descriptions
+    //         +clear
 
-            header 
-                h1 
-                    font-size: 24px
-                    color: $paleBlue
-                    padding: 30px 0px
-                    margin: 0
-                    font-weight: 600
-            p 
-                font-family: $latolight
-                margin: 0
-                padding: 0 0 30px
-                display: block
-                font-size: 18px
-                // width: 48%
+    //         header 
+    //             h1 
+    //                 font-size: 24px
+    //                 color: $paleBlue
+    //                 padding: 30px 0px
+    //                 margin: 0
+    //                 font-weight: 600
+    //         p 
+    //             font-family: $latolight
+    //             margin: 0
+    //             padding: 0 0 30px
+    //             display: block
+    //             font-size: 18px
+    //             // width: 48%
 
-                &.fleft,
-                &.fright
-                    width: 48%
+    //             &.fleft,
+    //             &.fright
+    //                 width: 48%
+
+article#addtnl-1 
+    // height: 100vh
+    background: url('../img/about-banners/about-banner-2.jpg') #060405 no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    background-attachment: fixed
+    padding: 50px 20px
+
+    .about-4dl
+        margin-bottom: 50px
+        // width: 65%
+        
+        h1
+            color: white
+
+        p
+            font-weight: 400
+            font-size: 16px
+            opacity: .8
+            // color: white
 
 
-    .about-contact-wrapper
-        background: $footer1
-        padding: 50px 0
-        color: white !important
-        +clear 
-        .contact-item
-            width: 50%
+.about-contact-wrapper
+    background: $footer1
+    padding: 50px 0
+    color: white !important
+    +clear 
+
+    .contact-item
+        width: 50%
+        float: left
+        +clear
+
+        label
+            display: block
+            width: 100%
+            color: $paleBlue
+        h2 
+            width: 100%
+            margin-bottom: 30px
+        p
+            width: 40%
             float: left
-            +clear
-
-            label
-                display: block
-                width: 100%
-                color: $paleBlue
-            h2 
-                width: 100%
-                margin-bottom: 30px
-            p
-                width: 40%
-                float: left
+            font-family: $latolight
+        ul 
+            width: 50%
+            float: right
+            li 
                 font-family: $latolight
-            ul 
-                width: 50%
-                float: right
-                li 
-                    font-family: $latolight
 
-                    span 
-                        width: 25px
-                        display: inline-block
-                        color: #777777
+                span 
+                    width: 25px
+                    display: inline-block
+                    color: #777777
 
 .leftToDefault
     .content
@@ -252,4 +274,3 @@ section.about-wrapper
         figure, p 
             right: 0 !important
             opacity: 1 !important
-

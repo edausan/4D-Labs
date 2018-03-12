@@ -1,7 +1,7 @@
 $(function() {
 
-    var prodThumbItem   =   $('ul.product-thumb-list li');
-    var thumbWrapper    =   $(document).find('.product-head figure.product-thumb .product-thumb-wrapper');
+    var prodThumbItem   =   $('ul.diagram-thumb-list li');
+    var thumbWrapper    =   $(document).find('figure.diagram-thumb .diagram-thumb-wrapper');
 
     prodThumbItem.click(function() { 
         $(this).addClass('active-thumb').siblings().removeClass('active-thumb');

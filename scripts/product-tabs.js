@@ -7,7 +7,6 @@ $(function() {
 
     tabs.click(function() {
         var tabId = $(this).attr('id');
-        console.log(tabId);
         $(this).addClass('active').siblings().removeClass('active');
 
         tabContent.children('#'+ tabId +'').removeClass('tab-hidden').siblings().addClass('tab-hidden');

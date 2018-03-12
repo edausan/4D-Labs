@@ -41,12 +41,57 @@
     <link rel="stylesheet" href="css/dev-style.min.css">
     <!-- <link rel="stylesheet" href="css/dev-style.min-dist.css"> -->
     
-    
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.loading-wraper').fadeIn(300);
+            $('body').addClass('scrollOff');
+
+            var loading = setInterval(function() {
+                // $('.loading-wraper').show();
+                if ( $(window).ready()) {
+                    load();
+                    clearInterVal(loading);
+                }
+            }, 300);
+
+            function load() {
+                $('.loading-wrapper').fadeOut(300);
+                setTimeout(function() {
+                    $('.loading-wrapper').hide();
+                    $('.page-container').css('opacity', 1);
+                    $('body').removeClass('scrollOff');
+                }, 400);
+            }; 
+        });
+           
+    </script>
     
 </head>
+
 <body dir="ltr">
 
+<div class="loading-wrapper">
+    <figure><img src="img/favicon.png" alt=""></figure>
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h2 for="">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </h2>
+</div>
 
+<section class="page-container" style="opacity: 0; transition: 1s ease;">
 
 <section class="compare-popup-wrapper">
     <div class="compare-popup">
@@ -268,33 +313,33 @@
 
     <header class="header-wrapper">
 
-    <section class="navigation-wrapper">
-        <section class="lab-container">
-            <article class="lab-row">
-                <section class="navigation-container">
-                    <article class="logo-wrapper">
-                        <a href="home">
-                            <img src="img/4dllogo.png" alt="">
-                        </a>
-                    </article>
+        <section class="navigation-wrapper">
+            <section class="lab-container">
+                <article class="lab-row">
+                    <section class="navigation-container">
+                        <article class="logo-wrapper">
+                            <a href="home">
+                                <img src="img/4dllogo.png" alt="">
+                            </a>
+                        </article>
 
-                    <button id="open-mnav"><span><i class="fa fa-bars"></i></span></button>
+                        <button id="open-mnav"><span><i class="fa fa-bars"></i></span></button>
 
-                    <article class="navbar-wrapper">
-                        
-                        <section class="menu-bar">
-                            <ul>
+                        <article class="navbar-wrapper">
+                            
+                            <section class="menu-bar">
+                                <ul>
 
-                                <!-- account form -->
-                                <li>
-                                    <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
+                                    <!-- account form -->
+                                    <li>
+                                        <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
 
-                                    <!-- Change the div element to 'form' -->
-                                    <!-- also change the 'div.account-form' to 'form.account-form in navbar-3.sass' -->
-                                    <!-- also change the 'div.account-form' to 'form.account-form in navbar.js'  -->
-                                    <form class="account-form" action="#" method="post">
-                                        
-                                            <span class="close-form-btn"><i class="fa fa-close"></i></span>
+                                        <!-- Change the div element to 'form' -->
+                                        <!-- also change the 'div.account-form' to 'form.account-form in navbar-3.sass' -->
+                                        <!-- also change the 'div.account-form' to 'form.account-form in navbar.js'  -->
+                                        <form class="account-form" action="#" method="post">
+                                            
+                                                <span class="close-form-btn"><i class="fa fa-close"></i></span>
 <h4>Sign In </h4>
 
 <p class="notif"><i class="fa fa-exclamation-circle"></i></p>
@@ -313,49 +358,49 @@
     <a href="">Forgot your password?</a>
     <p>Don't have an account? <a href="register.php">Register Now</a></p>
 </div>
-                                                                                
-                                    </form>
+                                                                                        
+                                        </form>
+
+                                        
+                                    </li>
+                                    <!-- /account form -->
+
+
+                                    <li>
+                                        <a id="languages"><span class="lang lang-en"></span> <span id="lang-name">ENGLISH</span><i class="fa fa-angle-down"></i></a>
+                                        
+                                        <div class="languages-wrapper">
+                                            <ul>
+                                                <li>Select language</li>
+                                                <hr>
+                                                <li><a id="en"><span class="lang lang-en"></span> ENGLISH</a></li>
+                                                <li><a id="zh"><span class="lang lang-zh"></span> 中文</a></li>
+                                                <li><a id="ja"><span class="lang lang-ja"></span> 日本語</a></li>
+                                                <li><a id="ko"><span class="lang lang-ko"></span> 한국어</a></li>
+                                            </ul>
+                                        </div>
 
                                     
-                                </li>
-                                <!-- /account form -->
-
-
-                                <li>
-                                    <a id="languages"><span class="lang lang-en"></span> <span id="lang-name">ENGLISH</span><i class="fa fa-angle-down"></i></a>
                                     
-                                    <div class="languages-wrapper">
-                                        <ul>
-                                            <li>Select language</li>
-                                            <hr>
-                                            <li><a id="en"><span class="lang lang-en"></span> ENGLISH</a></li>
-                                            <li><a id="zh"><span class="lang lang-zh"></span> 中文</a></li>
-                                            <li><a id="ja"><span class="lang lang-ja"></span> 日本語</a></li>
-                                            <li><a id="ko"><span class="lang lang-ko"></span> 한국어</a></li>
-                                        </ul>
-                                    </div>
+                                    </li>
+                                                                        <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i>3</i></span></a></li>
+                                </ul>
+                            </section>
+                            
+                            <nav class="navigation-bar">
+                                <ul>
+                                    <li><a href="products">Products</a></li>
+                                    <li><a href="solutions">Solutions</a></li>
+                                    <li><a href="app notes">App Notes</a></li>
+                                    <li><a href="support">Support</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <!-- <li><a href="contact">Contact</a></li> -->
+                                    <li><a id="search"><i class="fa fa-search"></i></a></li>
+                                </ul>
+                            </nav>
+                        </article>
 
-                                
-                                
-                                </li>
-                                                                <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i>3</i></span></a></li>
-                            </ul>
-                        </section>
-                        
-                        <nav class="navigation-bar">
-                            <ul>
-                                <li><a href="products">Products</a></li>
-                                <li><a href="solutions">Solutions</a></li>
-                                <li><a href="app notes">App Notes</a></li>
-                                <li><a href="support">Support</a></li>
-                                <li><a href="about">About</a></li>
-                                <!-- <li><a href="contact">Contact</a></li> -->
-                                <li><a id="search"><i class="fa fa-search"></i></a></li>
-                            </ul>
-                        </nav>
-                    </article>
-
-                    <section class="lab-container">
+                        <section class="lab-container">
     <article class="lab-row">
         <div id="overlay"></div>
         <div class="mobile-navbar-wrapper">
@@ -399,19 +444,19 @@
         </div>
     </article>
 </section>
-                </section>
-            </article>
+                    </section>
+                </article>
+            </section>
+            
         </section>
-        
-    </section>
 
-    <section class="search-bar-wrapper">
-        <form action="" class="search-bar">
-            <input type="text" name="" id="" placeholder="Search Product">
-            <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
-        </form>
-    </section>
-</header>
+        <section class="search-bar-wrapper">
+            <form action="" class="search-bar">
+                <input type="text" name="" id="" placeholder="Search Product">
+                <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
+            </form>
+        </section>
+    </header>
 
 
 
@@ -881,113 +926,115 @@
         </section>
 
     </article>
-</section><section class="lab-container-fluid">
+</section>        <section class="lab-container-fluid">
 
-    <article class="lab-row">
-    
-        <footer class="footer-new-wrapper">
-            <section class="lab-container">
-                <article class="lab-row">
-                    <div class="footer-container">
-                        <figure class="footer-logo">
-                            <img src="img/4dllogo-grey.png" alt="">
-                        </figure>
+            <article class="lab-row">
+            
+                <footer class="footer-new-wrapper">
+                    <section class="lab-container">
+                        <article class="lab-row">
+                            <div class="footer-container">
+                                <figure class="footer-logo">
+                                    <img src="img/4dllogo-grey.png" alt="">
+                                </figure>
 
-                        <ul class="footer-list" id="social-media">
-                            <li class="footer-item"><a href=""><span><i class="fa fa-github"></i></span></a></li>
-                            <li class="footer-item"><a href=""><span><i class="fa fa-linkedin"></i></span></a></li>
-                            <li class="footer-item"><a href=""><span><i class="fa fa-youtube"></i></span></a></li>
-                        </ul>
-                    </div>
+                                <ul class="footer-list" id="social-media">
+                                    <li class="footer-item"><a href=""><span><i class="fa fa-github"></i></span></a></li>
+                                    <li class="footer-item"><a href=""><span><i class="fa fa-linkedin"></i></span></a></li>
+                                    <li class="footer-item"><a href=""><span><i class="fa fa-youtube"></i></span></a></li>
+                                </ul>
+                            </div>
 
-                    <div class="footer-container">
-                        <h4>4D Labs</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item"><a href="app notes">App Notes</a></li>
-                            <li class="footer-item"><a href="distributors">Distributors</a></li>
-                            <li class="footer-item"><a href="shopping-cart">Shopping Cart</a></li>
-                            <li class="footer-item"><a href="account">Account</a></li>
-                        </ul>
-                    </div>
+                            <div class="footer-container">
+                                <h4>4D Labs</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-item"><a href="app notes">App Notes</a></li>
+                                    <li class="footer-item"><a href="distributors">Distributors</a></li>
+                                    <li class="footer-item"><a href="shopping-cart">Shopping Cart</a></li>
+                                    <li class="footer-item"><a href="account">Account</a></li>
+                                </ul>
+                            </div>
 
-                    <div class="footer-container">
-                        <h4 id="corporate">Corporate</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item"><a href="about">About Us</a></li>
-                            <li class="footer-item"><a href="contact">Contact Us</a></li>
-                            <li class="footer-item"><a href="news-and-events">News and Events</a></li>
-                        </ul>
-                    </div>
+                            <div class="footer-container">
+                                <h4 id="corporate">Corporate</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-item"><a href="about">About Us</a></li>
+                                    <li class="footer-item"><a href="contact">Contact Us</a></li>
+                                    <li class="footer-item"><a href="news-and-events">News and Events</a></li>
+                                </ul>
+                            </div>
 
-                    <div class="footer-container">
-                        <h4>Products</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item"><a href="goldelox">Goldelox</a></li>
-                            <li class="footer-item"><a href="diablo16">Diablo16</a></li>
-                            <li class="footer-item"><a href="picaso">Picaso</a></li>
-                            <li class="footer-item"><a href="picaso-Lite">Picaso-Lite</a></li>
-                        </ul>
-                    </div>
+                            <div class="footer-container">
+                                <h4>Products</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-item"><a href="goldelox">Goldelox</a></li>
+                                    <li class="footer-item"><a href="diablo16">Diablo16</a></li>
+                                    <li class="footer-item"><a href="picaso">Picaso</a></li>
+                                    <li class="footer-item"><a href="picaso-Lite">Picaso-Lite</a></li>
+                                </ul>
+                            </div>
 
-                    <div class="footer-container">
-                        <h4>Support</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item"><a href="terms-and-conditions">Terms & Conditions</a></li>
-                            <li class="footer-item"><a href="privacy-policy">Privacy Policy</a></li>
-                            <li class="footer-item"><a href="glossary">Technical Glossary</a></li>
-                            <li class="footer-item"><a href="parametric-search">Parametric Search</a></li>
-                        </ul>
-                    </div>
-                    
-                </article>
-            </section>
-
-            <section class="copyright-wrapper">
-                <article class="lab-container">
-                    <section class="lab-row">
-                        <p>Copyright &copy; 2018 4D Labs. All rights reserved.</p>
-                        <div class="payment-method-wrapper">
-                            <ul class="cc-list">
-                                <li id="visa"><img src="img/footer-icons/visa.png" alt=""></li>
-                                <li id="mastercard"><img src="img/footer-icons/mastercard.png" alt=""></li>
-                                <li id="paypal"><img src="img/footer-icons/paypal.png" alt=""></li>
-                                <li id="americanexpress"><img src="img/footer-icons/americanexpress.png" alt=""></li>
-                            </ul>
-                        </div>
+                            <div class="footer-container">
+                                <h4>Support</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-item"><a href="terms-and-conditions">Terms & Conditions</a></li>
+                                    <li class="footer-item"><a href="privacy-policy">Privacy Policy</a></li>
+                                    <li class="footer-item"><a href="glossary">Technical Glossary</a></li>
+                                    <li class="footer-item"><a href="parametric-search">Parametric Search</a></li>
+                                </ul>
+                            </div>
+                            
+                        </article>
                     </section>
-                    
-                </article>
-            </section>
-        </footer>
-    
-    </article>
+
+                    <section class="copyright-wrapper">
+                        <article class="lab-container">
+                            <section class="lab-row">
+                                <p>Copyright &copy; 2018 4D Labs. All rights reserved.</p>
+                                <div class="payment-method-wrapper">
+                                    <ul class="cc-list">
+                                        <li id="visa"><img src="img/footer-icons/visa.png" alt=""></li>
+                                        <li id="mastercard"><img src="img/footer-icons/mastercard.png" alt=""></li>
+                                        <li id="paypal"><img src="img/footer-icons/paypal.png" alt=""></li>
+                                        <li id="americanexpress"><img src="img/footer-icons/americanexpress.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            
+                        </article>
+                    </section>
+                </footer>
+            
+            </article>
+
+        </section>
 
 </section>
+<!-- </div> -->
 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.details.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tinymce/tinymce.min.js"></script>
+        <script src="js/dragscroll.js"></script>
+        <script async src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="js/recaptcha.js"></script>
 
+        <script src="scripts/main.js"></script>
+        <script async src="http://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
+        <script async src="https://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
 
+        <script async>
+        function init() {
+        var vidDefer = document.getElementsByTagName('iframe');
+        for (var i=0; i<vidDefer.length; i++) {
+        if(vidDefer[i].getAttribute('data-src')) {
+        vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+        } } }
+        window.onload = init;
+        </script>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.details.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/tinymce/tinymce.min.js"></script>
-<script src="js/dragscroll.js"></script>
-<script async src='https://www.google.com/recaptcha/api.js'></script>
-<script src="js/recaptcha.js"></script>
-
-<script src="scripts/main.js"></script>
-<script async src="http://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
-<script async src="https://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
-
-<script async>
-function init() {
-var vidDefer = document.getElementsByTagName('iframe');
-for (var i=0; i<vidDefer.length; i++) {
-if(vidDefer[i].getAttribute('data-src')) {
-vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-} } }
-window.onload = init;
-</script>
+    
 
 </body>
 

@@ -1,0 +1,136 @@
+section.product-page-wrapper 
+    padding: 0px 20px
+
+    section.product-head-wrapper 
+        .product-head
+            width: 100% !important
+
+            &#product-title
+
+            &#product-img
+                margin-top: 30px
+                z-index: 1001
+
+        .product-head 
+            header 
+                h1
+                    font-size: 28px
+                    line-height: 25px
+                    font-weight: 600
+
+                .sub-head
+                    h3
+                        font-size: 20px
+
+            ul.product-thumb-list
+                width: 100% !important
+                li.active-thumb
+
+    section.diagram-parametric-wrapper 
+        .diagram-wrapper,
+        .parametric-wrapper
+            width: 100% !important
+
+        .diagram-wrapper
+            figure.diagram-thumb
+                height: 213px
+
+        ul.diagram-thumb-list
+            width: 100%
+
+
+    section.product-tabs
+        &.lg-tabs
+            display: none 
+
+        &.mobile-tabs
+            display: block
+            ul 
+                border-bottom: none
+                li.tab 
+                    width: 100% !important
+                    +border-radius(0px !important)
+                    box-shadow: none !important
+                    text-align: left
+
+                    &#dev-tools
+                        border-bottom: 1px solid $paleBlue
+
+
+        article.tab-content
+            padding: 20px 0px
+            border: none
+
+            .specs-wrapper 
+                ul.specs-list
+                    width: 100% !important
+
+
+            .product-video-wrapper 
+                iframe
+                    width: 100%
+                    height: auto 
+
+            .downloads-wrapper 
+                ul.download-category-list 
+                    li.download-category 
+                        ul.download-list 
+                            li.download-item 
+                                figure.file-icon
+                                    width: 100% !important
+
+
+            .dev-tools-wrapper 
+                article.dev-tool-environment 
+                    .environment
+                        padding: 0px 
+                        margin-bottom: 20px
+
+                        figure.environment-thumb
+                            width: 15%
+                            img
+                                width: 100%
+
+                        section.environment-details
+                            width: 80%
+
+            .order-details-wrapper 
+                .order-container 
+                    form.order-form 
+                        padding: 0px
+                        width: 100% !important
+
+                        figure.order-img-wrapper,
+                        .form-input
+                            width: 100% !important
+                            padding: 0px
+
+                        figure.order-img-wrapper
+                            height: auto 
+                            img 
+                                width: 60%
+
+                            figcaption
+                                display: block
+
+                        .form-input 
+                            input,
+                            button,
+                            a
+                                +border-radius(0px)
+
+                    table.quantity-table
+                        width: 100% !important
+                        margin-top: 50px
+
+                .order-services
+                    margin-top: 30px
+                    .services
+                        padding: 0px
+                        width: 100%
+
+                        &.delivery
+                            margin-top: 20px
+                        
+
+                        

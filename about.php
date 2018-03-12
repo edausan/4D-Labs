@@ -84,18 +84,6 @@
             <!-- Additional 1 -->
             <article class="about-content addtnl-about-content" id="addtnl-1" >
                 <section class="lab-container">
-                    <!-- <article class="lab-row">
-                        <header>
-                            <h1>a global leader for intelligent displays and graphics processors</h1>
-                        </header>
-                        <p>Our growing range of embedded displays leverage oLED and LCD technology, while our range of dedicated graphics processors provide the horsepower to bring superior yet affordable graphics systems to any application.</p>
-                        
-                        <ul>
-                            <li><span><i class="fa fa-angle-double-right"></i></span> <p>Powerful and Rich Graphics displays.</p> </li>
-                            <li><span><i class="fa fa-angle-double-right"></i></span> <p>Resistive or Capacitive Touch in many instances.</p> </li>
-                            <li><span><i class="fa fa-angle-double-right"></i></span> <p>Comprehensive User Interface solution.</p> </li>
-                        </ul>
-                    </article> -->
 
                     <article class="lab-row">
                         <div class="about-4dl">
@@ -118,35 +106,6 @@
                 </section>
             </article>
             <!-- /Additional 1 -->
-
-            <!-- Other Descriptions -->
-            <!-- <div class="other-descriptions">
-
-                <section class="lab-container">
-                    <article class="lab-row">
-                        <div class="about-descriptions description-1">
-                            <header>
-                                <h1>We designs and manufactures custom embedded graphics controllers designed to interface with many popular OLED and LCD display panels</h1>
-                            </header>
-                                
-                            <p class="fleft">While our heritage is in providing power for commercially-destined embedded systems, an area we remain committed to, the maker movement has also created new interest and requirements for rich displays. Our suite of Arduino and Raspberry Pi compatible display hardware provides market-leading capabilities, without prohibitive cost or development challenges even for novice users.</p>
-
-                            <p class="fright">Native display capabilities for Arduino compatible hardware in particular are quite limited. Our integrated solutions take care of the processing, so a rich user experience is possible with standard Arduino hardware.</p>
-                        </div>
-                        <div class="about-descriptions description-2">
-                            <header>
-                                <h1>We’re constantly improving and adapting to the needs of our customers, to rapidly improve and forge new technologies.</h1>
-                            </header>
-                            
-                            <p>It goes without saying that quality matters every step of the way. Our hardware and software engineering teams are well seasoned, and work with ISO9001 certified production factories using our own quality assurance procedures for impeccable outcomes. Hardware is available directly or via one of many distribution partners across the globe. Our hardware is directly supported by our engineering team for impeccable problem solving, so you’re not alone. </p>
-                        </div>
-                    
-                    </article>
-                </section>
-
-                
-            </div> -->
-            <!-- Other Descriptions -->
 
             <!-- Contact Us -->
             <div class="about-contact-wrapper">
@@ -175,8 +134,6 @@
                 </section>
             </div>
                 
-
-
             <!-- Learn About Us -->
             <section class="learn-nav" id="learn">
                 <article class="lab-container">
@@ -209,7 +166,6 @@
                 </article>
             </section>
             <!-- Learn About Us -->
-
 
         </section>
 

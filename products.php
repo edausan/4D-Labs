@@ -7,10 +7,8 @@
 ?>
 
 <section class="product-category-wrapper">
-    <article class="lab-container">
-        <!-- Breadcrumbs -->
-        <?php include('include/breadcrumbs.php'); ?>
-        <!-- /Breadcrumbs -->
+    <article class="lab-container-fluid">
+        
 
         <section class="lab-row">
 

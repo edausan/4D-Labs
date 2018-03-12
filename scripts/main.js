@@ -28,6 +28,7 @@ $(function() {
     dynamicallyLoadScript('scripts/mobile-navbar.js');
     dynamicallyLoadScript('scripts/fb.js');
     dynamicallyLoadScript('scripts/defer-video.js');
+    dynamicallyLoadScript('scripts/product-category.js');
 });
 
 

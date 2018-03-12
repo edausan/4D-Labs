@@ -1,5 +1,5 @@
 <!-- Tabs -->
-<section class="product-tabs lg-tabs" id="product-page-tabs">
+<section class="product-tabs mobile-tabs" id="product-page-tabs">
     <article class="tabs-wrapper">
         <ul class="tabs">
             <li class="tab active" id="description">

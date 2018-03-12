@@ -1,0 +1,104 @@
+.loading-wrapper
+    position: fixed 
+    top: 50%
+    left: 50%
+    z-index: 2000
+    +transform(translate(-50%, -50%))
+
+    &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 100vw
+        height: 100vh
+        background: white
+        z-index: 1000
+        +transform
+
+    figure 
+        position: relative
+        z-index: 1001
+        display: block 
+        width: 75%
+        margin: 0 auto
+        margin-bottom: 20px
+        img
+            width: 100%
+
+    h2
+        text-align: center
+        position: relative
+        z-index: 1001
+        font-size: 1em
+
+        span 
+            opacity: .5
+            text-shadow: 0 5px 5px rgba(black, .5)
+            
+
+            &:nth-child(1)
+                animation: opaque 1s ease forwards infinite
+            &:nth-child(2)
+                animation: opaque 1s ease 142ms forwards infinite
+            &:nth-child(3)
+                animation: opaque 1s ease 285ms forwards infinite
+            &:nth-child(4)
+                animation: opaque 1s ease 427ms forwards infinite
+            &:nth-child(5)
+                animation: opaque 1s ease 569ms forwards infinite
+            &:nth-child(6)
+                animation: opaque 1s ease 711ms forwards infinite
+            &:nth-child(7)
+                animation: opaque 1s ease 853ms forwards infinite
+
+    .loading
+        width: 50px
+        height: 50px
+        z-index: 1001
+        margin: 0 auto 
+        display: block 
+        +clear
+        
+        span
+            float: left
+            width: 25%
+            height: 25%
+            background: $footer1
+            display: block 
+            z-index: 1000
+            position: relative
+            border: 2px solid white
+            +border-radius(100%)
+            +transform(translateY(0))
+            +transition
+            box-shadow: 0 4px 10px rgba(black, .4)
+
+            &:nth-child(1)
+                animation: loading 750ms ease forwards infinite
+            &:nth-child(2)
+                animation: loading 750ms ease 180ms forwards infinite
+            &:nth-child(3)
+                animation: loading 750ms ease 360ms forwards infinite
+            &:nth-child(4)
+                animation: loading 750ms ease 540ms forwards infinite
+
+@keyframes loading
+    0%
+        +transform(translateY(0)) 
+        background: $footer1
+    50%
+        +transform(translateY(10px)) 
+        background: #900E0E
+    100%
+        background: $footer1
+        +transform(translateY(0))
+
+
+@keyframes opaque
+    0%
+        opacity: .5
+    50%
+        opacity: 1
+    100%
+        opacity: .5

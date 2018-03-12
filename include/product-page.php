@@ -1,6 +1,3 @@
-
-
-
 <section class="lab-container-fluid">
     <article class="lab-row">
 
@@ -26,7 +23,7 @@
                             </header>
                             <p><?php echo $product['short-description']; ?></p>
 
-                            <a href="workshop4">Download the Workshop4 PRO IDE »</a>
+                            <!-- <a href="workshop4">Download the Workshop4 PRO IDE »</a> -->
 
                             <!-- <div class="product-overview">
                                 <ul>
@@ -39,30 +36,41 @@
 
                         <div class="product-head" id="product-img">
                             <figure class="product-thumb">
-                                <div class="product-thumb-wrapper">
-                                    <img id="" src="img/product-page-icons/goldelox.png" alt="">
-                                    <img id="" src="img/product-page-icons/picaso.png" alt="">
-                                    <img id="" src="img/product-page-icons/diablo16.png" alt="">
-                                    <img id="" src="img/product-page-icons/picaso-Lite.png" alt="">
-                                </div>
+                                <img id="" src="img/product-page-icons/goldelox.png" alt="">
                             </figure>
-
-                            <ul class="product-thumb-list">
-                                <li class="active-thumb" id="prod-thumb-1" data-move="0"><img src="img/product-page-icons/goldelox.png" alt=""></li>
-                                <li id="prod-thumb-2" data-move="25"><img src="img/product-page-icons/picaso.png" alt=""></li>
-                                <li id="prod-thumb-3" data-move="50"><img src="img/product-page-icons/diablo16.png" alt=""></li>
-                                <li id="prod-thumb-4" data-move="75"><img src="img/product-page-icons/picaso-Lite.png" alt=""></li>
-                            </ul>
                         </div>
 
                     </section> <!-- Product Details Wrapper -->
 
                     <section class="diagram-parametric-wrapper">
                         <div class="diagram-wrapper">
-                            <figure>
-                                <img src="img/product-diagram/diagram.png" alt="">
+                            <figure class="diagram-thumb">
+                                <div class="diagram-thumb-wrapper">
+                                    <div class="thumb-container">
+                                        <img src="img/product-diagram/diagram.png" alt="">
+                                    </div>
+                                    <div class="thumb-container">
+                                        <img src="img/product-diagram/diagram.png" alt="">
+                                    </div>
+                                    <div class="thumb-container">
+                                        <img src="img/product-diagram/diagram.png" alt="">
+                                    </div>
+                                    <div class="thumb-container">
+                                        <img src="img/product-diagram/diagram.png" alt="">
+                                    </div>
+                                </div>
                             </figure>
+
+                            <ul class="diagram-thumb-list">
+                                <li class="active-thumb" id="prod-thumb-1" data-move="0"><img src="img/product-diagram/diagram.png" alt=""></li>
+                                <li id="prod-thumb-2" data-move="25"><img src="img/product-diagram/diagram.png" alt=""></li>
+                                <li id="prod-thumb-3" data-move="50"><img src="img/product-diagram/diagram.png" alt=""></li>
+                                <li id="prod-thumb-4" data-move="75"><img src="img/product-diagram/diagram.png" alt=""></li>
+                            </ul>
                         </div>
+
+
+                        
                         <div class="parametric-wrapper">
                             <ul class="parametric-details-list">
                                 <li class="parametric-detail"><strong>Part Number:</strong> <span><?php echo $product['order-details']['Part Number']; ?></span></li>
@@ -96,6 +104,7 @@
                     </section>
 
                     <?php include('product-page-tabs.php'); ?>
+                    <?php include('mobile-page-tabs.php'); ?>
 
                 </article> <!-- lab-row -->
             </section> <!-- lab-container -->
