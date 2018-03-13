@@ -20,7 +20,7 @@
                             <div class="footer-container">
                                 <h4>4D Labs</h4>
                                 <ul class="footer-list">
-                                    <li class="footer-item"><a href="app notes">App Notes</a></li>
+                                    <li class="footer-item"><a href="app_notes">App Notes</a></li>
                                     <li class="footer-item"><a href="distributors">Distributors</a></li>
                                     <li class="footer-item"><a href="shopping-cart">Shopping Cart</a></li>
                                     <li class="footer-item"><a href="account">Account</a></li>
@@ -84,15 +84,15 @@
 </section>
 <!-- </div> -->
 
-        <script src="js/jquery.min.js"></script>
+        <!-- <script src="js/jquery.min.js"></script> -->
         <script src="js/jquery.details.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/tinymce/tinymce.min.js"></script>
         <script src="js/dragscroll.js"></script>
+        <script src="scripts/main.js"></script>
         <script async src='https://www.google.com/recaptcha/api.js'></script>
         <script src="js/recaptcha.js"></script>
 
-        <script src="scripts/main.js"></script>
         <script async src="http://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
         <script async src="https://staticxx.facebook.com/connect/xd_arbiter/r/Nh1oH0K63yz.js?version=42#"></script>
 

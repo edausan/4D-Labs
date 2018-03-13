@@ -37,7 +37,7 @@
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="4D Labs" />
     <meta property="og:description"        content="4D Labs Semiconductors is a global leader in the research, development and manufacture of intelligent graphics solutions." />
-    <meta property="og:image"              content="http://4dl.4dwebsites.cf/img/banner1.jpg" />
+    <meta property="og:image"              content="http://4dl.4dwebsites.cf/img/fb_thumb.jpg" />
     <meta property="fb:app_id"             content="1971476612882479" />
 
     <title><?php echo TITLE; ?> | 4D Labs</title>
@@ -57,16 +57,15 @@
     <script src="js/jquery.min.js"></script>
     <script>
         $(function() {
+            var loading;
             $('.loading-wraper').fadeIn(300);
             $('body').addClass('scrollOff');
 
-            var loading = setInterval(function() {
-                // $('.loading-wraper').show();
+            loading = setInterval(function() {
                 if ( $(window).ready()) {
-                    load();
-                    clearInterVal(loading);
+                    load();                    
                 }
-            }, 300);
+            }, 100);
 
             function load() {
                 $('.loading-wrapper').fadeOut(300);
@@ -75,6 +74,7 @@
                     $('.page-container').css('opacity', 1);
                     $('body').removeClass('scrollOff');
                 }, 400);
+                clearInterVal(loading);
             }; 
         });
            
@@ -202,7 +202,7 @@
                                 <ul>
                                     <li><a href="products">Products</a></li>
                                     <li><a href="solutions">Solutions</a></li>
-                                    <li><a href="app notes">App Notes</a></li>
+                                    <li><a href="app_notes">App Notes</a></li>
                                     <li><a href="support">Support</a></li>
                                     <li><a href="about">About</a></li>
                                     <!-- <li><a href="contact">Contact</a></li> -->

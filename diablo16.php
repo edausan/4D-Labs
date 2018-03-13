@@ -8,7 +8,7 @@
         'title'         =>  'diablo16',
 
         // Product Name
-        'name'          =>  'Diablo16 Graphics Processor',
+        'name'          =>  'Diablo16 Graphics <br />Processor',
 
         // Carousel Images
         'carousel-img'  => array('goldelox-2'),

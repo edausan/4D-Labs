@@ -8,7 +8,7 @@
         'title'         =>  'goldelox',
 
         // Product Name
-        'name'          =>  'Goldelox Graphics Processor',
+        'name'          =>  'Goldelox Graphics <br /> Processor',
 
         // Carousel Images
         'carousel-img'  => array('goldelox-2', 'goldelox-3'),

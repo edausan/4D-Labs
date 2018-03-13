@@ -6,10 +6,8 @@
 ?>
 
 <article class="lab-container">    
+    <?php include('include/breadcrumbs.php'); ?>
     <section class="lab-row">
-
-        <?php include('include/breadcrumbs.php'); ?>
-
         <article class="terms-wrapper">
             <header>
                 <h1 class="">Terms and Conditions</h1>

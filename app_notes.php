@@ -55,7 +55,7 @@
 
 
 
-<section class="solutions-wrapper">
+<section class="appnote-wrapper">
 
     <article class="lab-container">
 

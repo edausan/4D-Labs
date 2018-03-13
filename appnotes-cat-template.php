@@ -3,6 +3,9 @@
 ?>
 
 <section class="lab-row">
+
+
+
     <article class="cat-product-container" id="appnotes-wrapper">
         <aside class="sidebar-wrapper">
             <section class="product-search-wrapper">
@@ -49,6 +52,8 @@
         </aside>
 
         <section class="cat-product-result">
+        <button id="showAside">Show Filters</button>
+        <button id="hideAside"><i class="fa fa-close"></i></button>
             <article class="show-count">
                 <?php 
                     $x = 0;
@@ -104,12 +109,13 @@
 
                                 <li class="appnote-detail" id="supported-processor">
                                     <strong>Supported Processors: </strong> 
-
-                                    <?php 
-                                        foreach ($appVal['processor'] as $key =>  $val) {
-                                    ?>
-                                        <a href="<?php echo $key; ?>.php" title="<?php echo $val; ?>" rel="noopener noreferrer" target="_blank" class="<?php echo $key; ?>"><?php echo $val; ?>, </a>
-                                    <?php } ?>
+                                    <span>
+                                        <?php 
+                                            foreach ($appVal['processor'] as $key =>  $val) {
+                                        ?>
+                                            <a href="<?php echo $key; ?>.php" title="<?php echo $val; ?>" rel="noopener noreferrer" target="_blank" class="<?php echo $key; ?>"><?php echo $val; ?>, </a>
+                                        <?php } ?>
+                                    </span>
                                 </li>
 
                                 <li class="appnote-detail" id="supported-environment">

@@ -1,43 +1,42 @@
+button#showAside 
+    padding: 10px 20px
+    background: $paleBlue
+    color: white 
+    cursor: pointer
+    margin: 0 auto 
+    width: 129px
+    display: none
+    margin-top: 50px
+
+button#hideAside 
+    width: 50px
+    height: 50px
+    background: black
+    position: fixed
+    bottom: 100px
+    right: 30px
+    +transform(translateX(300%))
+    color: white 
+    cursor: pointer
+    display: none
+    z-index: 1007
+    +transition
+
+    i 
+        position: absolute
+        top: 50%
+        left: 50%
+        +transform
+
+    &.showHideAside
+        +transform(translateX(0%))
+    
+    
 .cat-product-container
     +clear
     margin: 50px 0px
     font-family: $lato
     position: relative
-
-    button#showAside 
-        padding: 10px 20px
-        background: $paleBlue
-        color: white 
-        cursor: pointer
-        margin: 0 auto 
-        width: 129px
-        display: none
-        margin-top: 50px
-
-    button#hideAside 
-        width: 50px
-        height: 50px
-        background: black
-        position: fixed
-        bottom: 100px
-        right: 30px
-        +transform(translateX(300%))
-        color: white 
-        cursor: pointer
-        display: none
-        z-index: 1007
-        +transition
-
-        i 
-            position: absolute
-            top: 50%
-            left: 50%
-            +transform
-
-        &.showHideAside
-            +transform(translateX(0%))
-            
-    
 
     // Sidebar 
     aside.sidebar-wrapper
