@@ -41,7 +41,7 @@
 
                         <?php
                             if ($response != null && $response->success) {
-                                echo "Hi " . $_POST["contact-name"] . " (" . $_POST["contact-email"] . "), thanks for contacting us!";
+                                echo "Hi " . $_POST["contact-name"] . " (" . $_POST["contact-email"] . "), Thank you for contacting us!";
                             } else {
                         ?>
 

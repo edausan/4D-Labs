@@ -1,0 +1,20 @@
+section.navigation-container {
+  padding: 0 20px; }
+  section.navigation-container article.navbar-wrapper nav.navigation-bar ul li {
+    margin-left: 0px !important; }
+
+section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-container figure.highlights-figure {
+  height: 25%; }
+
+section.new-thumbnails-wrapper {
+  padding: 50px 20px; }
+
+section.appnote-home-wrapper {
+  padding: 22px 20px 40px; }
+
+footer.footer-new-wrapper {
+  padding: 0 20px; }
+
+section.copyright-wrapper {
+  padding: 32px 20px 70px;
+  margin: 0 -20px; }

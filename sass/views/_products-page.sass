@@ -27,6 +27,7 @@ section.product-page-wrapper
                     margin-bottom: 16px
                     font-weight: 400
                     font-family: $latolight
+                    text-transform: capitalize
 
                 .sub-head
                     padding-left: 10px
@@ -288,6 +289,25 @@ figure.diagram-thumb
     overflow: hidden
     position: relative
     
+    &:hover
+        &::before
+            // opacity: .3
+        
+        .thumb-slide-controls
+            opacity: 1
+
+    &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 40%
+        background: linear-gradient(to top, black, rgba(0,0,0,0))
+        z-index: 1002
+        opacity: 0
+        +transition
+    
     .diagram-thumb-wrapper
         position: absolute
         top: 0
@@ -311,19 +331,32 @@ ul.diagram-thumb-list
     +clear
     margin: 0 auto
     margin-top: 20px
-    width: 75%
+    width: 20%
     display: block
     
     
     li 
+        +border-radius(100%)
         display: inline-block
         width: 25%
         float: left
         cursor: pointer
-        opacity: .6
+        opacity: .4
         padding: 2px 2px 5px
         +transition
         filter: grayscale(50%)
+        position: relative
+
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            +transform
+            width: 10px
+            height: 10px
+            background: black
+            +border-radius(100%)
 
         &.active-thumb
             opacity: 1
@@ -339,7 +372,46 @@ ul.diagram-thumb-list
 
 figure.product-thumb
     width: 100%
+    position: relative
+    margin-top: 25px
     img 
         width: 74%
         display: block
         margin: 0 auto 
+
+
+
+
+.thumb-slide-controls
+    width: 20%
+    position: absolute
+    bottom: 30px
+    left: 50%
+    +transform(translateX(-50%))
+    z-index: 1002
+    opacity: .4
+    +transition
+    +clear
+
+    .thumb-slide-control
+        padding: 10px 20px
+        cursor: pointer
+        color: #eeeeee 
+        border: 1px solid #eeeeee
+        background: rgba(white, .5)
+        box-shadow: 0 3px 6px rgba(black, .1)
+        +transition
+
+        &:hover
+            background: rgba(white, 1)
+            color: #000
+            box-shadow: 0 8px 15px rgba(black, .4)
+
+        &:active
+            box-shadow: 0 4px 8px rgba(black, .4)
+
+
+        &.ctrl-left
+            float: left
+        &.ctrl-right
+            float: right

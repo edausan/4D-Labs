@@ -1,0 +1,37 @@
+figure.contact-banner
+    margin: 0
+    height: 10vh
+    
+section.contact-wrapper
+    position: relative
+    width: 100% !important
+    display: block 
+    top: 0
+    left: 0
+    +transform(translate(0%,0%))
+
+    article.contact-form-wrapper,
+    article.headquarters-wrapper
+        width: 100%
+
+    article.contact-form-wrapper
+        padding: 20px
+
+        form.contact-form 
+            .captcha-btn-section 
+                text-align: center
+                button.contact-submit
+                    width: 100%
+                    display: block 
+                    margin-top: 20px
+
+                .g-recaptcha
+                    position: relative
+                    margin: 0 auto 
+                    display: block
+                    left: 50%
+                    +transform(translateX(-50%))
+
+
+.field-wrapper
+    width: 100%

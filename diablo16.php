@@ -3,12 +3,12 @@
     include('header-2.php');
 
     $product = array(
-        
+        'product-type' => 1,
         // Product Title
         'title'         =>  'diablo16',
 
         // Product Name
-        'name'          =>  'Diablo16 Graphics <br />Processor',
+        'name'          =>  'Diablo16 Graphics Processor',
 
         // Carousel Images
         'carousel-img'  => array('goldelox-2'),

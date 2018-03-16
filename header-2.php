@@ -3,7 +3,7 @@
 
     if (isset($_POST['logout'])) {
         session_destroy();
-        $url='home';
+        $url='/';
         echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
     } else  if (isset($_POST['signin'])) {
         $_SESSION['email'] = $_POST['email'];
@@ -55,30 +55,7 @@
     
 
     <script src="js/jquery.min.js"></script>
-    <script>
-        $(function() {
-            var loading;
-            $('.loading-wraper').fadeIn(300);
-            $('body').addClass('scrollOff');
-
-            loading = setInterval(function() {
-                if ( $(window).ready()) {
-                    load();                    
-                }
-            }, 100);
-
-            function load() {
-                $('.loading-wrapper').fadeOut(300);
-                setTimeout(function() {
-                    $('.loading-wrapper').hide();
-                    $('.page-container').css('opacity', 1);
-                    $('body').removeClass('scrollOff');
-                }, 400);
-                clearInterVal(loading);
-            }; 
-        });
-           
-    </script>
+    <script src="scripts/loading.js"></script>
     
 </head>
 <?php include('arrays.php'); ?>
@@ -104,7 +81,7 @@
     </h2>
 </div>
 
-<section class="page-container" style="opacity: 0; transition: 1s ease;">
+<section class="page-container" style="opacity: 0; transition: 1s ease; overflow-x:hidden">
 
 <?php include('include/parametric-compare-popup.php'); ?>
 <?php include('include/product-video-popup.php'); ?>
@@ -112,8 +89,7 @@
     <div class="to-top">
         <i class="fa fa-chevron-up"></i>
     </div>
-
-
+    
     <header class="header-wrapper">
 
         <section class="navigation-wrapper">
@@ -121,7 +97,7 @@
                 <article class="lab-row">
                     <section class="navigation-container">
                         <article class="logo-wrapper">
-                            <a href="home">
+                            <a href="/">
                                 <img src="img/4dllogo.png" alt="">
                             </a>
                         </article>

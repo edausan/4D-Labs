@@ -20,6 +20,7 @@ $(function() {
     dynamicallyLoadScript('scripts/mce.js');
     dynamicallyLoadScript('scripts/documentation.js');
     dynamicallyLoadScript('scripts/parametric-search.js');
+    dynamicallyLoadScript('scripts/parametric-search-mobile.js');
     dynamicallyLoadScript('scripts/contact.js');
     dynamicallyLoadScript('scripts/news.js');
     dynamicallyLoadScript('scripts/product-thumb-slider.js');

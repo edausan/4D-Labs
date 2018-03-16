@@ -3,12 +3,13 @@
     include('header-2.php');
 
     $product = array(
+        'product-type' => 1,
         
         // Product Title
         'title'         =>  'goldelox',
 
         // Product Name
-        'name'          =>  'Goldelox Graphics <br /> Processor',
+        'name'          =>  'Goldelox Graphics Processor',
 
         // Carousel Images
         'carousel-img'  => array('goldelox-2', 'goldelox-3'),

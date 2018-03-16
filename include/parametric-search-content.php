@@ -1,4 +1,4 @@
-<section class="parametric-wrapper">
+<section class="parametric-wrapper" id="parametric-wrapper">
 
     <div class="para-category-wrapper">
         <h1>Parametric Part Number Search</h1>

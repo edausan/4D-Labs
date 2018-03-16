@@ -188,4 +188,4 @@ OLED">
             </noscript>
 
 
-<?php include('navbar_1.php'); ?>
+<?php include('../navbars/navbar_1.php'); ?>

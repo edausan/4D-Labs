@@ -15,7 +15,13 @@
 
                         <div class="product-head" id="product-title">
                             <header>
-                                <h1><?php echo $product['name']; ?></h1>
+                                <?php if ($product['product-type'] >= 1) : ?>
+                                    <h1><?php echo $product['title']; ?> Graphics <br /> Processor</h1>
+                                <?php else :?>
+                                    <h1><?php echo $product['name']; ?></h1>
+                                <?php endif; ?> 
+
+                                <!-- <h1><?php echo $product['name']; ?></h1> -->
                                 <div class="sub-head">
                                     <h3>Manufacturer Part#: <span><?php echo $product['order-details']['Part Number']; ?></span></h3>
                                     <h5><?php echo $product['order-details']['Package Type']; ?> Graphics Processor</h5>
@@ -44,7 +50,16 @@
 
                     <section class="diagram-parametric-wrapper">
                         <div class="diagram-wrapper">
+                            
+
                             <figure class="diagram-thumb">
+
+                                <div class="thumb-slide-controls">
+                                    <button class="thumb-slide-control ctrl-left" id="ctrl-left"><i class="fa fa-chevron-left"></i></button>
+                                    <button class="thumb-slide-control ctrl-right" id="ctrl-right"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                               
+
                                 <div class="diagram-thumb-wrapper">
                                     <div class="thumb-container">
                                         <img src="img/product-diagram/diagram.png" alt="">
@@ -62,10 +77,18 @@
                             </figure>
 
                             <ul class="diagram-thumb-list">
-                                <li class="active-thumb" id="prod-thumb-1" data-move="0"><img src="img/product-diagram/diagram.png" alt=""></li>
-                                <li id="prod-thumb-2" data-move="25"><img src="img/product-diagram/diagram.png" alt=""></li>
-                                <li id="prod-thumb-3" data-move="50"><img src="img/product-diagram/diagram.png" alt=""></li>
-                                <li id="prod-thumb-4" data-move="75"><img src="img/product-diagram/diagram.png" alt=""></li>
+                                <li class="active-thumb" id="prod-thumb-1" data-move="0">
+                                    <!-- <img src="img/product-diagram/diagram.png" alt=""> -->
+                                </li>
+                                <li id="prod-thumb-2" data-move="25">
+                                    <!-- <img src="img/product-diagram/diagram.png" alt=""> -->
+                                </li>
+                                <li id="prod-thumb-3" data-move="50">
+                                    <!-- <img src="img/product-diagram/diagram.png" alt=""> -->
+                                </li>
+                                <li id="prod-thumb-4" data-move="75">
+                                    <!-- <img src="img/product-diagram/diagram.png" alt=""> -->
+                                </li>
                             </ul>
                         </div>
 

@@ -3,7 +3,7 @@
         <div id="overlay"></div>
         <div class="mobile-navbar-wrapper">
             <ul>
-                <li><a href="home"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="products"><i class="fa fa-shopping-basket"></i>Products</a></li>
                 <li><a href="solutions"><i class="fa fa-wrench"></i>Solutions</a></li>
                 <li><a href="app_notes"><i class="fa fa-book"></i>App Notes</a></li>

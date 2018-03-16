@@ -3,7 +3,7 @@ ErrorDocument 404 /4DLabs-dev/404.php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^home index.php [NC,L]
+RewriteRule ^/ index.php [NC,L]
 
 AddDefaultCharset UTF-8
 
