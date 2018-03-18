@@ -212,6 +212,23 @@ section.parametric-wrapper
                 z-index: 1000
                 float: left
                 width: 100%
+
+                thead 
+
+                    tr#para-input-wrapper
+
+                        .th-wrapper
+                            height: 60px !important
+
+                tbody 
+                    tr 
+                        td 
+                            .th-wrapper
+                                figure.product-image
+                                    width: 80px
+                                    margin: 0 auto 
+                                    img 
+                                        width: 100%
             
             &#para-tb-1
                 width: 15%
@@ -223,11 +240,18 @@ section.parametric-wrapper
 
                 thead 
                     width: 100%
+
+                    tr#para-input-wrapper
+                        .th-wrapper
+                            height: 60px !important
+
                     tr 
                         width: 100%
                         
+                        
                         th 
                             +clear
+                            // height: 40px
                             
                             .th-wrapper
                                 font-size: 14px !important
@@ -297,7 +321,9 @@ section.parametric-wrapper
                                     background: white
                                     +transition
                                     font-size: 11px
-                                
+
+                        &#para-input-wrapper
+
 
             thead 
                 tr 
@@ -308,6 +334,7 @@ section.parametric-wrapper
                         cursor: pointer
                         font-weight: 600
                         height: 88px
+                        overflow-y: auto 
                         +clear
 
                         .th-wrapper
@@ -349,24 +376,13 @@ section.parametric-wrapper
                         th 
                             cursor: auto
                             vertical-align: top
-                            font-size: 11px !important
+                            font-size: 11px !important                            
 
                             
                             &#Price
 
                                 label 
-                                    display: block
                                 input 
-                                    height: 32px
-                                    border-style: none
-                                    border: 1px solid #cccccc
-                                    padding: 0 5px
-                                    width: 100%
-                                    +border-radius(2px)
-                                    +transition
-
-                                    &:focus
-                                        border-color: $paleBlue
 
 
                             

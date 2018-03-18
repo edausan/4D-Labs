@@ -5017,7 +5017,7 @@ button#hideAside.showHideAside {
 }
 
 .cat-product-container {
-  margin: 50px 0px;
+  margin: 0 0px 50px;
   font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   position: relative;
 }
@@ -5260,7 +5260,7 @@ button#hideAside.showHideAside {
 }
 
 .appnote-details {
-  padding-left: 10px !important;
+  padding-left: 10px;
 }
 
 #appnotes-wrapper {
@@ -10635,6 +10635,19 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para
   width: 100%;
 }
 
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 thead tr#para-input-wrapper .th-wrapper {
+  height: 60px !important;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 tbody tr td .th-wrapper figure.product-image {
+  width: 80px;
+  margin: 0 auto;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 tbody tr td .th-wrapper figure.product-image img {
+  width: 100%;
+}
+
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
   width: 15%;
   float: left;
@@ -10650,6 +10663,10 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead {
   width: 100%;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr#para-input-wrapper .th-wrapper {
+  height: 60px !important;
 }
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 thead tr {
@@ -10779,6 +10796,7 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table thea
   cursor: pointer;
   font-weight: 600;
   height: 88px;
+  overflow-y: auto;
 }
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th::after {
@@ -10831,32 +10849,6 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table thea
   cursor: auto;
   vertical-align: top;
   font-size: 11px !important;
-}
-
-section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th#Price label {
-  display: block;
-}
-
-section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th#Price input {
-  height: 32px;
-  border-style: none;
-  border: 1px solid #cccccc;
-  padding: 0 5px;
-  width: 100%;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: 250ms ease;
-  -moz-transition: 250ms ease;
-  -ms-transition: 250ms ease;
-  -o-transition: 250ms ease;
-  transition: 250ms ease;
-}
-
-section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th#Price input:focus {
-  border-color: #327B83;
 }
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr#para-input-wrapper th .filter-reset {
@@ -11440,7 +11432,7 @@ section.product-tabs.mobile-tabs {
 }
 
 section.product-tabs article.tabs-wrapper ul.tabs li.tab label span {
-  font-size: 16px !important;
+  font-size: 16px;
   text-transform: capitalize !important;
   font-weight: 600;
 }
@@ -13524,6 +13516,10 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   .thumb-slide-controls {
     width: 50%;
   }
+  .thumb-slide-controls .thumb-slide-control {
+    border-color: #333333;
+    color: #333333;
+  }
   .support-banner-wrapper figure.support-banner {
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -13817,8 +13813,14 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   section.navigation-container article.navbar-wrapper nav.navigation-bar ul li {
     margin-left: 0px !important;
   }
+  section.highlights-wrapper ul.highlights-list li.highlights-item {
+    height: 330px;
+  }
   section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-container figure.highlights-figure {
     height: 25%;
+  }
+  section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-container p {
+    min-height: 168px;
   }
   section.new-thumbnails-wrapper {
     padding: 50px 20px;
@@ -13832,5 +13834,107 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   section.copyright-wrapper {
     padding: 32px 20px 70px;
     margin: 0 -20px;
+  }
+  .cat-product-container {
+    padding: 0 20px 20px;
+  }
+  section.product-page-wrapper {
+    padding: 0px 20px;
+  }
+  section.product-tabs article.tabs-wrapper ul.tabs li.tab label span {
+    font-size: 12px;
+  }
+  .thumb-slide-controls .thumb-slide-control {
+    border-color: #333333;
+    color: #333333;
+  }
+  section.appnote-wrapper {
+    padding: 0 20px;
+  }
+  section.appnote-wrapper .cat-product-container {
+    padding: 0;
+  }
+  .support-banner-wrapper figure.support-banner {
+    padding: 20px;
+  }
+  section.support-wrapper {
+    padding: 0 20px 20px;
+  }
+  section.support-wrapper p#support-description {
+    font-size: 16px;
+  }
+  section.support-wrapper .attachment-wrapper .upload-wrapper label {
+    width: 68%;
+  }
+  section.support-wrapper .attachment-wrapper .upload-wrapper button {
+    font-size: 14px !important;
+  }
+  section.support-wrapper .attachment-wrapper .upload-wrapper button#select-btn {
+    width: 20%;
+  }
+  section.support-wrapper .attachment-wrapper .upload-wrapper button#upload-btn {
+    width: 10% !important;
+  }
+  section.support-wrapper button#submit-btn {
+    width: 20%;
+  }
+  section.datasheet-wrapper,
+  section.firmware-wrapper {
+    padding: 0 20px;
+  }
+  .breadcrumbs-new {
+    margin: 30px 20px;
+  }
+  section.about-wrapper .welcome-wrapper {
+    padding: 100px 20px;
+  }
+  section.about-wrapper .history-wrapper .history-item .history {
+    width: 85%;
+  }
+  .about-contact-wrapper {
+    padding: 50px 20px;
+  }
+  section.shopping-cart-wrapper {
+    padding: 50px 20px;
+  }
+  article.voucher-total-wrapper section.proceed a#proceed-btn {
+    font-size: 12px;
+  }
+  article.voucher-total-wrapper section.voucher-container .voucher-input input#voucher-input {
+    width: 35%;
+  }
+  article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread::before {
+    top: 68px;
+  }
+  article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread section.bread p.bread-title {
+    font-size: 12px;
+  }
+  article.cart-summary section.cart-sum-wrapper .checkout-wrapper button#proceed-checkout {
+    font-size: 14px;
+  }
+  .payment-method-wrapper .payment-selection-wrapper .payment-selector-wrapper {
+    width: 80%;
+  }
+  article.terms-wrapper {
+    padding: 50px 20px;
+  }
+  h3.glossary-header {
+    padding: 20px 20px;
+  }
+  section.glossary-wrapper {
+    padding: 0 20px;
+  }
+  section.parametric-wrapper .parametric-table-wrapper {
+    width: 100%;
+  }
+  section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
+    float: right;
+    width: 78.5%;
+  }
+}
+
+@media all and (max-width: 1440px), print {
+  section.highlights-wrapper ul.highlights-list li.highlights-item {
+    height: 311px;
   }
 }

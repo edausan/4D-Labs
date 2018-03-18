@@ -47,13 +47,6 @@
                             <td id="para-prod-name">
                                 <div class="th-wrapper">
                                     <a href="<?php echo $key; ?>" class="para-prod-name-link"><?php echo $value['part-name']; ?></a>
-                                    <a href="<?php echo $key; ?>"><img id="para-prod-thumb" src="img/<?php echo $key; ?>.png" alt="<?php echo $value['part-name']; ?>"></a>
-                                    <a href="<?php echo $value['datasheet']; ?>"> 
-                                        <div class="datasheet-download">
-                                            <img src="img/pdf-download-2.png" alt="" id="part-name-ds">
-                                            <!-- <span>Datasheet</span> -->
-                                        </div>
-                                    </a>
                                 </div>
                             </td>
                     </tr>
@@ -62,86 +55,89 @@
         </table>
 
         <div class="para-tb-2-wrapper dragscroll" title="Drag to scroll">
-            <!-- <button class="scroll-btn" id="scroll-left"><i class="fa fa-chevron-left"></i></button>
-            <button class="scroll-btn" id="scroll-right"><i class="fa fa-chevron-right"></i></button> -->
 
 
             <table class="parametric-table" id="para-tb-2">
 
-                <thead>
+                <thead class="column-names">
                     <tr>
-                        <th class="large " id="Quantity"><div class="th-wrapper"><span>Quantity</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="large" id="Price"><div class="th-wrapper"><span>Price</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="medium" id="Product-image"><div class="th-wrapper"><span>Product Image</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="medium" id="Datasheet"><div class="th-wrapper"><span>Datasheet</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="Price"><div class="th-wrapper"><span>10K Pricing</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Availability"><div class="th-wrapper"><span>Availability</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="medium" id="Manufacturer"><div class="th-wrapper"><span>Manufacturer</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="medium" id="Info"><div class="th-wrapper"><span>Info</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        
                         <th class="medium" id="Status"><div class="th-wrapper"><span>Status</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="medium" id="Package-Type"><div class="th-wrapper"><span>Package Type</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        
                         <th class="large" id="Supply-Voltage"><div class="th-wrapper"><span>Supply Voltage</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="small" id="Clock-Speed"><div class="th-wrapper"><span>Clock Speed (Max)</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="small" id="Data-Processing"><div class="th-wrapper"><span>Data Processing</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="small" id="Internal-Flash"><div class="th-wrapper"><span>Internal Flash</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="small" id="Internal-SRAM"><div class="th-wrapper"><span>Internal SRAM</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="large" id="communication-protocols"><div class="th-wrapper"><span>Communication Protocols</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="large" id="GPIO-Pins"><div class="th-wrapper"><span>GPIO Pins</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="large" id="Timer"><div class="th-wrapper"><span>Timer</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="small" id="Clock-Speed"><div class="th-wrapper"><span>Clock Speed (MHz)</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="small" id="Data-Processing"><div class="th-wrapper"><span>Processor Type</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="medium" id="Internal-Flash"><div class="th-wrapper"><span>Internal Flash (kB)</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="medium" id="Internal-SRAM"><div class="th-wrapper"><span>Internal SRAM (kB)</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+
+                        <th class="small" id="communication-protocols"><div class="th-wrapper"><span>UART</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="medium" id="communication-protocols"><div class="th-wrapper"><span>I2C</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="small" id="communication-protocols"><div class="th-wrapper"><span>SPI</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="small" id="communication-protocols"><div class="th-wrapper"><span>1-WIRE</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+
+                        <th class="large" id="GPIO-Pins"><div class="th-wrapper"><span>Digital I/O</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="GPIO-Pins"><div class="th-wrapper"><span>Analog Input</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="GPIO-Pins"><div class="th-wrapper"><span>PWM Output</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="GPIO-Pins"><div class="th-wrapper"><span>Pulse Counters</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="GPIO-Pins"><div class="th-wrapper"><span>Quadrature Input</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="Timer"><div class="th-wrapper"><span>Digital Timer</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Operating-Temperature"><div class="th-wrapper"><span>Operating Temperature</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="large" id="Display-Interface"><div class="th-wrapper"><span>Display Interface</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="Package-Type"><div class="th-wrapper"><span>Package Type</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="medium" id="Info"><div class="th-wrapper"><span>Info</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                     </tr>
 
                     <tr class="para-input-wrapper" id="para-input-wrapper">
-                        <th class="large " id="Quantity">
-                            <div class="th-wrapper" id="prod-quantity">
-                                <!-- <input type="text" placeholder="Quantity" min="1">
-                                <button class="quantity-btn" id="minus"><i class="fa fa-minus"></i></button>
-                                <button class="quantity-btn" id="plus"><i class="fa fa-plus"></i></button> -->
-                                
-                            </div>
 
+                        <!-- ### PRODUCT IMAGE -->
+                        <th class="medium" id="product-image">
+                            <div class="th-wrapper"></div>
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
 
+                        <!-- ### DATASHEET -->
+                        <th class="medium" id="datasheet">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
+                        <!-- ### PRICE -->
                         <th class="large" id="Price">
                             <div class="th-wrapper">
-                                <!-- <ul>
-                                    <li>
-                                        <label for="from">From:</label>
-                                        <input type="text" class="price-range" id="from" name="price-range-from" placeholder="$0.00">
-                                    </li>
-                                    
-                                    <li>
-                                        <label for="to">To:</label>
-                                        <input type="text" class="price-range" id="to" name="price-range-to" placeholder="$0.00">
-                                    </li>
-                                </ul> -->
-                            </div>
-                            <div class="filter-reset"><a href="">Reset</a></div>
-                        </th>
-
-                        <th class="medium" id="Availability"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
-
-                        <th class="medium" id="Manufacturer"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
-
-                        <th class="medium" id="Info"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
-
-                        <th class="small" id="Status"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
-                        
-                        <th class="medium" id="Package-Type">
-                            <div class="th-wrapper">
                                 <ul>
-                                    <li><input type="checkbox" name="" id="Canned"> <label for="Canned">Canned Module</label></li>
-                                    <li><input type="checkbox" name="" id="QFN"> <label for="QFN">QFN</label></li>
-                                    <li><input type="checkbox" name="" id="TQFP"> <label for="TQFP">TQFP</label></li>
+                                    <li><input type="checkbox" name="" id="$6.15"> <label for="$6.15">$6.15</label></li>
+                                    <li><input type="checkbox" name="" id="$5.27"> <label for="$5.27">$5.27</label></li>
+                                    <li><input type="checkbox" name="" id="$5.15"> <label for="$5.15">$5.15</label></li>
+                                    <li><input type="checkbox" name="" id="$5.00"> <label for="$5.00">$5.00</label></li>
+                                    <li><input type="checkbox" name="" id="$4.50"> <label for="$4.50">$4.50</label></li>
                                 </ul>
                             </div>
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
 
-                        <th class="large" id="Supply-Voltage"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
-                        <th class="small" id="Clock-Speed"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
-                        <th class="small" id="Data-Processing"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
+                        <!-- ### AVAILABILITY -->
+                        <th class="medium" id="Availability"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
 
-                        <th class="small" id="Internal-Flash">
+                        <!-- <th class="medium" id="Manufacturer"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th> -->
+
+                        <!-- ### STATUS -->
+                        <th class="small" id="Status"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
+            
+                        <!-- ### SUPPLY VOLTAGE -->
+                        <th class="large" id="Supply-Voltage"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
+
+                        <!-- ### CLOCK SPEED -->
+                        <th class="small" id="Clock-Speed"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
+
+                        <!-- ### PROCESSOR TYPE -->
+                        <th class="small" id="Processor-Type"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
+
+                        <!-- ### INTERNAL FLASH -->
+                        <th class="medium" id="Internal-Flash">
                             <div class="th-wrapper">
                                 <ul>
                                     <li>
@@ -161,7 +157,8 @@
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
 
-                        <th class="small" id="Internal-SRAM">
+                        <!-- ### INTERNAL SRAM -->
+                        <th class="medium" id="Internal-SRAM">
                             <div class="th-wrapper">
                                 <ul>
                                     <li>
@@ -181,37 +178,48 @@
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
 
-                        <th class="small" id="communication-protocols">
-                            <div class="th-wrapper">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" name="" id="uart">
-                                        <label for="uart">UART</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="i2c">
-                                        <label for="i2c">I2C</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="spi">
-                                        <label for="spi">spi</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="1-wire">
-                                        <label for="1-wire">1-wire</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="8bit-Bus-Interface">
-                                        <label for="8bit-Bus-Interface">8bit Bus Interface</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="" id="16bit-Bus-Interface">
-                                        <label for="16bit-Bus-Interface">16bit Bus Interface</label>
-                                    </li>
-                                </ul>
-                            </div>
+                        <!-- ### UART -->
+                        <th class="small" id="uart">
+                            <div class="th-wrapper"></div>
                             <div class="filter-reset"><a href="">Reset</a></div>
                         </th>
+
+                        <!-- ## I2C -->
+                        <th class="medium" id="I2C">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
+                        <!-- ### SPI -->
+                        <th class="small" id="spi">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
+                        <!-- ### 1-WIRED -->
+                        <th class="small" id="1-wired">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
+                        <!-- ### Digital I/O -->
+                        <th class="small" id="Digital-I/O">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
+                        <!-- ### ANALOG INPUT -->
+                        <th class="small" id="Analog-input">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
+                        <!-- ### PWM Output -->
+                        <th class="small" id="PWM-Ouput">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+
 
                         <th class="small" id="GPIO-Pins">
                             <div class="th-wrapper">
@@ -244,22 +252,41 @@
                         <th class="large" id="Timer"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
                         <th class="medium" id="Operating-Temperature"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
                         <th class="large" id="Display-Interface"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
+                        <th class="medium" id="Package-Type">
+                            <div class="th-wrapper">
+                                <ul>
+                                    <li><input type="checkbox" name="" id="Canned"> <label for="Canned">Canned Module</label></li>
+                                    <li><input type="checkbox" name="" id="QFN"> <label for="QFN">QFN</label></li>
+                                    <li><input type="checkbox" name="" id="TQFP"> <label for="TQFP">TQFP</label></li>
+                                </ul>
+                            </div>
+                            <div class="filter-reset"><a href="">Reset</a></div>
+                        </th>
+                        <th class="medium" id="Info"><div class="th-wrapper"></div><div class="filter-reset"><a href="">Reset</a></div></th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <?php foreach ($products as $product => $value) : ?>
+                    <?php $x = 0; foreach ($products as $product => $value) : ?>
                         <tr class="para-tbody-row" id="<?php echo $product; ?>">
-                            <td id="Quantity">
-                                <div class="th-wrapper" id="prod-quantity">
-                                    <input type="text" placeholder="Quantity" min="1" value="">
-                                    <button class="quantity-btn" id="minus"><i class="fa fa-minus"></i></button>
-                                    <button class="quantity-btn" id="plus"><i class="fa fa-plus"></i></button>
+                            <td>
+                                <div class="th-wrapper">
+                                    <figure class="product-image">
+                                        <img src="img/<?php echo $product; ?>.png" alt="">
+                                    </figure>
                                 </div>
-                                <button id="para-add-to-cart-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
-
-                                <!-- <p>Min: <span>160</span> Mult: <span>160</span></p> -->
                             </td>
+
+                            <td>
+                                <div class="th-wrapper">
+                                    <figure class="product-image">
+                                        <a href="<?php echo $partName['goldelox']['datasheet']; ?>">
+                                            <img src="img/pdf.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </td>
+
                             <?php foreach ($value as $key => $val) : ?>
                                 <td id="<?php echo $key; ?>">
                                     <ul>
@@ -274,7 +301,7 @@
                                 </td>
                             <?php endforeach;  ?>
                         </tr>
-                    <?php endforeach;  ?>
+                    <?php $x++; endforeach;  ?>
                 </tbody>
             </table>
         </div>

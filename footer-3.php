@@ -89,10 +89,10 @@
         <script src="js/tinymce/tinymce.min.js"></script>
         <script src="js/dragscroll.js"></script>
         <script src="scripts/main.js"></script>
-        <script async src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- <script async src='https://www.google.com/recaptcha/api.js'></script> -->
         <script src="js/recaptcha.js"></script>
 
-        <script async>
+        <!-- <script async>
             function init() {
             var vidDefer = document.getElementsByTagName('iframe');
             for (var i=0; i<vidDefer.length; i++) {
@@ -100,7 +100,7 @@
             vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
             } } }
             window.onload = init;
-        </script>
+        </script> -->
 
     
 
