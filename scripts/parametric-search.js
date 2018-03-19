@@ -8,15 +8,31 @@ $(function() {
         i++;
     });
 
-    var dataCatCbox = $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li input[type="checkbox"]');
+    var dataCatCbox =   $(document).find('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li input[type="checkbox"]');
+    var filter      =   $(document).find('.filter-reset label');
 
     dataCatCbox.change(function() {
-
         if ($(this).is(':checked')) {
             $(this).siblings('label').css({'color':'#327B83'});
+            $(this).parents('.th-wrapper').siblings('.filter-reset').find('label').show();
+
         } else {
             $(this).siblings('label').css({'color':'black'});
+            $(this).parents('.th-wrapper').siblings('.filter-reset').find('label').hide();
         }
+    });
+
+    filter.click(function() {
+        $(this).hide();
+        var th_ID = $(this).parents('th').prop('id');
+        var checkedBox  =   $(this).parent('.filter-reset').siblings('.th-wrapper').find('input[type="checkbox"]');    
+        var cboxLabel   =   $(this).parent('.filter-reset').siblings('.th-wrapper').find('label')  
+        checkedBox.prop('checked', false);
+        cboxLabel.css({'color':'black'});
+
+        console.log(th_ID);
+        
+        $(document).find('table.parametric-table thead tr th#'+th_ID+' .th-wrapper').removeClass('changed');
     });
 
     var paraSel = $('section.parametric-wrapper .para-category-wrapper select#para-category');
@@ -126,7 +142,6 @@ $(function() {
     var thWrap          =   $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper');
 
     resetFilterBtn.click(function() {
-
         paraCbox.prop('checked', false);
         $('section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul li label').css({'color':'black'});
         thWrap.removeClass('changed');
