@@ -13,7 +13,7 @@ $(function() {
     dataCatCbox.change(function() {
 
         if ($(this).is(':checked')) {
-            $(this).siblings('label').css({'color':'#0099FF'});
+            $(this).siblings('label').css({'color':'#327B83'});
         } else {
             $(this).siblings('label').css({'color':'black'});
         }
