@@ -200,6 +200,8 @@ $(function() {
     var aboutBanner         =   $('section.about-wrapper article.about-desc .overlay');
     var addntlBanner        =   $('section.about-wrapper article#addtnl-1');
 
+    var navbarFixed = $(document).find('section.navigation-container');
+
     $(window).scroll(function() {
         var winScroll = $(this).scrollTop();
         
@@ -210,6 +212,13 @@ $(function() {
         } else {
             aboutNav.removeClass('fixed-top');
             descList.removeClass('moveDesc');
+        }
+
+
+        if (winScroll > 1) {
+            navbarFixed.addClass('fixed');
+        } else {
+            navbarFixed.removeClass('fixed');
         }
     });
 
@@ -262,6 +271,7 @@ $(function() {
 
 
 
+    
     
 
 

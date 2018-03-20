@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
-    <!-- <link rel="stylesheet" href="css/dev-style.min-dist.css"> -->
     
 
     <script src="js/jquery.min.js"></script>
@@ -113,9 +112,6 @@
                                     <li>
                                         <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
 
-                                        <!-- Change the div element to 'form' -->
-                                        <!-- also change the 'div.account-form' to 'form.account-form in navbar-3.sass' -->
-                                        <!-- also change the 'div.account-form' to 'form.account-form in navbar.js'  -->
                                         <form class="account-form" action="#" method="post">
                                             <?php if (!empty($_SESSION['email'])) : ?>
 
@@ -181,7 +177,7 @@
                                     <li><a href="app_notes">App Notes</a></li>
                                     <li><a href="support">Support</a></li>
                                     <li><a href="about">About</a></li>
-                                    <!-- <li><a href="contact">Contact</a></li> -->
+                                    <li><a href="about">Parametric Search</a></li>
                                     <li><a id="search"><i class="fa fa-search"></i></a></li>
                                 </ul>
                             </nav>

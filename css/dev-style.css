@@ -126,6 +126,10 @@ input:focus, input:link, select:focus, select:link, details:focus, details:link,
   float: right;
 }
 
+.page-container {
+  padding-top: 112px;
+}
+
 .loading-wrapper {
   position: fixed;
   top: 50%;
@@ -1401,7 +1405,11 @@ header.header-wrapper nav.nav-wrapper section.menu-container article.menu-bar se
 header.header-wrapper {
   position: relative;
   font-family: 'Sony Sketch';
-  z-index: 1003;
+  z-index: 1009;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 header.header-wrapper::after {
@@ -1439,11 +1447,33 @@ header.header-wrapper section.navigation-wrapper section.navigation-container::a
   clear: both;
 }
 
+header.header-wrapper section.navigation-wrapper section.navigation-container.fixed article.navbar-wrapper section.menu-bar ul {
+  padding-top: 0;
+}
+
+header.header-wrapper section.navigation-wrapper section.navigation-container.fixed article.navbar-wrapper nav.navigation-bar ul {
+  padding: 0;
+}
+
+header.header-wrapper section.navigation-wrapper section.navigation-container.fixed article.logo-wrapper {
+  height: 80px !important;
+}
+
+header.header-wrapper section.navigation-wrapper section.navigation-container.fixed article.logo-wrapper img {
+  width: 80%;
+  bottom: -2px !important;
+}
+
 header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper {
   width: 25%;
   float: left;
   height: 100px;
   position: relative;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper a {
@@ -1455,6 +1485,11 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
   left: 0px;
   bottom: -10px;
   width: 90%;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper {
@@ -1476,6 +1511,11 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul {
   text-align: right;
   padding: 10px 0px 0px;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper section.menu-bar ul li {
@@ -1675,6 +1715,11 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul {
   text-align: right;
   padding: 10px;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li {
@@ -1686,7 +1731,7 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a {
   text-decoration: none;
   color: #3c3c3c;
-  padding: 10px;
+  padding: 10px 5px;
   font-size: 22px;
   cursor: pointer;
   text-transform: uppercase;

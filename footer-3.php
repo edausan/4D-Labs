@@ -82,7 +82,6 @@
         </section>
 
 </section>
-<!-- </div> -->
 
         <script src="js/jquery.details.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
