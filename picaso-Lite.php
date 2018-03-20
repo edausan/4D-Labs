@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Picaso-Lite');
+    $nav = array('nav-active','','','','','');
     include('header-2.php');
 ?> 
 

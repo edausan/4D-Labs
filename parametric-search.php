@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Parametric Search');
+    $nav = array('','','','','','nav-active');
     include('header-2.php');
 ?> 
 

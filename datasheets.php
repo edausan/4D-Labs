@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Datasheets');
+    $nav = array('','','','nav-active','','');
     include('header-2.php');
     $breads =   array('support','datasheets');
 ?> 

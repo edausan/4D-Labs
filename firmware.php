@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Firmware');
+    $nav = array('','','','nav-active','','');
     include('header-2.php');
     $breads =   array('support','firmware');
 ?> 

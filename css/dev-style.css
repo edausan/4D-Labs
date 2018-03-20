@@ -1455,6 +1455,11 @@ header.header-wrapper section.navigation-wrapper section.navigation-container.fi
   padding: 0;
 }
 
+header.header-wrapper section.navigation-wrapper section.navigation-container.fixed article.navbar-wrapper nav.navigation-bar ul li a {
+  padding-top: 0;
+  padding-bottom: 6px;
+}
+
 header.header-wrapper section.navigation-wrapper section.navigation-container.fixed article.logo-wrapper {
   height: 80px !important;
 }
@@ -1493,9 +1498,9 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper {
-  width: 75%;
-  float: left;
+  float: right;
   padding: 10px;
+  padding-bottom: 0;
   padding-right: 0px;
 }
 
@@ -1715,6 +1720,29 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul {
   text-align: right;
   padding: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+  position: relative;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0px;
+  background: #FB2800;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
   -ms-transition: 250ms ease;
@@ -1724,17 +1752,29 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 0px;
   cursor: pointer;
+  float: right;
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a {
   text-decoration: none;
   color: #3c3c3c;
-  padding: 10px 5px;
+  padding: 10px;
   font-size: 22px;
   cursor: pointer;
   text-transform: uppercase;
+  border-bottom: 2px solid white;
+  display: block;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a.nav-active {
+  color: #FB2800;
 }
 
 header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a:hover {
@@ -1762,7 +1802,7 @@ header.header-wrapper section.search-bar-wrapper {
   position: absolute;
   top: 0%;
   left: 0;
-  border-top: 2px solid #327B83;
+  border-top: 1px solid #eeeeee;
   background: white;
   z-index: 1000;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
@@ -10605,13 +10645,22 @@ section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
   width: 85%;
   float: left;
   position: relative;
-  cursor: -webkit-grab;
+  cursor: move;
   cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   -ms-transition: 300ms ease;
   -o-transition: 300ms ease;
   transition: 300ms ease;
+}
+
+section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper:active {
+  cursor: move;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table::after {

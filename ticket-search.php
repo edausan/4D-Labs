@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Search Result');
+    $nav = array('','','','','','');
     include('header-2.php');
 ?> 
 

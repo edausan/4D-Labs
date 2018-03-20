@@ -1,6 +1,7 @@
 <!-- Shipping and Billing Page when user is already Logged In -->
 <?php 
     define('TITLE', 'Shipping and Billing');
+    $nav = array('','','','','','');
     include('header-2.php');
 
     if (isset($_POST['checkout-signin-btn'])) {

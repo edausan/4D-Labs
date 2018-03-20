@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Support');
+    $nav = array('','','','nav-active','','');
     include('header-2.php');
 ?> 
 

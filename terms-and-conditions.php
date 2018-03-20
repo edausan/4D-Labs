@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Terms and Conditions');
+    $nav = array('','','','','','');
     include('header-2.php');
 
     $breads = array('Terms and Conditions');

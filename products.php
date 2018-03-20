@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Products');
+    $nav = array('nav-active','','','','','');
     include('header-2.php');
 
     $productNames   =   array('goldelox', 'diablo16','picaso','picaso-Lite');

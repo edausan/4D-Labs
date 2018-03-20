@@ -178,6 +178,13 @@ $(function() {
     
 
 
+    var paraTable    =   $('.para-tb-2-wrapper');
+
+    paraTable.mousedown(function() {
+        $(this).css({'cursor':'grabbing'});
+    }).mouseup(function() {
+        $(this).css({'cursor':'grab'});
+    });
 
     
 

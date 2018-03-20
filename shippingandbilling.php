@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Shipping and Billing');
+    $nav = array('','','','','','');
     include('header-2.php');
     
     if (!empty($_SESSION['email'])) {

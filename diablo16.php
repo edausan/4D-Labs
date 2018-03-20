@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Diablo16');
+    $nav = array('nav-active','','','','','');
     include('header-2.php');
 
     $product = array(

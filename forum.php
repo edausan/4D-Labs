@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Forum');
+    $nav = array('','','','','','');
     include('header-2.php');
 ?> 
 

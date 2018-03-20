@@ -259,7 +259,7 @@
                             <!-- Product Datasheet -->
                             <td>
                                 <figure class="product-pdf">
-                                    <a href="<?php echo $partName['goldelox']['datasheet']; ?>" target="_blank">
+                                    <a href="" target="_blank">
                                         <img src="img/pdf.png" alt="" title="Click to Download.">
                                     </a>
                                 </figure>

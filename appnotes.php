@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'App Notes');
+    
     include('header-2.php');
 
     

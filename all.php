@@ -1,5 +1,6 @@
 <?php  
     define('TITLE', 'Home');
+    $nav = array('','','','','','');
     include('header-2.php');
     include('include/banner.php');
     include('include/highlights.php');

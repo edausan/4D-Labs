@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'About');
+    $nav = array('','','','','nav-active','');
     include('header-2.php');
 ?> 
 

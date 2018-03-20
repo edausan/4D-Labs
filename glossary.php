@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Technical Glossary');
+    $nav = array('','','','','','');
     include('header-2.php');
     $breads     =   array('technical glossary');
 ?> 

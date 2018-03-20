@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Payments');
+    $nav = array('','','','','','');
     include('header-2.php');
 ?>
 

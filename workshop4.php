@@ -1,6 +1,6 @@
 <?php 
     define('TITLE', 'Worshop4 PRO IDE');
-    
+    $nav = array('nav-active','','','','','');
     include('header-2.php');
 ?> 
 

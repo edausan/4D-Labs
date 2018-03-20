@@ -1,6 +1,7 @@
 <!-- Shipping and Billing Page when user is already Logged In -->
 <?php 
     define('TITLE', 'Shipping Method');
+    $nav = array('','','','','','');
     include('header-2.php');
 
     $email = $_SESSION['email']; 

@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Shopping Cart');
+    $nav = array('','','','','','');
     include('header-2.php');
 ?>
 

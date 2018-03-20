@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Contact');
+    $nav = array('','','','','','');
     include('header-2.php');
 
     require_once "recaptchalib.php";

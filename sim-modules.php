@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'SIM Modules');
+    $nav = array('','','','','','');
     include('header-2.php');
 ?> 
 

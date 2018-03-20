@@ -35,6 +35,10 @@ header.header-wrapper
                     nav.navigation-bar 
                         ul
                             padding: 0
+                            li 
+                                a 
+                                    padding-top: 0
+                                    padding-bottom: 6px
 
                 article.logo-wrapper 
                     height: 80px !important
@@ -63,9 +67,9 @@ header.header-wrapper
 
 
             article.navbar-wrapper
-                width: 75%
-                float: left
+                float: right 
                 padding: 10px
+                padding-bottom: 0
                 padding-right: 0px
 
                 ul 
@@ -231,30 +235,51 @@ header.header-wrapper
                                                     
                                                     
 
-                                            
-
+                        
 
                 nav.navigation-bar
                     ul
                         text-align: right
                         padding: 10px
+                        padding-bottom: 0
+                        padding-left: 0
+                        position: relative
                         +transition
+                        +clear
+
+                        .underline
+                            position: absolute
+                            bottom: 0
+                            left: 0
+                            height: 2px 
+                            width: 0px
+                            background: $orange
+                            +transition
 
                         li
                             display: inline-block
-                            margin-left: 20px
+                            margin-left: 0px
                             cursor: pointer
+                            float: right 
 
                             a
                                 text-decoration: none
                                 color: $link
-                                padding: 10px 5px
+                                padding: 10px
                                 font-size: 22px
                                 cursor: pointer
                                 text-transform: uppercase
-                                
+                                border-bottom: 2px solid white
+                                display: block 
+                                +transition
+
+                                &.nav-active
+                                    color: $orange
+                                    // border-color: $orange
+
                                 &:hover
                                     color: $orange
+                                    // border-color: lighten(black, 50%)
 
                                 label
                                     cursor: pointer
@@ -278,7 +303,7 @@ header.header-wrapper
         position: absolute
         top: 0%
         left: 0
-        border-top: 2px solid $paleBlue
+        border-top: 1px solid #eeeeee
         background: white
         z-index: 1000
         box-shadow: 0 20px 20px rgba(black, .3)

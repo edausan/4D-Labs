@@ -172,15 +172,17 @@
                             
                             <nav class="navigation-bar">
                                 <ul>
-                                    <li><a href="products">Products</a></li>
-                                    <li><a href="solutions">Solutions</a></li>
-                                    <li><a href="app_notes">App Notes</a></li>
-                                    <li><a href="support">Support</a></li>
-                                    <li><a href="about">About</a></li>
-                                    <li><a href="about">Parametric Search</a></li>
                                     <li><a id="search"><i class="fa fa-search"></i></a></li>
+                                    <li><a id="parametric-search" class="<?php echo $nav[5]; ?>" href="parametric-search">Parametric Search</a></li>
+                                    <li><a id="about" class="<?php echo $nav[4]; ?>" href="about">About</a></li>
+                                    <li><a id="support" class="<?php echo $nav[3]; ?>" href="support">Support</a></li>
+                                    <li><a id="app-notes" class="<?php echo $nav[2]; ?>" href="app_notes">App Notes</a></li>
+                                    <li><a id="solutions" class="<?php echo $nav[1]; ?>" href="solutions">Solutions</a></li>
+                                    <li><a id="products" class="<?php echo $nav[0]; ?>" href="products">Products</a></li>
+                                    <div class="underline"></div>
                                 </ul>
                             </nav>
+
                         </article>
 
                         <?php include('include/mobile-navbar.php'); ?>

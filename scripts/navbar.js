@@ -269,9 +269,78 @@ $(function() {
     }
 
 
-
-
     
+    var navlink     =   $('nav.navigation-bar ul li a');
+    var underline   =   $('nav.navigation-bar ul .underline');
+    var width       =   0;
+    var left        =   0;
+    var navLinkId;
+    var navActiveLinkId;
+    var navActiveLinkWidth  =   0;
+
+    navlink.each(function() {
+        if ($(this).hasClass('nav-active')) {
+            navActiveLinkId = $(this).attr('id');
+            navActiveLinkWidth = $(this).width();
+        } else {
+            width = 0;
+            left = 0;
+        }
+        width = navActiveLinkWidth;
+        navLinkCheck(navActiveLinkId);
+    });
+
+    navlink.mouseover(function() {
+        
+        navLinkId   = $(this).attr('id');
+        width       = $(this).width();
+        left        = 0;
+
+        navLinkCheck(navLinkId);
+        
+    }).mouseleave(function() {
+        if (navActiveLinkId == undefined) {
+            width = 0 - 20;
+            moveUnderline(navLinkId, width, left);
+        } else {
+            width = navActiveLinkWidth;
+            navLinkCheck(navActiveLinkId);
+        }
+    });
+
+
+    function navLinkCheck(navLinkId) {
+        if (navLinkId == 'products') {
+            left = 0;
+            moveUnderline(navLinkId, width, left);
+
+        } else if (navLinkId == 'solutions') {
+            left = 14.5;
+            moveUnderline(navLinkId, width, left);
+
+        } else if (navLinkId == 'app-notes') {
+            left = 29.4;
+            moveUnderline(navLinkId, width, left);
+
+        } else if (navLinkId == 'support') {
+            left = 44.7;
+            moveUnderline(navLinkId, width, left);
+
+        } else if (navLinkId == 'about') {
+            left = 57.8;
+            moveUnderline(navLinkId, width, left);
+
+        } else if (navLinkId == 'parametric-search') {
+            left = 68;
+            moveUnderline(navLinkId, width, left);
+        }
+        
+    }
+
+    function moveUnderline(navLinkId, width, left) {
+        width = width + 20;        
+        underline.css({ 'width':''+width+'px', 'left':''+left+'%' });
+    }
     
 
 

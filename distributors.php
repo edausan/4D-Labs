@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Distributors');
+    $nav = array('','','','','','');
     include('header-2.php');
 ?> 
 

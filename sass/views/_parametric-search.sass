@@ -170,8 +170,17 @@ section.parametric-wrapper
             width: 85%
             float: left
             position: relative
+            cursor: move
             cursor: grab
+            cursor: -moz-grab
+            cursor: -webkit-grab
             +transition(300ms ease) 
+
+            &:active
+                cursor: move
+                cursor: grabbing
+                cursor: -moz-grabbing
+                cursor: -webkit-grabbing
 
 
         table.parametric-table

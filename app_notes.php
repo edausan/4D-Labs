@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'App Notes');
+    $nav = array('','','nav-active','','','');
     include('header-2.php');
 
 

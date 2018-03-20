@@ -1,5 +1,6 @@
 <?php 
     define('TITLE', 'Privacy Policy');
+    $nav = array('','','','','','');
     include('header-2.php');
 
     $breads = array('Privacy Policy');
