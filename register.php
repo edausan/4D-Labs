@@ -34,7 +34,7 @@
                             <input type="text" name="log" value="0" hidden>
                             <!-- /hidden data for log -->
 
-                            <figure class="reg-logo-wrapper"><a href="/"><img src="img/4dllogo2.png" alt=""></a></figure>
+                            <figure class="reg-logo-wrapper"><a href="/"><img src="img/4dllogo.png" alt=""></a></figure>
                             <hr>
 
                             <header>

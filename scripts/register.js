@@ -80,7 +80,7 @@ $(function() {
             $(document).find('input#shipping-taxid').val(billtaxid);
 
         } else {
-            $(document).find('input').val('');
+            shippingWrap.find('input').val('');
             $(document).find('select#shipping-country option[value='+billCountry+']').prop('selected', false);
             $(document).find('select#shipping-country option[value=0]').prop('disabled', false).prop('selected', true);
 

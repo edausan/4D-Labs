@@ -18,7 +18,6 @@
 
     if (!empty($_SESSION['email'])) {
         $log = 0;
-
     } else {
         $_SESSION['email'] = $_POST['email'];
     }
@@ -48,7 +47,7 @@
                     // Passing Data from pre-defined data to $_SESSION
                     $_SESSION['fname'] = 'Jane';
                     $_SESSION['lname'] = 'Cruz';
-                    $_SESSION['email'] = 'janedoe@email.com';
+                    $_SESSION['email'] = 'janecruz@email.com';
                     $_SESSION['company'] = 'JaneCruz Inc.';
 
                     $_SESSION['billing-add1'] = 'Block 123 Lot 456 Phase 7';
@@ -83,10 +82,10 @@
                 <?php  } else if ($log == 2) {
 
                             // checking if the Sessions variables has a value
-                            if (empty($_POST['firstname'])) {
-                                $_POST['firstname'] = '';
-                                $_POST['lastname'] = '';
-                                $_POST['company'] = '';
+                            if (empty($_POST['billing-address1'])) {
+                                // $_POST['firstname'] = '';
+                                // $_POST['lastname'] = '';
+                                // $_POST['company'] = '';
                                 $_POST['email'] = $_SESSION['email'];
                                 $_POST['billing-address1'] = '';
                                 $_POST['billing-address2'] = '';
@@ -132,6 +131,19 @@
                             include('include/sb-inputs.php');
 
                         } else {
+                            if (empty($_SESSION['company'])) {
+                                
+                                $_POST['email'] = $_SESSION['email'];
+                                $_SESSION['company'] = '';
+                                $_SESSION['billing-add1'] = '';
+                                $_SESSION['billing-add2'] = '';
+                                $_SESSION['billing-city'] = '';
+                                $_SESSION['billing-state'] = '';
+                                $_SESSION['billing-postal'] = '';
+                                $_SESSION['billing-phone'] = '';
+                                $_SESSION['billing-country'] = 0;
+                            }
+
                             $fname = $_SESSION['fname'];
                             $lname = $_SESSION['lname'];
                             $email = $_SESSION['email'];

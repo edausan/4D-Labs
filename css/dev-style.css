@@ -2022,17 +2022,12 @@ div.to-top:hover {
   background: #327B83;
   color: white;
   padding: 8px 16px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
   cursor: pointer;
   width: 30%;
 }
 
 .account-form button:hover {
-  background: #AD2005;
+  background: #163639;
 }
 
 .account-form hr {
@@ -6808,42 +6803,41 @@ article#addtnl-1 .about-4dl p {
 section.register-wrapper {
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-position: 50%;
-  background-attachment: fixed;
+  background: -webkit-radial-gradient(top, #cccccc 0%, #eeeeee 100%);
+  background: -o-radial-gradient(top, #cccccc 0%, #eeeeee 100%);
+  background: radial-gradient(to bottom, #cccccc 0%, #eeeeee 100%);
   position: relative;
   font-family: "Lato Regular", Arial, Helvetica, sans-serif;
-  padding: 50px 0px;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
 }
 
 section.register-wrapper input.reg-input, section.register-wrapper form.registration-form .input-wrapper textarea, section.register-wrapper form.registration-form .input-wrapper select, section.register-wrapper select {
-  color: white !important;
+  color: black;
 }
 
 section.register-wrapper input.reg-input::-webkit-input-placeholder, section.register-wrapper form.registration-form .input-wrapper textarea::-webkit-input-placeholder, section.register-wrapper form.registration-form .input-wrapper select::-webkit-input-placeholder, section.register-wrapper select::-webkit-input-placeholder {
-  color: #cccccc !important;
+  color: black;
 }
 
 section.register-wrapper input.reg-input:-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper textarea:-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper select:-ms-input-placeholder, section.register-wrapper select:-ms-input-placeholder {
-  color: #cccccc !important;
+  color: black;
 }
 
 section.register-wrapper input.reg-input::-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper textarea::-ms-input-placeholder, section.register-wrapper form.registration-form .input-wrapper select::-ms-input-placeholder, section.register-wrapper select::-ms-input-placeholder {
-  color: #cccccc !important;
+  color: black;
 }
 
 section.register-wrapper input.reg-input::placeholder, section.register-wrapper form.registration-form .input-wrapper textarea::placeholder, section.register-wrapper form.registration-form .input-wrapper select::placeholder, section.register-wrapper select::placeholder {
-  color: #cccccc !important;
+  color: black;
 }
 
 section.register-wrapper form.registration-form {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
-  margin-bottom: 50px;
+  display: block;
 }
 
 section.register-wrapper form.registration-form::after {
@@ -6854,25 +6848,22 @@ section.register-wrapper form.registration-form::after {
 
 section.register-wrapper form.registration-form p {
   text-align: center;
+  color: black;
 }
 
 section.register-wrapper form.registration-form .personal-info-wrapper, section.register-wrapper form.registration-form .login-wrapper {
   width: 49%;
   height: 1002.2px;
-  background: rgba(50, 123, 131, 0.9);
-  padding: 60px 60px 100px;
-  margin: 0 auto;
+  background: white;
+  padding: 40px 40px 100px;
+  margin: 70px auto;
   position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eeeeee;
+  -webkit-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
@@ -6900,12 +6891,12 @@ section.register-wrapper form.registration-form .personal-info-wrapper.fifty-per
 }
 
 section.register-wrapper form.registration-form .personal-info-wrapper:hover, section.register-wrapper form.registration-form .login-wrapper:hover {
-  -webkit-box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-  background: rgba(50, 123, 131, 0.95);
+  border-color: #327B83;
+  -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 section.register-wrapper form.registration-form .personal-info-wrapper figure.reg-logo-wrapper, section.register-wrapper form.registration-form .login-wrapper figure.reg-logo-wrapper {
@@ -6927,7 +6918,7 @@ section.register-wrapper form.registration-form .personal-info-wrapper header, s
 }
 
 section.register-wrapper form.registration-form .personal-info-wrapper header h4, section.register-wrapper form.registration-form .login-wrapper header h4 {
-  color: rgba(255, 255, 255, 0.6);
+  color: black;
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
@@ -6945,14 +6936,9 @@ section.register-wrapper form.registration-form .shipping-and-billing-wrapper {
   width: 49%;
   float: left;
   background: rgba(50, 123, 131, 0.9);
-  padding: 40px 60px;
-  margin: 0 auto;
+  padding: 40px 40px;
+  margin: 70px auto;
   position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
   -webkit-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.1);
@@ -6990,6 +6976,52 @@ section.register-wrapper form.registration-form .shipping-and-billing-wrapper.tr
   transform: translateX(50%);
 }
 
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .cbox label {
+  color: white;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .cbox i {
+  color: white;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper span {
+  color: #cccccc;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper span.cc {
+  color: white !important;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper input,
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper select {
+  color: white !important;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper input::-webkit-input-placeholder,
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper select::-webkit-input-placeholder {
+  color: white;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper input:-ms-input-placeholder,
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper select:-ms-input-placeholder {
+  color: white;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper input::-ms-input-placeholder,
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper select::-ms-input-placeholder {
+  color: white;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper input::placeholder,
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper select::placeholder {
+  color: white;
+}
+
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper input option:nth-child(1),
+section.register-wrapper form.registration-form .shipping-and-billing-wrapper .input-wrapper select option:nth-child(1) {
+  color: white !important;
+}
+
 section.register-wrapper form.registration-form .shipping-and-billing-wrapper .shipping-details-wrapper header.form-header,
 section.register-wrapper form.registration-form .shipping-and-billing-wrapper .billing-details-wrapper header.form-header {
   text-align: left;
@@ -7010,12 +7042,15 @@ section.register-wrapper form.registration-form .shipping-and-billing-wrapper .s
 
 section.register-wrapper form.registration-form .login-wrapper {
   height: auto;
-  -webkit-transform: translate(50%, -100%);
-  -moz-transform: translate(50%, -100%);
-  -ms-transform: translate(50%, -100%);
-  -o-transform: translate(50%, -100%);
-  transform: translate(50%, -100%);
-  margin-top: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto !important;
 }
 
 section.register-wrapper form.registration-form .input-wrapper {
@@ -7029,7 +7064,7 @@ section.register-wrapper form.registration-form .input-wrapper {
   margin-bottom: 10px;
   padding: 0px 10px;
   z-index: 1002;
-  color: white;
+  color: black;
 }
 
 section.register-wrapper form.registration-form .input-wrapper::after {
@@ -7045,7 +7080,7 @@ section.register-wrapper form.registration-form .input-wrapper.invalid {
 section.register-wrapper form.registration-form .input-wrapper span {
   display: block;
   position: relative;
-  color: white;
+  color: #cccccc;
   width: 5%;
   float: left;
   height: 100%;
@@ -7068,7 +7103,7 @@ section.register-wrapper form.registration-form .input-wrapper span i {
 }
 
 section.register-wrapper form.registration-form .input-wrapper span.cc {
-  color: #4EBDFF;
+  color: #327B83;
 }
 
 section.register-wrapper form.registration-form .input-wrapper input.reg-input, section.register-wrapper form.registration-form .input-wrapper textarea, section.register-wrapper form.registration-form .input-wrapper select {
@@ -7083,7 +7118,7 @@ section.register-wrapper form.registration-form .input-wrapper input.reg-input, 
   -o-box-shadow: none;
   box-shadow: none;
   outline: none;
-  color: white !important;
+  color: black;
   padding: 10px;
   position: relative;
   z-index: 1001;
@@ -7106,7 +7141,7 @@ section.register-wrapper form.registration-form .input-wrapper::before {
   left: 0;
   height: 100%;
   width: 0%;
-  background: #1d474c;
+  background: #cccccc;
   opacity: 0;
   -webkit-transition: 500ms ease;
   -moz-transition: 500ms ease;
@@ -7117,17 +7152,17 @@ section.register-wrapper form.registration-form .input-wrapper::before {
 
 section.register-wrapper form.registration-form .input-wrapper.activeIn::before {
   width: 100%;
-  opacity: .2;
+  opacity: .4;
 }
 
 section.register-wrapper form.registration-form p {
-  color: whitesmoke;
+  color: black;
   z-index: 1001;
   position: relative;
 }
 
 section.register-wrapper form.registration-form p a {
-  color: #81d0ff;
+  color: #327B83;
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper {
@@ -7169,7 +7204,6 @@ section.register-wrapper form.registration-form .sub-btn-wrapper a, section.regi
   -o-transition: 250ms ease;
   transition: 250ms ease;
   text-transform: uppercase;
-  border-bottom: 2px solid rgba(78, 189, 255, 0);
   position: relative;
 }
 
@@ -7180,10 +7214,10 @@ section.register-wrapper form.registration-form .sub-btn-wrapper a::before, sect
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(78, 189, 255, 0.2)), color-stop(rgba(78, 189, 255, 0.1)), color-stop(transparent), to(transparent));
-  background: -webkit-linear-gradient(bottom, rgba(78, 189, 255, 0.2), rgba(78, 189, 255, 0.1), transparent, transparent);
-  background: -o-linear-gradient(bottom, rgba(78, 189, 255, 0.2), rgba(78, 189, 255, 0.1), transparent, transparent);
-  background: linear-gradient(to top, rgba(78, 189, 255, 0.2), rgba(78, 189, 255, 0.1), transparent, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(50, 123, 131, 0.2)), color-stop(rgba(50, 123, 131, 0.1)), color-stop(transparent), to(transparent));
+  background: -webkit-linear-gradient(bottom, rgba(50, 123, 131, 0.2), rgba(50, 123, 131, 0.1), transparent, transparent);
+  background: -o-linear-gradient(bottom, rgba(50, 123, 131, 0.2), rgba(50, 123, 131, 0.1), transparent, transparent);
+  background: linear-gradient(to top, rgba(50, 123, 131, 0.2), rgba(50, 123, 131, 0.1), transparent, transparent);
   opacity: 0;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
@@ -7212,7 +7246,6 @@ section.register-wrapper form.registration-form .sub-btn-wrapper a p, section.re
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper a:hover, section.register-wrapper form.registration-form .sub-btn-wrapper button:hover {
-  border-bottom: 2px solid #4ebdff;
   -webkit-box-shadow: inset 0 10px 30px -10px transparent;
   -moz-box-shadow: inset 0 10px 30px -10px transparent;
   -ms-box-shadow: inset 0 10px 30px -10px transparent;
@@ -7225,30 +7258,32 @@ section.register-wrapper form.registration-form .sub-btn-wrapper a:hover::before
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper a#submit, section.register-wrapper form.registration-form .sub-btn-wrapper button#submit {
-  color: #81d0ff;
+  color: black;
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper a#login, section.register-wrapper form.registration-form .sub-btn-wrapper button#login {
-  color: white;
+  color: black;
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper a#login p, section.register-wrapper form.registration-form .sub-btn-wrapper button#login p {
-  color: white;
+  color: #327B83;
+  opacity: .7;
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper a#login:hover, section.register-wrapper form.registration-form .sub-btn-wrapper button#login:hover {
-  color: white;
+  color: black;
 }
 
 section.register-wrapper form.registration-form .sub-btn-wrapper a#login:hover p, section.register-wrapper form.registration-form .sub-btn-wrapper button#login:hover p {
-  color: #81d0ff;
+  opacity: 1;
 }
 
 section.register-wrapper a#forgotpass {
   position: relative;
   z-index: 1001;
-  color: #4EBDFF;
+  color: #327B83;
   text-align: center;
+  display: block;
   margin-top: 20px;
 }
 
@@ -7273,7 +7308,7 @@ section.register-wrapper a#forgotpass {
 }
 
 .cbox label {
-  color: white;
+  color: black;
   margin: 0;
   margin-left: 10px;
   cursor: pointer;
@@ -7283,7 +7318,7 @@ section.register-wrapper a#forgotpass {
   position: absolute;
   top: 50%;
   left: 15px;
-  color: white;
+  color: #327B83;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -7295,7 +7330,7 @@ section.register-wrapper a#forgotpass {
   -ms-transition: 250ms ease;
   -o-transition: 250ms ease;
   transition: 250ms ease;
-  z-index: 1000;
+  z-index: 1001;
   font-weight: normal;
 }
 
@@ -7306,23 +7341,18 @@ section.register-wrapper a#forgotpass {
 .cbox::before {
   content: '';
   position: absolute;
-  width: 13px;
-  height: 13px;
-  top: 50%;
+  width: 10px;
+  height: 10px;
+  top: 55%;
   left: 15px;
   -webkit-transform: translateY(-50%) scale(1);
   -moz-transform: translateY(-50%) scale(1);
   -ms-transform: translateY(-50%) scale(1);
   -o-transform: translateY(-50%) scale(1);
   transform: translateY(-50%) scale(1);
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1002;
   opacity: 1;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;

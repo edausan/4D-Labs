@@ -1,53 +1,45 @@
 $bgImg: url('../img/register2.jpg') no-repeat
-
-// body 
-//     overflow: hidden
-//     &.overflowY
-//         overflow-y: auto
+$bgGrad: radial-gradient(to bottom, #cccccc 0%, #eeeeee 100%)
 
 section.register-wrapper
     width: 100%
     height: 100vh
-    // background: $bgImg
-    background-size: cover
-    background-position: 50%
-    background-attachment: fixed
+    background: $bgGrad
     position: relative
     font-family: $lato
-    padding: 50px 0px
     overflow-y: auto
     overflow-x: hidden
     position: relative
 
     input.reg-input, select 
-        color: white !important
+        color: black
 
         &::placeholder
-            color: #cccccc !important
-
+            color: black
     
 
     form.registration-form
         +clear
         width: 100%
-        height: 100%
+        height: 100vh
         position: relative
-        margin-bottom: 50px
+        display: block
 
         p 
             text-align: center
+            color: black
 
         
 
         .personal-info-wrapper
             width: 49%
             height: 1002.2px
-            background: rgba($paleBlue, .9)
-            padding: 60px 60px 100px
-            margin: 0 auto
+            background: white 
+            padding: 40px 40px 100px
+            margin: 70px auto
             position: relative
-            +border-radius(5px)
-            +boxShadow(0 8px 32px 0px rgba(black, .1))
+            border: 1px solid #eeeeee
+            +boxShadow(0 4px 20px 0px rgba(black, .1))
             +transform(translateX(0%))
             overflow: hidden
             float: left
@@ -60,8 +52,8 @@ section.register-wrapper
                 margin-right: 10px
 
             &:hover
-                +boxShadow(0 8px 20px -8px rgba(black, .5))
-                background: rgba($paleBlue, .95)
+                border-color: $paleBlue
+                +boxShadow(0 10px 20px 0px rgba(black, .1))
 
             figure.reg-logo-wrapper
                 width: 50%
@@ -79,7 +71,7 @@ section.register-wrapper
                 margin-bottom: 20px
 
                 h4
-                    color: rgba(white, .6)
+                    color: black
                     text-transform: uppercase
                     text-align: center
                     font-size: 20px
@@ -97,10 +89,9 @@ section.register-wrapper
             width: 49%
             float: left
             background: rgba($paleBlue, .9)
-            padding: 40px 60px
-            margin: 0 auto
+            padding: 40px 40px
+            margin: 70px auto
             position: relative
-            +border-radius(5px)
             +boxShadow(0 8px 32px 0px rgba(black, .1))
             +transform(translateX(0%))
             +transition
@@ -115,12 +106,41 @@ section.register-wrapper
                 opacity: 0
                 +transform(translateX(50%))
 
+            .cbox
+                label
+                    color: white 
+                
+                i 
+                    color: white
+
+            .input-wrapper
+                span 
+                    color: #cccccc
+                    i
+                        
+
+                    &.cc
+                        color: white !important
+
+                input, 
+                select
+                    color: white !important
+
+                    &::placeholder
+                        color: white 
+
+                    option 
+                        &:nth-child(1)
+                            color: white !important
+
             .shipping-details-wrapper,
             .billing-details-wrapper
                 header.form-header
                     text-align: left
                     h3 
                         color: white 
+
+                
 
             .shipping-details-wrapper
                 header.form-header
@@ -137,8 +157,12 @@ section.register-wrapper
         .login-wrapper
             @extend .personal-info-wrapper
             height: auto
-            +transform(translate(50%, -100%))
-            margin-top: 50%
+            position: absolute
+            top: 50%
+            left: 50%
+            +transform
+            // margin-top: 50%
+            margin: 0 auto !important
 
 
         .input-wrapper
@@ -149,7 +173,7 @@ section.register-wrapper
             padding: 0px 10px
             +clear
             z-index: 1002
-            color: white
+            color: black
 
             &.invalid
                 background: rgba(255, 0, 0, .2)
@@ -157,7 +181,7 @@ section.register-wrapper
             span
                 display: block
                 position: relative
-                color: white 
+                color: #cccccc 
                 width: 5%
                 float: left
                 height: 100%
@@ -170,7 +194,7 @@ section.register-wrapper
                     +transform
 
                 &.cc
-                    color: $picaso-lite
+                    color: $paleBlue
 
 
             input.reg-input
@@ -181,7 +205,7 @@ section.register-wrapper
                 border-style: none
                 +boxShadow(none)
                 outline: none
-                color: white !important
+                color: black
                 padding: 10px
                 position: relative
                 z-index: 1001
@@ -204,7 +228,7 @@ section.register-wrapper
                 left: 0
                 height: 100%
                 width: 0%
-                background: darken($paleBlue, 15%)
+                background: #cccccc
                 opacity: 0
                 +transition(500ms ease)
                 
@@ -212,20 +236,16 @@ section.register-wrapper
             &.activeIn
                 &::before
                     width: 100%
-                    opacity: .2
-
-
-
-
+                    opacity: .4
 
         
         p
-            color: whitesmoke
+            color: black
             z-index: 1001
             position: relative
 
             a
-                color: lighten($picaso-lite, 10%)
+                color: $paleBlue
 
         .sub-btn-wrapper
             position: absolute
@@ -251,7 +271,7 @@ section.register-wrapper
                 +boxShadow(inset 0 10px 30px -10px rgba(black, .2))
                 +transition
                 text-transform: uppercase
-                border-bottom: 2px solid rgba($picaso-lite, 0)
+                // border-bottom: 2px solid rgba($paleBlue, 0)
                 position: relative
 
                 &::before
@@ -261,7 +281,7 @@ section.register-wrapper
                     left: 0
                     width: 100%
                     height: 100%
-                    background: linear-gradient(to top, rgba($picaso-lite, .2),rgba($picaso-lite, .1), transparent, transparent)
+                    background: linear-gradient(to top, rgba($paleBlue, .2),rgba($paleBlue, .1), transparent, transparent)
                     opacity: 0
                     +transition
 
@@ -280,34 +300,36 @@ section.register-wrapper
                     text-transform: none
 
                 &:hover
-                    border-bottom: 2px solid rgba($picaso-lite, 1)
+                    // border-bottom: 2px solid rgba($paleBlue, 1)
                     +boxShadow(inset 0 10px 30px -10px rgba(black, 0))
 
                     &::before
                         opacity: 1
 
                 &#submit
-                    color: lighten($picaso-lite, 10%)
+                    color: black
                 
                 &#login
-                    color: white
+                    color: black
 
                     p 
-                        color: white
+                        color: $paleBlue
+                        opacity: .7
 
                     &:hover
-                        color: rgba(white, 1)
+                        color: rgba(black, 1)
 
                         p
-                            color: lighten($picaso-lite, 10%)
+                            opacity: 1
 
 
 
     a#forgotpass 
         position: relative
         z-index: 1001
-        color: $picaso-lite
+        color: $paleBlue
         text-align: center
+        display: block 
         margin-top: 20px
 
 .cbox
@@ -330,7 +352,7 @@ section.register-wrapper
         z-index: 1000
         
     label
-        color: white
+        color: black
         margin: 0
         margin-left: 10px
         cursor: pointer
@@ -339,11 +361,11 @@ section.register-wrapper
         position: absolute
         top: 50%
         left: 15px
-        color: white
+        color: $paleBlue
         +transform(translateY(-50%))
         opacity: 0
         +transition
-        z-index: 1000
+        z-index: 1001
         font-weight: normal
 
         &.showCheck
@@ -353,15 +375,14 @@ section.register-wrapper
     &::before
         content: ''
         position: absolute
-        width: 13px
-        height: 13px
-        top: 50%
+        width: 10px
+        height: 10px
+        top: 55%
         left: 15px
         +transform(translateY(-50%) scale(1))
-        background: rgba(white, .5)
-        +border-radius(2px)
+        background: rgba(black, .2)
         cursor: pointer
-        z-index: 1001
+        z-index: 1002
         opacity: 1
         +transition
         

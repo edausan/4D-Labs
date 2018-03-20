@@ -3,10 +3,20 @@
 
     if (isset($_POST['logout'])) {
         session_destroy();
-        $url='/';
+        $url='index';
         echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
     } else  if (isset($_POST['signin'])) {
         $_SESSION['email'] = $_POST['email'];
+    }
+
+    if (empty($_POST['log'])) {
+        $_POST['log'] = 0;
+    }
+
+    if (isset($_POST['signin'])) {
+        // die($_POST['log']);
+        // die($_SESSION['email']);
+        $_SESSION['log'] = $_POST['log'];
     }
 
 ?>
@@ -118,13 +128,13 @@
                                                 <?php 
 
                                                     if (empty($_SESSION['fname']) && empty($_SESSION['lname'])) {
-                                                        $_SESSION['fname'] = "User's";
+                                                        $_SESSION['fname'] = "Your";
                                                         $_SESSION['lname'] = "Name";
                                                     }
                                                 
                                                 ?>
 
-                                                <label><strong><?php echo $_SESSION['fname']; ?> <?php echo $_SESSION['lname']; ?></strong></label>
+                                                <label>Hi! <strong><?php echo $_SESSION['fname']; ?> <?php echo $_SESSION['lname']; ?></strong></label>
                                                 <p><?php echo $_SESSION['email']; ?></p>
                                                 <a href="shopping-cart"><i class="fa fa-shopping-cart"></i>Shopping Cart</a>
 
