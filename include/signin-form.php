@@ -15,5 +15,5 @@
 
 <div class="account-bottom">
     <a href="">Forgot your password?</a>
-    <p>Don't have an account? <a href="register.php">Register Now</a></p>
+    <p>Don't have an account? <a href="register">Register Now</a></p>
 </div>

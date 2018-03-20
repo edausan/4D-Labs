@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="default-css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
-    <link rel="stylesheet" href="css/dev-style.min-dist.css">
+    <!-- <link rel="stylesheet" href="css/dev-style.min-dist.css"> -->
 </head>
 <body>
     
@@ -25,7 +25,7 @@
             <article class="lab-container">
                 <section class="lab-row">
 
-                    <form action="index" method="post" class="registration-form" >
+                    <form action="/" method="post" class="registration-form" >
                         <!-- HIDDEN DATA -->
                         <!-- Just for the mock and flow of the site -->
                         <div class="hidden-data" hidden>
@@ -59,7 +59,7 @@
                             
                             <div class="sub-btn-wrapper">
                                 <button href="" id="submit" class="signin" name="signin"><span>Sign In</span></button>
-                                <a href="register.php" id="login"><span>Don't have account yet?<p>Click here to sign up.</p></span></a>
+                                <a href="register" id="login"><span>Don't have account yet?<p>Click here to sign up.</p></span></a>
                             </div>
                         </div>
                         

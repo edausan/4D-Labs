@@ -3,7 +3,7 @@
 
     if (isset($_POST['logout'])) {
         session_destroy();
-        $url='index';
+        $url='/';
         echo '<META HTTP-EQUIV=REFRESH CONTENT="0; '.$url.'">'; 
     } else  if (isset($_POST['signin'])) {
         $_SESSION['email'] = $_POST['email'];
@@ -71,24 +71,7 @@
 
 <body dir="ltr">
 
-<div class="loading-wrapper">
-    <figure><img src="img/favicon.png" alt=""></figure>
-    <div class="loading">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <h2 for="">
-        <span>L</span>
-        <span>O</span>
-        <span>A</span>
-        <span>D</span>
-        <span>I</span>
-        <span>N</span>
-        <span>G</span>
-    </h2>
-</div>
+<?php include('include/loading.php'); ?>
 
 <section class="page-container" style="opacity: 0; transition: 1s ease; overflow-x:hidden">
 
@@ -120,7 +103,12 @@
 
                                     <!-- account form -->
                                     <li>
-                                        <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
+                                        <?php if (!empty($_SESSION['email'])) : ?>
+                                            <a id="account"><i class="fa fa-user"></i> <label for=""><?php echo $_SESSION['fname']; ?> <?php echo $_SESSION['lname']; ?></label> <i class="fa fa-angle-down"></i></a>
+                                        <?php else : ?>
+                                            <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
+                                        <?php endif; ?>
+                                        
 
                                         <form class="account-form" action="#" method="post">
                                             <?php if (!empty($_SESSION['email'])) : ?>

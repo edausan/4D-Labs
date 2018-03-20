@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="default-css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
-    <link rel="stylesheet" href="css/dev-style.min-dist.css">
+    <!-- <link rel="stylesheet" href="css/dev-style.min-dist.css"> -->
 </head>
 <body>
     
@@ -25,7 +25,7 @@
             <article class="lab-container">
                 <section class="lab-row">
 
-                    <form action="sb-loggedin" class="registration-form" method="post">
+                    <form action="/" class="registration-form" method="post">
                         <input type="text" name="log" value="2" hidden>
 
                         <!-- Personal Information Form -->
