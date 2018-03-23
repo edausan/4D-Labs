@@ -44,6 +44,7 @@
                             <figure class="product-thumb">
                                 <img id="" src="img/product-page-icons/goldelox.png" alt="">
                             </figure>
+                            <p id="pricing">Price: <span>10K+</span> <strong>$ <?php echo $product['pricing']; ?></strong></p>
                         </div>
 
                     </section> <!-- Product Details Wrapper -->

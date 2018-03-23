@@ -578,7 +578,7 @@
                             'Processors'            =>  4,
                             'Modules'               =>  1,
                             'Chipsets'              =>  4,
-                            'Dvelopment Tools'      =>  1,
+                            'Development Tools'      =>  1,
                         ),
 
         'communication protocols'  =>  array(

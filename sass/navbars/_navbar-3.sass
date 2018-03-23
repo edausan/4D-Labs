@@ -77,7 +77,7 @@ header.header-wrapper
 
                 section.menu-bar
                     position: relative
-                    z-index: 4
+                    z-index: 1003
                     
                     ul
                         text-align: right
@@ -87,6 +87,7 @@ header.header-wrapper
                             display: inline-block
                             margin: 0 5px
                             position: relative
+                            font-size: 14px
 
                             i
                                 margin: 0 5px
@@ -254,23 +255,52 @@ header.header-wrapper
                             height: 2px 
                             width: 0px
                             background: $orange
+                            z-index: 1000
                             +transition
+                            
+                            &::before
+                                content: ''
+                                position: absolute
+                                top: 0
+                                left: 0 
+                                +transform(translateY(-100%))
+                                height: 50px
+                                width: 100%
+                                background: linear-gradient(to top, rgba($orange, .1) 0%, rgba($orange,.02) 50%, white 100%)
+                                opacity: .5
 
                         li
                             display: inline-block
                             margin-left: 0px
                             cursor: pointer
                             float: right 
+                            position: relative
+
+                            &::before
+                                content: ''
+                                position: absolute
+                                top: 50%
+                                right: 0
+                                +transform(translateY(-50%))
+                                width: 1px 
+                                height: 35%
+                                background: #cccccc
+
+                            &:nth-child(1)
+                                &::before
+                                    display: none 
 
                             a
                                 text-decoration: none
                                 color: $link
-                                padding: 10px
+                                padding: 10px 25px
                                 font-size: 22px
                                 cursor: pointer
                                 text-transform: uppercase
-                                border-bottom: 2px solid white
+                                border-bottom: 2px solid transparent
                                 display: block 
+                                position: relative
+                                z-index: 1001
                                 +transition
 
                                 &.nav-active

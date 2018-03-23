@@ -300,7 +300,7 @@ $(function() {
         
     }).mouseleave(function() {
         if (navActiveLinkId == undefined) {
-            width = 0 - 20;
+            width = 0 - 50;
             moveUnderline(navLinkId, width, left);
         } else {
             width = navActiveLinkWidth;
@@ -315,30 +315,26 @@ $(function() {
             moveUnderline(navLinkId, width, left);
 
         } else if (navLinkId == 'solutions') {
-            left = 14.5;
+            left = 19.1;
             moveUnderline(navLinkId, width, left);
 
         } else if (navLinkId == 'app-notes') {
-            left = 29.4;
+            left = 38.6;
             moveUnderline(navLinkId, width, left);
 
         } else if (navLinkId == 'support') {
-            left = 44.7;
+            left = 58.8;
             moveUnderline(navLinkId, width, left);
 
         } else if (navLinkId == 'about') {
-            left = 57.8;
-            moveUnderline(navLinkId, width, left);
-
-        } else if (navLinkId == 'parametric-search') {
-            left = 68;
+            left = 76.3;
             moveUnderline(navLinkId, width, left);
         }
         
     }
 
     function moveUnderline(navLinkId, width, left) {
-        width = width + 20;        
+        width = width + 50;        
         underline.css({ 'width':''+width+'px', 'left':''+left+'%' });
     }
     

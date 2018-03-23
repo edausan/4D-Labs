@@ -8,63 +8,24 @@
 
         <article class="lab-row"> 
 
+            <!-- Mobile view buttons -->
             <button id="showAside">Show Filters</button>
             <button id="hideAside"><i class="fa fa-close"></i></button>
+            <!-- /Mobile view buttons -->
 
-            <aside class="sidebar-wrapper">
-                <section class="product-search-wrapper">
-                    
-                    <form action="" class="cat-search-form">
-                        <label for="">Search Product</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Here">
-                            <button class="input-group-addon"><i class="fa fa-search"></i></button>
-                        </div>
-                        
-                    </form>
-                </section>
+            <!-- Product Category Sidebar -->
+            <?php include('include/product-category_sidebar.php'); ?>
+            <!-- /Product Category Sidebar -->
 
-                <section class="product-filters-wrapper">
-                    <?php 
-                        foreach ($sidebarFilters as $key => $value) {
-                    ?>
-
-                    <article class="product-filter">
-                        
-                        <h6 for=""><?php echo $key; ?></h6>
-
-                        <ul>
-                            <?php
-                                foreach ($value as $valkey => $val) {
-                            ?>
-                            
-                            <li>
-                                <a href="">
-                                    <input type="checkbox" name="<?php echo $key; ?>" id="<?php echo $valkey; ?>">
-                                    <label for="<?php echo $valkey; ?>"><?php echo $valkey; ?> [<?php echo $val; ?>]</label>
-                                </a>
-                                
-                            </li>
-
-                            <?php } ?>
-                        </ul>
-                    </article>
-
-                    <?php } ?>
-                </section>
-
-            </aside>
-
+            <!-- Product List -->
             <section class="cat-product-result">
                 <article class="show-count">
-                    <?php 
-                        $x = 0;
-                        foreach ($catProductView as $key => $value) {
-                        $x++;
-                        }
-                    ?>
+
+                    <!-- Product Count -->
+                    <?php $x = 0; foreach ($catProductView as $key => $value) { $x++; } ?>
+
                     <label for=""><?php echo $x;?> Item(s)</label>
-                    
+                    <!-- /Product Count -->
 
                     <div class="item-count-dropdown">
                         <label for="">Show</label>
@@ -74,69 +35,71 @@
                             <option value="36">36</option>
                         </select>
                     </div>
+
                 </article>
 
                 <article class="cat-product-wrapper">
 
-                    <?php 
-                        foreach ($catProductView as $key => $value) {
-                    ?>
-                    <section class="cat-product">
+                    <!-- foreach loop for every products -->
+                    <?php foreach ($catProductView as $key => $value) : ?>
+                        <section class="cat-product">
+                            
                         
-                    
-                            <figure class="cat-product-img-wrapper">
-                                <a href="<?php echo $key; ?>">
-                                    <img src="img/<?php echo $key; ?>.<?php echo $value['file-type']; ?>" alt="<?php echo $key; ?>">
-                                </a>
-                            </figure>
+                                <figure class="cat-product-img-wrapper">
+                                    <a href="<?php echo $key; ?>">
+                                        <img src="img/<?php echo $key; ?>.<?php echo $value['file-type']; ?>" alt="<?php echo $key; ?>">
+                                    </a>
+                                </figure>
 
-                        
+                            
 
-                        <div class="cat-product-details">
+                            <div class="cat-product-details">
 
-                            <?php
-                                if ($value['type'] == 'Embedded Graphics Controller') { ?>
-                                
+                                <?php if ($value['type'] == 'Embedded Graphics Controller') : ?>
+                                    
                                     <h4 class="cat-product-title"><a href="<?php echo $key; ?>"><?php echo $key; ?> Graphics Processor</a></h4>
 
-                                <?php } elseif($value['type'] == 'Integrated Development Environment') { ?>
+                                <?php elseif($value['type'] == 'Integrated Development Environment') : ?>
 
                                     <h4 class="cat-product-title"><a href="<?php echo $key; ?>"><?php echo $key; ?> PRO IDE</a></h4>
 
-                                <?php } else { ?>
+                                <?php else : ?>
 
                                     <h4 class="cat-product-title"><a href="<?php echo $key; ?>"><?php echo $key; ?></a></h4>
 
-                                <?php } ?>
-                            
-                            
-
-                            <label for="" class="cat-product-type"><?php echo $value['type']; ?></label>
-
-                            <div class="cat-parametric-data">
-                                <details>
-                                    <summary>More Details</summary>
-                                    <ul class="product-data-list">
-
-                                        <?php 
-                                            foreach ($value['parametric-data'] as $key => $val) {
-                                        ?>
-                                        <li><strong><?php echo $key; ?>: </strong> <span><?php echo $val; ?></span></li>
-                                        <?php } ?>
-
-                                    </ul>
-                                </details>
+                                <?php endif; ?>
                                 
-                            </div>
+                                
 
-                        </div>
-                        
-                    </section>
-                    <?php } ?>
+                                <label for="" class="cat-product-type"><?php echo $value['type']; ?></label>
+
+                                <div class="cat-parametric-data">
+                                    <details>
+                                        <summary>More Details</summary>
+
+                                        <ul class="product-data-list">
+
+                                            <?php foreach ($value['parametric-data'] as $key => $val) : ?>
+
+                                                <li><strong><?php echo $key; ?>: </strong> <span><?php echo $val; ?></span></li>
+
+                                            <?php endforeach; ?>
+
+                                        </ul>
+                                    </details>
+                                    
+                                </div>
+
+                            </div>
+                            
+                        </section>
+                    <?php endforeach; ?>
+                    <!-- /foreach loop for every products -->
 
                 </article>
 
             </section>
+            <!-- Product List -->
         
         </article>
     </section>

@@ -84,6 +84,7 @@
 </section>
 
         <script src="js/jquery.details.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/tinymce/tinymce.min.js"></script>
         <script src="js/dragscroll.js"></script>

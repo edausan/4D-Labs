@@ -1,8 +1,8 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -37,18 +37,20 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/full-slider.css">
     <link rel="stylesheet" href="css/dev-style.min.css">
     
-
+    <!-- JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="scripts/loading.js"></script>
     
 </head>
 
+
 <body dir="ltr">
 
-<div class="loading-wrapper">
+    <div class="loading-wrapper">
     <figure><img src="img/favicon.png" alt=""></figure>
     <div class="loading">
         <span></span>
@@ -66,9 +68,10 @@
         <span>G</span>
     </h2>
 </div>
-<section class="page-container" style="opacity: 0; transition: 1s ease; overflow-x:hidden">
+    <section class="page-container" style="opacity: 0; transition: 1s ease; overflow-x:hidden">
 
-<section class="compare-popup-wrapper">
+        <!-- including Parametric Compare modal/popup -->
+        <section class="compare-popup-wrapper">
     <div class="compare-popup">
         <header class="popup-header">
             <h3>Compare</h3>
@@ -310,7 +313,9 @@
         <button id="compare-x-btn" class="compare-close-btn">Close</button>
 
     </div>
-</section><section class="product-video-popup">
+</section>
+        <!-- including Product video modal/popup -->
+        <!-- <section class="product-video-popup">
     
     <article class="lab-container">
         <section class="lab-row">
@@ -328,38 +333,43 @@
     
     </article>
 
-</section>
-    <div class="to-top">
-        <i class="fa fa-chevron-up"></i>
-    </div>
-    
-    <header class="header-wrapper">
+</section> -->
 
-        <section class="navigation-wrapper">
-            <section class="lab-container">
-                <article class="lab-row">
-                    <section class="navigation-container">
-                        <article class="logo-wrapper">
-                            <a href="/">
-                                <img src="img/4dllogo.png" alt="">
-                            </a>
-                        </article>
+        <div class="to-top">
+            <i class="fa fa-chevron-up"></i>
+        </div>
 
-                        <button id="open-mnav"><span><i class="fa fa-bars"></i></span></button>
+        <!-- including navbar.php -->
+        <header class="header-wrapper">
 
-                        <article class="navbar-wrapper">
-                            
-                            <section class="menu-bar">
-                                <ul>
+    <section class="navigation-wrapper">
+        <section class="lab-container">
+            <article class="lab-row">
+                <section class="navigation-container">
+                    <article class="logo-wrapper">
+                        <a href="/">
+                            <img src="img/4dllogo.png" alt="">
+                        </a>
+                    </article>
 
-                                    <!-- account form -->
-                                    <li>
-                                                                                    <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
-                                                                                
+                    <button id="open-mnav"><span><i class="fa fa-bars"></i></span></button>
 
-                                        <form class="account-form" action="#" method="post">
-                                            
-                                                <span class="close-form-btn"><i class="fa fa-close"></i></span>
+                    <article class="navbar-wrapper">
+                        
+                        <section class="menu-bar">
+                            <ul>
+
+                                <!-- account form
+                                 -->
+                                <li>
+                                    <!-- checking if session email is empty -->
+                                    
+                                        <a id="account"><i class="fa fa-user"></i> <label for="">ACCOUNT</label> <i class="fa fa-angle-down"></i></a>
+                                                                        
+
+                                    <form class="account-form" action="#" method="post">
+                                        
+                                            <span class="close-form-btn"><i class="fa fa-close"></i></span>
 <h4>Sign In </h4>
 
 <p class="notif"><i class="fa fa-exclamation-circle"></i></p>
@@ -378,51 +388,52 @@
     <a href="">Forgot your password?</a>
     <p>Don't have an account? <a href="register">Register Now</a></p>
 </div>
-                                                                                        
-                                        </form>
-
-                                        
-                                    </li>
-                                    <!-- /account form -->
-
-
-                                    <li>
-                                        <a id="languages"><span class="lang lang-en"></span> <span id="lang-name">ENGLISH</span><i class="fa fa-angle-down"></i></a>
-                                        
-                                        <div class="languages-wrapper">
-                                            <ul>
-                                                <li>Select language</li>
-                                                <hr>
-                                                <li><a id="en"><span class="lang lang-en"></span> ENGLISH</a></li>
-                                                <li><a id="zh"><span class="lang lang-zh"></span> 中文</a></li>
-                                                <li><a id="ja"><span class="lang lang-ja"></span> 日本語</a></li>
-                                                <li><a id="ko"><span class="lang lang-ko"></span> 한국어</a></li>
-                                            </ul>
-                                        </div>
+                                                                                
+                                    </form>
 
                                     
+                                </li>
+                                <!-- /account form -->
+
+
+                                <li>
+                                    <a id="languages"><span class="lang lang-en"></span> <span id="lang-name">ENGLISH</span><i class="fa fa-angle-down"></i></a>
                                     
-                                    </li>
-                                                                        <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i>3</i></span></a></li>
-                                </ul>
-                            </section>
-                            
-                            <nav class="navigation-bar">
-                                <ul>
-                                    <li><a id="search"><i class="fa fa-search"></i></a></li>
-                                    <li><a id="parametric-search" class="" href="parametric-search">Parametric Search</a></li>
-                                    <li><a id="about" class="" href="about">About</a></li>
-                                    <li><a id="support" class="" href="support">Support</a></li>
-                                    <li><a id="app-notes" class="" href="app_notes">App Notes</a></li>
-                                    <li><a id="solutions" class="" href="solutions">Solutions</a></li>
-                                    <li><a id="products" class="" href="products">Products</a></li>
-                                    <div class="underline"></div>
-                                </ul>
-                            </nav>
+                                    <div class="languages-wrapper">
+                                        <ul>
+                                            <li>Select language</li>
+                                            <hr>
+                                            <li><a id="en"><span class="lang lang-en"></span> ENGLISH</a></li>
+                                            <li><a id="zh"><span class="lang lang-zh"></span> 中文</a></li>
+                                            <li><a id="ja"><span class="lang lang-ja"></span> 日本語</a></li>
+                                            <li><a id="ko"><span class="lang lang-ko"></span> 한국어</a></li>
+                                        </ul>
+                                    </div>
 
-                        </article>
+                                
+                                
+                                </li>
+                                <li><a href="parametric-search"><i class="fa fa-search"></i> <span>PARAMETRIC SEARCH</span></a></li>
+                                                                <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i> <label for="">CART</label> <span id="order-count"><i>3</i></span></a></li>
+                            </ul>
+                        </section>
+                        
+                        <nav class="navigation-bar">
+                            <ul>
+                                <li><a id="search"><i class="fa fa-search"></i></a></li>
+                                <!-- <li><a id="parametric-search" class="" href="parametric-search">Parametric Search</a></li> -->
+                                <li><a id="about" class="" href="about">About</a></li>
+                                <li><a id="support" class="" href="support">Support</a></li>
+                                <li><a id="app-notes" class="" href="app_notes">App Notes</a></li>
+                                <li><a id="solutions" class="" href="solutions">Solutions</a></li>
+                                <li><a id="products" class="" href="products">Products</a></li>
+                                <div class="underline"></div>
+                            </ul>
+                        </nav>
 
-                        <section class="lab-container">
+                    </article>
+
+                    <section class="lab-container">
     <article class="lab-row">
         <div id="overlay"></div>
         <div class="mobile-navbar-wrapper">
@@ -466,19 +477,21 @@
         </div>
     </article>
 </section>
-                    </section>
-                </article>
-            </section>
-            
+                </section>
+            </article>
         </section>
+        
+    </section>
 
-        <section class="search-bar-wrapper">
-            <form action="" class="search-bar">
-                <input type="text" name="" id="" placeholder="Search Product">
-                <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
-            </form>
-        </section>
-    </header>
+    <section class="search-bar-wrapper">
+        <form action="" class="search-bar">
+            <input type="text" name="" id="" placeholder="Search Product">
+            <span class="clear-btn" title="Clear search bar"><i class="fa fa-close"></i></span>
+        </form>
+    </section>
+    
+</header>        
+
 
 
 
@@ -1034,6 +1047,7 @@
 </section>
 
         <script src="js/jquery.details.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/tinymce/tinymce.min.js"></script>
         <script src="js/dragscroll.js"></script>

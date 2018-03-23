@@ -10,15 +10,27 @@ section.product-page-wrapper
         +clear 
 
         .product-head
+            text-align: center
 
             &#product-title
                 width: 65%
                 padding-right: 20px
                 float: left
+                text-align: left
 
             &#product-img
                 width: 30%
                 float: right
+
+            p#pricing
+                text-align: center
+                margin-bottom: 0
+                display: inline-block
+                padding: 5px 10px
+                border: 1px solid #eeeeee
+
+                strong 
+                    color: $paleBlue
 
             header
                 h1 
@@ -374,6 +386,7 @@ figure.product-thumb
     width: 100%
     position: relative
     margin-top: 25px
+
     img 
         width: 74%
         display: block

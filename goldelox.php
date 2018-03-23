@@ -11,6 +11,7 @@
 
         // Product Name
         'name'          =>  'Goldelox Graphics Processor',
+        'pricing'       =>  4.27,
 
         // Carousel Images
         'carousel-img'  => array('goldelox-2', 'goldelox-3'),
