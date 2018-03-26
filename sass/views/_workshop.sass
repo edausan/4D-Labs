@@ -6,6 +6,7 @@ article#addtnl-3
     background-position: 50% 50%
     background-attachment: fixed
     padding: 50px 0px
+    font-size: 16px
     
     header
         background-color: $paleBlue
@@ -36,7 +37,7 @@ article#addtnl-3
         color: #53565a
         margin-top: 40px
         font-size: 16px
-        width: 60%
+        // width: 60%
 
     figure.ws4-content
         width: 50%
@@ -53,7 +54,7 @@ article#addtnl-3
 
 
 .workshop
-    width: 60%
+    width: 65%
     margin-top: 50px
 
     h1 
@@ -173,3 +174,48 @@ article#addtnl-3
                 span 
                     width: 98%
                     float: left
+
+
+
+    &.genie-magic-wrapper
+        ul 
+            list-style: outside
+            margin-left: 15px
+
+            li 
+
+    &.product-video-wrapper
+        iframe
+            width: 100%
+            height: 500px
+            margin-top: 40px
+
+
+    &.documentation
+        ul 
+            padding: 30px 0px
+            +clear
+            li 
+                +clear
+                width: 33.333333333%
+                float: left
+                padding: 5px
+                a 
+                    color: $paleBlue
+                    font-size: 14px
+
+                    &:hover
+                        color: $orange
+
+                figure 
+                    width: 20%
+                    float: left
+
+                label 
+                    width: 80%
+                    float: left
+                    cursor: pointer
+
+                    span 
+                        display: block 
+                        color: #777777
