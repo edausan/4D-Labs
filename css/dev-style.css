@@ -10887,7 +10887,7 @@ section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
   overflow-x: auto;
   display: inline-block;
   width: 85%;
-  float: left;
+  float: right;
   position: relative;
   cursor: move;
   cursor: grab;
@@ -11129,8 +11129,8 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table thea
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table thead tr th .th-wrapper ul {
   border: 1px solid #e3e3e3;
-  height: 55px;
-  padding: 5px 8px;
+  height: 58px;
+  padding: 1px 8px;
   overflow-y: auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -11309,6 +11309,7 @@ a.para-prod-name-link {
   display: block;
   margin-bottom: 10px;
   font-weight: 600;
+  min-width: 145px;
 }
 
 img#para-prod-thumb {
@@ -12413,8 +12414,8 @@ article#addtnl-3 figure.ws4-content img:hover {
 }
 
 .workshop.documentation ul li label {
-  width: 80%;
-  float: left;
+  width: 78%;
+  float: right;
   cursor: pointer;
 }
 
@@ -14222,10 +14223,34 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     float: right;
     width: 78.5%;
   }
+  section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
+    width: 25%;
+  }
+  section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 1316px), print {
+  section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
+    width: 25% !important;
+  }
+  section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
+    width: 75% !important;
+  }
 }
 
 @media all and (max-width: 1440px), print {
   section.highlights-wrapper ul.highlights-list li.highlights-item {
     height: 311px;
+  }
+}
+
+@media all and (max-width: 1748px), print {
+  section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
+    width: 20%;
+  }
+  section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
+    width: 80%;
   }
 }

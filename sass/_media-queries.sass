@@ -9,9 +9,43 @@ print
 
     @import media-queries/tablet
 
+    section.parametric-wrapper 
+        .parametric-table-wrapper 
+            table.parametric-table
+                &#para-tb-1
+                    width: 25%
+
+            .para-tb-2-wrapper
+                width: 75%
+
+
+@media all and (max-width: 1316px),
+print 
+    section.parametric-wrapper 
+        .parametric-table-wrapper 
+            table.parametric-table
+                &#para-tb-1
+                    width: 25% !important
+
+            .para-tb-2-wrapper
+                width: 75% !important
+
+
 @media all and (max-width: 1440px),
 print 
     section.highlights-wrapper 
         ul.highlights-list 
             li.highlights-item 
                 height: 311px
+
+
+@media all and (max-width: 1748px),
+print 
+    section.parametric-wrapper 
+        .parametric-table-wrapper 
+            table.parametric-table
+                &#para-tb-1
+                    width: 20%
+
+            .para-tb-2-wrapper
+                width: 80%

@@ -177,7 +177,6 @@
                         </ul>
 
                         <h1>Workshop4 Pro Documentation</h1>
-
                         <ul>
                             <li>
                                 <a href="https://www.4dsystems.com.au/productpages/4D-Workshop-4-IDE/downloads/4DLS-MN-SWE-UGS_R_1_0.pdf">
@@ -188,7 +187,6 @@
                         </ul>
 
                         <h1>Designer Environment Documentation</h1>
-
                         <ul>
                             <li>
                                 <a href="http://www.4dsystems.com.au/productpages/4DGL/downloads/4DGL_progmanual_R_6_0.pdf">
@@ -217,7 +215,6 @@
                         </ul>
 
                         <h1>ViSi Environment Documentation</h1>
-
                         <ul>
                             <li>
                                 <a href="http://www.4dsystems.com.au/productpages/ViSi/downloads/ViSi_userguide_R_2_1.pdf">
@@ -250,6 +247,166 @@
                                 </a>
                             </li>
                         </ul>
+
+                        <h1>ViSi-Genie Environment Documentation</h1>
+                        <ul>
+                            <li>
+                                <a href="http://www.4dsystems.com.au/productpages/ViSi-Genie/downloads/Visi-Genie_userguide_R_2_0.pdf">
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_pdf_50x50.png" alt=""></figure>
+                                    <label for="">ViSi-Genie User <br/> Guide<span>Rev. 2.0 | 3.48 MB</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.4dsystems.com.au/productpages/ViSi-Genie/downloads/Visi-Genie_refmanual_R_2_0.pdf" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_pdf_50x50.png" alt=""></figure>
+                                    <label for="">ViSi-Genie User Reference Manual<span>Rev. 2.0 | 1.71 MB</span></label>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <!-- Serial Environment Documentation  -->
+                        <h1>Serial Environment Documentation</h1>
+                        <ul>
+                            <li>
+                                <a href="http://www.4dsystems.com.au/productpages/PICASO/downloads/PICASO_serialcmdmanual_R_2_0.pdf">
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_pdf_50x50.png" alt=""></figure>
+                                    <label for="">PICASO Serial Command Set Reference Manual<span>Rev. 2.0 | 3.14 MB</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.4dsystems.com.au/productpages/GOLDELOX/downloads/GOLDELOX_serialcmdmanual_R_2_0.pdf" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_pdf_50x50.png" alt=""></figure>
+                                    <label for="">GOLDELOX Serial Command Set Reference Manual<span>Rev. 2.0 | 2.08 MB</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.4dsystems.com.au/productpages/DIABLO16/downloads/DIABLO16_serialcmdmanual_R_2_0.pdf" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_pdf_50x50.png" alt=""></figure>
+                                    <label for="">DIABLO16 Serial Command Set Reference Manual<span>Rev. 2.0 | 3.07 MB</span></label>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h5>Libraries for use with PICASO Serial Environment</h5>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/4dsystems/Picaso-Serial-Arduino-Library">
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Arduino Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Picaso-Serial-C-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">C Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Picaso-Serial-Pascal-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Pascal Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Picaso-Serial-PicAxe-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">PicAxe Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Picaso-Serial-Linux-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Linux Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h5>Libraries for use with GOLDELOX Serial Environment</h5>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/4dsystems/Goldelox-Serial-Arduino-Library">
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Arduino Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Goldelox-Serial-C-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">C Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Goldelox-Serial-Pascal-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Pascal Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Goldelox-Serial-PicAxe-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">PicAxe Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Goldelox-Serial-Linux-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Linux Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h5>Libraries for use with DIABLO16 Serial Environment</h5>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/4dsystems/Diablo16-Serial-Arduino-Library">
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Arduino Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Diablo16-Serial-C-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">C Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Diablo16-Serial-Pascal-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Pascal Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Diablo16-Serial-PicAxe-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">PicAxe Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/4dsystems/Diablo16-Serial-Linux-Library" alt=""></figure>
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_git_50x50.png" alt=""></figure>
+                                    <label for="">Linux Serial Library<span>Github Link</span></label>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h1>Additional Documentation / Appnotes</h1>
+                        <ul>
+                            <li>
+                                <a href="app_notes">
+                                    <figure><img src="https://www.4dsystems.com.au/images/icons/icon_dl_appnotes_50x50.png" alt=""></figure>
+                                    <label for="">Application Notes<span>Searchable Repository</span></label>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h1>Workshop4 PRO License</h1>
+
+
+
             </section>
             
         </article>
