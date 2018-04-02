@@ -740,9 +740,7 @@
  
         // Oder Details
         'goldelox' =>  array(   
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">600</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 
                                 'Status'                =>  array('In Production'),
@@ -768,9 +766,7 @@
                                 'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
                             ),
         'diablo16' =>  array(
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">1200</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 'Status'                =>  array('In Production'),
                                 
@@ -795,9 +791,7 @@
                                 'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
                             ),
         'picaso' =>  array(
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">800</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 
                                 'Status'                =>  array('In Production'),
@@ -823,9 +817,7 @@
                                 'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
                             ),
         'picaso-Lite' =>  array(
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">800</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 
                                 'Status'                =>  array('In Production'),
@@ -852,9 +844,7 @@
                             ),
 
         'goldelox-2' =>  array(   
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">600</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 
                                 'Status'                =>  array('In Production'),
@@ -880,9 +870,7 @@
                                 'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
                             ),
         'diablo16-2' =>  array(
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">1200</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 'Status'                =>  array('In Production'),
                                 
@@ -907,9 +895,7 @@
                                 'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
                             ),
         'picaso-2' =>  array(
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">800</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 
                                 'Status'                =>  array('In Production'),
@@ -935,9 +921,7 @@
                                 'Info'                  =>  array('<img src="img/rohs.png" class="rohs-icon">RoHS Compliant'),
                             ),
         'picaso-Lite-2' =>  array(
-                                'Price'                 =>  array(
-                                                            '10000+'    =>  '$4.50',
-                                                        ),
+                                'Price'                 =>  array('$4.50'),
                                 'Availability'          =>  array('<label>In Stock:</label> <span class="stock-val">800</span>', '<p>Additional Stock Lead Time: <span>12 Weeks</span></p>'),
                                 
                                 'Status'                =>  array('In Production'),

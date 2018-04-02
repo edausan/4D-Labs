@@ -1,26 +1,12 @@
-@media all and (max-width: 768px),
-print 
-    
+@media (min-width: 481px) and (max-width: 767px)
     @import media-queries/mobile
     
-
-@media all and (max-width: 1024px),
-print 
-
-    @import media-queries/tablet
-
+@media (min-width: 767px) and (max-width: 800px)
+    
     section.parametric-wrapper 
-        .parametric-table-wrapper 
-            table.parametric-table
-                &#para-tb-1
-                    width: 25%
+        .para-category-wrapper
+            +transform(translateY(0%))
 
-            .para-tb-2-wrapper
-                width: 75%
-
-
-@media all and (max-width: 1316px),
-print 
     section.parametric-wrapper 
         .parametric-table-wrapper 
             table.parametric-table
@@ -28,19 +14,93 @@ print
                     width: 25% !important
 
             .para-tb-2-wrapper
-                width: 75% !important
+                width: 66% !important
+                float: left !important
 
 
-@media all and (max-width: 1440px),
-print 
+    header.header-wrapper 
+        section.navigation-wrapper 
+            section.navigation-container 
+                article.navbar-wrapper 
+                    nav.navigation-bar 
+                        ul 
+                            li 
+                                a
+                                    font-size: 18px
+
+    button#open-mnav
+        display: block
+        
+    header.header-wrapper 
+        section.navigation-wrapper 
+            section.navigation-container
+                width: 100%
+
+                article.logo-wrapper
+                    width: 100%
+
+                    img
+                        width: 75%
+                        max-width: 297px
+                        top: 50%
+                        left: 50%
+                        +transform
+
+                article.navbar-wrapper
+                    display: none
+
+        section.search-bar-wrapper 
+            width: 100%
+            form.search-bar
+                width: 100%
+
+
+@media (min-width: 801px) and (max-width: 1024px)
+
+    @import media-queries/tablet
+
+    section.parametric-wrapper 
+        .parametric-table-wrapper 
+            table.parametric-table
+                &#para-tb-1
+                    width: 25% !important
+
+            .para-tb-2-wrapper
+                width: 72% !important
+                float: left !important
+
+    header.header-wrapper 
+        section.navigation-wrapper 
+            section.navigation-container 
+                article.navbar-wrapper 
+                    nav.navigation-bar 
+                        ul 
+                            li 
+                                a
+                                    font-size: 18px
+
+
     section.highlights-wrapper 
         ul.highlights-list 
             li.highlights-item 
                 height: 311px
 
+    section.parametric-wrapper 
+        .para-category-wrapper
+            +transform(translateY(0%))
 
-@media all and (max-width: 1748px),
-print 
+
+    header.header-wrapper 
+        section.navigation-wrapper 
+            section.navigation-container 
+                article.logo-wrapper
+                    width: 23%
+
+
+
+@media (min-width: 1025px) and (max-width: 1780px)
+    
+
     section.parametric-wrapper 
         .parametric-table-wrapper 
             table.parametric-table
@@ -48,4 +108,4 @@ print
                     width: 20%
 
             .para-tb-2-wrapper
-                width: 80%
+                width: 78.3%

@@ -43,19 +43,19 @@ $(function() {
     });
 
     var filterController = $('section.parametric-wrapper .menu-bar button#filter-control');
+    $(document).find('.para-input-wrapper').hide(300);
+    // filterController.click(function() {
+    //     $(this).toggleClass('hide show');
 
-    filterController.click(function() {
-        $(this).toggleClass('hide show');
+    //     if ($(this).hasClass('show')) {
+    //         $(this).children('#filter-control-text').text('Show ');
+    //         $(document).find('.para-input-wrapper').hide(300);
+    //     } else {
+    //         $(this).children('#filter-control-text').text('Hide ');
+    //         $(document).find('.para-input-wrapper').show(300);
+    //     }
 
-        if ($(this).hasClass('show')) {
-            $(this).children('#filter-control-text').text('Show ');
-            $(document).find('.para-input-wrapper').hide(300);
-        } else {
-            $(this).children('#filter-control-text').text('Hide ');
-            $(document).find('.para-input-wrapper').show(300);
-        }
-
-    });
+    // });
 
     var pageSizeBtn = $('section.parametric-wrapper .menu-bar .page-size-wrapper button');
 

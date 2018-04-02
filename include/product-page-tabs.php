@@ -18,7 +18,7 @@
                     <span>Specifications</span>
                 </label>
             </li>
-            <li class="tab " id="downloads">
+            <li class="tab" id="downloads">
                 <label>
                     <svg class="ico-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/tab-icons.svg#downloads" xmlns:xlink="http://www.w3.org/1999/xlink"></use>

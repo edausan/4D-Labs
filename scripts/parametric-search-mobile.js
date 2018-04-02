@@ -6,11 +6,13 @@ $(function() {
     $('#orientation-msg').show();    
 
     function winResize() {
-        if ($(window).width() <= 500) {
+        
+        if ($(window).width() <= 768) {
             parametricWrapper.hide();
             $('#orientation-msg').show();
-        } else {
             
+            
+        } else {
             parametricWrapper.show();
             $('#orientation-msg').hide();
             
@@ -18,14 +20,14 @@ $(function() {
     }
 
     $(window).resize(function() {
-        if (window.location.href == 'http://4dl.4dwebsites.cf/parametric-search') {
-            window.location.href = window.location.href
+        // window.location.href = window.location.href
+        var winLocation =   window.location.href;
+        if (winLocation == 'http://4dl.4dwebsites.cf/parametric-search' || winLocation == 'http://localhost:7880/4DLabs-dev/parametric-search') {
+            winLocation = window.location.href 
             winResize();
         }        
     });
 
-    winResize();
-    
-    
+    winResize();   
 
-})
+});

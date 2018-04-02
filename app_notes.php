@@ -6,12 +6,6 @@
 
     $sidebarFilters =   array(
 
-                            'difficulty'  =>  array(
-                                                'Easy'                  =>  28,
-                                                'Average'               =>  17,
-                                                'Difficult'             =>  1,
-                                            ),
-
                             'processors'  =>  array(
                                                 'Goldelox'              =>  11,
                                                 'Diablo16'              =>  34,

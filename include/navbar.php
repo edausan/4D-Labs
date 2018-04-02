@@ -78,7 +78,7 @@
                                 
                                 
                                 </li>
-                                <li><a href="parametric-search"><i class="fa fa-search"></i> <label for="">PARAMETRIC SEARC</label>H</a></li>
+                                <li><a href="parametric-search"><i class="fa fa-search"></i> <label for="">PARAMETRIC SEARCH</label></a></li>
                                 <?php 
                                     $x = 0;
                                     foreach ($shopSample as $key => $value) {

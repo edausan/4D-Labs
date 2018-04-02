@@ -2,7 +2,7 @@ $link: #3c3c3c
 
 header.header-wrapper
     position: relative
-    font-family: 'Sony Sketch'
+    font-family: $sony
     z-index: 1009
     width: 100%
     position: fixed
@@ -16,7 +16,7 @@ header.header-wrapper
         z-index: 1001
         box-shadow: 0 8px 32px rgba(black, .2)
         +clear
-        font-family: 'Sony Sketch'
+        font-family: $sony
 
         section.navigation-container
             width: 100%
@@ -101,7 +101,7 @@ header.header-wrapper
                                 display: inline-block
                                 vertical-align: middle
                                 color: white
-                                font-family: 'Avenir'
+                                font-family: $lato
                                 font-size: 12px
 
                                 i 
@@ -181,7 +181,7 @@ header.header-wrapper
                                 right: 0
                                 background: white
                                 box-shadow: 0 8px 32px rgba(black, .2)
-                                font-family: 'Avenir'
+                                font-family: $lato
                                 +transition
 
                                 &.viewLang
@@ -337,14 +337,15 @@ header.header-wrapper
         background: white
         z-index: 1000
         box-shadow: 0 20px 20px rgba(black, .3)
-        font-family: 'Avenir'
+        font-family: $lato
         +transition
 
         &.goDown
             top: 100%
 
         form.search-bar
-            width: 1440px
+            width: 100%
+            max-width: 1170px
             position: relative
             margin: 0 auto
             padding: 20px

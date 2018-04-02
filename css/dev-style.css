@@ -46,6 +46,15 @@ body, html {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -1404,7 +1413,7 @@ header.header-wrapper nav.nav-wrapper section.menu-container article.menu-bar se
 
 header.header-wrapper {
   position: relative;
-  font-family: 'Sony Sketch';
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
   z-index: 1009;
   width: 100%;
   position: fixed;
@@ -1424,7 +1433,7 @@ header.header-wrapper section.navigation-wrapper {
   z-index: 1001;
   -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  font-family: 'Sony Sketch';
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
 }
 
 header.header-wrapper section.navigation-wrapper::after {
@@ -1547,7 +1556,7 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
   display: inline-block;
   vertical-align: middle;
   color: white;
-  font-family: 'Avenir';
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
@@ -1648,7 +1657,7 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
   background: white;
   -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  font-family: 'Avenir';
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
   -ms-transition: 250ms ease;
@@ -1850,7 +1859,7 @@ header.header-wrapper section.search-bar-wrapper {
   z-index: 1000;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-  font-family: 'Avenir';
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
   -ms-transition: 250ms ease;
@@ -1863,7 +1872,8 @@ header.header-wrapper section.search-bar-wrapper.goDown {
 }
 
 header.header-wrapper section.search-bar-wrapper form.search-bar {
-  width: 1440px;
+  width: 100%;
+  max-width: 1170px;
   position: relative;
   margin: 0 auto;
   padding: 20px;
@@ -2106,7 +2116,7 @@ div.to-top:hover {
 section.featured-wrapper {
   display: block;
   margin: 30px 0;
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 section.featured-wrapper::after {
@@ -2284,7 +2294,7 @@ section.quick-links {
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 section.quick-links::after {
@@ -2316,20 +2326,20 @@ section.quick-links .quick-wrapper h1 {
   text-align: center;
   border-bottom: 1px solid #cecece;
   padding-bottom: 40px;
-  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  font-family: "Helvetica", Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 35px;
 }
 
 section.quick-links .quick-wrapper h1 strong {
-  font-family: 'Sony Sketch', Arial, Helvetica, sans-serif;
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
   font-size: 60px;
   margin: 0;
   font-weight: 400;
 }
 
 section.quick-links .quick-wrapper h1 span {
-  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+  font-family: "Lato Light", Arial, Helvetica, sans-serif;
 }
 
 section.quick-links .quick-wrapper p {
@@ -2337,7 +2347,7 @@ section.quick-links .quick-wrapper p {
   font-size: 200%;
   padding-top: 40px;
   margin: 0;
-  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  font-family: "Helvetica", Arial, Helvetica, sans-serif;
 }
 
 #content .homepage-area {
@@ -2699,7 +2709,7 @@ section.thumb-wrapper article.thumb-container section.thumb-row-2 .last-thumb {
 
 section.news-section-wrapper {
   margin-bottom: 30px;
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 section.news-section-wrapper .latest-news-wrapper {
@@ -2856,7 +2866,7 @@ section.news-section-wrapper .latest-news-wrapper .news .news-content p a:hover 
 }
 
 .carousel .carousel-inner .carousel-item .carousel-content h3 {
-  font-family: 'Sony Sketch', Arial, Helvetica, sans-serif;
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
   font-size: 60px;
   margin: 0;
   padding: 10px 20px;
@@ -2916,7 +2926,7 @@ section.news-section-wrapper .latest-news-wrapper .news .news-content p a:hover 
 }
 
 .breadcrumbs {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 .breadcrumbs ul.breadcrumbs-list {
@@ -3016,7 +3026,7 @@ section.news-section-wrapper .latest-news-wrapper .news .news-content p a:hover 
 }
 
 article.cart-breadcrumbs {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   overflow: hidden;
   margin: 0px 0px 60px;
 }
@@ -3232,7 +3242,7 @@ article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread {
   -ms-transition: 250ms ease;
   -o-transition: 250ms ease;
   transition: 250ms ease;
-  font-family: 'Sony Sketch', Arial, Helvetica, sans-serif;
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
 }
 
 article.cart-breadcrumbs-new ul.cart-bread-list-new li.cart-bread::before {
@@ -3743,7 +3753,7 @@ section.compare-popup-wrapper .compare-popup button.compare-close-btn:hover {
 }
 
 section.highlights-wrapper {
-  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  font-family: "Helvetica", Arial, Helvetica, sans-serif;
 }
 
 section.highlights-wrapper ul.highlights-list::after {
@@ -3821,7 +3831,7 @@ section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-c
 }
 
 section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-container header.highlights-header #highlights-title {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 600;
@@ -3868,7 +3878,7 @@ section.thumb-wrapper-container {
 
 section.new-thumbnails-wrapper {
   padding: 50px 0px;
-  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  font-family: "Helvetica", Arial, Helvetica, sans-serif;
   position: relative;
   z-index: 1001;
 }
@@ -3881,7 +3891,7 @@ section.new-thumbnails-wrapper header.new-thumbnails-header {
 section.new-thumbnails-wrapper header.new-thumbnails-header h2 {
   color: #327B83;
   font-size: 32px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -3942,7 +3952,7 @@ section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-con
 
 section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-content p {
   font-size: 16px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-content a {
@@ -3961,7 +3971,7 @@ section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-con
   -ms-transition: 250ms ease;
   -o-transition: 250ms ease;
   transition: 250ms ease;
-  font-family: 'Lato Light', Arial, Helvetica, sans-serif !important;
+  font-family: "Lato Light", Arial, Helvetica, sans-serif;
   font-size: 24px;
   padding-bottom: 16px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(33.33333%, #d2d3d4), color-stop(0%, rgba(255, 255, 255, 0)));
@@ -4011,7 +4021,7 @@ section.news-and-events-wrapper header.news-header {
 section.news-and-events-wrapper header.news-header h3 {
   color: white;
   margin-bottom: 0px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 600;
 }
@@ -4104,7 +4114,7 @@ section.news-and-events-wrapper .news-container .news-item .news-content-wrapper
   height: 100%;
   background: #eeeeee;
   background-size: cover;
-  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+  font-family: "Lato Light", Arial, Helvetica, sans-serif;
   position: relative;
 }
 
@@ -4138,13 +4148,13 @@ section.appnote-home-wrapper .appnote-content {
 }
 
 section.appnote-home-wrapper .appnote-content h2 {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 32px;
 }
 
 section.appnote-home-wrapper .appnote-content p {
-  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+  font-family: "Lato Light", Arial, Helvetica, sans-serif;
   font-size: 24px;
 }
 
@@ -4202,7 +4212,7 @@ section.appnote-home-wrapper .featured-article .article-container header.article
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -4212,7 +4222,7 @@ section.appnote-home-wrapper .featured-article .article-container header.article
 
 section.appnote-home-wrapper .featured-article .article-container header.article-header h5 {
   font-size: 24px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: black;
   -webkit-transition: 250ms ease;
@@ -4236,7 +4246,7 @@ section.appnote-home-wrapper .featured-article .article-container img {
 section.appnote-home-wrapper .featured-article .article-container p {
   width: 100%;
   font-size: 14px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -4251,7 +4261,7 @@ section.newsletter-home-wrapper p {
   display: inline-block;
   color: white;
   font-size: 23px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin: 0;
 }
@@ -4287,7 +4297,7 @@ section.newsletter-home-wrapper button i {
   background: #F5F5F5;
   display: block;
   margin-top: 30px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -4502,7 +4512,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
 
 article.product-details-wrapper {
   margin-top: 20px;
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 article.product-details-wrapper header.product-header {
@@ -5558,7 +5568,7 @@ button#hideAside.showHideAside {
 }
 
 #appnotes-wrapper {
-  font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 details.appnote-cat-details {
@@ -5621,11 +5631,6 @@ details.appnote-cat-details ul.appnote-detail-list #downloads ul li {
 
 details.appnote-cat-details ul.appnote-detail-list #downloads ul li a img {
   width: 40px;
-}
-
-article.appnote-wrapper,
-details.appnote-cat-details {
-  font-family: 'Open Sans';
 }
 
 article.appnote-wrapper header.appnote-header h2,
@@ -5840,7 +5845,7 @@ article.terms-wrapper ul.terms-list li.terms-item ul.terms-sublist {
 }
 
 section.about-wrapper {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
 
@@ -5935,7 +5940,7 @@ section.about-wrapper nav.about-nav ul.about-nav-list li a {
   -o-transition: 250ms ease;
   transition: 250ms ease;
   font-size: 20px;
-  font-family: 'Sony Sketch';
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
 }
 
 section.about-wrapper nav.about-nav ul.about-nav-list li a:hover {
@@ -5984,7 +5989,7 @@ section.about-wrapper article.about-us section.about-title h1 {
   font-size: 44px;
   right: 50px;
   text-transform: uppercase;
-  font-family: 'Sony Sketch';
+  font-family: "Sony Sketch", Arial, Helvetica, sans-serif;
   font-size: 80px;
   line-height: 60px;
 }
@@ -9851,7 +9856,7 @@ section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-ite
 
 section.support-wrapper {
   padding: 50px 0px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 section.support-wrapper .support-header h1 {
@@ -10468,7 +10473,7 @@ section.datasheet-wrapper,
 section.firmware-wrapper {
   width: 100%;
   position: relative;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 section.datasheet-wrapper::after,
@@ -11298,6 +11303,10 @@ td#Price .para-id:last-child {
   margin-top: 10px;
 }
 
+td#Price span {
+  color: #327B83;
+}
+
 #para-val {
   float: right;
 }
@@ -11337,7 +11346,7 @@ figure.contact-banner::before {
 }
 
 section.contact-wrapper {
-  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   position: absolute;
   width: 1170px;
   top: 50%;
@@ -13030,7 +13039,7 @@ footer.footer-new-wrapper .footer-container h4 {
   padding-top: 66px;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
   border-left: 1px solid #666666;
   padding-left: 25px;
 }
@@ -13048,7 +13057,7 @@ footer.footer-new-wrapper .footer-container ul.footer-list li.footer-item {
 footer.footer-new-wrapper .footer-container ul.footer-list li.footer-item a {
   color: #999;
   text-decoration: none;
-  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+  font-family: "Lato Light", Arial, Helvetica, sans-serif;
 }
 
 footer.footer-new-wrapper .footer-container ul.footer-list li.footer-item a:hover {
@@ -13113,7 +13122,7 @@ section.copyright-wrapper p {
   margin: 0;
   position: relative;
   color: white;
-  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+  font-family: "Lato Light", Arial, Helvetica, sans-serif;
   display: inline-block;
 }
 
@@ -13142,7 +13151,7 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   filter: grayscale(100%);
 }
 
-@media all and (max-width: 768px), print {
+@media (min-width: 481px) and (max-width: 767px) {
   button#open-mnav {
     display: block;
   }
@@ -14098,7 +14107,56 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   }
 }
 
-@media all and (max-width: 1024px), print {
+@media (min-width: 767px) and (max-width: 800px) {
+  section.parametric-wrapper .para-category-wrapper {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
+    width: 25% !important;
+  }
+  section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
+    width: 66% !important;
+    float: left !important;
+  }
+  header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a {
+    font-size: 18px;
+  }
+  button#open-mnav {
+    display: block;
+  }
+  header.header-wrapper section.navigation-wrapper section.navigation-container {
+    width: 100%;
+  }
+  header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper {
+    width: 100%;
+  }
+  header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper img {
+    width: 75%;
+    max-width: 297px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper {
+    display: none;
+  }
+  header.header-wrapper section.search-bar-wrapper {
+    width: 100%;
+  }
+  header.header-wrapper section.search-bar-wrapper form.search-bar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
   section.navigation-container {
     padding: 0 20px;
   }
@@ -14224,33 +14282,35 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     width: 78.5%;
   }
   section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
-    width: 25%;
-  }
-  section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
-    width: 75%;
-  }
-}
-
-@media all and (max-width: 1316px), print {
-  section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
     width: 25% !important;
   }
   section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
-    width: 75% !important;
+    width: 72% !important;
+    float: left !important;
   }
-}
-
-@media all and (max-width: 1440px), print {
+  header.header-wrapper section.navigation-wrapper section.navigation-container article.navbar-wrapper nav.navigation-bar ul li a {
+    font-size: 18px;
+  }
   section.highlights-wrapper ul.highlights-list li.highlights-item {
     height: 311px;
   }
+  section.parametric-wrapper .para-category-wrapper {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  header.header-wrapper section.navigation-wrapper section.navigation-container article.logo-wrapper {
+    width: 23%;
+  }
 }
 
-@media all and (max-width: 1748px), print {
+@media (min-width: 1025px) and (max-width: 1780px) {
   section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
     width: 20%;
   }
   section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
-    width: 80%;
+    width: 78.3%;
   }
 }

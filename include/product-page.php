@@ -1,6 +1,7 @@
 <section class="lab-container-fluid">
     <article class="lab-row">
 
+        <input id="prod-active-tab" type="text" value="<?php echo $_SESSION['tab-active']; ?>" hidden>
     
         <section class="product-page-wrapper"> <!-- Product Page Wrapper -->
 

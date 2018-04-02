@@ -7,8 +7,8 @@
     
 
     <div class="menu-bar">
-        <button class="hide" id="filter-control"><i class="fa fa-filter"></i> <span id="filter-control-text">Hide </span>Filters</button>
-        <button id="reset-filter">Reset Filters</button>
+        <!-- <button class="hide" id="filter-control"><i class="fa fa-filter"></i> <span id="filter-control-text">Hide </span>Filters</button> -->
+        <!-- <button id="reset-filter">Reset Filters</button> -->
 
         <div class="page-size-wrapper">
             <button class="active-size" id="twenty">20</button>
@@ -259,7 +259,7 @@
                             <!-- Product Datasheet -->
                             <td>
                                 <figure class="product-pdf">
-                                    <a href="" target="_blank">
+                                    <a href="<?php echo $product; ?>#product-page-tabs" target="_blank">
                                         <img src="img/pdf.png" alt="" title="Click to Download.">
                                     </a>
                                 </figure>
