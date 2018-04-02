@@ -1,6 +1,4 @@
 $(function() {
-    console.log('Product-tabs JS');
-    
     // Product Tabs
     var tabs        = $('section.product-tabs article.tabs-wrapper ul.tabs li.tab');
     var tabContent  = $('section.product-tabs article.tab-content');
@@ -27,8 +25,6 @@ $(function() {
             var activeTab   =   $(document).find('#prod-active-tab').val();
             $('section.product-tabs article.tabs-wrapper ul.tabs li#'+activeTab+'').addClass('active').siblings().removeClass('active');
             tabContent.children('#'+ activeTab +'').removeClass('tab-hidden').siblings().addClass('tab-hidden');
-            console.log(activeTab);
-
         }
     });
     
