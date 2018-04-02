@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @font-face {
   font-family: 'PT Sans';
   src: url("../fonts/PTSans-Regular.woff") format("woff"), url("../fonts/PTSans-Regular.ttf") format("truetype"), url("../fonts/PTSans-Regular.svg#PTSans-Regular") format("svg"), url("../fonts/PT_Sans-Web-Regular.eot"), url("../fonts/PT_Sans-Web-Regular.woff2") format("woff2"), url("../fonts/PT_Sans-Web-Regular.eot?#iefix") format("embedded-opentype");
@@ -15,13 +16,6 @@
 @font-face {
   font-family: 'Avenir';
   src: url("../fonts/AvenirLTStd-Light.eot"), url("../fonts/AvenirLTStd-Light.woff2") format("woff2"), url("../fonts/AvenirLTStd-Light.woff") format("woff"), url("../fonts/AvenirLTStd-Light.ttf") format("truetype"), url("../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg"), url("../fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lato Regular';
-  src: url("../fonts/Lato-Regular.eot"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -1556,7 +1550,7 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
   display: inline-block;
   vertical-align: middle;
   color: white;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 12px;
 }
 
@@ -1657,7 +1651,7 @@ header.header-wrapper section.navigation-wrapper section.navigation-container ar
   background: white;
   -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
   -ms-transition: 250ms ease;
@@ -1859,7 +1853,7 @@ header.header-wrapper section.search-bar-wrapper {
   z-index: 1000;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
   -ms-transition: 250ms ease;
@@ -1959,7 +1953,7 @@ div.to-top:hover {
 }
 
 .account-form {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   position: absolute;
   top: 10%;
   right: 0;
@@ -2116,7 +2110,7 @@ div.to-top:hover {
 section.featured-wrapper {
   display: block;
   margin: 30px 0;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.featured-wrapper::after {
@@ -2294,7 +2288,7 @@ section.quick-links {
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.quick-links::after {
@@ -2709,7 +2703,7 @@ section.thumb-wrapper article.thumb-container section.thumb-row-2 .last-thumb {
 
 section.news-section-wrapper {
   margin-bottom: 30px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.news-section-wrapper .latest-news-wrapper {
@@ -2926,7 +2920,7 @@ section.news-section-wrapper .latest-news-wrapper .news .news-content p a:hover 
 }
 
 .breadcrumbs {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .breadcrumbs ul.breadcrumbs-list {
@@ -3026,7 +3020,7 @@ section.news-section-wrapper .latest-news-wrapper .news .news-content p a:hover 
 }
 
 article.cart-breadcrumbs {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   overflow: hidden;
   margin: 0px 0px 60px;
 }
@@ -3831,7 +3825,7 @@ section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-c
 }
 
 section.highlights-wrapper ul.highlights-list li.highlights-item a .highlights-container header.highlights-header #highlights-title {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 600;
@@ -3891,7 +3885,7 @@ section.new-thumbnails-wrapper header.new-thumbnails-header {
 section.new-thumbnails-wrapper header.new-thumbnails-header h2 {
   color: #327B83;
   font-size: 32px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
 }
 
@@ -3952,7 +3946,7 @@ section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-con
 
 section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-content p {
   font-size: 16px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.new-thumbnails-wrapper .thumbnails-container .thumbnails-item .thumb-content a {
@@ -4021,7 +4015,7 @@ section.news-and-events-wrapper header.news-header {
 section.news-and-events-wrapper header.news-header h3 {
   color: white;
   margin-bottom: 0px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 600;
 }
@@ -4148,7 +4142,7 @@ section.appnote-home-wrapper .appnote-content {
 }
 
 section.appnote-home-wrapper .appnote-content h2 {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 32px;
 }
@@ -4212,7 +4206,7 @@ section.appnote-home-wrapper .featured-article .article-container header.article
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -4222,7 +4216,7 @@ section.appnote-home-wrapper .featured-article .article-container header.article
 
 section.appnote-home-wrapper .featured-article .article-container header.article-header h5 {
   font-size: 24px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   color: black;
   -webkit-transition: 250ms ease;
@@ -4246,7 +4240,7 @@ section.appnote-home-wrapper .featured-article .article-container img {
 section.appnote-home-wrapper .featured-article .article-container p {
   width: 100%;
   font-size: 14px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -4261,7 +4255,7 @@ section.newsletter-home-wrapper p {
   display: inline-block;
   color: white;
   font-size: 23px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   margin: 0;
 }
@@ -4297,7 +4291,7 @@ section.newsletter-home-wrapper button i {
   background: #F5F5F5;
   display: block;
   margin-top: 30px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 
@@ -4512,7 +4506,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
 
 article.product-details-wrapper {
   margin-top: 20px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 article.product-details-wrapper header.product-header {
@@ -5322,7 +5316,7 @@ button#hideAside.showHideAside {
 
 .cat-product-container {
   margin: 0 0px 50px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   position: relative;
 }
 
@@ -5568,7 +5562,7 @@ button#hideAside.showHideAside {
 }
 
 #appnotes-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 details.appnote-cat-details {
@@ -5800,7 +5794,7 @@ details.appnote-cat-details ul.appnote-detail-list #downloads ul li a img {
 }
 
 article.terms-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 50px 0px;
 }
 
@@ -5845,7 +5839,7 @@ article.terms-wrapper ul.terms-list li.terms-item ul.terms-sublist {
 }
 
 section.about-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   overflow: hidden;
 }
 
@@ -6720,7 +6714,7 @@ section.learn-nav ul.learn-list li.learn:hover a header span.arrow-right {
 }
 
 section.about-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 
@@ -6750,7 +6744,7 @@ section.about-wrapper .welcome-wrapper h1 {
   margin-bottom: 0;
   color: white;
   position: relative;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   z-index: 1001;
 }
 
@@ -7026,7 +7020,7 @@ section.register-wrapper {
   background: -o-radial-gradient(top, #cccccc 0%, #eeeeee 100%);
   background: radial-gradient(to bottom, #cccccc 0%, #eeeeee 100%);
   position: relative;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
@@ -7610,7 +7604,7 @@ a#goto:hover {
 
 section.shopping-cart-wrapper,
 section.payments-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 50px 0px;
 }
 
@@ -8457,7 +8451,7 @@ article.voucher-total-wrapper section.proceed a#proceed-btn:hover {
 
 section.checkout-wrapper {
   padding: 50px 0px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.checkout-wrapper::after {
@@ -8638,7 +8632,7 @@ section.checkout-wrapper article.checkout-account a#checkout-signup-btn i {
 
 section.payments-wrapper,
 section.shipping-method-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.payments-wrapper::after,
@@ -9149,7 +9143,7 @@ section.paypal-payment-wrapper a#pay-via-pp:hover {
 section.shipping-billing-userin-wrapper {
   width: 100%;
   position: relative;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 50px 0px;
   overflow-x: hidden;
 }
@@ -9708,7 +9702,7 @@ a#change-add:hover {
 }
 
 section.confirmation-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 50px 0px;
   margin-bottom: 50px;
 }
@@ -9768,7 +9762,7 @@ section.confirmation-wrapper .confirmation-container a#continue-shopping:hover {
 h3.glossary-header {
   padding: 20px 0px;
   background: #343D44;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h3.glossary-header p {
@@ -9779,7 +9773,7 @@ h3.glossary-header p {
 }
 
 section.glossary-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   margin-top: 60px;
 }
 
@@ -9856,7 +9850,7 @@ section.glossary-wrapper .glossary-list-wrapper ul.glossary-list li.glossary-ite
 
 section.support-wrapper {
   padding: 50px 0px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.support-wrapper .support-header h1 {
@@ -10061,7 +10055,7 @@ section.support-wrapper section.support-boxes ul.support-list li.support-item ar
   display: block;
   margin: 10px 0px;
   font-size: 20px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
 }
 
@@ -10473,7 +10467,7 @@ section.datasheet-wrapper,
 section.firmware-wrapper {
   width: 100%;
   position: relative;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.datasheet-wrapper::after,
@@ -10689,7 +10683,7 @@ section.firmware-wrapper article.datasheet-content .datasheet-table-wrapper tabl
 }
 
 section.parametric-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0px 0px 50px;
 }
 
@@ -11346,7 +11340,7 @@ figure.contact-banner::before {
 }
 
 section.contact-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   position: absolute;
   width: 1170px;
   top: 50%;
@@ -11526,7 +11520,7 @@ section.contact-wrapper article.headquarters-wrapper .headquarters ul li {
 }
 
 section.product-page-wrapper {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   z-index: 1006;
 }
 
@@ -11592,7 +11586,7 @@ section.product-page-wrapper section.product-head-wrapper .product-head header .
 
 section.product-page-wrapper section.product-head-wrapper .product-head header .sub-head h3 span {
   color: #327B83;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 section.product-page-wrapper section.product-head-wrapper .product-head header .sub-head h5 {
@@ -11607,7 +11601,7 @@ section.product-page-wrapper section.product-head-wrapper .product-head p {
 
 section.product-page-wrapper section.product-head-wrapper .product-head a {
   font-size: 16px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   color: #73BF44;
 }
 
@@ -12138,7 +12132,7 @@ figure.product-thumb img {
 }
 
 article#addtnl-3 {
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100%;
   background: url("../img/about-banners/about-ws4.jpg") #E3EBED no-repeat;
   background-size: cover;
@@ -12608,7 +12602,7 @@ button#open-mnav {
   background: none;
   outline: none;
   cursor: pointer;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10px;
   opacity: 1;
   position: fixed;
@@ -12689,7 +12683,7 @@ button#open-mnav span i.fa-plus {
   padding: 10px 20px;
   background: white;
   text-align: left;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .mobile-navbar-wrapper ul li {
@@ -12702,7 +12696,7 @@ button#open-mnav span i.fa-plus {
   padding: 5px 10px;
   display: block;
   font-size: 16px;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .mobile-navbar-wrapper ul li a:hover {
@@ -13039,7 +13033,7 @@ footer.footer-new-wrapper .footer-container h4 {
   padding-top: 66px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   border-left: 1px solid #666666;
   padding-left: 25px;
 }
