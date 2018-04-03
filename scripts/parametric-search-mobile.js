@@ -7,11 +7,9 @@ $(function() {
 
     function winResize() {
         
-        if ($(window).width() <= 768) {
+        if ($(window).width() < $(window).height()) {
             parametricWrapper.hide();
             $('#orientation-msg').show();
-            
-            
         } else {
             parametricWrapper.show();
             $('#orientation-msg').hide();

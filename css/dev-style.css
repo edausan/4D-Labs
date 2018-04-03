@@ -13145,7 +13145,7 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   filter: grayscale(100%);
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   button#open-mnav {
     display: block;
   }
@@ -13287,6 +13287,9 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     display: block;
     text-align: center;
   }
+  .mobile-navbar-wrapper ul li a {
+    font-size: 12px;
+  }
   .account-form {
     display: block;
     position: relative;
@@ -13306,15 +13309,15 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   }
   .account-form h4 {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #327B83;
     font-weight: 600;
   }
   .account-form label {
-    font-size: 14px;
+    font-size: 12px;
   }
   .account-form button {
-    margin: 10px 0px;
+    margin: 5px 0px;
     display: block;
     width: 100%;
     -webkit-border-radius: 0px;
@@ -13322,12 +13325,63 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     border-radius: 0px;
+    padding: 5px;
+  }
+  .account-form input {
+    font-size: 12px;
+  }
+  .account-form span.close-form-btn {
+    display: none;
   }
   .account-form a:hover {
     background: white !important;
   }
   .account-form a#mobile-cart {
     display: none;
+  }
+  .account-form .account-bottom a {
+    display: inline-block;
+    height: auto !important;
+  }
+  .account-form .account-bottom p {
+    font-size: 12px;
+  }
+  .mobile-navbar-wrapper hr {
+    margin: 5px 0;
+  }
+  .mobile-navbar-wrapper ul {
+    padding: 10px;
+  }
+  .mobile-navbar-wrapper ul::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .mobile-navbar-wrapper ul li {
+    width: 33.333333333%;
+    float: left;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1px;
+  }
+  .mobile-navbar-wrapper ul li:nth-child(10) {
+    width: 100%;
+  }
+  .mobile-navbar-wrapper ul li:last-child {
+    width: 100%;
+  }
+  .mobile-navbar-wrapper ul li a {
+    height: 58px;
+    text-align: center;
+    padding: 0;
+    padding-top: 12px;
+    background: whitesmoke;
+  }
+  .mobile-navbar-wrapper ul li a i {
+    display: block;
+    width: 100%;
+    font-size: 16px;
   }
   section.about-wrapper .welcome-wrapper {
     padding-left: 20px;
@@ -13380,10 +13434,10 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     padding-bottom: 40px;
   }
   section.about-wrapper section.learn-nav ul.learn-list li.learn a header label {
-    font-size: 20px;
+    font-size: 15px;
   }
   section.about-wrapper section.learn-nav ul.learn-list li.learn a header h1 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 60px;
   }
   section.shopping-cart-wrapper header.title-wrapper {
@@ -13410,6 +13464,9 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     width: 100% !important;
     display: block;
   }
+  section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td#product-details-wrapper {
+    padding-left: 20px;
+  }
   section.shopping-cart-wrapper section.cart-wrapper article.cart form.cart-form table.cart-table tbody tr td header.prod-name .prod-name-content a p {
     color: #327B83;
   }
@@ -13426,14 +13483,19 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     width: 100% !important;
   }
   section.shopping-cart-wrapper section.cart-wrapper article.voucher-total-wrapper section.voucher-container .voucher-input input#voucher-input {
-    width: 83%;
+    width: 80%;
     padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   section.shopping-cart-wrapper section.cart-wrapper article.voucher-total-wrapper section.voucher-container .voucher-input button#voucher-btn {
+    width: 20%;
     border: 1px solid #FB2800;
     float: right;
     min-height: 36px;
     padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   section.shopping-cart-wrapper section.cart-wrapper article.voucher-total-wrapper section.proceed {
     width: 100%;
@@ -13861,6 +13923,9 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
   section.support-wrapper .field-wrapper {
     width: 100%;
   }
+  section.support-wrapper .attachment-wrapper .upload-wrapper label {
+    width: 100%;
+  }
   section.support-wrapper .accept-wrapper .accept-item::after {
     content: '';
     display: table;
@@ -14007,17 +14072,18 @@ section.copyright-wrapper .payment-method-wrapper ul.cc-list li img {
     width: 100%;
   }
   section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-1 {
-    width: 32% !important;
+    width: 41% !important;
     float: left;
   }
   section.parametric-wrapper .parametric-table-wrapper .para-tb-2-wrapper {
-    width: 68% !important;
+    width: 59% !important;
   }
   section.parametric-wrapper .parametric-table-wrapper tbody tr td {
     font-size: 16px !important;
   }
   section.parametric-wrapper a.para-prod-name-link {
     font-size: 14px;
+    min-width: 110px;
   }
   section.parametric-wrapper span,
   section.parametric-wrapper input,

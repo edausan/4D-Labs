@@ -17,19 +17,27 @@
 
     h4 
         margin-bottom: 10px
-        font-size: 16px
+        font-size: 14px
         color: $paleBlue
         font-weight: 600
 
 
     label
-        font-size: 14px
+        font-size: 12px
 
     button
-        margin: 10px 0px
+        margin: 5px 0px
         display: block 
         width: 100%
         +border-radius(0px)
+        padding: 5px
+
+    input
+        font-size: 12px
+
+    span.close-form-btn
+        display: none 
+
 
     a
         &:hover
@@ -37,3 +45,45 @@
 
         &#mobile-cart
             display: none 
+
+    .account-bottom 
+        a
+            display: inline-block
+            height: auto !important
+        p
+            font-size: 12px
+
+
+.mobile-navbar-wrapper
+    hr 
+        margin: 5px 0
+
+    ul 
+        padding: 10px
+        +clear 
+
+        li 
+            width: 33.333333333%
+            float: left
+            text-align: center
+            box-sizing: border-box
+            padding: 1px
+
+            &:nth-child(10)
+                width: 100%
+
+            &:last-child
+                width: 100%
+
+            a 
+                height: 58px
+                text-align: center
+                padding: 0
+                padding-top: 12px
+                background: whitesmoke
+
+                i 
+                    display: block 
+                    width: 100%
+                    font-size: 16px
+

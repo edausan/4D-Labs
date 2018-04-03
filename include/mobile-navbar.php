@@ -10,6 +10,8 @@
                 <li><a href="support"><i class="fa fa-comments"></i>Support</a></li>
                 <li><a href="about"><i class="fa fa-users"></i>About Us</a></li>
                 <li><a href="shopping-cart"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+                <li><a href="parametric-search"><i class="fa fa-search"></i>Parametric Search</a></li>
+                <li><a href="contact"><i class="fa fa-phone"></i>Contact Us</a></li>
                 <li><hr></li>
                 <li>
                     <form class="account-form" action="#" method="post">
