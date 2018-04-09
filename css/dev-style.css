@@ -4504,6 +4504,78 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   border-color: #cccccc;
 }
 
+.add-to-cart-notif {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 1009;
+}
+
+.add-to-cart-notif .cart-notif {
+  position: relative;
+  background: white;
+  padding: 30px;
+  z-index: 1009;
+  -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  -webkit-transform: translateX(110%);
+  -moz-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  -o-transform: translateX(110%);
+  transform: translateX(110%);
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -ms-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.add-to-cart-notif .cart-notif.showAddToCartNotif {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.add-to-cart-notif .cart-notif.stayAddToCartNotif {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.add-to-cart-notif .cart-notif .close-notif-btn {
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #cccccc;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-to-cart-notif .cart-notif .close-notif-btn:hover {
+  color: black;
+}
+
+.add-to-cart-notif .cart-notif label {
+  display: block;
+}
+
+.add-to-cart-notif .cart-notif label span {
+  text-transform: uppercase;
+}
+
+.add-to-cart-notif .cart-notif a {
+  display: block;
+}
+
 article.product-details-wrapper {
   margin-top: 20px;
   font-family: "Lato", sans-serif;
@@ -11317,6 +11389,26 @@ a.para-prod-name-link {
 
 img#para-prod-thumb {
   width: 50px;
+}
+
+button.param-add-to-cart {
+  padding: 5px 10px;
+  background: #327B83;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+button.param-add-to-cart i {
+  margin-right: 5px;
+}
+
+button.param-add-to-cart:hover {
+  background: #24585e;
 }
 
 figure.contact-banner {

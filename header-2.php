@@ -50,8 +50,9 @@
 
 <?php include('arrays.php'); ?>
 
-<body dir="ltr">
 
+<body dir="ltr">
+    <?php include('include/add-to-cart-notif.php'); ?>
     <?php include('include/loading.php'); ?>
 
     <section class="page-container" style="opacity: 0; transition: 1s ease; overflow-x:hidden">

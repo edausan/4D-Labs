@@ -268,6 +268,7 @@
                             <?php foreach ($value as $key => $val) : ?>
                                 <td id="<?php echo $key; ?>">
                                     <ul>
+                                    
                                         <?php $i = 1; foreach ($val as $newKey => $newVal) : ?>
                                             <?php  if (is_int($newKey)) : ?>
                                                 <li class="para-id" id="para-<?php echo $i; ?>"><span><?php echo $newVal; ?></span></li>
@@ -275,6 +276,11 @@
                                                 <li class="para-id" id="para-<?php echo $i; ?>"><span id="para-key"><?php echo $newKey; ?></span> <span id="para-val"><?php echo $newVal; ?></span></li>
                                             <?php endif; ?>
                                         <?php $i++; endforeach;  ?>
+
+                                        <!-- adding 'add to cart button' if $key is equal to 'Price' -->
+                                        <?php if ($key == 'Price') : ?>
+                                            <li><button class="param-add-to-cart" data-prod="<?php echo $product; ?>" id="param-add-to-cart" ><i class="fa fa-shopping-cart"></i> Add to Cart</button></li>
+                                        <?php endif; ?>
                                     </ul>
                                 </td>
                             <?php endforeach;  ?>

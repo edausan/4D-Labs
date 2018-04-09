@@ -1,0 +1,45 @@
+.add-to-cart-notif
+    position: fixed 
+    bottom: 20px
+    right: 0
+    z-index: 1009
+    // display: none 
+
+    .cart-notif
+        position: relative
+        background: white
+        padding: 30px
+        z-index: 1009
+        box-shadow: 0 8px 32px rgba(0,0,0,.3)
+        margin-top: 10px
+        +transform(translateX(110%))
+        +transition(300ms ease-in-out)
+
+        &.showAddToCartNotif
+            +transform(translateX(0%))
+
+        &.stayAddToCartNotif
+            +transform(translateX(0%))
+
+        .close-notif-btn
+            background: none
+            position: absolute
+            top: 5px 
+            right: 5px
+            color: #cccccc
+            border: none
+            box-shadow: none
+            outline: none
+            cursor: pointer
+
+            &:hover
+                color: black
+
+        label 
+            display: block
+
+            span 
+                text-transform: uppercase
+        
+        a
+            display: block

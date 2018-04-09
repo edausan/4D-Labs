@@ -29,6 +29,7 @@ $(function() {
     dynamicallyLoadScript('scripts/fb.js');
     dynamicallyLoadScript('scripts/defer-video.js');
     dynamicallyLoadScript('scripts/product-category.js');
+    dynamicallyLoadScript('scripts/add-to-cart-notif.js');
 });
 
 
