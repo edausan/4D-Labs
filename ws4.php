@@ -410,5 +410,5 @@
             </section>
             
         </article>
-    </section-lab-container>
+    </section>
 </article>

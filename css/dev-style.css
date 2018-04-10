@@ -4524,11 +4524,11 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   -ms-transform: translateX(110%);
   -o-transform: translateX(110%);
   transform: translateX(110%);
-  -webkit-transition: 300ms ease-in-out;
-  -moz-transition: 300ms ease-in-out;
-  -ms-transition: 300ms ease-in-out;
-  -o-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 350ms ease;
+  -moz-transition: 350ms ease;
+  -ms-transition: 350ms ease;
+  -o-transition: 350ms ease;
+  transition: 350ms ease;
 }
 
 .add-to-cart-notif .cart-notif.showAddToCartNotif {
@@ -4545,6 +4545,14 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
+}
+
+.add-to-cart-notif .cart-notif.hide-notif {
+  -webkit-transform: translateX(110%);
+  -moz-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  -o-transform: translateX(110%);
+  transform: translateX(110%);
 }
 
 .add-to-cart-notif .cart-notif .close-notif-btn {
@@ -11006,13 +11014,13 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 tbody tr td figure.product-image,
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 tbody tr td figure.product-pdf {
   position: absolute;
-  top: 50%;
+  top: 10px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 80px;
   margin: 0 auto;
 }
@@ -11022,7 +11030,16 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para
   width: 100%;
 }
 
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 tbody tr td #fig-goldelox {
+  top: 0;
+}
+
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table#para-tb-2 tbody tr td figure.product-pdf {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 30px;
 }
 
@@ -11322,17 +11339,51 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbod
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity {
   width: 75%;
   float: left;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity button {
   width: 20%;
+  cursor: pointer;
+  padding: 6px 8px;
+  color: #327B83;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity button:hover {
+  background: #327B83;
+  color: white;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity button#minus {
+  float: left;
+  border-right: 1px solid #cccccc;
+}
+
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity button#plus {
+  float: right;
+  border-left: 1px solid #cccccc;
 }
 
 section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td #prod-quantity input {
   width: 60%;
+  float: left;
+  padding: 6px 8px;
+  text-align: center;
 }
 
-section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td button#para-add-to-cart-btn {
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td button.para-add-to-cart-btn {
   width: 22%;
   float: right;
   height: 32px;
@@ -11352,7 +11403,7 @@ section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbod
   transition: 250ms ease;
 }
 
-section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td button#para-add-to-cart-btn:hover {
+section.parametric-wrapper .parametric-table-wrapper table.parametric-table tbody tr td button.para-add-to-cart-btn:hover {
   background: #24585e;
 }
 

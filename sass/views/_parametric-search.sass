@@ -210,15 +210,21 @@ section.parametric-wrapper
                             figure.product-image,
                             figure.product-pdf
                                 position: absolute
-                                top: 50%
+                                top: 10px
                                 left: 50%
-                                +transform
+                                +transform(translateX(-50%))
                                 width: 80px
                                 margin: 0 auto 
                                 img 
                                     width: 100%
 
+                            #fig-goldelox
+                                top: 0
+                            
+
                             figure.product-pdf
+                                // top: 10px
+                                +transform(translateX(-50%))
                                 width: 30px 
             
             // Parametric Table 1   
@@ -423,9 +429,10 @@ section.parametric-wrapper
                         vertical-align: top
 
                         &#Availability
-                            color: $paleBlue
+                            
 
                         &#Availability
+                            color: $paleBlue
                             label
                                 margin-right: 10px
                             
@@ -448,15 +455,38 @@ section.parametric-wrapper
                         #prod-quantity
                             width: 75%
                             float: left
+                            border: 1px solid #cccccc
+                            +border-radius(2px)
+                            overflow: hidden
+                            +clear 
 
                             button
                                 width: 20%
-                                // font-weight: 600
+                                cursor: pointer
+                                padding: 6px 8px
+                                color: $paleBlue
+
+                                &:hover
+                                    background: $paleBlue
+                                    color: white
+
+                                &#minus 
+                                    float: left
+                                    border-right: 1px solid #cccccc
+                                
+                                &#plus 
+                                    float: right
+                                    border-left: 1px solid #cccccc
 
                             input
                                 width: 60%
+                                float: left
+                                padding: 6px 8px
+                                text-align: center
 
-                        button#para-add-to-cart-btn
+                            
+
+                        button.para-add-to-cart-btn
                             width: 22%
                             float: right
                             height: 32px

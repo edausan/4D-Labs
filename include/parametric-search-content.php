@@ -14,8 +14,8 @@
             <button class="active-size" id="twenty">20</button>
             <button id="fifty">50</button>
             <button id="all">All</button>
-            
         </div>
+
         <label for="">Results per page</label>
     </div>
 
@@ -63,7 +63,8 @@
                     <tr>
                         <th class="medium" id="Product-image"><div class="th-wrapper"><span>Product Image</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Datasheet"><div class="th-wrapper"><span>Datasheet</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
-                        <th class="medium" id="Price"><div class="th-wrapper"><span>10K Pricing</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="Quantity"><div class="th-wrapper"><span>Quantity</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
+                        <th class="large" id="Price"><div class="th-wrapper"><span>Pricing</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Availability"><div class="th-wrapper"><span>Availability</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         <th class="medium" id="Status"><div class="th-wrapper"><span>Status</span> <span id="sorter" hidden><i class="fa fa-arrow-down"></i></span></div></th>
                         
@@ -105,8 +106,14 @@
                             <div class="filter-reset"><label for="">Reset</label></div>
                         </th>
 
+                        <!-- ### QUANTITY -->
+                        <th class="large" id="datasheet">
+                            <div class="th-wrapper"></div>
+                            <div class="filter-reset"><label for="">Reset</label></div>
+                        </th>
+
                         <!-- ### PRICE -->
-                        <th class="medium" id="Price">
+                        <th class="large" id="Price">
                             <div class="th-wrapper">
                                 <ul>
                                     <li><input type="checkbox" name="" id="$4.50" hidden> <label for="$4.50">$4.50</label></li>
@@ -251,7 +258,7 @@
                         
                             <!-- Product Thumbnail -->
                             <td>
-                                <figure class="product-image">
+                                <figure class="product-image" id="fig-<?php echo $product; ?>">
                                     <img src="img/<?php echo $product; ?>.png" alt="">
                                 </figure>
                             </td>
@@ -265,10 +272,19 @@
                                 </figure>
                             </td>
 
+                            <!-- Quantity -->
+                            <td id="Quantity">
+                                <div class="th-wrapper" id="prod-quantity">
+                                    <button class="quantity-btn" id="minus"><i class="fa fa-minus"></i></button>
+                                    <input type="text" placeholder="Quantity" min="1" value="">
+                                    <button class="quantity-btn" id="plus"><i class="fa fa-plus"></i></button>
+                                </div>
+                                <button class="para-add-to-cart-btn" id="param-add-to-cart" title="Add to Cart" data-prod="<?php echo $product; ?>"><i class="fa fa-shopping-cart"></i></button>
+                            </td>
+
                             <?php foreach ($value as $key => $val) : ?>
                                 <td id="<?php echo $key; ?>">
                                     <ul>
-                                    
                                         <?php $i = 1; foreach ($val as $newKey => $newVal) : ?>
                                             <?php  if (is_int($newKey)) : ?>
                                                 <li class="para-id" id="para-<?php echo $i; ?>"><span><?php echo $newVal; ?></span></li>
@@ -276,11 +292,6 @@
                                                 <li class="para-id" id="para-<?php echo $i; ?>"><span id="para-key"><?php echo $newKey; ?></span> <span id="para-val"><?php echo $newVal; ?></span></li>
                                             <?php endif; ?>
                                         <?php $i++; endforeach;  ?>
-
-                                        <!-- adding 'add to cart button' if $key is equal to 'Price' -->
-                                        <?php if ($key == 'Price') : ?>
-                                            <li><button class="param-add-to-cart" data-prod="<?php echo $product; ?>" id="param-add-to-cart" ><i class="fa fa-shopping-cart"></i> Add to Cart</button></li>
-                                        <?php endif; ?>
                                     </ul>
                                 </td>
                             <?php endforeach;  ?>

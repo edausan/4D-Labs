@@ -3,7 +3,6 @@
     bottom: 20px
     right: 0
     z-index: 1009
-    // display: none 
 
     .cart-notif
         position: relative
@@ -13,13 +12,16 @@
         box-shadow: 0 8px 32px rgba(0,0,0,.3)
         margin-top: 10px
         +transform(translateX(110%))
-        +transition(300ms ease-in-out)
+        +transition(350ms ease)
 
         &.showAddToCartNotif
             +transform(translateX(0%))
 
         &.stayAddToCartNotif
             +transform(translateX(0%))
+
+        &.hide-notif
+            +transform(translateX(110%))
 
         .close-notif-btn
             background: none
