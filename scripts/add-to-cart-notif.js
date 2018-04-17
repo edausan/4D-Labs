@@ -36,7 +36,7 @@ $(function() {
             setTimeout(function() {
                 $(document).find('#'+notifID+'').removeClass('showAddToCartNotif');
                 deleteNotif(notifID);
-            }, 2000);
+            }, 3000);
         });
     }
 
@@ -51,7 +51,6 @@ $(function() {
     }).mouseleave(function() {
         $(document).find('.cart-notif').removeClass('stayAddToCartNotif');
     });
-
 
 
 });

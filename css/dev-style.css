@@ -4529,6 +4529,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   -ms-transition: 350ms ease;
   -o-transition: 350ms ease;
   transition: 350ms ease;
+  opacity: 0;
 }
 
 .add-to-cart-notif .cart-notif.showAddToCartNotif {
@@ -4537,6 +4538,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
+  opacity: 1;
 }
 
 .add-to-cart-notif .cart-notif.stayAddToCartNotif {
@@ -4545,6 +4547,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
+  opacity: 1;
 }
 
 .add-to-cart-notif .cart-notif.hide-notif {
@@ -4553,6 +4556,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
   -ms-transform: translateX(110%);
   -o-transform: translateX(110%);
   transform: translateX(110%);
+  opacity: 0;
 }
 
 .add-to-cart-notif .cart-notif .close-notif-btn {
@@ -4578,6 +4582,7 @@ section.product-filters-wrapper .price-range_btn#price-range_reset:hover {
 
 .add-to-cart-notif .cart-notif label span {
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .add-to-cart-notif .cart-notif a {

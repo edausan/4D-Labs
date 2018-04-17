@@ -176,7 +176,7 @@
                     <div class="form-input">
                         <label for="qty" class="">Quantity</label>
                         <input name="qty" id="qty" step="" min="1" max="999999999" value="1" title="Enter Quantity" class="input-text form-control" type="number">
-                        <button type="submit" class="btn btn-info"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span> </button>
+                        <button type="submit" class="btn btn-info" data-prod="<?php echo $product['title']?>" id="param-add-to-cart"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span> </button>
 
                         <div class="separator"><span>or</span></div>
 

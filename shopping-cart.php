@@ -249,7 +249,8 @@
                                 <div class="related-product-details">
                                     <span id="related-price-<?php echo $x; ?>"><input type="text" name="related-product-price" id="related-product-price-<?php echo $x; ?>" value="<?php echo $details[2]; ?>" readonly="true" disabled></span>
                                 </div>
-                                <button class="add-to-cart" id="add-cart-btn-<?php echo $x; ?>"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                                <!-- <button class="add-to-cart" id="add-cart-btn-<?php echo $x; ?>"><i class="fa fa-shopping-cart"></i> Add to Cart</button> -->
+                                <button class="add-to-cart" data-prod="<?php echo $product; ?>" id="param-add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
                                 
                             </li>
                         <?php $x++; } ?>

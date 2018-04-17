@@ -13,15 +13,19 @@
         margin-top: 10px
         +transform(translateX(110%))
         +transition(350ms ease)
+        opacity: 0
 
         &.showAddToCartNotif
             +transform(translateX(0%))
+            opacity: 1
 
         &.stayAddToCartNotif
             +transform(translateX(0%))
+            opacity: 1
 
         &.hide-notif
             +transform(translateX(110%))
+            opacity: 0
 
         .close-notif-btn
             background: none
@@ -42,6 +46,7 @@
 
             span 
                 text-transform: uppercase
+                font-weight: 600
         
         a
             display: block
