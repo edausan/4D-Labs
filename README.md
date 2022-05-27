@@ -1,6 +1,3 @@
 # 4DLabs-dev
-Front-end side of 4D Labs Website Designing / Developing
-
-
-# Home Page
-Home page = all.php
+Prototype Website of 4D Labs.
+https://edausan.github.io/4D-Labs/
